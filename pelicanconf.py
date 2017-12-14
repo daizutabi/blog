@@ -3,7 +3,7 @@ RELATIVE_URLS = True
 
 AUTHOR = 'daizutabi'
 SITENAME = '大豆旅'
-# SITESUBTITLE = 'Sub-title that goes underneath site name in jumbotron.'
+SITESUBTITLE = 'Sub-title that goes underneath site name in jumbotron.'
 SITEURL = 'https://daizutabi.github.io'
 OUTPUT_PATH = '../daizutabi.github.io/'
 
@@ -35,13 +35,15 @@ THEME = '../voidy-bootstrap/'
 
 # Voidy Bootstrap
 STYLESHEETS = (
-    'voidybootstrap.css',
+    'custom/custom.css',
+    # 'voidybootstrap.css',
     # 'addition/pygment.css',
     # 'addition/style.css',
     # 'addition/image.css',
     # 'addition/admonition.css',
 )
 
+CUSTOM_SITE_HEADERS = ['custom/jumbotron.jinja2']
 CUSTOM_ARTICLE_HEADERS = ['custom/article_header.jinja2']
 CUSTOM_INDEX_ARTICLE_HEADERS = ['custom/index_article_header.jinja2']
 
