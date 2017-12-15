@@ -37,7 +37,7 @@ THEME = '../voidy-bootstrap/'
 STYLESHEETS = (
     'custom/custom.css',
     # 'voidybootstrap.css',
-    # 'addition/pygment.css',
+    'addition/pygment.css',
     # 'addition/style.css',
     # 'addition/image.css',
     # 'addition/admonition.css',
