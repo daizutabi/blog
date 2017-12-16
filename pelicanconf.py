@@ -3,7 +3,7 @@ RELATIVE_URLS = True
 
 AUTHOR = 'daizutabi'
 SITENAME = '大豆旅'
-SITESUBTITLE = 'Sub-title that goes underneath site name in jumbotron.'
+SITESUBTITLE = 'daizutabiのブログです．'
 SITEURL = 'https://daizutabi.github.io'
 OUTPUT_PATH = '../daizutabi.github.io/'
 
@@ -19,8 +19,8 @@ DEFAULT_LANG = 'ja'
 DEFAULT_PAGINATION = 5
 
 
-ARTICLE_URL = 'blog/{date:%Y}/{date:%m}/{date:%d}/{slug}/'
-ARTICLE_SAVE_AS = 'blog/{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html'
+ARTICLE_URL = 'blog/{date:%Y}/{date:%m}/{date:%d}/'
+ARTICLE_SAVE_AS = 'blog/{date:%Y}/{date:%m}/{date:%d}/index.html'
 PAGE_URL = 'page/{slug}/'
 PAGE_SAVE_AS = 'page/{slug}/index.html'
 
@@ -37,7 +37,7 @@ THEME = '../voidy-bootstrap/'
 STYLESHEETS = (
     'custom/custom.css',
     # 'voidybootstrap.css',
-    'addition/pygment.css',
+    'pygment.css',
     # 'addition/style.css',
     # 'addition/image.css',
     # 'addition/admonition.css',
