@@ -114,10 +114,10 @@ Slug: URL
 <li>ルートディレクトリから記事ファイルに至るまでのディレクトリ構造はどのようにしても構いませんでした．例えば，ひとつめの記事を書くのに，わざわざ<code>2017/12/06</code>といったディレクトリ構造を作るのは大げさでしょう．はじめのうちは，カテゴリーディレクトリの直下に<code>20171206_something.md</code>を作っておけばよいのです．記事の数が多くなって，ディレクトリ内の見通しが悪くなったら，その時に初めて月ごとあるいは年ごとのディレクトリを作り，そこに記事を移動しましょう．どのようなディレクトリ構造の中にあっても，ファイル名で記事の日付，タイトルを指定できます．</li>
 </ol>
 <p>記事およびカテゴリーページのURLと出力先のファイル名は以下のように設定しています．一日に２本の記事を書くことはないため，記事のタイトルなどをURLに含めていません．また<code>CATEGORY_*</code>には<code>slug</code>を用いるとおかしなローマ字になるときがあるので，<code>name</code>をそのまま使います．</p>
-<div class="highlight"><pre><span></span><span class="n">ARTICLE_URL</span> <span class="o">=</span> <span class="s1">&#39;blog/{date:%Y}/{date:%m}/{date:</span><span class="si">%d</span><span class="s1">}/&#39;</span>
-<span class="n">ARTICLE_SAVE_AS</span> <span class="o">=</span> <span class="s1">&#39;blog/{date:%Y}/{date:%m}/{date:</span><span class="si">%d</span><span class="s1">}/index.html&#39;</span>
-<span class="n">CATEGORY_URL</span> <span class="o">=</span> <span class="s1">&#39;blog/category/{name}/&#39;</span>
-<span class="n">CATEGORY_SAVE_AS</span> <span class="o">=</span> <span class="s1">&#39;blog/category/{name}/index.html&#39;</span>
+<div class="highlight"><pre><span></span><span class="n">ARTICLE_URL</span> <span class="o">=</span> <span class="s1">&#39;{date:%Y}/{date:%m}/{date:</span><span class="si">%d</span><span class="s1">}/&#39;</span>
+<span class="n">ARTICLE_SAVE_AS</span> <span class="o">=</span> <span class="s1">&#39;{date:%Y}/{date:%m}/{date:</span><span class="si">%d</span><span class="s1">}/index.html&#39;</span>
+<span class="n">CATEGORY_URL</span> <span class="o">=</span> <span class="s1">&#39;category/{name}/&#39;</span>
+<span class="n">CATEGORY_SAVE_AS</span> <span class="o">=</span> <span class="s1">&#39;category/{name}/index.html&#39;</span>
 </pre></div>
 
 
