@@ -1,0 +1,93 @@
+/* @import url(http://fonts.googleapis.com/earlyaccess/mplus1c.css); */
+/* @import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css); */
+/* @import url(http://fonts.googleapis.com/earlyaccess/roundedmplus1c.css); */
+/* @import url(http://fonts.googleapis.com/earlyaccess/sawarabimincho.css); */
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-size: 1rem;
+  /* font-family: 'Mplus 1p', sans-serif; */
+  /* font-family: 'Noto Sans JP', sans-serif; */
+  /* font-family: 'Rounded Mplus 1c', sans-serif; */
+  /* font-family: 'Sawarabi Mincho'; */
+}
+
+.navbar {
+  margin-bottom: 0px;
+}
+
+.jumbotron {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.jumbotron h1 {
+  margin: 0px;
+  font-size: 2.0rem;
+  font-weight: 700;
+  background-image: url(https://www.gravatar.com/avatar/425bf792666d158202306d5dc73367d0?s=30);
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.jumbotron p {
+  margin: 10px 0px 0px 0px;
+  font-size: 1.1rem;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 1.4rem;
+}
+
+h2 {
+  font-size: 1.3rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+h4 {
+  font-size: 1.1rem;
+}
+
+h5 {
+  font-size: 1.05rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+.index-article-header h1, .article-header h1 {
+  margin-top: 9px;
+  margin-bottom: : 9px;
+}
+
+.index-article-header-info, .index-article-header-date, .article-header-info, .article-header-date {
+  font-size: 0.8rem;
+  color: #999;
+}
+
+/* .index-article-header-modified, .article-header-modified {
+  font-size: 0.8rem;
+  color: #aaa;
+} */
+
+#site-colophon {
+  font-size: 0.7rem;
+}
