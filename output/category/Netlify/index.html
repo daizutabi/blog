@@ -4,11 +4,11 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="" />
+    <meta name="description" content="Posts in category Netlify" />
     <meta name="author" content="daizutabi" />
     <meta name="generator" content="Pelican (VoidyBootstrap theme)" />
 
-    <title>Gravater画像を貼り付ける - 大豆旅</title>
+    <title>Category:Netlify - 大豆旅</title>
 
    
         <link rel="stylesheet"
@@ -70,53 +70,51 @@
 
     <div class="container" id="main-container">
         <div class="" id="content">
-<article itemscope="itemscope" itemtype="http://schema.org/BlogPosting">
-  <header class="article-header">
-<div class="article-header">
-  <span class="article-header-date">2017年12月19日 (火)</span>
-  <span class="article-header-info">
+<ol class="breadcrumb">
+    <li><a href="https://blog.daizutabi.net/" title="Home" rel="home">
+		<i class="fa fa-home fa-fw fa-lg"></i> </a></li>
+    <li>Categories </li>
+    <li class="active">Netlify</li>
+</ol>
+    <article>
+<div class="index-article-header">
+  <span class="index-article-header-date">2017年12月20日 (水)</span>
+  <span class="index-article-header-info">
     <i class="fa fa-folder"></i>
-    <a href="https://blog.daizutabi.net/category/Pelican/">Pelican</a>
+    <a href="https://blog.daizutabi.net/category/Netlify/">Netlify</a>
   </span>
   <h1>
-      Gravater画像を貼り付ける
+    <a href="https://blog.daizutabi.net/2017/12/20/" rel="bookmark"
+       title="Permalink to NetlifyでPelicanページを公開する">
+      NetlifyでPelicanページを公開する
     </a>
   </h1>
-</div>  </header>
-  <div class="content-body" itemprop="text articleBody">
-	<p>ブログサイトの右上のほうに<a href="https://ja.gravatar.com">Gravater</a>の画像を表示させてみます．画像の取得方法は<a href="https://ja.gravatar.com/site/implement/images/">「Image Requests」</a>や<a href="https://ja.gravatar.com/site/implement/images/python/">「Python Image Requests」</a>に記載されています．</p>
-<p>Gravaterに登録したアドレスからハッシュ値を生成します．</p>
-<div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">hashlib</span><span class="o">.</span><span class="n">md5</span><span class="p">(</span><span class="sa">b</span><span class="s1">&#39;daizutabi@gmail.com&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">hexdigest</span><span class="p">()</span>
-<span class="s1">&#39;425bf792666d158202306d5dc73367d0&#39;</span>
-</pre></div>
+</div>
+      <div class="summary">
+		<p>（編集中）</p>
+<p>これまで<a href="https://pages.github.com">GitHub Pages</a>でブログを公開していましたが，<a href="https://www.netlify.com">Netlify</a>に移行します．とても簡単に独自ドメインを使うことができます．</p>
+<h2>お名前.comで独自ドメインの取得</h2>
+<p><a href="https://www.onamae.com">お名前.com</a>で独自ドメインを取得します．金額に関しては，初年度だけでなく２年目以降の金額についてもチェックしておきましょう．また，「1.お申込み内容」のところで，</p>
+<ul>
+<li>Whois情報公開代行（新規登録と同時なら無料）</li>
+</ul>
+<p>は，個人情報を公開したくない場合にはチェックを入れておきます．</p>
+<h2>Pelicanプロジェクトの作成</h2>
+<p>Pelicanプロジェクトを作成して，GitHubレポジトリにPushしておきます．</p>
+<h2>Netifyでサイトの作成</h2>
+<p><a href="https://www.netlify.com">Netlify</a>にはGitHubアカウント使ってログインします．ログイン後に，<a href="https://app.netlify.com/">https://app.netlify.com</a>を開き，右上のNew Site From Gitをクリックします．GitHubを選ぶと，自分のレポジトリ一覧が表示されるので，公開したいレポジトリを選択します．（以下はblogレポジトリを選択した前提です．）</p>
+<p>Deploy settings for daizutabi/blogで，次の選択をします．</p>
+<ul>
+<li>Branch …</li></ul>
+		<p class="content-emphasis"><a href="https://blog.daizutabi.net/2017/12/20/">
+			Read more... <i class="fa fa-arrow-circle-right fa-fw fa-lg"></i> 
+		</a></p>
+      </div>    </article>
+    <hr />
 
+<nav class="index-pager">
 
-<p>ハッシュ値を使って，画像を読み込みます．</p>
-<div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://www.gravatar.com/avatar/425bf792666d158202306d5dc73367d0&quot;</span><span class="p">/&gt;</span>
-</pre></div>
-
-
-<p>実際の表示は以下の通りです．</p>
-<p><img src="https://www.gravatar.com/avatar/425bf792666d158202306d5dc73367d0"/></p>
-<p>画像サイズを変えてみます．</p>
-<div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://www.gravatar.com/avatar/425bf792666d158202306d5dc73367d0?s=200&quot;</span><span class="p">/&gt;</span>
-</pre></div>
-
-
-<p><img src="https://www.gravatar.com/avatar/425bf792666d158202306d5dc73367d0?s=200"/></p>
-<p>ここまで出来たら，CSSを編集して完成です．</p>
-<div class="highlight"><pre><span></span><span class="p">.</span><span class="nc">jumbotron</span> <span class="nt">h1</span> <span class="p">{</span>
-  <span class="k">padding-top</span><span class="p">:</span> <span class="mi">15</span><span class="kt">px</span><span class="p">;</span>
-  <span class="k">padding-bottom</span><span class="p">:</span> <span class="mi">15</span><span class="kt">px</span><span class="p">;</span>
-  <span class="k">background-image</span><span class="p">:</span> <span class="nb">url</span><span class="p">(</span><span class="sx">https://www.gravatar.com/avatar/425bf792666d158202306d5dc73367d0?s=30</span><span class="p">);</span>
-  <span class="k">background-repeat</span><span class="p">:</span> <span class="kc">no-repeat</span><span class="p">;</span>
-  <span class="k">background-position</span><span class="p">:</span> <span class="kc">right</span> <span class="kc">center</span><span class="p">;</span>
-<span class="p">}</span>
-</pre></div>
-  </div>
-  
-
-</article>
+</nav> <!-- /index-pager -->
         </div><!-- /content -->
 
     </div><!--/.container /#main-container -->
