@@ -138,25 +138,24 @@
 		<p><a href="https://github.com/daizutabi/takuhai">Takuhai</a>パッケージを作りました．Pelicanプロジェクト内の記事ファイルが更新されたら次のことを実行します：</p>
 <ul>
 <li>記事をビルドしてHTMLファイルを生成します．</li>
-<li>ローカルのHTTPサーバを立ち上げて生成した記事をブラウザで表示します．</li>
-<li>記事の更新に同期して，ブラウザのページを自動でリロードします．</li>
+<li>ローカルのHTTPサーバを立ち上げて，生成した記事をブラウザで表示します．</li>
+<li>記事が更新されたら，その都度ビルドして，ブラウザのページを自動でリロードします．</li>
 </ul>
-<p>参考にした記事へのリンクを記載しておきます：</p>
+<p>本パッケージを作成するにあたって，次の記事を参考にしました：</p>
 <ul>
 <li><a href="https://merlijn.vandeen.nl/2015/pelican-livereload.html">Using LiveReload with Pelican</a></li>
 <li><a href="http://tech.agilitynerd.com/livereload-with-pelican.html">LiveReload with Pelican</a></li>
 </ul>
-<p>Takuhaiでは以下の改善を加えています：</p>
+<p>これらの記事が提供する機能に加えて，Takuhaiでは以下の改善を加えています：</p>
 <ul>
 <li><a href="https://pypi.org">PyPI</a>および<a href="https://anaconda.org">Anaconda Cloud</a>からのインストール．</li>
 <li>実行コマンド<code>takuhai</code>の実装．</li>
-<li>ホスト名やポートの指定．</li>
+<li>ホスト名やポート番号の指定．</li>
 <li>ブラウザの自動起動．</li>
 <li>相対URLと絶対URLの選択．</li>
 </ul>
 <p>特に有用と考えている「相対URLと絶対URLの選択」について説明します．Takuhaiの実行コマンド<code>takuhai</code>はデフォルトで相対URLを設定します．これは<code>pelicanconf.py</code>の設定を上書きします．</p>
-<p>Pelicanドキュメントの<a href="http://docs.getpelican.com/en/stable/settings.html#url-settings">URL settings</a>によれば，絶対URLが望ましい選択とされています．しかし，これではローカルHTTPサーバを立ち上げても，リンク先が外部サイトになってしまいます．望ましい動作とは言えないでしょう．</p>
-<p>Takuhaiでは，<code>pelicanconf.py</code>の設定を上書きすることで …</p>
+<p>Pelicanドキュメントの<a href="http://docs.getpelican.com/en/stable/settings.html#url-settings">URL settings</a>によれば，絶対URLが望ましい選択とされています．しかし，これではローカルHTTPサーバを立ち上げても，リンク先が外部サイトになってしまいます．望ましい動作とは言えないでしょう …</p>
 		<p class="content-emphasis"><a href="https://blog.daizutabi.net/2017/12/17/">
 			Read more... <i class="fa fa-arrow-circle-right fa-fw fa-lg"></i> 
 		</a></p>
