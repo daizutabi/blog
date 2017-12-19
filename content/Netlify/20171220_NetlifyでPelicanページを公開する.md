@@ -1,6 +1,4 @@
-（編集中）
-
-これまで[GitHub Pages](https://pages.github.com)でブログを公開していましたが，[Netlify](https://www.netlify.com)に移行します．とても簡単に独自ドメインを使うことができます．
+これまで[GitHub Pages](https://pages.github.com)をブログなどの公開に使っていましたが，[Netlify](https://www.netlify.com)に移行します．とても簡単に独自ドメインを使うことができます．
 
 ## お名前.comで独自ドメインの取得
 
@@ -10,31 +8,34 @@
 
 は，個人情報を公開したくない場合にはチェックを入れておきます．
 
+お名前.comのサイト内ですることは，取得したドメインのネームサーバをNetlify DNSにに設定することだけです．それ以外の設定はすべて，Netlify内で完結します．
 
-## Pelicanプロジェクトの作成
 
-Pelicanプロジェクトを作成して，GitHubレポジトリにPushしておきます．
+## 静的サイトの作成
+
+Pelicanを使ってサイトを作成し，GitHubレポジトリにPushしておきます．
 
 ## Netifyでサイトの作成
 
-[Netlify](https://www.netlify.com)にはGitHubアカウント使ってログインします．ログイン後に，[https://app.netlify.com](https://app.netlify.com/)を開き，右上のNew Site From Gitをクリックします．GitHubを選ぶと，自分のレポジトリ一覧が表示されるので，公開したいレポジトリを選択します．（以下はblogレポジトリを選択した前提です．）
+[Netlify](https://www.netlify.com)にはGitHubアカウント使ってログインします．ログイン後に，[https://app.netlify.com](https://app.netlify.com/)を開き，右上のNew Site From Gitをクリックします．GitHubを選ぶと，自分のレポジトリ一覧が表示されるので，公開したいレポジトリを選択します．（以下はblogレポジトリを選択した前提です進めます．）
 
-Deploy settings for daizutabi/blogで，次の選択をします．
+"Deploy settings for daizutabi/iroha"で，次の選択をします．
 
 + Branch to deploy: master
 + Build commant: (何も入力しない)
-+ Publish directory: /output
++ Publish directory: output
 
-Deply siteをクリックすると（すでに生成されていた）サイトが公開されます．
+"Deply site"をクリックすると（すでに生成されていた）サイトが公開されます．
 
-## Custom domain
+## カスタムドメインの設定
 
-編集中
+"Add a custom domain"をクリックします．
+
+"Your custom domain"に
+`http://blog.daizutabi.net`を入力し，Saveをクリックします．
+
+"Change your domain's name servers"を開くと，Netlify DNSが表示されるので，これをお名前.comのネームサーバーに設定します．
 
 ## HTTPS
 
-Verify DNS configurationをクリック．うまくいけば，Let's Encrypt certificateに代わるのでもう一度クリック．
-
-Automatic TLS setupダイアログで Provision certificateをクリック
-
-Force HTTPSもクリック
+画面の案内に従えばすんなり設定できます．

@@ -1,4 +1,4 @@
-/* @import url(http://fonts.googleapis.com/earlyaccess/mplus1c.css); */
+@import url(http://fonts.googleapis.com/earlyaccess/mplus1c.css);
 /* @import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css); */
 /* @import url(http://fonts.googleapis.com/earlyaccess/roundedmplus1c.css); */
 /* @import url(http://fonts.googleapis.com/earlyaccess/sawarabimincho.css); */
@@ -9,7 +9,7 @@ html {
 
 body {
   font-size: 1rem;
-  /* font-family: 'Mplus 1p', sans-serif; */
+  font-family: 'Mplus 1p', sans-serif;
   /* font-family: 'Noto Sans JP', sans-serif; */
   /* font-family: 'Rounded Mplus 1c', sans-serif; */
   /* font-family: 'Sawarabi Mincho'; */
@@ -54,26 +54,14 @@ h1 {
 }
 
 h2 {
-  font-size: 1.3rem;
-}
-
-h3 {
   font-size: 1.2rem;
 }
 
-h4 {
+h3 {
   font-size: 1.1rem;
 }
 
-h5 {
-  font-size: 1.05rem;
-}
-
-h6 {
-  font-size: 1rem;
-}
-
-.index-article-header h1, .article-header h1 {
+article h1 {
   margin-top: 9px;
   margin-bottom: : 9px;
 }
