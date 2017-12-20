@@ -8,7 +8,7 @@
 
 は，個人情報を公開したくない場合にはチェックを入れておきます．
 
-お名前.comのサイト内ですることは，取得したドメインのネームサーバをNetlify DNSにに設定することだけです．それ以外の設定はすべて，Netlify内で完結します．
+お名前.comのサイト内ですることは，取得したドメインのネームサーバをNetlify DNSに設定することだけです．それ以外の設定はすべて，Netlify内で完結します．
 
 
 ## 静的サイトの作成
@@ -17,7 +17,7 @@ Pelicanを使ってサイトを作成し，GitHubレポジトリにPushしてお
 
 ## Netifyでサイトの作成
 
-[Netlify](https://www.netlify.com)にはGitHubアカウント使ってログインします．ログイン後に，[https://app.netlify.com](https://app.netlify.com/)を開き，右上のNew Site From Gitをクリックします．GitHubを選ぶと，自分のレポジトリ一覧が表示されるので，公開したいレポジトリを選択します．（以下はblogレポジトリを選択した前提です進めます．）
+[Netlify](https://www.netlify.com)にはGitHubアカウント使ってログインします．ログイン後に，[https://app.netlify.com](https://app.netlify.com/)を開き，右上のNew Site From Gitをクリックします．GitHubを選ぶと，自分のレポジトリ一覧が表示されるので，公開したいレポジトリを選択します．（以下はblogレポジトリを選択した前提で進めます．）
 
 "Deploy settings for daizutabi/iroha"で，次の選択をします．
 
