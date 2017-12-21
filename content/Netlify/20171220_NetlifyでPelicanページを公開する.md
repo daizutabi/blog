@@ -1,3 +1,7 @@
+Modified: 2017-12-21
+
+（追記）以下の内容よりも，2017/12/21の[「DNS Zonesからネームサーバーを設定する方法」](https://blog.daizutabi.net/2017/12/21/)のほうがお勧めです．
+
 これまで[GitHub Pages](https://pages.github.com)をブログなどの公開に使っていましたが，[Netlify](https://www.netlify.com)に移行します．とても簡単に独自ドメインを使うことができます．
 
 ## お名前.comで独自ドメインの取得
@@ -17,7 +21,7 @@ Pelicanを使ってサイトを作成し，GitHubレポジトリにPushしてお
 
 ## Netifyでサイトの作成
 
-[Netlify](https://www.netlify.com)にはGitHubアカウント使ってログインします．ログイン後に，[https://app.netlify.com](https://app.netlify.com/)を開き，右上のNew Site From Gitをクリックします．GitHubを選ぶと，自分のレポジトリ一覧が表示されるので，公開したいレポジトリを選択します．（以下はblogレポジトリを選択した前提で進めます．）
+[Netlify](https://www.netlify.com)にはGitHubアカウントを使ってログインします．ログイン後に，[https://app.netlify.com](https://app.netlify.com/)を開き，右上のNew Site From Gitをクリックします．GitHubを選ぶと，自分のレポジトリ一覧が表示されるので，公開したいレポジトリを選択します．（以下はblogレポジトリを選択した前提で進めます．）
 
 "Deploy settings for daizutabi/iroha"で，次の選択をします．
 

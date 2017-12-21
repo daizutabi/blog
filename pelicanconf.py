@@ -26,6 +26,8 @@ PAGE_SAVE_AS = 'page/{slug}/index.html'
 CATEGORY_URL = 'category/{name}/'
 CATEGORY_SAVE_AS = 'category/{name}/index.html'
 
+STATIC_PATHS = ['images']
+
 THEME = 'voidy-bootstrap/'
 STYLESHEETS = (
     'custom/custom.css',

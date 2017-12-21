@@ -78,6 +78,43 @@
 </ol>
     <article>
 <div class="index-article-header">
+  <span class="index-article-header-date">2017年12月21日 (木)</span>
+  <span class="index-article-header-info">
+    <i class="fa fa-folder"></i>
+    <a href="https://blog.daizutabi.net/category/Netlify/">Netlify</a>
+  </span>
+  <h1>
+    <a href="https://blog.daizutabi.net/2017/12/21/" rel="bookmark"
+       title="Permalink to DNS Zonesからネームサーバーを設定する方法">
+      DNS Zonesからネームサーバーを設定する方法
+    </a>
+  </h1>
+</div>
+      <div class="summary">
+		<p><a href="https://blog.daizutabi.net/2017/12/20/">2017/12/20</a>に，ブログの公開を<a href="https://pages.github.com">GitHub Pages</a>を<a href="https://www.netlify.com">Netlify</a>に移行した件を書きました．ただ，その時の方法だと，最初にアップしたサイトが特権的な扱いを受けて，後続のサイトと非対称な形になってしまいました．少し気になっていたところ，DNS zonesから再設定することで，非対称を解消できました．以下，順を追って説明したいと思います．次の前提で話を進めます．</p>
+<ul>
+<li>カスタムドメインとサイトをすでに登録していたので，すべて削除しました．</li>
+<li><a href="https://www.onamae.com">お名前.com</a>で<code>daizutabi.net</code>を取得済です．</li>
+<li>GitHub上の<a href="https://github.com/daizutabi/blog">「ブログ」</a>レポジトリと<a href="https://github.com/daizutabi/iroha">「Pythonパッケージの作り方」</a>レポジトリを公開していきます．</li>
+</ul>
+<p>（注）具体的な名前で説明したほうが分かりやすいと思いそのまま書いています．ドメイン名やレポジトリ名は適宜置き換えを行ってください．</p>
+<h2>DNS zonesの設定</h2>
+<p><a href="https://www.netlify.com">Netlify</a>にGitHubアカウントを使ってログインします．</p>
+<p><img alt="daizutabi" src="https://blog.daizutabi.net/images/20171221/010.png"></p>
+<p>左上のAll teamsからdaizutabiを選択します．</p>
+<p><img alt="DNS zones" src="https://blog.daizutabi.net/images/20171221/020.png"></p>
+<p>メニューからDNS zonesをクリックします．</p>
+<p><img alt="Add a domain" src="https://blog.daizutabi.net/images/20171221/030.png"></p>
+<p>Add a domainをクリックします．</p>
+<p><img alt="Create DNS zone" src="https://blog.daizutabi.net/images/20171221/040.png"></p>
+<p>Domainにdaizutabi.netを入力して …</p>
+		<p class="content-emphasis"><a href="https://blog.daizutabi.net/2017/12/21/">
+			Read more... <i class="fa fa-arrow-circle-right fa-fw fa-lg"></i> 
+		</a></p>
+      </div>    </article>
+    <hr />
+    <article>
+<div class="index-article-header">
   <span class="index-article-header-date">2017年12月20日 (水)</span>
   <span class="index-article-header-info">
     <i class="fa fa-folder"></i>
@@ -91,7 +128,8 @@
   </h1>
 </div>
       <div class="summary">
-		<p>これまで<a href="https://pages.github.com">GitHub Pages</a>をブログなどの公開に使っていましたが，<a href="https://www.netlify.com">Netlify</a>に移行します．とても簡単に独自ドメインを使うことができます．</p>
+		<p>（追記）以下の内容よりも，2017/12/21の<a href="https://blog.daizutabi.net/2017/12/21/">「DNS Zonesからネームサーバーを設定する方法」</a>のほうがお勧めです．</p>
+<p>これまで<a href="https://pages.github.com">GitHub Pages</a>をブログなどの公開に使っていましたが，<a href="https://www.netlify.com">Netlify</a>に移行します．とても簡単に独自ドメインを使うことができます．</p>
 <h2>お名前.comで独自ドメインの取得</h2>
 <p><a href="https://www.onamae.com">お名前.com</a>で独自ドメインを取得します．金額に関しては，初年度だけでなく２年目以降の金額についてもチェックしておきましょう．また，「1.お申込み内容」のところで，</p>
 <ul>
@@ -102,8 +140,7 @@
 <h2>静的サイトの作成</h2>
 <p>Pelicanを使ってサイトを作成し，GitHubレポジトリにPushしておきます．</p>
 <h2>Netifyでサイトの作成</h2>
-<p><a href="https://www.netlify.com">Netlify</a>にはGitHubアカウント使ってログインします．ログイン後に，<a href="https://app.netlify.com/">https://app.netlify.com</a>を開き，右上のNew Site From Gitをクリックします．GitHubを選ぶと，自分のレポジトリ一覧が表示されるので，公開したいレポジトリを選択します．（以下はblogレポジトリを選択した前提で進めます．）</p>
-<p>"Deploy settings …</p>
+<p><a href="https://www.netlify.com">Netlify</a>にはGitHubアカウントを使ってログインします．ログイン後に，<a href="https://app.netlify.com/">https://app.netlify.com</a>を開き，右上のNew Site …</p>
 		<p class="content-emphasis"><a href="https://blog.daizutabi.net/2017/12/20/">
 			Read more... <i class="fa fa-arrow-circle-right fa-fw fa-lg"></i> 
 		</a></p>
@@ -215,47 +252,25 @@
 		</a></p>
       </div>    </article>
     <hr />
-    <article>
-<div class="index-article-header">
-  <span class="index-article-header-date">2017年12月16日 (土)</span>
-  <span class="index-article-header-info">
-    <i class="fa fa-folder"></i>
-    <a href="https://blog.daizutabi.net/category/Pelican/">Pelican</a>
-  </span>
-  <h1>
-    <a href="https://blog.daizutabi.net/2017/12/16/" rel="bookmark"
-       title="Permalink to ブログを始める">
-      ブログを始める
-    </a>
-  </h1>
-</div>
-      <div class="summary">
-		<p><a href="https://pages.github.com/">GitHub Pages</a>でブログを始めることにしました．<a href="https://blog.getpelican.com/">Pelican</a>を使って記事を生成します．フォーマットはマークダウンにします．Pelicanでは，各記事のファイルの先頭に以下のようなメタデータを書く必要があります．</p>
-<div class="highlight"><pre><span></span>Title: My First Review
-Date: 2010-12-03 10:20
-Category: Review
-Slug: URL
-</pre></div>
-
-
-<p>記事を書くたびにこれらのメタデータを入力するのは少々面倒です．そこで，ファイル名から自動的にメタデータを抽出するようにします．設定ファイル<code>pelicanconf.py</code>に以下の内容を追加します．</p>
-<div class="highlight"><pre><span></span><span class="n">PATH_METADATA</span> <span class="o">=</span> <span class="sa">r</span><span class="s1">&#39;(?P&lt;category&gt;.+?)/.*&#39;</span>
-<span class="n">FILENAME_METADATA</span> <span class="o">=</span> <span class="sa">r</span><span class="s1">&#39;(?P&lt;date&gt;\d{8}).(?P&lt;title&gt;.+)&#39;</span>
-</pre></div>
-
-
-<p>以下のようなルールで記事ファイルを<code>content</code>ディレクトリに配置します．</p>
-<ul>
-<li><code>content</code>ディレクトリ直下に置かれたディレクトリの名前がカテゴリー名になります．</li>
-<li>その下のディレクトリから各記事ファイルに至るまでは任意のディレクトリ構造をとることができます．</li>
-<li>記事ファイルの名前は<code>&lt;YYYYMMDD&gt;&lt;sep&gt;&lt;title&gt;.md …</code></li></ul>
-		<p class="content-emphasis"><a href="https://blog.daizutabi.net/2017/12/16/">
-			Read more... <i class="fa fa-arrow-circle-right fa-fw fa-lg"></i> 
-		</a></p>
-      </div>    </article>
-    <hr />
 
 <nav class="index-pager">
+	<ul class="pagination">
+        <li class="prev disabled"><span>
+            <i class="fa fa-chevron-circle-left fa-fw fa-lg"></i> 
+            Previous</span>
+        </li>
+
+        <li class="active"> <span>1</span> </li>
+        <li>
+          <a href="https://blog.daizutabi.net/author/daizutabi2.html">2</a>
+        </li>
+
+		<li class="next">
+		  <a href="https://blog.daizutabi.net/author/daizutabi2.html">
+			Next <i class="fa fa-chevron-circle-right fa-fw fa-lg"></i>
+		  </a>
+		</li>
+	</ul>
 
 </nav> <!-- /index-pager -->
         </div><!-- /content -->

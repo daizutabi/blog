@@ -8,7 +8,7 @@
     <meta name="author" content="daizutabi" />
     <meta name="generator" content="Pelican (VoidyBootstrap theme)" />
 
-    <title>NetlifyでPelicanページを公開する - 大豆旅</title>
+    <title>大豆旅 - Page 2</title>
 
    
         <link rel="stylesheet"
@@ -70,51 +70,66 @@
 
     <div class="container" id="main-container">
         <div class="" id="content">
-<article itemscope="itemscope" itemtype="http://schema.org/BlogPosting">
-  <header class="article-header">
-<div class="article-header">
-  <span class="article-header-date">2017年12月20日 (水)</span>
-  <span class="article-header-info">
+    <article>
+<div class="index-article-header">
+  <span class="index-article-header-date">2017年12月16日 (土)</span>
+  <span class="index-article-header-info">
     <i class="fa fa-folder"></i>
-    <a href="https://blog.daizutabi.net/category/Netlify/">Netlify</a>
+    <a href="https://blog.daizutabi.net/category/Pelican/">Pelican</a>
   </span>
   <h1>
-      NetlifyでPelicanページを公開する
+    <a href="https://blog.daizutabi.net/2017/12/16/" rel="bookmark"
+       title="Permalink to ブログを始める">
+      ブログを始める
     </a>
   </h1>
-</div>  </header>
-  <div class="content-body" itemprop="text articleBody">
-	<p>（追記）以下の内容よりも，2017/12/21の<a href="https://blog.daizutabi.net/2017/12/21/">「DNS Zonesからネームサーバーを設定する方法」</a>のほうがお勧めです．</p>
-<p>これまで<a href="https://pages.github.com">GitHub Pages</a>をブログなどの公開に使っていましたが，<a href="https://www.netlify.com">Netlify</a>に移行します．とても簡単に独自ドメインを使うことができます．</p>
-<h2>お名前.comで独自ドメインの取得</h2>
-<p><a href="https://www.onamae.com">お名前.com</a>で独自ドメインを取得します．金額に関しては，初年度だけでなく２年目以降の金額についてもチェックしておきましょう．また，「1.お申込み内容」のところで，</p>
-<ul>
-<li>Whois情報公開代行（新規登録と同時なら無料）</li>
-</ul>
-<p>は，個人情報を公開したくない場合にはチェックを入れておきます．</p>
-<p>お名前.comのサイト内ですることは，取得したドメインのネームサーバをNetlify DNSに設定することだけです．それ以外の設定はすべて，Netlify内で完結します．</p>
-<h2>静的サイトの作成</h2>
-<p>Pelicanを使ってサイトを作成し，GitHubレポジトリにPushしておきます．</p>
-<h2>Netifyでサイトの作成</h2>
-<p><a href="https://www.netlify.com">Netlify</a>にはGitHubアカウントを使ってログインします．ログイン後に，<a href="https://app.netlify.com/">https://app.netlify.com</a>を開き，右上のNew Site From Gitをクリックします．GitHubを選ぶと，自分のレポジトリ一覧が表示されるので，公開したいレポジトリを選択します．（以下はblogレポジトリを選択した前提で進めます．）</p>
-<p>"Deploy settings for daizutabi/iroha"で，次の選択をします．</p>
-<ul>
-<li>Branch to deploy: master</li>
-<li>Build commant: (何も入力しない)</li>
-<li>Publish directory: output</li>
-</ul>
-<p>"Deply site"をクリックすると（すでに生成されていた）サイトが公開されます．</p>
-<h2>カスタムドメインの設定</h2>
-<p>"Add a custom domain"をクリックします．</p>
-<p>"Your custom domain"に
-<code>http://blog.daizutabi.net</code>を入力し，Saveをクリックします．</p>
-<p>"Change your domain's name servers"を開くと，Netlify DNSが表示されるので，これをお名前.comのネームサーバーに設定します．</p>
-<h2>HTTPS</h2>
-<p>画面の案内に従えばすんなり設定できます．</p>
-  </div>
-  
+</div>  
+      <div class="summary">
+		<p><a href="https://pages.github.com/">GitHub Pages</a>でブログを始めることにしました．<a href="https://blog.getpelican.com/">Pelican</a>を使って記事を生成します．フォーマットはマークダウンにします．Pelicanでは，各記事のファイルの先頭に以下のようなメタデータを書く必要があります．</p>
+<div class="highlight"><pre><span></span>Title: My First Review
+Date: 2010-12-03 10:20
+Category: Review
+Slug: URL
+</pre></div>
 
-</article>
+
+<p>記事を書くたびにこれらのメタデータを入力するのは少々面倒です．そこで，ファイル名から自動的にメタデータを抽出するようにします．設定ファイル<code>pelicanconf.py</code>に以下の内容を追加します．</p>
+<div class="highlight"><pre><span></span><span class="n">PATH_METADATA</span> <span class="o">=</span> <span class="sa">r</span><span class="s1">&#39;(?P&lt;category&gt;.+?)/.*&#39;</span>
+<span class="n">FILENAME_METADATA</span> <span class="o">=</span> <span class="sa">r</span><span class="s1">&#39;(?P&lt;date&gt;\d{8}).(?P&lt;title&gt;.+)&#39;</span>
+</pre></div>
+
+
+<p>以下のようなルールで記事ファイルを<code>content</code>ディレクトリに配置します．</p>
+<ul>
+<li><code>content</code>ディレクトリ直下に置かれたディレクトリの名前がカテゴリー名になります．</li>
+<li>その下のディレクトリから各記事ファイルに至るまでは任意のディレクトリ構造をとることができます．</li>
+<li>記事ファイルの名前は<code>&lt;YYYYMMDD&gt;&lt;sep&gt;&lt;title&gt;.md …</code></li></ul>
+		<p class="content-emphasis"><a href="https://blog.daizutabi.net/2017/12/16/">
+			Read more... <i class="fa fa-arrow-circle-right fa-fw fa-lg"></i> 
+		</a></p>
+      </div>    </article>
+
+    <hr />
+
+<nav class="index-pager">
+	<ul class="pagination">
+		<li class="prev">
+		  <a href="https://blog.daizutabi.net/index.html">
+			<i class="fa fa-chevron-circle-left fa-fw fa-lg"></i> Previous
+		  </a>
+		</li>
+
+        <li>
+          <a href="https://blog.daizutabi.net/index.html">1</a>
+        </li>
+        <li class="active"> <span>2</span> </li>
+
+        <li class="next disabled">
+          <span><i class="fa fa-chevron-circle-right fa-fw fa-lg"></i> Next</span>
+        </li>
+	</ul>
+
+</nav> <!-- /index-pager -->
         </div><!-- /content -->
 
     </div><!--/.container /#main-container -->
