@@ -1,5 +1,5 @@
 AUTHOR = 'daizutabi'
-SITENAME = '大豆旅'
+SITENAME = '大豆足袋'
 SITESUBTITLE = 'daizutabiのブログです．'
 SITEURL = 'https://blog.daizutabi.net'
 
