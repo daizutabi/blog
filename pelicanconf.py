@@ -1,5 +1,5 @@
 AUTHOR = 'daizutabi'
-SITENAME = '大豆足袋'
+SITENAME = '大豆旅'
 SITESUBTITLE = 'daizutabiのブログです．'
 SITEURL = 'https://blog.daizutabi.net'
 
@@ -36,6 +36,10 @@ STYLESHEETS = (
     # 'addition/style.css',
     # 'addition/image.css',
     # 'addition/admonition.css',
+)
+
+STYLESHEET_URLS = (
+    'https://fonts.googleapis.com/earlyaccess/sawarabigothic.css',
 )
 
 CUSTOM_SITE_HEADERS = ['custom/jumbotron.jinja2']

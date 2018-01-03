@@ -8,7 +8,7 @@
     <meta name="author" content="daizutabi" />
     <meta name="generator" content="Pelican (VoidyBootstrap theme)" />
 
-    <title>Author:daizutabi - 大豆足袋</title>
+    <title>Author:daizutabi - 大豆旅</title>
 
    
         <link rel="stylesheet"
@@ -20,6 +20,7 @@
             integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
             crossorigin="anonymous">
 
+      <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/sawarabigothic.css" />
 
    
       <link rel="stylesheet" href="https://blog.daizutabi.net/theme/css/custom/custom.css" />
@@ -63,7 +64,7 @@
 
 <div class="jumbotron" id="overview">
   <div class="container">
-	<h1><a href="https://blog.daizutabi.net/">大豆足袋</a></h1>
+	<h1><a href="https://blog.daizutabi.net/">大豆旅</a></h1>
 	<p class="lead">daizutabiのブログです．</p>
   </div>
 </div>
@@ -76,6 +77,50 @@
     <li>Authors </li>
     <li class="active">daizutabi</li>
 </ol>
+    <article>
+<div class="index-article-header">
+  <span class="index-article-header-date">2018年01月03日 (水)</span>
+  <span class="index-article-header-info">
+    <i class="fa fa-folder"></i>
+    <a href="https://blog.daizutabi.net/category/Pelican/">Pelican</a>
+  </span>
+  <h1>
+    <a href="https://blog.daizutabi.net/2018/01/03/" rel="bookmark"
+       title="Permalink to Google Web Fontの設定">
+      Google Web Fontの設定
+    </a>
+  </h1>
+</div>
+      <div class="summary">
+		<p><a href="https://googlefonts.github.io/japanese/">Google Fonts + 日本語早期アクセス</a>の設定を行います．今回は，さわらびゴシックを使ってみます．</p>
+<p>本ブログのPelicanテーマである<a href="http://www.voidynullness.net/page/voidy-bootstrap-pelican-theme/">VoidyBootstrap</a>での設定方法になります．</p>
+<p><code>pelicanconf.py</code>に以下を追加します．</p>
+<div class="highlight"><pre><span></span><span class="n">THEME</span> <span class="o">=</span> <span class="s1">&#39;voidy-bootstrap/&#39;</span>
+<span class="n">STYLESHEETS</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="s1">&#39;custom/custom.css&#39;</span><span class="p">,</span>
+    <span class="c1"># other stylesheets</span>
+<span class="p">)</span>
+
+<span class="n">STYLESHEET_URLS</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="s1">&#39;https://fonts.googleapis.com/earlyaccess/sawarabigothic.css&#39;</span><span class="p">,</span>
+    <span class="c1"># other stylesheet_urls</span>
+<span class="p">)</span>
+</pre></div>
+
+
+<p><code>voidy-bootstrap</code>ディレクトリ下に<code>static/css/custom.css</code>を作成し，以下を追加します．</p>
+<div class="highlight"><pre><span></span><span class="nt">body</span> <span class="p">{</span>
+  <span class="k">font-family</span><span class="p">:</span> <span class="s1">&#39;Sawarabi Gothic&#39;</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<p>簡単に設定できました．</p>
+		<p class="content-emphasis"><a href="https://blog.daizutabi.net/2018/01/03/">
+			Read more... <i class="fa fa-arrow-circle-right fa-fw fa-lg"></i> 
+		</a></p>
+      </div>    </article>
+    <hr />
     <article>
 <div class="index-article-header">
   <span class="index-article-header-date">2017年12月21日 (木)</span>
@@ -207,47 +252,6 @@
       <div class="summary">
 		<p><a href="https://github.com/daizutabi/takuhai">Takuhai</a>を作成するにあたってPythonパッケージの作り方について学びました．<a href="https://iroha.daizutabi.net/">「Pythonパッケージの作り方」</a>に公開しています．パッケージを作るたびに<code>PYTHONPATH</code>を設定していたり，<code>setup.py</code>を作るのが敷居が高いなと思っている方の参考になれば幸いです．</p>
 		<p class="content-emphasis"><a href="https://blog.daizutabi.net/2017/12/18/">
-			Read more... <i class="fa fa-arrow-circle-right fa-fw fa-lg"></i> 
-		</a></p>
-      </div>    </article>
-    <hr />
-    <article>
-<div class="index-article-header">
-  <span class="index-article-header-date">2017年12月17日 (日)</span>
-  <span class="index-article-header-info">
-    <i class="fa fa-folder"></i>
-    <a href="https://blog.daizutabi.net/category/Pelican/">Pelican</a>
-  </span>
-  <h1>
-    <a href="https://blog.daizutabi.net/2017/12/17/" rel="bookmark"
-       title="Permalink to 記事の自動ビルドとページのリロード">
-      記事の自動ビルドとページのリロード
-    </a>
-  </h1>
-</div>
-      <div class="summary">
-		<p><a href="https://github.com/daizutabi/takuhai">Takuhai</a>パッケージを作りました．Pelicanプロジェクト内の記事ファイルが更新されたら次のことを実行します：</p>
-<ul>
-<li>記事をビルドしてHTMLファイルを生成します．</li>
-<li>ローカルのHTTPサーバを立ち上げて，生成した記事をブラウザで表示します．</li>
-<li>記事が更新されたら，その都度ビルドして，ブラウザのページを自動でリロードします．</li>
-</ul>
-<p>本パッケージを作成するにあたって，次の記事を参考にしました：</p>
-<ul>
-<li><a href="https://merlijn.vandeen.nl/2015/pelican-livereload.html">Using LiveReload with Pelican</a></li>
-<li><a href="http://tech.agilitynerd.com/livereload-with-pelican.html">LiveReload with Pelican</a></li>
-</ul>
-<p>これらの記事が提供する機能に加えて，Takuhaiでは以下の改善を加えています：</p>
-<ul>
-<li><a href="https://pypi.org">PyPI</a>および<a href="https://anaconda.org">Anaconda Cloud</a>からのインストール．</li>
-<li>実行コマンド<code>takuhai</code>の実装．</li>
-<li>ホスト名やポート番号の指定．</li>
-<li>ブラウザの自動起動．</li>
-<li>相対URLと絶対URLの選択．</li>
-</ul>
-<p>特に有用と考えている「相対URLと絶対URLの選択」について説明します．Takuhaiの実行コマンド<code>takuhai</code>はデフォルトで相対URLを設定します．これは<code>pelicanconf.py</code>の設定を上書きします．</p>
-<p>Pelicanドキュメントの<a href="http://docs.getpelican.com/en/stable/settings.html#url-settings">URL settings</a>によれば，絶対URLが望ましい選択とされています．しかし，これではローカルHTTPサーバを立ち上げても，リンク先が外部サイトになってしまいます．望ましい動作とは言えないでしょう …</p>
-		<p class="content-emphasis"><a href="https://blog.daizutabi.net/2017/12/17/">
 			Read more... <i class="fa fa-arrow-circle-right fa-fw fa-lg"></i> 
 		</a></p>
       </div>    </article>

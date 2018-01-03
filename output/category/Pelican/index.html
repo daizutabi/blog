@@ -8,7 +8,7 @@
     <meta name="author" content="daizutabi" />
     <meta name="generator" content="Pelican (VoidyBootstrap theme)" />
 
-    <title>Category:Pelican - 大豆足袋</title>
+    <title>Category:Pelican - 大豆旅</title>
 
    
         <link rel="stylesheet"
@@ -20,6 +20,7 @@
             integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
             crossorigin="anonymous">
 
+      <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/sawarabigothic.css" />
 
    
       <link rel="stylesheet" href="https://blog.daizutabi.net/theme/css/custom/custom.css" />
@@ -63,7 +64,7 @@
 
 <div class="jumbotron" id="overview">
   <div class="container">
-	<h1><a href="https://blog.daizutabi.net/">大豆足袋</a></h1>
+	<h1><a href="https://blog.daizutabi.net/">大豆旅</a></h1>
 	<p class="lead">daizutabiのブログです．</p>
   </div>
 </div>
@@ -76,6 +77,50 @@
     <li>Categories </li>
     <li class="active">Pelican</li>
 </ol>
+    <article>
+<div class="index-article-header">
+  <span class="index-article-header-date">2018年01月03日 (水)</span>
+  <span class="index-article-header-info">
+    <i class="fa fa-folder"></i>
+    <a href="https://blog.daizutabi.net/category/Pelican/">Pelican</a>
+  </span>
+  <h1>
+    <a href="https://blog.daizutabi.net/2018/01/03/" rel="bookmark"
+       title="Permalink to Google Web Fontの設定">
+      Google Web Fontの設定
+    </a>
+  </h1>
+</div>
+      <div class="summary">
+		<p><a href="https://googlefonts.github.io/japanese/">Google Fonts + 日本語早期アクセス</a>の設定を行います．今回は，さわらびゴシックを使ってみます．</p>
+<p>本ブログのPelicanテーマである<a href="http://www.voidynullness.net/page/voidy-bootstrap-pelican-theme/">VoidyBootstrap</a>での設定方法になります．</p>
+<p><code>pelicanconf.py</code>に以下を追加します．</p>
+<div class="highlight"><pre><span></span><span class="n">THEME</span> <span class="o">=</span> <span class="s1">&#39;voidy-bootstrap/&#39;</span>
+<span class="n">STYLESHEETS</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="s1">&#39;custom/custom.css&#39;</span><span class="p">,</span>
+    <span class="c1"># other stylesheets</span>
+<span class="p">)</span>
+
+<span class="n">STYLESHEET_URLS</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="s1">&#39;https://fonts.googleapis.com/earlyaccess/sawarabigothic.css&#39;</span><span class="p">,</span>
+    <span class="c1"># other stylesheet_urls</span>
+<span class="p">)</span>
+</pre></div>
+
+
+<p><code>voidy-bootstrap</code>ディレクトリ下に<code>static/css/custom.css</code>を作成し，以下を追加します．</p>
+<div class="highlight"><pre><span></span><span class="nt">body</span> <span class="p">{</span>
+  <span class="k">font-family</span><span class="p">:</span> <span class="s1">&#39;Sawarabi Gothic&#39;</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<p>簡単に設定できました．</p>
+		<p class="content-emphasis"><a href="https://blog.daizutabi.net/2018/01/03/">
+			Read more... <i class="fa fa-arrow-circle-right fa-fw fa-lg"></i> 
+		</a></p>
+      </div>    </article>
+    <hr />
     <article>
 <div class="index-article-header">
   <span class="index-article-header-date">2017年12月19日 (火)</span>

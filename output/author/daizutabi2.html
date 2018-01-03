@@ -8,7 +8,7 @@
     <meta name="author" content="daizutabi" />
     <meta name="generator" content="Pelican (VoidyBootstrap theme)" />
 
-    <title>Author:daizutabi - 大豆足袋</title>
+    <title>Author:daizutabi - 大豆旅</title>
 
    
         <link rel="stylesheet"
@@ -20,6 +20,7 @@
             integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
             crossorigin="anonymous">
 
+      <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/sawarabigothic.css" />
 
    
       <link rel="stylesheet" href="https://blog.daizutabi.net/theme/css/custom/custom.css" />
@@ -63,7 +64,7 @@
 
 <div class="jumbotron" id="overview">
   <div class="container">
-	<h1><a href="https://blog.daizutabi.net/">大豆足袋</a></h1>
+	<h1><a href="https://blog.daizutabi.net/">大豆旅</a></h1>
 	<p class="lead">daizutabiのブログです．</p>
   </div>
 </div>
@@ -76,6 +77,47 @@
     <li>Authors </li>
     <li class="active">daizutabi</li>
 </ol>
+    <article>
+<div class="index-article-header">
+  <span class="index-article-header-date">2017年12月17日 (日)</span>
+  <span class="index-article-header-info">
+    <i class="fa fa-folder"></i>
+    <a href="https://blog.daizutabi.net/category/Pelican/">Pelican</a>
+  </span>
+  <h1>
+    <a href="https://blog.daizutabi.net/2017/12/17/" rel="bookmark"
+       title="Permalink to 記事の自動ビルドとページのリロード">
+      記事の自動ビルドとページのリロード
+    </a>
+  </h1>
+</div>
+      <div class="summary">
+		<p><a href="https://github.com/daizutabi/takuhai">Takuhai</a>パッケージを作りました．Pelicanプロジェクト内の記事ファイルが更新されたら次のことを実行します：</p>
+<ul>
+<li>記事をビルドしてHTMLファイルを生成します．</li>
+<li>ローカルのHTTPサーバを立ち上げて，生成した記事をブラウザで表示します．</li>
+<li>記事が更新されたら，その都度ビルドして，ブラウザのページを自動でリロードします．</li>
+</ul>
+<p>本パッケージを作成するにあたって，次の記事を参考にしました：</p>
+<ul>
+<li><a href="https://merlijn.vandeen.nl/2015/pelican-livereload.html">Using LiveReload with Pelican</a></li>
+<li><a href="http://tech.agilitynerd.com/livereload-with-pelican.html">LiveReload with Pelican</a></li>
+</ul>
+<p>これらの記事が提供する機能に加えて，Takuhaiでは以下の改善を加えています：</p>
+<ul>
+<li><a href="https://pypi.org">PyPI</a>および<a href="https://anaconda.org">Anaconda Cloud</a>からのインストール．</li>
+<li>実行コマンド<code>takuhai</code>の実装．</li>
+<li>ホスト名やポート番号の指定．</li>
+<li>ブラウザの自動起動．</li>
+<li>相対URLと絶対URLの選択．</li>
+</ul>
+<p>特に有用と考えている「相対URLと絶対URLの選択」について説明します．Takuhaiの実行コマンド<code>takuhai</code>はデフォルトで相対URLを設定します．これは<code>pelicanconf.py</code>の設定を上書きします．</p>
+<p>Pelicanドキュメントの<a href="http://docs.getpelican.com/en/stable/settings.html#url-settings">URL settings</a>によれば，絶対URLが望ましい選択とされています．しかし，これではローカルHTTPサーバを立ち上げても，リンク先が外部サイトになってしまいます．望ましい動作とは言えないでしょう …</p>
+		<p class="content-emphasis"><a href="https://blog.daizutabi.net/2017/12/17/">
+			Read more... <i class="fa fa-arrow-circle-right fa-fw fa-lg"></i> 
+		</a></p>
+      </div>    </article>
+    <hr />
     <article>
 <div class="index-article-header">
   <span class="index-article-header-date">2017年12月16日 (土)</span>

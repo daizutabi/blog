@@ -1,18 +1,10 @@
-/* @import url(http://fonts.googleapis.com/earlyaccess/mplus1c.css); */
-/* @import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css); */
-/* @import url(http://fonts.googleapis.com/earlyaccess/roundedmplus1c.css); */
-/* @import url(http://fonts.googleapis.com/earlyaccess/sawarabimincho.css); */
-
 html {
   font-size: 100%;
 }
 
 body {
   font-size: 1rem;
-  /* font-family: 'Mplus 1p', sans-serif; */
-  /* font-family: 'Noto Sans JP', sans-serif; */
-  /* font-family: 'Rounded Mplus 1c', sans-serif; */
-  /* font-family: 'Sawarabi Mincho'; */
+  font-family: 'Sawarabi Gothic', 'Mplus 1p';
 }
 
 .navbar {

@@ -8,7 +8,7 @@
     <meta name="author" content="daizutabi" />
     <meta name="generator" content="Pelican (VoidyBootstrap theme)" />
 
-    <title>Tags - 大豆旅</title>
+    <title>Google Web Fontの設定 - 大豆旅</title>
 
    
         <link rel="stylesheet"
@@ -71,9 +71,48 @@
 
     <div class="container" id="main-container">
         <div class="" id="content">
-<h1 class="direct-heading"><i class="fa fa-tags fa-fw fa-lg"></i>Tags</h1>
-<ul class="direct-list tags-tag-cloud">
-</ul>
+<article itemscope="itemscope" itemtype="http://schema.org/BlogPosting">
+  <header class="article-header">
+<div class="article-header">
+  <span class="article-header-date">2018年01月03日 (水)</span>
+  <span class="article-header-info">
+    <i class="fa fa-folder"></i>
+    <a href="https://blog.daizutabi.net/category/Pelican/">Pelican</a>
+  </span>
+  <h1>
+      Google Web Fontの設定
+    </a>
+  </h1>
+</div>  </header>
+  <div class="content-body" itemprop="text articleBody">
+	<p><a href="https://googlefonts.github.io/japanese/">Google Fonts + 日本語早期アクセス</a>の設定を行います．今回は，さわらびゴシックを使ってみます．</p>
+<p>本ブログのPelicanテーマである<a href="http://www.voidynullness.net/page/voidy-bootstrap-pelican-theme/">VoidyBootstrap</a>での設定方法になります．</p>
+<p><code>pelicanconf.py</code>に以下を追加します．</p>
+<div class="highlight"><pre><span></span><span class="n">THEME</span> <span class="o">=</span> <span class="s1">&#39;voidy-bootstrap/&#39;</span>
+<span class="n">STYLESHEETS</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="s1">&#39;custom/custom.css&#39;</span><span class="p">,</span>
+    <span class="c1"># other stylesheets</span>
+<span class="p">)</span>
+
+<span class="n">STYLESHEET_URLS</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="s1">&#39;https://fonts.googleapis.com/earlyaccess/sawarabigothic.css&#39;</span><span class="p">,</span>
+    <span class="c1"># other stylesheet_urls</span>
+<span class="p">)</span>
+</pre></div>
+
+
+<p><code>voidy-bootstrap</code>ディレクトリ下に<code>static/css/custom.css</code>を作成し，以下を追加します．</p>
+<div class="highlight"><pre><span></span><span class="nt">body</span> <span class="p">{</span>
+  <span class="k">font-family</span><span class="p">:</span> <span class="s1">&#39;Sawarabi Gothic&#39;</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<p>簡単に設定できました．</p>
+  </div>
+  
+
+</article>
         </div><!-- /content -->
 
     </div><!--/.container /#main-container -->
