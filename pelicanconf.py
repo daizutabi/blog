@@ -15,9 +15,6 @@ DATE_FORMATS = {
 
 PATH_METADATA = r'(?P<category>.+?)/.*'
 FILENAME_METADATA = r'(?P<date>\d{8}).(?P<title>.+)'
-# USE_FOLDER_AS_CATEGORY = False
-# FILENAME_METADATA = r'(?P<date>.+?)_(?P<title>.+)'
-# SLUGIFY_SOURCE = 'title'
 
 ARTICLE_URL = '{date:%Y}/{date:%m}/{date:%d}/'
 ARTICLE_SAVE_AS = '{date:%Y}/{date:%m}/{date:%d}/index.html'
@@ -40,7 +37,7 @@ STYLESHEETS = (
 
 STYLESHEET_URLS = (
     # 'https://fonts.googleapis.com/earlyaccess/sawarabigothic.css',
-    'https://fonts.googleapis.com/earlyaccess/notosansjapanese.css',
+    # 'https://fonts.googleapis.com/earlyaccess/notosansjapanese.css',
 )
 
 CUSTOM_SITE_HEADERS = ['custom/jumbotron.jinja2']
