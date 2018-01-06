@@ -62,4 +62,4 @@ AUTHOR_FEED_RSS = None
 #           ('Another social link', '#'),)
 
 # PLUGIN_PATHS = ['../pelican-plugins']
-# PLUGINS = []
+PLUGINS = ['pheasant']
