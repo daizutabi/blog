@@ -25,7 +25,7 @@ CATEGORY_SAVE_AS = 'category/{name}/index.html'
 
 STATIC_PATHS = ['images']
 
-THEME = 'voidy-bootstrap/'
+THEME = 'theme/voidy-bootstrap'
 STYLESHEETS = (
     'custom/custom.css',
     # 'voidybootstrap.css',
@@ -61,5 +61,6 @@ AUTHOR_FEED_RSS = None
 # SOCIAL = (('You can add links in your config file', '#'),
 #           ('Another social link', '#'),)
 
-# PLUGIN_PATHS = ['../pelican-plugins']
-PLUGINS = ['pheasant']
+PLUGIN_PATHS = ['plugins']
+PLUGINS = ['pheasant', 'render_math']
+IGNORE_FILES = ['.#*', '__pycache__', '.ipynb_checkpoints']
