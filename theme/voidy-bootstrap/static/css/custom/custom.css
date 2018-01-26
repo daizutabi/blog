@@ -41,22 +41,26 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
 }
 
-h1 {
+.article-header h1 {
   font-size: 1.4rem;
 }
 
-h2 {
+h1 {
   font-size: 1.2rem;
+}
+
+h2 {
+  font-size: 1.1rem;
 }
 
 h3 {
   font-size: 1.1rem;
 }
 
-article h1 {
+/* article h1 {
   margin-top: 9px;
   margin-bottom: : 9px;
-}
+} */
 
 .index-article-header-info, .index-article-header-date, .article-header-info, .article-header-date {
   font-size: 0.8rem;
@@ -70,4 +74,40 @@ article h1 {
 
 #site-colophon {
   font-size: 0.7rem;
+}
+
+.pheasant-figure {
+  margin-bottom: 24px;
+}
+
+.pheasant-figure p {
+  text-align: center;
+  margin: 0px;
+  font-weight: bold;
+  color: #000066;
+}
+
+.pheasant-figure svg {
+  margin-left: auto;
+  margin-right: auto;
+  display: table !important;
+  width: auto !important;
+}
+
+.pheasant-table {
+  margin-top: 24px;
+}
+
+.pheasant-table p {
+  text-align: center;
+  margin-bottom: 2px;
+  font-weight: bold;
+  color: #000066;
+}
+
+.pheasant-table table {
+  margin-left: auto;
+  margin-right: auto;
+  display: table !important;
+  width: auto !important;
 }

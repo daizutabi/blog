@@ -64,3 +64,8 @@ AUTHOR_FEED_RSS = None
 PLUGIN_PATHS = ['plugins']
 PLUGINS = ['pheasant', 'render_math']
 IGNORE_FILES = ['.#*', '__pycache__', '.ipynb_checkpoints']
+
+PHEASANT = {
+    'jupyter': {'kernel_name': {'python': 'python3'}},
+    'number': {'enabled': True}
+}
