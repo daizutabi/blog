@@ -77,6 +77,7 @@
     <li class="active">Netlify</li>
 </ol>
     <article>
+      <header class="article-header">
 <div class="index-article-header">
   <span class="index-article-header-date">2017年12月21日 (木)</span>
   <span class="index-article-header-info">
@@ -89,31 +90,13 @@
       DNS Zonesからネームサーバーを設定する方法
     </a>
   </h1>
-</div>
-      <div class="summary">
-		<p><a href="https://blog.daizutabi.net/2017/12/20/">2017/12/20</a>に，ブログの公開を<a href="https://pages.github.com">GitHub Pages</a>から<a href="https://www.netlify.com">Netlify</a>に移行した件を書きました．ただ，その時の方法だと，最初にアップしたサイトが特権的な扱いを受けて，後続のサイトと非対称な形になってしまいました．少し気になっていたところ，DNS zonesから再設定することで，非対称性を解消できました．以下，順を追って説明したいと思います．次の前提で話を進めます．</p>
-<ul>
-<li>カスタムドメインとサイトをすでに登録していたので，すべて削除しました．</li>
-<li><a href="https://www.onamae.com">お名前.com</a>で<code>daizutabi.net</code>を取得済です．</li>
-<li>GitHub上の<a href="https://github.com/daizutabi/blog">「ブログ」</a>レポジトリと<a href="https://github.com/daizutabi/iroha">「Pythonパッケージの作り方」</a>レポジトリを公開していきます．</li>
-</ul>
-<p>（注）具体的な名前で説明したほうが分かりやすいと思いそのまま書いています．ドメイン名やレポジトリ名は適宜置き換えを行ってください．</p>
-<h2>1. DNS zonesの設定</h2>
-<p><a href="https://www.netlify.com">Netlify</a>にGitHubアカウントを使ってログインします．</p>
-<p><img alt="daizutabi" src="../../images/20171221/010.png"></p>
-<p>左上のAll teamsからdaizutabiを選択します．</p>
-<p><img alt="DNS zones" src="../../images/20171221/020.png"></p>
-<p>メニューからDNS zonesをクリックします．</p>
-<p><img alt="Add a domain" src="../../images/20171221/030.png"></p>
-<p>Add a domainをクリックします．</p>
-<p><img alt="Create DNS zone" src="../../images/20171221/040.png"></p>
-<p>Domainにdaizutabi …</p>
-		<p class="content-emphasis"><a href="../../2017/12/21/">
-			Read more... <i class="fa fa-arrow-circle-right fa-fw fa-lg"></i> 
-		</a></p>
-      </div>    </article>
-    <hr />
+</div>      </header>
+<div class="summary">
+ <p><a href="https://blog.daizutabi.net/2017/12/20/">2017/12/20</a>に，ブログの公開を<a href="https://pages.github.com">GitHub Pages</a>から<a href="https://www.netlify.com">Netlify</a>に移行した件を書きました．ただ，その時の方法だと，最初にアップしたサイトが特権的な扱いを受けて，後続のサイトと非対称な形になってしまいました．少し気になっていたところ，DNS zonesから再設定することで，非対称性を解消できました．</p>
+
+</div>    </article>
     <article>
+      <header class="article-header">
 <div class="index-article-header">
   <span class="index-article-header-date">2017年12月20日 (水)</span>
   <span class="index-article-header-info">
@@ -126,26 +109,11 @@
       NetlifyでPelicanページを公開する
     </a>
   </h1>
-</div>
-      <div class="summary">
-		<p>（追記）以下の内容よりも，2017/12/21の<a href="https://blog.daizutabi.net/2017/12/21/">「DNS Zonesからネームサーバーを設定する方法」</a>のほうがお勧めです．</p>
-<p>これまで<a href="https://pages.github.com">GitHub Pages</a>をブログなどの公開に使っていましたが，<a href="https://www.netlify.com">Netlify</a>に移行します．とても簡単に独自ドメインを使うことができます．</p>
-<h2>1. お名前.comで独自ドメインの取得</h2>
-<p><a href="https://www.onamae.com">お名前.com</a>で独自ドメインを取得します．金額に関しては，初年度だけでなく２年目以降の金額についてもチェックしておきましょう．また，「1.お申込み内容」のところで，</p>
-<ul>
-<li>Whois情報公開代行（新規登録と同時なら無料）</li>
-</ul>
-<p>は，個人情報を公開したくない場合にはチェックを入れておきます．</p>
-<p>お名前.comのサイト内ですることは，取得したドメインのネームサーバをNetlify DNSに設定することだけです．それ以外の設定はすべて，Netlify内で完結します．</p>
-<h2>2. 静的サイトの作成</h2>
-<p>Pelicanを使ってサイトを作成し，GitHubレポジトリにPushしておきます．</p>
-<h2>3. Netifyでサイトの作成</h2>
-<p><a href="https://www.netlify.com">Netlify</a>にはGitHubアカウントを使ってログインします．ログイン後に，<a href="https://app.netlify.com/">https://app.netlify.com …</a></p>
-		<p class="content-emphasis"><a href="../../2017/12/20/">
-			Read more... <i class="fa fa-arrow-circle-right fa-fw fa-lg"></i> 
-		</a></p>
-      </div>    </article>
-    <hr />
+</div>      </header>
+<div class="summary">
+ <p>これまで<a href="https://pages.github.com">GitHub Pages</a>をブログなどの公開に使っていましたが，<a href="https://www.netlify.com">Netlify</a>に移行します．とても簡単に独自ドメインを使うことができます．</p>
+
+</div>    </article>
 
 <nav class="index-pager">
 

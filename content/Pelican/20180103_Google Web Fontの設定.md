@@ -1,6 +1,6 @@
-[Google Fonts + 日本語早期アクセス](https://googlefonts.github.io/japanese/)の設定を行います．今回は，さわらびゴシックを使ってみます．
+[Google Fonts + 日本語早期アクセス](https://googlefonts.github.io/japanese/)の設定を行います．今回は，さわらびゴシックを使ってみます．本ブログのPelicanテーマである[VoidyBootstrap](http://www.voidynullness.net/page/voidy-bootstrap-pelican-theme/)での設定方法になります．
 
-本ブログのPelicanテーマである[VoidyBootstrap](http://www.voidynullness.net/page/voidy-bootstrap-pelican-theme/)での設定方法になります．
+<!-- PELICAN_END_SUMMARY -->
 
 `pelicanconf.py`に以下を追加します．
 

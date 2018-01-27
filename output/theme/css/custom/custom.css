@@ -38,20 +38,16 @@ code, kbd, pre, samp {
 .jumbotron {
   padding-top: 10px;
   padding-bottom: 10px;
-  margin-bottom: 10px;
   margin-right: 10px;
   margin-left: 10px;
+  margin-bottom: 0px;
   background-color: #fff;
-  border-bottom: 1px solid #ddd;
 }
 
 .jumbotron h1 {
   margin: 0px;
   font-size: 2.0rem;
   font-weight: 700;
-  background-image: url(https://www.gravatar.com/avatar/425bf792666d158202306d5dc73367d0?s=30);
-  background-repeat: no-repeat;
-  background-position: right center;
 }
 
 .jumbotron p {
@@ -67,12 +63,38 @@ code, kbd, pre, samp {
   margin-left: 20px;
 }
 
+article {
+  border: solid 1px #ccc;
+  border-radius: 7px;
+  box-shadow: 4px 4px 2px #eee;
+  -webkit-box-shadow: 4px 4px 2px #eee;
+  -moz-box-shadow: 4px 4px 2px #eee;
+  padding: 0;
+  margin: 10px 0 30px;
+}
+
+header.article-header {
+  border-radius: 7px;
+  background: -moz-linear-gradient(top, #f3f3f3 0%, #f3f3f3 33%, #fcfcfc 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f3f3f3), color-stop(33%, #f3f3f3), color-stop(100%, #fcfcfc));
+  background: -webkit-linear-gradient(top, #f3f3f3 0%, #f3f3f3 33%, #fcfcfc 100%);
+  background: -o-linear-gradient(top, #f3f3f3 0%, #f3f3f3 33%, #fcfcfc 100%);
+  background: -ms-linear-gradient(top, #f3f3f3 0%, #f3f3f3 33%, #fcfcfc 100%);
+  background: linear-gradient(to bottom, #f3f3f3 0%, #f3f3f3 33%, #fcfcfc 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3f3f3', endColorstr='#fcfcfc', GradientType=0);
+  padding: 5px 10px 5px 10px;
+}
+
+div.summary, div.content-body {
+  padding: 5px 15px 0px 15px;
+}
+
 h1, h2, h3 {
   font-weight: 700;
 }
 
 h1 {
-  font-size: 1.35rem;
+  font-size: 1.3rem;
 }
 
 h2 {
@@ -87,6 +109,11 @@ article h1 {
   margin-top: 9px;
   margin-bottom: : 9px;
 }
+
+article h2 {
+  border-bottom: 1px solid #ccc;
+}
+
 
 .index-article-header-info, .index-article-header-date, .article-header-info, .article-header-date {
   font-size: 0.8rem;

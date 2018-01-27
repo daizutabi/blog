@@ -1,8 +1,10 @@
 Modified: 2017-12-21
 
-（追記）以下の内容よりも，2017/12/21の[「DNS Zonesからネームサーバーを設定する方法」](https://blog.daizutabi.net/2017/12/21/)のほうがお勧めです．
-
 これまで[GitHub Pages](https://pages.github.com)をブログなどの公開に使っていましたが，[Netlify](https://www.netlify.com)に移行します．とても簡単に独自ドメインを使うことができます．
+
+<!-- PELICAN_END_SUMMARY -->
+
+（追記）以下の内容よりも，2017/12/21の[「DNS Zonesからネームサーバーを設定する方法」](https://blog.daizutabi.net/2017/12/21/)のほうがお勧めです．
 
 ## お名前.comで独自ドメインの取得
 

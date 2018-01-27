@@ -5,7 +5,7 @@ SITEURL = 'https://blog.daizutabi.net'
 
 RELATIVE_URLS = False
 
-DEFAULT_PAGINATION = 5
+DEFAULT_PAGINATION = 10
 
 TIMEZONE = 'Asia/Tokyo'
 DEFAULT_LANG = 'ja'
@@ -60,7 +60,7 @@ AUTHOR_FEED_RSS = None
 #           ('Another social link', '#'),)
 
 PLUGIN_PATHS = ['plugins']
-PLUGINS = ['pheasant', 'render_math']
+PLUGINS = ['pheasant', 'summary', 'render_math']
 IGNORE_FILES = ['.#*', '__pycache__', '.ipynb_checkpoints']
 
 PHEASANT = {
