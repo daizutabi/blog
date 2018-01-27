@@ -20,17 +20,20 @@
             integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
             crossorigin="anonymous">
 
+      <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/sawarabigothic.css" />
+      <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" />
+      <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/sawarabimincho.css" />
 
    
-      <link rel="stylesheet" href="https://blog.daizutabi.net/theme/css/custom/custom.css" />
-      <link rel="stylesheet" href="https://blog.daizutabi.net/theme/css/pygment.css" />
+      <link rel="stylesheet" href="../../../theme/css/custom/custom.css" />
+      <link rel="stylesheet" href="../../../theme/css/pygment.css" />
 
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js" integrity="sha384-FFgGfda92tXC8nCNOxrCQ3R8x1TNkMFqDZVQdDaaJiiVbjkPBXIJBx0o7ETjy8Bh" crossorigin="anonymous"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js" integrity="sha384-ZoaMbDF+4LeFxg6WdScQ9nnR1QC2MIRxA1O9KWEXQwns1G8UNyIEZIQidzb0T1fo" crossorigin="anonymous"></script>
     <![endif]-->
 
-    <link rel="shortcut icon" href="https://blog.daizutabi.net/favicon.ico" />
+    <link rel="shortcut icon" href="../../../favicon.ico" />
   </head>
 
   <body>
@@ -45,7 +48,7 @@
 		  <span class="icon-bar"></span>
 		  <span class="icon-bar"></span>
 		</button>
-		<a class="navbar-brand" href="https://blog.daizutabi.net/" rel="home">
+		<a class="navbar-brand" href="../../../" rel="home">
           <i class="fa fa-home fa-fw fa-lg"> </i> </a>
        </div>
 
@@ -53,7 +56,7 @@
         <ul class="nav navbar-nav">
             <li class="divider"></li>
             <li class="">
-              <a href="https://blog.daizutabi.net/archives.html">Archives</a>
+              <a href="../../../archives.html">Archives</a>
             </li>
           <li class="divider"></li>
         </ul> <!-- /nav -->
@@ -63,7 +66,7 @@
 
 <div class="jumbotron" id="overview">
   <div class="container">
-	<h1><a href="https://blog.daizutabi.net/">大豆旅</a></h1>
+	<h1><a href="../../../">大豆旅</a></h1>
 	<p class="lead">daizutabiのブログです．</p>
   </div>
 </div>
@@ -76,23 +79,23 @@
   <span class="article-header-date">2017年12月20日 (水)</span>
   <span class="article-header-info">
     <i class="fa fa-folder"></i>
-    <a href="https://blog.daizutabi.net/category/Netlify/">Netlify</a>
+    <a href="../../../category/Netlify/">Netlify</a>
   </span>
   <h1>NetlifyでPelicanページを公開する</h1>
 </div>  </header>
   <div class="content-body" itemprop="text articleBody">
 	<p>（追記）以下の内容よりも，2017/12/21の<a href="https://blog.daizutabi.net/2017/12/21/">「DNS Zonesからネームサーバーを設定する方法」</a>のほうがお勧めです．</p>
 <p>これまで<a href="https://pages.github.com">GitHub Pages</a>をブログなどの公開に使っていましたが，<a href="https://www.netlify.com">Netlify</a>に移行します．とても簡単に独自ドメインを使うことができます．</p>
-<h2>0.1. お名前.comで独自ドメインの取得</h2>
+<h2>1. お名前.comで独自ドメインの取得</h2>
 <p><a href="https://www.onamae.com">お名前.com</a>で独自ドメインを取得します．金額に関しては，初年度だけでなく２年目以降の金額についてもチェックしておきましょう．また，「1.お申込み内容」のところで，</p>
 <ul>
 <li>Whois情報公開代行（新規登録と同時なら無料）</li>
 </ul>
 <p>は，個人情報を公開したくない場合にはチェックを入れておきます．</p>
 <p>お名前.comのサイト内ですることは，取得したドメインのネームサーバをNetlify DNSに設定することだけです．それ以外の設定はすべて，Netlify内で完結します．</p>
-<h2>0.2. 静的サイトの作成</h2>
+<h2>2. 静的サイトの作成</h2>
 <p>Pelicanを使ってサイトを作成し，GitHubレポジトリにPushしておきます．</p>
-<h2>0.3. Netifyでサイトの作成</h2>
+<h2>3. Netifyでサイトの作成</h2>
 <p><a href="https://www.netlify.com">Netlify</a>にはGitHubアカウントを使ってログインします．ログイン後に，<a href="https://app.netlify.com/">https://app.netlify.com</a>を開き，右上のNew Site From Gitをクリックします．GitHubを選ぶと，自分のレポジトリ一覧が表示されるので，公開したいレポジトリを選択します．（以下はblogレポジトリを選択した前提で進めます．）</p>
 <p>"Deploy settings for daizutabi/iroha"で，次の選択をします．</p>
 <ul>
@@ -101,12 +104,12 @@
 <li>Publish directory: output</li>
 </ul>
 <p>"Deply site"をクリックすると（すでに生成されていた）サイトが公開されます．</p>
-<h2>0.4. カスタムドメインの設定</h2>
+<h2>4. カスタムドメインの設定</h2>
 <p>"Add a custom domain"をクリックします．</p>
 <p>"Your custom domain"に
 <code>http://blog.daizutabi.net</code>を入力し，Saveをクリックします．</p>
 <p>"Change your domain's name servers"を開くと，Netlify DNSが表示されるので，これをお名前.comのネームサーバーに設定します．</p>
-<h2>0.5. HTTPS</h2>
+<h2>5. HTTPS</h2>
 <p>画面の案内に従えばすんなり設定できます．</p>
   </div>
   

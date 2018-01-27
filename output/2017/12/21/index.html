@@ -20,17 +20,20 @@
             integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
             crossorigin="anonymous">
 
+      <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/sawarabigothic.css" />
+      <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" />
+      <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/sawarabimincho.css" />
 
    
-      <link rel="stylesheet" href="https://blog.daizutabi.net/theme/css/custom/custom.css" />
-      <link rel="stylesheet" href="https://blog.daizutabi.net/theme/css/pygment.css" />
+      <link rel="stylesheet" href="../../../theme/css/custom/custom.css" />
+      <link rel="stylesheet" href="../../../theme/css/pygment.css" />
 
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js" integrity="sha384-FFgGfda92tXC8nCNOxrCQ3R8x1TNkMFqDZVQdDaaJiiVbjkPBXIJBx0o7ETjy8Bh" crossorigin="anonymous"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js" integrity="sha384-ZoaMbDF+4LeFxg6WdScQ9nnR1QC2MIRxA1O9KWEXQwns1G8UNyIEZIQidzb0T1fo" crossorigin="anonymous"></script>
     <![endif]-->
 
-    <link rel="shortcut icon" href="https://blog.daizutabi.net/favicon.ico" />
+    <link rel="shortcut icon" href="../../../favicon.ico" />
   </head>
 
   <body>
@@ -45,7 +48,7 @@
 		  <span class="icon-bar"></span>
 		  <span class="icon-bar"></span>
 		</button>
-		<a class="navbar-brand" href="https://blog.daizutabi.net/" rel="home">
+		<a class="navbar-brand" href="../../../" rel="home">
           <i class="fa fa-home fa-fw fa-lg"> </i> </a>
        </div>
 
@@ -53,7 +56,7 @@
         <ul class="nav navbar-nav">
             <li class="divider"></li>
             <li class="">
-              <a href="https://blog.daizutabi.net/archives.html">Archives</a>
+              <a href="../../../archives.html">Archives</a>
             </li>
           <li class="divider"></li>
         </ul> <!-- /nav -->
@@ -63,7 +66,7 @@
 
 <div class="jumbotron" id="overview">
   <div class="container">
-	<h1><a href="https://blog.daizutabi.net/">大豆旅</a></h1>
+	<h1><a href="../../../">大豆旅</a></h1>
 	<p class="lead">daizutabiのブログです．</p>
   </div>
 </div>
@@ -76,7 +79,7 @@
   <span class="article-header-date">2017年12月21日 (木)</span>
   <span class="article-header-info">
     <i class="fa fa-folder"></i>
-    <a href="https://blog.daizutabi.net/category/Netlify/">Netlify</a>
+    <a href="../../../category/Netlify/">Netlify</a>
   </span>
   <h1>DNS Zonesからネームサーバーを設定する方法</h1>
 </div>  </header>
@@ -88,19 +91,19 @@
 <li>GitHub上の<a href="https://github.com/daizutabi/blog">「ブログ」</a>レポジトリと<a href="https://github.com/daizutabi/iroha">「Pythonパッケージの作り方」</a>レポジトリを公開していきます．</li>
 </ul>
 <p>（注）具体的な名前で説明したほうが分かりやすいと思いそのまま書いています．ドメイン名やレポジトリ名は適宜置き換えを行ってください．</p>
-<h2>0.1. DNS zonesの設定</h2>
+<h2>1. DNS zonesの設定</h2>
 <p><a href="https://www.netlify.com">Netlify</a>にGitHubアカウントを使ってログインします．</p>
-<p><img alt="daizutabi" src="https://blog.daizutabi.net/images/20171221/010.png"></p>
+<p><img alt="daizutabi" src="../../../images/20171221/010.png"></p>
 <p>左上のAll teamsからdaizutabiを選択します．</p>
-<p><img alt="DNS zones" src="https://blog.daizutabi.net/images/20171221/020.png"></p>
+<p><img alt="DNS zones" src="../../../images/20171221/020.png"></p>
 <p>メニューからDNS zonesをクリックします．</p>
-<p><img alt="Add a domain" src="https://blog.daizutabi.net/images/20171221/030.png"></p>
+<p><img alt="Add a domain" src="../../../images/20171221/030.png"></p>
 <p>Add a domainをクリックします．</p>
-<p><img alt="Create DNS zone" src="https://blog.daizutabi.net/images/20171221/040.png"></p>
+<p><img alt="Create DNS zone" src="../../../images/20171221/040.png"></p>
 <p>Domainにdaizutabi.netを入力して，Create DNS zoneをクリックします．</p>
-<p><img alt="Add new record" src="https://blog.daizutabi.net/images/20171221/050.png"></p>
+<p><img alt="Add new record" src="../../../images/20171221/050.png"></p>
 <p>Add new recordをクリックします．</p>
-<p><img alt="Save" src="https://blog.daizutabi.net/images/20171221/060.png"></p>
+<p><img alt="Save" src="../../../images/20171221/060.png"></p>
 <p>上のように入力して，Saveをクリックします．つづけて，Add new recordをクリックして，次にように入力して，Saveをクリックします．</p>
 <ul>
 <li>Type: CNAME</li>
@@ -108,16 +111,16 @@
 <li>Value: www.netlify.com</li>
 </ul>
 <p>Continueをクリックします．Update your domain's nameserversと表示されて，ネームサーバー一覧が表示されるので，これをお名前.comの自ドメインのネームサーバーに登録します．Doneをクリックして，DNS zonesの設定を終えます．</p>
-<h2>0.2. Siteの設定</h2>
+<h2>2. Siteの設定</h2>
 <p>daizutabiのメニューに戻ります．</p>
-<p><img alt="New site from Git" src="https://blog.daizutabi.net/images/20171221/070.png"></p>
+<p><img alt="New site from Git" src="../../../images/20171221/070.png"></p>
 <p>Sitesをクリックしたあと，New site from Gitを選びます．</p>
-<p><img alt="GitHub" src="https://blog.daizutabi.net/images/20171221/080.png"></p>
+<p><img alt="GitHub" src="../../../images/20171221/080.png"></p>
 <p>GitHubを選びます．</p>
-<p><img alt="daizutabi/blog" src="https://blog.daizutabi.net/images/20171221/090.png"></p>
+<p><img alt="daizutabi/blog" src="../../../images/20171221/090.png"></p>
 <p>レポジトリ一覧が表示されるので，<a href="https://github.com/daizutabi/blog">「ブログ」</a>用のレポジトリdaizutabi/blogを選びます．</p>
 <p>サイトの設定を入力していきます．blogレポジトリは，Pelicanを使っているのでPublish directoryにoutputを入力します．それ以外はデフォルトのままです．Deploy siteをクリックします．しばらくすると，サイトが自動で生成されます．</p>
-<p><img alt="Domain settings" src="https://blog.daizutabi.net/images/20171221/100.png"></p>
+<p><img alt="Domain settings" src="../../../images/20171221/100.png"></p>
 <p>Domain settingsをクリックします．ページ中ほどのAdd Custom domainをクリックします．表示されたダイアログで，blog.daizutabi.netと入力します．</p>
 <p><a href="https://github.com/daizutabi/iroha">「Pythonパッケージの作り方」</a>レポジトリについても同様です．ただし，こちらはMkDocsを使っているのでPublish directoryにはsiteを入力し，URLはiroha.daizutabi.netとします．他は同じです．</p>
   </div>

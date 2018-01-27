@@ -36,8 +36,9 @@ STYLESHEETS = (
 )
 
 STYLESHEET_URLS = (
-    # 'https://fonts.googleapis.com/earlyaccess/sawarabigothic.css',
-    # 'https://fonts.googleapis.com/earlyaccess/notosansjapanese.css',
+    'https://fonts.googleapis.com/earlyaccess/sawarabigothic.css',
+    'https://fonts.googleapis.com/earlyaccess/notosansjapanese.css',
+    'https://fonts.googleapis.com/earlyaccess/sawarabimincho.css',
 )
 
 CUSTOM_SITE_HEADERS = ['custom/jumbotron.jinja2']
@@ -67,5 +68,5 @@ IGNORE_FILES = ['.#*', '__pycache__', '.ipynb_checkpoints']
 
 PHEASANT = {
     'jupyter': {'kernel_name': {'python': 'python3'}},
-    'number': {'enabled': True}
+    'number': {'enabled': True, 'level': 2}
 }
