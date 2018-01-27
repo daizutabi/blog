@@ -36,9 +36,6 @@ STYLESHEETS = (
 )
 
 STYLESHEET_URLS = (
-    'https://fonts.googleapis.com/earlyaccess/sawarabigothic.css',
-    'https://fonts.googleapis.com/earlyaccess/notosansjapanese.css',
-    'https://fonts.googleapis.com/earlyaccess/sawarabimincho.css',
 )
 
 CUSTOM_SITE_HEADERS = ['custom/jumbotron.jinja2']

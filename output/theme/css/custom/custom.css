@@ -4,9 +4,11 @@ html {
 
 body {
   font-size: 1rem;
-  /* font-family: 'Noto Sans Japanese', 'Sawarabi Gothic', 'Mplus 1p'; */ */ */
-  /* font-family: 'Sawarabi Gothic', 'Mplus 1p'; */ */
-  font-family: "Sawarabi Mincho";
+  font-family: sans-serif;
+}
+
+code, kbd, pre, samp {
+  font-family: monospace;
 }
 
 .navbar-toggle {
