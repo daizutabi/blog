@@ -1,6 +1,6 @@
 AUTHOR = 'daizutabi'
 SITENAME = '大豆旅'
-SITESUBTITLE = 'daizutabiのブログです．'
+# SITESUBTITLE = 'daizutabiのブログです．'
 SITEURL = 'https://blog.daizutabi.net'
 
 RELATIVE_URLS = False
