@@ -26,6 +26,8 @@ code, kbd, pre, samp {
 .navbar {
   margin-bottom: 0px;
   min-height: 0px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 .navbar-nav>li>a {
@@ -38,8 +40,8 @@ code, kbd, pre, samp {
 .jumbotron {
   padding-top: 10px;
   padding-bottom: 10px;
-  /* margin-right: 10px;
-  margin-left: 10px; */
+  margin-right: 10px;
+  margin-left: 10px;
   margin-bottom: 0px;
   background-color: #fff;
 }
@@ -70,7 +72,7 @@ article {
   -webkit-box-shadow: 4px 4px 2px #eee;
   -moz-box-shadow: 4px 4px 2px #eee;
   padding: 0;
-  margin: 10px 0 30px;
+  margin: 10px 5px 10px 5px;
 }
 
 header.article-header {
@@ -86,25 +88,25 @@ header.article-header {
 }
 
 div.summary, div.content-body {
-  padding: 5px 15px 0px 15px;
+  padding: 0px 15px 0px 15px;
 }
 
 @media (max-width: 768px) {
   .container {
-    padding-right: 5px;
-    padding-left: 5px;
+    padding-right: 0px;
+    padding-left: 0px;
   }
   article {
     border-left: none;
     border-right: none;
     border-radius: 0px;
-    margin: 10px 0 0px;
+    margin: 10px 0px 10px 0px;
   }
   header.article-header {
     border-radius: 0px;
   }
   div.summary, div.content-body {
-    padding: 0;
+    padding: 0px 5px 0px 5px;
   }
 }
 
@@ -131,6 +133,10 @@ article h1 {
 
 article h2 {
   border-bottom: 1px solid #ccc;
+}
+
+article img {
+  max-width: 100%;
 }
 
 .index-article-header-info, .index-article-header-date, .article-header-info, .article-header-date {
