@@ -87,11 +87,12 @@ a {
 }
 
 article {
-  border: solid 1px #ccc;
+  border-top: solid 1px #ddd;
+  border-bottom: solid 1px #ddd;
   border-radius: 7px;
-  box-shadow: 4px 4px 2px #eee;
-  -webkit-box-shadow: 4px 4px 2px #eee;
-  -moz-box-shadow: 4px 4px 2px #eee;
+  box-shadow: 0px 2px 1px #f0f0f0;
+  -webkit-box-shadow: 0px 2px 1px #f0f0f0;
+  -moz-box-shadow: 0px 2px 1px #f0f0f0;
   padding: 0px;
   margin: 0px 0px 15px 0px;
 }
@@ -118,8 +119,6 @@ div.summary, div.content-body {
     padding-left: 0px;
   }
   article {
-    border-left: none;
-    border-right: none;
     border-radius: 0px;
   }
   header.article-header {
