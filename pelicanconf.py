@@ -23,7 +23,7 @@ PAGE_SAVE_AS = 'page/{slug}/index.html'
 CATEGORY_URL = 'category/{name}/'
 CATEGORY_SAVE_AS = 'category/{name}/index.html'
 
-STATIC_PATHS = ['images']
+STATIC_PATHS = ['images', 'extra']
 
 THEME = 'theme/voidy-bootstrap'
 STYLESHEETS = (
@@ -67,4 +67,11 @@ PHEASANT = {
     'jupyter': {'kernel_name': {'python': 'python3'},
                 'template_file': 'output_text_outside.jinja2'},
     'number': {'enabled': True, 'level': 2}
+}
+
+
+FAVICON = 'favicon.ico'
+FAVICON_TYPE = 'image/vnd.microsoft.icon'
+EXTRA_PATH_METADATA = {
+    'extra/' + FAVICON: {'path': FAVICON},
 }
