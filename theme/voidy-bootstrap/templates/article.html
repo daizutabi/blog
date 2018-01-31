@@ -32,7 +32,7 @@
     {% endif %}
 {% endif %}
 {% if TWITTER_CARD and TWITTER_USERNAME %}
-    <meta name="twitter:card" content="summary"> 
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="{{ article.title|striptags|e }}">
     <meta name="twitter:description" content="{{ article.description|striptags|e }}">
     <meta name="twitter:site" content="@{{ TWITTER_USERNAME }}">
@@ -84,8 +84,14 @@
     {% endif %}
     {% include "includes/" + CUSTOM_ARTICLE_PRECONTENT|default('article_precontent.html') ignore missing %}
 	{{ article.content }}
+  {% if article.locale_modified -%}
+    <p><span class="article-header-modified">
+      <i class="fa fa-pencil" aria-hidden="true"></i>
+      この記事は{{ article.locale_modified }}に更新されました．
+    </span></p>
+  {%- endif %}
   </div>
-  
+
   {% for file in CUSTOM_ARTICLE_FOOTERS %}
     {% include "includes/" + file %}
   {% endfor %}

@@ -11,6 +11,10 @@ code, kbd, pre, samp {
   font-family: monospace;
 }
 
+code, pre {
+  font-size: 100%;
+}
+
 h1, h2, h3 {
   font-weight: 700;
 }
@@ -25,11 +29,6 @@ h2 {
 
 h3 {
   font-size: 1rem;
-}
-
-a {
-  color: #03a;
-
 }
 
 .navbar-toggle {
@@ -49,6 +48,9 @@ a {
   min-height: 0px;
   padding-right: 10px;
   padding-left: 10px;
+  background-color: #f8fff8;
+  border-color: #ded;
+  border-radius: 0px;
 }
 
 .navbar-nav>li>a {
@@ -87,8 +89,8 @@ a {
 }
 
 article {
-  border-top: solid 1px #ddd;
-  border-bottom: solid 1px #ddd;
+  border-top: solid 1px #ded;
+  border-bottom: solid 1px #ded;
   border-radius: 7px;
   box-shadow: 0px 2px 1px #f0f0f0;
   -webkit-box-shadow: 0px 2px 1px #f0f0f0;
@@ -99,13 +101,13 @@ article {
 
 header.article-header {
   border-radius: 7px;
-  background: -moz-linear-gradient(top, #fafafa 0%, #fafafa 33%, #ffffff 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fafafa), color-stop(33%, #fafafa), color-stop(100%, #ffffff));
-  background: -webkit-linear-gradient(top, #fafafa 0%, #fafafa 33%, #ffffff 100%);
-  background: -o-linear-gradient(top, #fafafa 0%, #fafafa 33%, #ffffff 100%);
-  background: -ms-linear-gradient(top, #fafafa 0%, #fafafa 33%, #ffffff 100%);
-  background: linear-gradient(to bottom, #fafafa 0%, #fafafa 33%, #ffffff 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fafafa', endColorstr='#ffffff', GradientType=0);
+  background: -moz-linear-gradient(top, #f8fff8 0%, #f8fff8 33%, #ffffff 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f8fff8), color-stop(33%, #f8fff8), color-stop(100%, #ffffff));
+  background: -webkit-linear-gradient(top, #f8fff8 0%, #f8fff8 33%, #ffffff 100%);
+  background: -o-linear-gradient(top, #f8fff8 0%, #f8fff8 33%, #ffffff 100%);
+  background: -ms-linear-gradient(top, #f8fff8 0%, #f8fff8 33%, #ffffff 100%);
+  background: linear-gradient(to bottom, #f8fff8 0%, #f8fff8 33%, #ffffff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8fff8', endColorstr='#ffffff', GradientType=0);
   padding: 5px 10px 5px 10px;
 }
 
@@ -144,9 +146,59 @@ article img {
   display: block;
 }
 
+p {
+  line-height: 160%;
+}
+
+a {
+  color: #060;
+  transition: 0.2s;
+  border-radius: 0px;
+}
+
+a:hover {
+  color: #060;
+  text-decoration: none;
+  background-color: #ded;
+  border-radius: 6px;
+  transition: 0.5s;
+}
+
+article p a {
+  text-decoration: none;
+  border-bottom: dotted 1px #0a3;
+}
+
 .index-article-header-info, .index-article-header-date, .article-header-info, .article-header-date {
   font-size: 0.8rem;
+  color: #9b9;
+}
+
+.index-article-header-modified {
+  font-size: 0.8rem;
   color: #999;
+}
+
+.article-header-modified {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+div.output-text+div {
+  background-color: transparent;
+}
+
+div.output-text+div:before {
+  font-size: 80%;
+  color: #999;
+  content: "Out:";
+}
+
+div.output-text+div>pre {
+  margin-left: 2.3em;
+  margin-top: -1.6em;
+  background-color: #ffd;
+  border-color: #dda;
 }
 
 /* .index-article-header-modified, .article-header-modified {
