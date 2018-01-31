@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="daizutabi" />
+    <meta name="generator" content="Pelican (VoidyBootstrap theme)" />
+
+    <title>ディープラーニングパッケージのインストール - 大豆旅</title>
+
+        <link rel="stylesheet"
+              href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+              integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+              crossorigin="anonymous" />
+      <link rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+            integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+            crossorigin="anonymous">
+
+
+      <link rel="stylesheet" href="https://blog.daizutabi.net/theme/css/custom/custom.css" />
+      <link rel="stylesheet" href="https://blog.daizutabi.net/theme/css/pygment.css" />
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js" integrity="sha384-FFgGfda92tXC8nCNOxrCQ3R8x1TNkMFqDZVQdDaaJiiVbjkPBXIJBx0o7ETjy8Bh" crossorigin="anonymous"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js" integrity="sha384-ZoaMbDF+4LeFxg6WdScQ9nnR1QC2MIRxA1O9KWEXQwns1G8UNyIEZIQidzb0T1fo" crossorigin="anonymous"></script>
+    <![endif]-->
+
+    <link rel="shortcut icon" href="https://blog.daizutabi.net/favicon.ico" type="image/vnd.microsoft.icon">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container">
+	   <div class="navbar-header">
+		<button type="button" class="navbar-toggle"
+				data-toggle="collapse" data-target="#main-navbar-collapse">
+		  <span class="sr-only">Toggle navigation</span>
+		  <span class="icon-bar"></span>
+		  <span class="icon-bar"></span>
+		  <span class="icon-bar"></span>
+		</button>
+		<a class="navbar-brand" href="https://blog.daizutabi.net/" rel="home">
+          <i class="fa fa-home fa-fw fa-lg"> </i> </a>
+       </div>
+
+      <div class="collapse navbar-collapse" id="main-navbar-collapse">
+        <ul class="nav navbar-nav">
+            <li class="divider"></li>
+            <li class="">
+              <a href="https://blog.daizutabi.net/archives.html">Archives</a>
+            </li>
+          <li class="divider"></li>
+        </ul> <!-- /nav -->
+      </div> <!-- /navbar-collapse -->
+	  </div> <!-- /container -->
+    </nav> <!-- /navbar -->
+
+<div class="jumbotron" id="overview">
+  <div class="container">
+	<h1><a href="https://blog.daizutabi.net/">大豆旅</a></h1>
+  </div>
+</div>
+
+    <div class="container" id="main-container">
+        <div class="" id="content">
+<article itemscope="itemscope" itemtype="http://schema.org/BlogPosting">
+  <header class="article-header">
+<div class="article-header">
+  <span class="article-header-date">2018年01月31日 (水)</span>
+  <span class="article-header-info">
+    <i class="fa fa-folder"></i>
+    <a href="https://blog.daizutabi.net/category/Deep Learning/">Deep Learning</a>
+  </span>
+  <h1>ディープラーニングパッケージのインストール</h1>
+</div>  </header>
+  <div class="content-body" itemprop="text articleBody">
+	<p>ディープラーニングの学習をしていきます．まずは必要なパッケージをインストールしていきます．この記事では，インストール方法を順を追って説明し，ディープラーニングを実践する準備をします．今回インストールするパッケージは，以下の通りです．</p>
+<ul>
+<li>CUDA</li>
+<li>Theano</li>
+<li>TensorFlow</li>
+<li>Keras</li>
+<li>Neural Network Libraries</li>
+</ul>
+
+
+<p>Windows 10にCUDA，Theano，Keras，およびNeural Network Librariesをインストールします．インストールする環境は以下の通りです：</p>
+<ul>
+<li>OS: Windows 10 Home (64-bit)</li>
+<li>CPU: Intel Core i5-3337U @ 1.80 GHz</li>
+<li>GPU: NVIDIA GeForce GT 735M</li>
+<li>RAM: 8 GB</li>
+</ul>
+<h2>1.  CUDA Toolkit</h2>
+<p><a href="https://developer.nvidia.com/cuda-toolkit-archive">https://developer.nvidia.com/cuda-toolkit-archive</a>で，CUDA Toolkitのバージョンを選択した後，</p>
+<ul>
+<li>Operating System: Windows</li>
+<li>Architecture: x86_64</li>
+<li>Version: 10</li>
+<li>Installer Type: exe (local)</li>
+</ul>
+<p>を選び，ダウンロードしたファイルを実行してインストールします．現時点(2018/1/31)で，Neural Network LibrariesはVersion 8.0にしか対応していませんので，最新のVersion 9.1ではなく，8.0を選択しました．</p>
+<h2>2. NVIDIA cuDNN</h2>
+<p>インストールするにはメンバーシップが必要なので，<a href="https://developer.nvidia.com">https://developer.nvidia.com</a>の右上のJoinから登録します．</p>
+<p><a href="https://developer.nvidia.com/rdp/cudnn-download">https://developer.nvidia.com/rdp/cudnn-download</a>で，同意ボタンを選択し，リストの中から，CUDAのバージョンに対応するcuDNNを選択してダウンロードします．ダウンロードした圧縮ファイルを展開します．そして，展開してできた<code>cudnn-X.X-windows10-x64-vX\cuda</code>以下をすべて，<code>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\vX.X</code>にコピーします．</p>
+<h2>3. Miniconda</h2>
+<p><a href="https://conda.io/miniconda.html">https://conda.io/miniconda.html</a>で，</p>
+<ul>
+<li>Windows</li>
+<li>Python 3.6</li>
+<li>64-bit (exe installer)</li>
+</ul>
+<p>を選び，ダウンロードしたファイルを実行してインストールします．インストール中の選択肢は，すべてデフォルト設定のまま行います．Miniconda3 4.3.30 (64-bit)がインストールされました．</p>
+<p>以下のディープラーニング関連のパッケージは，仮想環境<code>dl</code>下にインストールすることにします．スタートメニューからAnaconda Promptを起動し，以下を実行します．</p>
+<div class="highlight"><pre><span></span>conda create -n dl
+</pre></div>
+
+
+<h2>4. Theano</h2>
+<p>Kerasのバックエンドとして，主にTensorFlowとTheanoという選択肢があります．ThensorFlowは，Kerasをインストールするときに自動でインストールされます．ここでは，Theanoをインストールしておきます．</p>
+<div class="highlight"><pre><span></span>activate dl
+conda install theano
+</pre></div>
+
+
+<p><code>m2w64-toolchain</code>，<code>libpython</code>，<code>libgpuarray</code>などの依存パッケージも一緒にインストールされます．</p>
+<p>コントロールパネルで環境変数を設定します．</p>
+<ul>
+<li>変数名: <code>MKL_THREADING_LAYER</code></li>
+<li>変数値:  <code>GNU</code></li>
+</ul>
+<p>GPUを使用するために，<code>~\.theanorc.txt</code>を作成して，以下の内容で保存します．</p>
+<div class="highlight"><pre><span></span>[global]
+device = cuda
+floatX = float32
+</pre></div>
+
+
+<p>実際にインポートしてみましょう．</p>
+<div class="highlight"><pre><span></span>python
+&gt;&gt;&gt; import theano
+Using cuDNN version <span class="m">7004</span> on context None
+Mapped name None to device cuda: GeForce GT 735M <span class="o">(</span><span class="m">0000</span>:01:00.0<span class="o">)</span>
+&gt;&gt;&gt; theano.__version__
+<span class="s1">&#39;1.0.0&#39;</span>
+</pre></div>
+
+
+<p>正常に動いているようです．</p>
+<h2>5. Keras</h2>
+<p>同じく仮想環境<code>dl</code>下で，Kerasをインストールします．</p>
+<div class="highlight"><pre><span></span>conda install keras
+</pre></div>
+
+
+<p>Kerasをインポートしてみます．Theanoをバックエンドに指定するために，<code>~\.keras\keras.json</code>を以下の内容で保存します．</p>
+<div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;floatx&quot;</span><span class="p">:</span> <span class="s2">&quot;float32&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;epsilon&quot;</span><span class="p">:</span> <span class="mf">1e-07</span><span class="p">,</span>
+    <span class="nt">&quot;backend&quot;</span><span class="p">:</span> <span class="s2">&quot;theano&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;image_data_format&quot;</span><span class="p">:</span> <span class="s2">&quot;channels_last&quot;</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<p>インポートしてみます．</p>
+<div class="highlight"><pre><span></span>python
+&gt;&gt;&gt; import keras
+Using Theano backend.
+Using cuDNN version <span class="m">7004</span> on context None
+Mapped name None to device cuda: GeForce GT 735M <span class="o">(</span><span class="m">0000</span>:01:00.0<span class="o">)</span>
+&gt;&gt;&gt; keras.__version__
+<span class="s1">&#39;2.0.9&#39;</span>
+</pre></div>
+
+
+<h2>6. Neural Network Libraries</h2>
+<p>Neural Network Librariesは，VC++14（Visual Studio 2015相当）でコンパイルされているので、<a href="https://www.microsoft.com/ja-JP/download/details.aspx?id=52685">Visual Studio 2015のRuntime</a>が必要です．未インストールの場合はインストールしておきます．</p>
+<p>以下の順番でNeural Network Librariesをインストールします．</p>
+<div class="highlight"><pre><span></span>conda install scipy scikit-image ipython
+pip install nnabla
+pip install nnabla-ext-cuda
+conda install pywin32
+</pre></div>
+
+
+<p>以上で，ディープラーニングを実行する環境が整いました．</p>
+  </div>
+
+
+</article>
+        </div><!-- /content -->
+
+    </div><!--/.container /#main-container -->
+
+    <footer id="site-footer">
+      <address id="site-colophon">
+        <p class="text-center text-muted">
+        Site built using <a href="http://getpelican.com/" target="_blank">Pelican</a>
+        &nbsp;&bull;&nbsp; Theme based on
+        <a href="http://www.voidynullness.net/page/voidy-bootstrap-pelican-theme/"
+           target="_blank">VoidyBootstrap</a> by
+        <a href="http://www.robertiwancz.com/"
+           target="_blank">RKI</a>
+        </p>
+      </address><!-- /colophon  -->
+    </footer>
+
+
+    <!-- javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+
+
+  </body>
+</html>

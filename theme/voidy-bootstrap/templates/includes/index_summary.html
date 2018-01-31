@@ -2,7 +2,9 @@
   {% if article.standfirst %}
   <p class="standfirst">{{ article.standfirst|e }}</p>
   {% endif %} {{ article.summary }}
+{#
   {% if article.locale_modified -%}
     <p><span class="index-article-header-modified">更新日 {{ article.locale_modified }}</span></p>
   {%- endif %}
+#}
 </div>
