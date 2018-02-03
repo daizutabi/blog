@@ -128,7 +128,7 @@ Markdownなどのファイルを編集するときには，ソフトラップを
 
 ### MagicPython
 
-Pythonコードのシンタックスハイライターに，MagicPythonを使います．
+Pythonコードのシンタックスハイライターに，MagicPythonを使います．コアパッケージのlanguage-pythonはdisableにします．
 
 #### Settings
 
@@ -279,7 +279,12 @@ Pythonコードを整形します．ide-pythonでも整形はできますが，a
 
 ### Hydrogen
 
-Jupyter clientを使って，Atom上でPythonコードの実行ができます．インタラクティブな実行が可能なので，非常に重宝します．
+Jupyter clientを使って，Atom上でPythonコードの実行ができます．インタラクティブな実行が可能なので，非常に重宝します．Hydrogenを使う仮想環境下で，以下を実行します：
+
+```bash
+(example) > conda install jupyter
+(example) > python -m ipykernel install --user --name example
+```
 
 #### Settings
 
