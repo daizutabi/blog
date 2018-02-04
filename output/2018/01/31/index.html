@@ -77,7 +77,7 @@
   <h1>ディープラーニング学習の準備</h1>
 </div>  </header>
   <div class="content-body" itemprop="text articleBody">
-	<p>Pythonを使ってディープラーニングの学習をしていこうと思っています．この記事では，必要なパッケージなどをインストールする方法を順を追って説明し，ディープラーニングの学習を開始できる状態にします．今回インストールする主なPythonパッケージは，以下の通りです．</p>
+	<p>Pythonを使ってディープラーニングの学習をしていきます．この記事では，必要なパッケージなどをインストールする方法を順を追って説明し，学習を開始できる状態にします．今回インストールする主なPythonパッケージは，以下の通りです．</p>
 <ul>
 <li>Theano</li>
 <li>TensorFlow</li>
@@ -130,44 +130,32 @@
 <li>64-bit (exe installer)</li>
 </ul>
 <p>を選び，ダウンロードしたファイルを実行してインストールします．インストール中の選択肢は，すべてデフォルト設定のまま行います．Miniconda3 4.3.30 (64-bit)がインストールされました．</p>
-<h2>5. TensorFlow</h2>
-<p>TensorFlowは，最新版のVersion 1.5ではなく，CUDA Toolkit Version 8.0, cuDNN Version 6.0に適合するVersion 1.4を選択しました．condaではVersion 1.2までしか用意されていないようなので，pipを使います．condaを併用してインストールします．スタートメニューからAnaconda Promptを起動し，以下を実行します．</p>
+<p>condaを最新版にしておきます．</p>
+<div class="highlight"><pre><span></span>&gt; conda install conda
+</pre></div>
+
+
+<p>仮想環境<code>dl</code>を作り，この下にインストールしていきます．</p>
 <div class="highlight"><pre><span></span><span class="o">(</span>base<span class="o">)</span> &gt; conda create -n dl
 <span class="o">(</span>base<span class="o">)</span> &gt; activate dl
-<span class="o">(</span>dl<span class="o">)</span> &gt; conda install werkzeug numpy markdown protobuf
-<span class="o">(</span>dl<span class="o">)</span> &gt; pip install tensorflow-gpu<span class="o">==</span><span class="m">1</span>.4.0
 </pre></div>
 
 
-<p>実際にインポートしてみましょう．</p>
-<div class="highlight"><pre><span></span><span class="o">(</span>dl<span class="o">)</span> &gt; python
-&gt;&gt;&gt; import tensorflow
-&gt;&gt;&gt; tensorflow.__version__
-<span class="s1">&#39;1.4.0&#39;</span>
+<p>pipでインストールされるパッケージのうち，condaで用意されているものはこの段階でインストールしておきます．bleach, html5lib, cythonについては，バージョン指定があるので，明示します．</p>
+<div class="highlight"><pre><span></span><span class="o">(</span>dl<span class="o">)</span> &gt; conda install <span class="nv">bleach</span><span class="o">==</span><span class="m">1</span>.5.0 <span class="nv">html5lib</span><span class="o">==</span><span class="m">0</span>.9999999 <span class="nv">cython</span><span class="o">==</span><span class="m">0</span>.25.2
+<span class="o">(</span>dl<span class="o">)</span> &gt; conda install werkzeug numpy markdown protobuf pyyaml contextlib2
+<span class="o">(</span>dl<span class="o">)</span> &gt; conda install urllib3 tqdm requests s3transfer h5py boto3
 </pre></div>
 
 
-<p>（TensorFlowを最初にインストールしたのは，bleach, html5libにバージョン指定があるためです．）</p>
-<h2>6. Jupyter ほか</h2>
-<p>ディープラーニングを学習する際に，Jupyter Notebookを使いますので，Jupyter関連のパッケージ一式をインストールしておきます．また，Neural Network Librariesで使う（かもしれない）scikit-image，pywin32もこの段階でインストールします．</p>
-<div class="highlight"><pre><span></span><span class="o">(</span>dl<span class="o">)</span> &gt; conda install jupyter scikit-image pywin32
+<h2>5. TensorFlow</h2>
+<p>TensorFlowは，CUDA Toolkit Version 8.0, cuDNN Version 6.0に適合するVersion 1.4を選択します．</p>
+<div class="highlight"><pre><span></span><span class="o">(</span>dl<span class="o">)</span> &gt; pip install tensorflow-gpu<span class="o">==</span><span class="m">1</span>.4.0
 </pre></div>
 
 
-<p>後からpipでインストールされる依存パッケージのうち，condaにあるものは，この段階でcondaを使ってインストールしておきます．</p>
-<div class="highlight"><pre><span></span><span class="o">(</span>dl<span class="o">)</span> &gt; conda install urllib3 idna tqdm requests s3transfer jmespath
-<span class="o">(</span>dl<span class="o">)</span> &gt; conda install h5py cython contextlib2 boto3
-</pre></div>
-
-
-<p>（以下の<code>conda install</code>, <code>pip install</code>はすべて<code>dl</code>環境で行います．）</p>
-<p>Jupyterが<code>dl</code>環境下のカーネルを認識できるように，以下を実行します．</p>
-<div class="highlight"><pre><span></span><span class="o">(</span>dl<span class="o">)</span> &gt; python -m ipykernel install --user --name dl
-</pre></div>
-
-
-<h2>7. Theano</h2>
-<p>Kerasのバックエンドとして，主にTensorFlowとTheanoという選択肢があります．まずは，Theanoをインストールします．</p>
+<h2>6. Theano</h2>
+<p>Theanoはcondaでインストールします．</p>
 <div class="highlight"><pre><span></span><span class="o">(</span>dl<span class="o">)</span> &gt; conda install theano
 </pre></div>
 
@@ -185,25 +173,42 @@ floatX = float32
 </pre></div>
 
 
-<p>実際にインポートしてみましょう．</p>
-<div class="highlight"><pre><span></span><span class="o">(</span>dl<span class="o">)</span> &gt; python
-&gt;&gt;&gt; import theano
-Using cuDNN version <span class="m">6021</span> on context None
-Mapped name None to device cuda: GeForce GTX <span class="m">1050</span> <span class="o">(</span><span class="m">0000</span>:01:00.0<span class="o">)</span>
-&gt;&gt;&gt; theano.__version__
-<span class="s1">&#39;1.0.1&#39;</span>
-</pre></div>
-
-
-<p>cuDNNのバージョンとGPUカードが正しく認識されています．</p>
-<h2>8. Keras</h2>
+<h2>7. Keras</h2>
 <p>Kerasをインストールします．condaでインストールすると，CPUベースのTensorFlowが勝手にインストールされるので，pipを使います．</p>
 <div class="highlight"><pre><span></span><span class="o">(</span>dl<span class="o">)</span> &gt; pip install keras
 </pre></div>
 
 
-<p>インポートしてみます．</p>
+<h2>8. Neural Network Libraries</h2>
+<p>Neural Network Librariesが必要とするパッケージをcondaでインストールした後，本体をpipでインストールします．</p>
+<div class="highlight"><pre><span></span><span class="o">(</span>dl<span class="o">)</span> &gt; conda install scipy scikit-image
+<span class="o">(</span>dl<span class="o">)</span> &gt; pip install nnabla
+<span class="o">(</span>dl<span class="o">)</span> &gt; pip install nnabla-ext-cuda
+</pre></div>
+
+
+<h2>9. Jupyter</h2>
+<p>ディープラーニングを学習する際に，Jupyter Notebookを使いますので，Jupyter関連のパッケージ一式をインストールしておきます．</p>
+<div class="highlight"><pre><span></span><span class="o">(</span>dl<span class="o">)</span> &gt; conda install jupyter
+</pre></div>
+
+
+<p>Jupyterが<code>dl</code>環境下のカーネルを認識できるように，以下を実行します．</p>
+<div class="highlight"><pre><span></span><span class="o">(</span>dl<span class="o">)</span> &gt; python -m ipykernel install --user --name dl
+</pre></div>
+
+
+<h2>10. インストールの確認</h2>
+<p>インポートできることを確認します．</p>
 <div class="highlight"><pre><span></span><span class="o">(</span>dl<span class="o">)</span> &gt; python
+&gt;&gt;&gt; import tensorflow
+&gt;&gt;&gt; tensorflow.__version__
+<span class="s1">&#39;1.4.0&#39;</span>
+&gt;&gt;&gt; import theano
+Using cuDNN version <span class="m">6021</span> on context None
+Mapped name None to device cuda: GeForce GTX <span class="m">1050</span> <span class="o">(</span><span class="m">0000</span>:01:00.0<span class="o">)</span>
+&gt;&gt;&gt; theano.__version__
+<span class="s1">&#39;1.0.1&#39;</span>
 &gt;&gt;&gt; import keras
 Using TensorFlow backend.
 &gt;&gt;&gt; keras.__version__
@@ -211,7 +216,7 @@ Using TensorFlow backend.
 </pre></div>
 
 
-<p>Theanoをバックエンドに指定してみます．<code>~\.keras\keras.json</code>を以下の内容で保存します．</p>
+<p>KerasのTheanoをバックエンドに指定してみます．<code>~\.keras\keras.json</code>を以下の内容で保存します．</p>
 <div class="highlight"><pre><span></span><span class="p">{</span>
     <span class="nt">&quot;floatx&quot;</span><span class="p">:</span> <span class="s2">&quot;float32&quot;</span><span class="p">,</span>
     <span class="nt">&quot;epsilon&quot;</span><span class="p">:</span> <span class="mf">1e-07</span><span class="p">,</span>
@@ -230,14 +235,7 @@ Mapped name None to device cuda: GeForce GTX <span class="m">1050</span> <span c
 </pre></div>
 
 
-<h2>9. Neural Network Libraries</h2>
-<p>以下の順番でNeural Network Librariesをインストールします．</p>
-<div class="highlight"><pre><span></span><span class="o">(</span>dl<span class="o">)</span> &gt; pip install nnabla
-<span class="o">(</span>dl<span class="o">)</span> &gt; pip install nnabla-ext-cuda
-</pre></div>
-
-
-<p>インポートしてみます．</p>
+<p>最後にNeural Network Librariesです．</p>
 <div class="highlight"><pre><span></span><span class="o">(</span>dl<span class="o">)</span> &gt; python
 &gt;&gt;&gt; import nnabla
 <span class="m">2018</span>-02-04 <span class="m">10</span>:57:01,657 <span class="o">[</span>nnabla<span class="o">][</span>INFO<span class="o">]</span>: Initializing cuDNN extension...
