@@ -180,10 +180,11 @@ floatX = float32
 
 
 <h2>8. Neural Network Libraries</h2>
-<p>Neural Network Librariesが必要とするパッケージをcondaでインストールした後，本体をpipでインストールします．</p>
+<p>Neural Network Librariesが必要とするパッケージをcondaでインストールした後，本体をpipでインストールします．最後に，依存性は明示されていないですが，pywin32もインストールする必要があります．</p>
 <div class="highlight"><pre><span></span><span class="o">(</span>dl<span class="o">)</span> &gt; conda install scipy scikit-image
 <span class="o">(</span>dl<span class="o">)</span> &gt; pip install nnabla
 <span class="o">(</span>dl<span class="o">)</span> &gt; pip install nnabla-ext-cuda
+<span class="o">(</span>dl<span class="o">)</span> &gt; conda install pywin32
 </pre></div>
 
 
@@ -238,10 +239,10 @@ Mapped name None to device cuda: GeForce GTX <span class="m">1050</span> <span c
 <p>最後にNeural Network Librariesです．</p>
 <div class="highlight"><pre><span></span><span class="o">(</span>dl<span class="o">)</span> &gt; python
 &gt;&gt;&gt; import nnabla
-<span class="m">2018</span>-02-04 <span class="m">10</span>:57:01,657 <span class="o">[</span>nnabla<span class="o">][</span>INFO<span class="o">]</span>: Initializing cuDNN extension...
+<span class="m">2018</span>-02-04 <span class="m">20</span>:19:37,163 <span class="o">[</span>nnabla<span class="o">][</span>INFO<span class="o">]</span>: Initializing CPU extension...
 &gt;&gt;&gt; import nnabla_ext.cuda.cudnn
-<span class="m">2018</span>-02-04 <span class="m">10</span>:57:00,741 <span class="o">[</span>nnabla<span class="o">][</span>INFO<span class="o">]</span>: Initializing CUDA extension...
-<span class="m">2018</span>-02-04 <span class="m">10</span>:57:01,657 <span class="o">[</span>nnabla<span class="o">][</span>INFO<span class="o">]</span>: Initializing cuDNN extension...
+<span class="m">2018</span>-02-04 <span class="m">20</span>:19:47,262 <span class="o">[</span>nnabla<span class="o">][</span>INFO<span class="o">]</span>: Initializing CUDA extension...
+<span class="m">2018</span>-02-04 <span class="m">20</span>:19:47,545 <span class="o">[</span>nnabla<span class="o">][</span>INFO<span class="o">]</span>: Initializing cuDNN extension...
 </pre></div>
 
 
