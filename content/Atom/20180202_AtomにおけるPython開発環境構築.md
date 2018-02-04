@@ -4,26 +4,13 @@ AtomテキストエディタにPython開発環境を構築します．細かい�
 
 <!-- PELICAN_END_SUMMARY -->
 
-## グローバル設定
+それでは，Python開発に役立つパッケージを紹介していきます．各節のヘッダがパッケージ名になっているので，特に記載のない限り，その名前でパッケージを検索してインストールしてください．その後，Settings，Keymap，Stylesheetの各項目を必要に応じて設定していきます．
 
-### 初期化スクリプト
-
-[File] > [Init Script...]を選択して，`init.coffee`を開き，次の行を追加します．
-
-```coffee
-# init.coffee
-process.env.PYTHONIOENCODING = "utf-8";
-```
-
-## パッケージ
-
-Python開発に役立つパッケージを紹介します．各ヘッダがパッケージ名になっているので，特に記載のない限り，その名前でパッケージを検索してインストールしてください．その後，Settings，Keymap，Stylesheetの各項目を必要に応じて設定していきます．
-
-### vim-mode-plus
+## vim-mode-plus
 
 AtomでVimキーバインドを実現します．このパッケージがなかったら，Atomを使っていないでしょう．
 
-#### Settings
+### Settings
 
 以下のキーマップを有効にします．
 
@@ -37,7 +24,7 @@ AtomでVimキーバインドを実現します．このパッケージがなか�
 
 * Automatically Escape Insert Mode On Activate Pane Item Change
 
-#### Keymap
+### Keymap
 
 Markdownなどのファイルを編集するときには，ソフトラップを有効にするので，論理行の移動キーと物理行の移動キーをスワップします．
 
@@ -91,19 +78,19 @@ Markdownなどのファイルを編集するときには，ソフトラップを
   'g <': 'vim-mode-plus:rotate-arguments-backwards-of-inner-pair'
 ```
 
-### ex-mode
+## ex-mode
 
 `:w`などのコマンドを使えるようにします．
 
-### vim-mode-plus-keymaps-for-surround
+## vim-mode-plus-keymaps-for-surround
 
 サラウンド機能のキーマップ設定です．たとえば，ある単語にカーソルを合わせて，`y s i w (`と入力すると，その単語をカッコでくくります．他に`c s`，`d s`などもあります．
 
-### cursor-history
+## cursor-history
 
 オリジナルのVimと同様にカーソルのジャンプ履歴に素早くアクセスします．
 
-#### Keymap
+### Keymap
 
 ```cson
 'atom-text-editor.vim-mode-plus.normal-mode':
@@ -111,11 +98,11 @@ Markdownなどのファイルを編集するときには，ソフトラップを
   'ctrl-o': 'cursor-history:prev'
 ```
 
-### quick-highlight
+## quick-highlight
 
 コードを編集するときに，同じ文字列をハイライトすると，どこで再利用されているか一目でわかります．
 
-#### Keymap
+### Keymap
 
 ```cson
 'atom-text-editor.vim-mode-plus.normal-mode, atom-text-editor.vim-mode-plus.visual-mode':
@@ -124,19 +111,19 @@ Markdownなどのファイルを編集するときには，ソフトラップを
   'space m': 'quick-highlight:clear'
 ```
 
-### tab-numbers
+## tab-numbers
 
 タブの横にタブの番号を表示します．この数値をもとに`s <number>`で移動できます．
 
-### MagicPython
+## MagicPython
 
 Pythonコードのシンタックスハイライターに，MagicPythonを使います．コアパッケージのlanguage-pythonはdisableにします．
 
-#### Settings
+### Settings
 
 * Tab Type: soft
 
-#### Stylesheet
+### Stylesheet
 
 色の設定を追加します．[File] > [Stylesheet]を選択して，`styles.less`を開き，次の行を追加します．好みに応じて変更してください．
 
@@ -201,11 +188,11 @@ atom-text-editor .syntax--source.syntax--python {
 
 （以下のスタイルシートの設定では，同様に`styles.less`を編集します．）
 
-### autocomplete-plus
+## autocomplete-plus
 
 コアパッケージに含まれているので，インストールの必要はありません．
 
-#### Settings
+### Settings
 
 補完の方法，カーソル移動の方法などを設定します．
 
@@ -213,7 +200,7 @@ atom-text-editor .syntax--source.syntax--python {
 * Use Core Movement Commands: false
 * Suppress Activation For Editor Classes: vim-mode-plus.normal-mode, vim-mode-plus.visual-mode, vim-mode-plus.operator-pending-mode, vim-mode-plus.insert-mode.replace
 
-#### Keymap
+### Keymap
 
 Vimライクなキー操作で補完候補間を移動できるようにします．この設定を有効にするには，上のUse Core Movement Commandsを非選択にする必要があります．
 
@@ -227,7 +214,7 @@ Vimライクなキー操作で補完候補間を移動できるようにしま�
   'pagedown': 'autocomplete-plus:page-down'
 ```
 
-#### Stylesheet
+### Stylesheet
 
 補完リストのフォントサイズを小さめに設定します．
 
@@ -237,7 +224,7 @@ Vimライクなキー操作で補完候補間を移動できるようにしま�
 }
 ```
 
-### ide-python
+## ide-python
 
 Atom IDE を使ってPython開発をするためのパッケージです．言語サーバーが必要なので，Condaの`base`環境下にインストールします：
 
@@ -245,17 +232,17 @@ Atom IDE を使ってPython開発をするためのパッケージです．言�
 (base) > pip install python-language-server
 ```
 
-#### Settings
+### Settings
 
 Condaの`base`環境にインストールされた`pyls.exe`をフルパスで指定します．
 
 * Python Language Server Path: C:\Users\daizu\Miniconda3\Scripts\pyls.exe
 
-### autocomplete-python
+## autocomplete-python
 
 autocomplete-plusのPython拡張です．本パッケージで提供される機能は， ide-pythonと重複します．しかし，`base`環境以外の仮想環境下にインストールされたPythonパッケージへのジャンプなどがide-pythonではできない（or 設定方法がわからない）ので，autocomplete-plusも同時に入れておきます．
 
-#### Settings
+### Settings
 
 * Use Kite-powered Completions: false
 * Python Executable Paths: C:\Users\daizu\Miniconda3\python.exe
@@ -265,7 +252,7 @@ autocomplete-plusのPython拡張です．本パッケージで提供される機
 
 上のExtra Paths For Packagesの設定は一例です．Condaの`example`環境を登録しています．他にも登録したい仮想環境がある場合には，セミコロンで区切って追記します．
 
-### atom-beautify
+## atom-beautify
 
 Pythonコードを整形します．ide-pythonでも整形はできますが，atom-beautifyでは，`import`の並び替えができます．整形するためのPythonパッケージをインストールします：
 
@@ -273,13 +260,13 @@ Pythonコードを整形します．ide-pythonでも整形はできますが，a
 (base) > pip install autopep8 isort
 ```
 
-#### Settings
+### Settings
 
 * Executables > autopep8: C:\Users\daizu\Miniconda3\Scripts\autopep8.exe
 * Executables > isort: C:\Users\daizu\Miniconda3\Scripts\isort.exe
 * Sort imports: true
 
-### Hydrogen
+## Hydrogen
 
 Jupyter clientを使って，Atom上でPythonコードの実行ができます．インタラクティブな実行が可能なので，非常に重宝します．Hydrogenを使う仮想環境下で，以下を実行します：
 
@@ -288,11 +275,11 @@ Jupyter clientを使って，Atom上でPythonコードの実行ができます�
 (example) > python -m ipykernel install --user --name example
 ```
 
-#### Settings
+### Settings
 
 * Language Mappings: {"python": "magicpython"}
 
-#### Keymap
+### Keymap
 
 ```cson
 'atom-text-editor':
@@ -301,30 +288,41 @@ Jupyter clientを使って，Atom上でPythonコードの実行ができます�
   'f10': 'hydrogen:run-all'
 ```
 
-### platformio-ide-terminal
+## platformio-ide-terminal
 
 Atom内でターミナルを実行します．
 
-#### Settings
+### Settings
 
 * Auto Run Command: C:\Users\daizu\Miniconda3\Scripts\activate.bat base
 * Shell Override: C:\Windows\System32\cmd.exe
 
-### hydrogen-launcher
+## hydrogen-launcher
 
 Hydrogenで実行中のカーネルに接続されたJupyterコンソールを表示します．
 
-#### Keymap
+### Keymap
 
 ```cson
 'atom-text-editor':
   'ctrl-alt-j': 'hydrogen-launcher:launch-jupyter-console-in-platformio-terminal'
 ```
 
-### その他
+## その他のパッケージ
 
 Pythonとは直接関係ないですが，以下のパッケージもインストールするとよいでしょう．
 
 * git-plus
 * file-icons
 * minimap系
+
+## 初期化スクリプト
+
+パッケージではありませんが，文字化けを防ぐために，[File] > [Init Script...]を選択して，`init.coffee`を開き，次の行を追加します．
+
+```coffee
+# init.coffee
+process.env.PYTHONIOENCODING = "utf-8";
+```
+
+以上で，開発環境が整いました．

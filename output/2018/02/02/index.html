@@ -80,19 +80,10 @@
 	<p>AtomテキストエディタにPython開発環境を構築します．細かい設定を丁寧に説明し，快適な開発環境を整備することを目指します．</p>
 
 
-<h2>1. グローバル設定</h2>
-<h3>1.1. 初期化スクリプト</h3>
-<p>[File] &gt; [Init Script...]を選択して，<code>init.coffee</code>を開き，次の行を追加します．</p>
-<div class="highlight"><pre><span></span><span class="c1"># init.coffee</span>
-<span class="nv">process.env.PYTHONIOENCODING = </span><span class="s">&quot;utf-8&quot;</span><span class="p">;</span>
-</pre></div>
-
-
-<h2>2. パッケージ</h2>
-<p>Python開発に役立つパッケージを紹介します．各ヘッダがパッケージ名になっているので，特に記載のない限り，その名前でパッケージを検索してインストールしてください．その後，Settings，Keymap，Stylesheetの各項目を必要に応じて設定していきます．</p>
-<h3>2.1. vim-mode-plus</h3>
+<p>それでは，Python開発に役立つパッケージを紹介していきます．各節のヘッダがパッケージ名になっているので，特に記載のない限り，その名前でパッケージを検索してインストールしてください．その後，Settings，Keymap，Stylesheetの各項目を必要に応じて設定していきます．</p>
+<h2>1. vim-mode-plus</h2>
 <p>AtomでVimキーバインドを実現します．このパッケージがなかったら，Atomを使っていないでしょう．</p>
-<h4>2.1.1. Settings</h4>
+<h3>1.1. Settings</h3>
 <p>以下のキーマップを有効にします．</p>
 <ul>
 <li><code>Y</code>: 'yank-to-last-character-of-line'</li>
@@ -105,7 +96,7 @@
 <ul>
 <li>Automatically Escape Insert Mode On Activate Pane Item Change</li>
 </ul>
-<h4>2.1.2. Keymap</h4>
+<h3>1.2. Keymap</h3>
 <p>Markdownなどのファイルを編集するときには，ソフトラップを有効にするので，論理行の移動キーと物理行の移動キーをスワップします．</p>
 <p>[File] &gt; [Keymap...]を選択して，<code>keymap.cson</code>を開き，次の行を追加します．好みに応じて変更してください．</p>
 <div class="highlight"><pre><span></span># keymap.cson
@@ -153,22 +144,22 @@
 </pre></div>
 
 
-<h3>2.2. ex-mode</h3>
+<h2>2. ex-mode</h2>
 <p><code>:w</code>などのコマンドを使えるようにします．</p>
-<h3>2.3. vim-mode-plus-keymaps-for-surround</h3>
+<h2>3. vim-mode-plus-keymaps-for-surround</h2>
 <p>サラウンド機能のキーマップ設定です．たとえば，ある単語にカーソルを合わせて，<code>y s i w (</code>と入力すると，その単語をカッコでくくります．他に<code>c s</code>，<code>d s</code>などもあります．</p>
-<h3>2.4. cursor-history</h3>
+<h2>4. cursor-history</h2>
 <p>オリジナルのVimと同様にカーソルのジャンプ履歴に素早くアクセスします．</p>
-<h4>2.4.1. Keymap</h4>
+<h3>4.1. Keymap</h3>
 <div class="highlight"><pre><span></span>&#39;atom-text-editor.vim-mode-plus.normal-mode&#39;:
   &#39;ctrl-i&#39;: &#39;cursor-history:next&#39;
   &#39;ctrl-o&#39;: &#39;cursor-history:prev&#39;
 </pre></div>
 
 
-<h3>2.5. quick-highlight</h3>
+<h2>5. quick-highlight</h2>
 <p>コードを編集するときに，同じ文字列をハイライトすると，どこで再利用されているか一目でわかります．</p>
-<h4>2.5.1. Keymap</h4>
+<h3>5.1. Keymap</h3>
 <div class="highlight"><pre><span></span>&#39;atom-text-editor.vim-mode-plus.normal-mode, atom-text-editor.vim-mode-plus.visual-mode&#39;:
   &#39;ctrl-m&#39;: &#39;vim-mode-plus-user:quick-highlight-word&#39;
   &#39;g m&#39;: &#39;vim-mode-plus-user:quick-highlight&#39;
@@ -176,15 +167,15 @@
 </pre></div>
 
 
-<h3>2.6. tab-numbers</h3>
+<h2>6. tab-numbers</h2>
 <p>タブの横にタブの番号を表示します．この数値をもとに<code>s &lt;number&gt;</code>で移動できます．</p>
-<h3>2.7. MagicPython</h3>
+<h2>7. MagicPython</h2>
 <p>Pythonコードのシンタックスハイライターに，MagicPythonを使います．コアパッケージのlanguage-pythonはdisableにします．</p>
-<h4>2.7.1. Settings</h4>
+<h3>7.1. Settings</h3>
 <ul>
 <li>Tab Type: soft</li>
 </ul>
-<h4>2.7.2. Stylesheet</h4>
+<h3>7.2. Stylesheet</h3>
 <p>色の設定を追加します．[File] &gt; [Stylesheet]を選択して，<code>styles.less</code>を開き，次の行を追加します．好みに応じて変更してください．</p>
 <div class="highlight"><pre><span></span><span class="c">/* styles.less */</span>
 <span class="nt">atom-text-editor</span> <span class="p">.</span><span class="nc">syntax--source</span><span class="p">.</span><span class="nc">syntax--python</span> <span class="p">{</span>
@@ -246,16 +237,16 @@
 
 
 <p>（以下のスタイルシートの設定では，同様に<code>styles.less</code>を編集します．）</p>
-<h3>2.8. autocomplete-plus</h3>
+<h2>8. autocomplete-plus</h2>
 <p>コアパッケージに含まれているので，インストールの必要はありません．</p>
-<h4>2.8.1. Settings</h4>
+<h3>8.1. Settings</h3>
 <p>補完の方法，カーソル移動の方法などを設定します．</p>
 <ul>
 <li>Keymap For Confirming A Suggestion: tab always, enter when suggestion explicitly selected</li>
 <li>Use Core Movement Commands: false</li>
 <li>Suppress Activation For Editor Classes: vim-mode-plus.normal-mode, vim-mode-plus.visual-mode, vim-mode-plus.operator-pending-mode, vim-mode-plus.insert-mode.replace</li>
 </ul>
-<h4>2.8.2. Keymap</h4>
+<h3>8.2. Keymap</h3>
 <p>Vimライクなキー操作で補完候補間を移動できるようにします．この設定を有効にするには，上のUse Core Movement Commandsを非選択にする必要があります．</p>
 <div class="highlight"><pre><span></span>&#39;atom-text-editor.autocomplete-active&#39;:
   &#39;ctrl-k&#39;: &#39;autocomplete-plus:move-up&#39;
@@ -267,7 +258,7 @@
 </pre></div>
 
 
-<h4>2.8.3. Stylesheet</h4>
+<h3>8.3. Stylesheet</h3>
 <p>補完リストのフォントサイズを小さめに設定します．</p>
 <div class="highlight"><pre><span></span><span class="p">.</span><span class="nc">autocomplete-plus</span> <span class="nt">li</span> <span class="p">{</span>
   <span class="k">font-size</span><span class="p">:</span> <span class="mi">11</span><span class="kt">pt</span><span class="p">;</span>
@@ -275,20 +266,20 @@
 </pre></div>
 
 
-<h3>2.9. ide-python</h3>
+<h2>9. ide-python</h2>
 <p>Atom IDE を使ってPython開発をするためのパッケージです．言語サーバーが必要なので，Condaの<code>base</code>環境下にインストールします：</p>
 <div class="highlight"><pre><span></span><span class="o">(</span>base<span class="o">)</span> &gt; pip install python-language-server
 </pre></div>
 
 
-<h4>2.9.1. Settings</h4>
+<h3>9.1. Settings</h3>
 <p>Condaの<code>base</code>環境にインストールされた<code>pyls.exe</code>をフルパスで指定します．</p>
 <ul>
 <li>Python Language Server Path: C:\Users\daizu\Miniconda3\Scripts\pyls.exe</li>
 </ul>
-<h3>2.10. autocomplete-python</h3>
+<h2>10. autocomplete-python</h2>
 <p>autocomplete-plusのPython拡張です．本パッケージで提供される機能は， ide-pythonと重複します．しかし，<code>base</code>環境以外の仮想環境下にインストールされたPythonパッケージへのジャンプなどがide-pythonではできない（or 設定方法がわからない）ので，autocomplete-plusも同時に入れておきます．</p>
-<h4>2.10.1. Settings</h4>
+<h3>10.1. Settings</h3>
 <ul>
 <li>Use Kite-powered Completions: false</li>
 <li>Python Executable Paths: C:\Users\daizu\Miniconda3\python.exe</li>
@@ -297,30 +288,30 @@
 <li>Use Fussy Matcher For Completions: false</li>
 </ul>
 <p>上のExtra Paths For Packagesの設定は一例です．Condaの<code>example</code>環境を登録しています．他にも登録したい仮想環境がある場合には，セミコロンで区切って追記します．</p>
-<h3>2.11. atom-beautify</h3>
+<h2>11. atom-beautify</h2>
 <p>Pythonコードを整形します．ide-pythonでも整形はできますが，atom-beautifyでは，<code>import</code>の並び替えができます．整形するためのPythonパッケージをインストールします：</p>
 <div class="highlight"><pre><span></span><span class="o">(</span>base<span class="o">)</span> &gt; pip install autopep8 isort
 </pre></div>
 
 
-<h4>2.11.1. Settings</h4>
+<h3>11.1. Settings</h3>
 <ul>
 <li>Executables &gt; autopep8: C:\Users\daizu\Miniconda3\Scripts\autopep8.exe</li>
 <li>Executables &gt; isort: C:\Users\daizu\Miniconda3\Scripts\isort.exe</li>
 <li>Sort imports: true</li>
 </ul>
-<h3>2.12. Hydrogen</h3>
+<h2>12. Hydrogen</h2>
 <p>Jupyter clientを使って，Atom上でPythonコードの実行ができます．インタラクティブな実行が可能なので，非常に重宝します．Hydrogenを使う仮想環境下で，以下を実行します：</p>
 <div class="highlight"><pre><span></span><span class="o">(</span>example<span class="o">)</span> &gt; conda install jupyter
 <span class="o">(</span>example<span class="o">)</span> &gt; python -m ipykernel install --user --name example
 </pre></div>
 
 
-<h4>2.12.1. Settings</h4>
+<h3>12.1. Settings</h3>
 <ul>
 <li>Language Mappings: {"python": "magicpython"}</li>
 </ul>
-<h4>2.12.2. Keymap</h4>
+<h3>12.2. Keymap</h3>
 <div class="highlight"><pre><span></span>&#39;atom-text-editor&#39;:
   &#39;f8&#39;: &#39;hydrogen:clear-results&#39;
   &#39;f9&#39;: &#39;hydrogen:run-all-above&#39;
@@ -328,28 +319,36 @@
 </pre></div>
 
 
-<h3>2.13. platformio-ide-terminal</h3>
+<h2>13. platformio-ide-terminal</h2>
 <p>Atom内でターミナルを実行します．</p>
-<h4>2.13.1. Settings</h4>
+<h3>13.1. Settings</h3>
 <ul>
 <li>Auto Run Command: C:\Users\daizu\Miniconda3\Scripts\activate.bat base</li>
 <li>Shell Override: C:\Windows\System32\cmd.exe</li>
 </ul>
-<h3>2.14. hydrogen-launcher</h3>
+<h2>14. hydrogen-launcher</h2>
 <p>Hydrogenで実行中のカーネルに接続されたJupyterコンソールを表示します．</p>
-<h4>2.14.1. Keymap</h4>
+<h3>14.1. Keymap</h3>
 <div class="highlight"><pre><span></span>&#39;atom-text-editor&#39;:
   &#39;ctrl-alt-j&#39;: &#39;hydrogen-launcher:launch-jupyter-console-in-platformio-terminal&#39;
 </pre></div>
 
 
-<h3>2.15. その他</h3>
+<h2>15. その他のパッケージ</h2>
 <p>Pythonとは直接関係ないですが，以下のパッケージもインストールするとよいでしょう．</p>
 <ul>
 <li>git-plus</li>
 <li>file-icons</li>
 <li>minimap系</li>
 </ul>
+<h2>16. 初期化スクリプト</h2>
+<p>パッケージではありませんが，文字化けを防ぐために，[File] &gt; [Init Script...]を選択して，<code>init.coffee</code>を開き，次の行を追加します．</p>
+<div class="highlight"><pre><span></span><span class="c1"># init.coffee</span>
+<span class="nv">process.env.PYTHONIOENCODING = </span><span class="s">&quot;utf-8&quot;</span><span class="p">;</span>
+</pre></div>
+
+
+<p>以上で，開発環境が整いました．</p>
 <p><span class="article-header-modified">
       <i class="fa fa-pencil" aria-hidden="true"></i>
       この記事は2018年02月04日 (日)に更新されました．
