@@ -87,14 +87,16 @@
 </ul>
 
 
-<p>Windows 10にCUDA，Theano，Keras，およびNeural Network Librariesをインストールします．インストールする環境は以下の通りです：</p>
+<p>インストールする環境は以下の通りです（PC新調に伴い2018/2/4に更新）：</p>
 <ul>
 <li>OS: Windows 10 Home (64-bit)</li>
-<li>CPU: Intel Core i5-3337U @ 1.80 GHz</li>
-<li>GPU: NVIDIA GeForce GT 735M</li>
-<li>RAM: 8 GB</li>
+<li>CPU: Intel Core i7-7700HQ @ 2.80 GHz</li>
+<li>GPU: NVIDIA GeForce GTX 1050</li>
+<li>RAM: 16 GB</li>
 </ul>
-<h2>1.  CUDA Toolkit</h2>
+<h2>1. Microsoft Visual C++ 2015 再頒布可能パッケージ</h2>
+<p>Neural Network Librariesは，VC++14（Visual Studio 2015相当）でコンパイルされているので、<a href="https://www.microsoft.com/ja-JP/download/details.aspx?id=52685">Visual Studio 2015のRuntime</a>が必要です．未インストールの場合はインストールしておきます．Visual Studio本体はインストールする必要はありません．</p>
+<h2>2.  CUDA Toolkit</h2>
 <p><a href="https://developer.nvidia.com/cuda-toolkit-archive">https://developer.nvidia.com/cuda-toolkit-archive</a>で，CUDA Toolkitのバージョンを選択した後，</p>
 <ul>
 <li>Operating System: Windows</li>
@@ -102,11 +104,21 @@
 <li>Version: 10</li>
 <li>Installer Type: exe (local)</li>
 </ul>
-<p>を選び，ダウンロードしたファイルを実行してインストールします．現時点(2018/1/31)で，Neural Network LibrariesはVersion 8.0にしか対応していませんので，最新のVersion 9.1ではなく，8.0を選択しました．</p>
-<h2>2. NVIDIA cuDNN</h2>
-<p>インストールするにはメンバーシップが必要なので，<a href="https://developer.nvidia.com">https://developer.nvidia.com</a>の右上のJoinから登録します．</p>
-<p><a href="https://developer.nvidia.com/rdp/cudnn-download">https://developer.nvidia.com/rdp/cudnn-download</a>で，同意ボタンを選択し，リストの中から，CUDAのバージョンに対応するcuDNNを選択してダウンロードします．ダウンロードした圧縮ファイルを展開します．そして，展開してできた<code>cudnn-X.X-windows10-x64-vX\cuda</code>以下をすべて，<code>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\vX.X</code>にコピーします．</p>
-<h2>3. Miniconda</h2>
+<p>を選び，ダウンロードしたファイルを実行してインストールします．現時点(2018/1/31)で，Neural Network LibrariesはVersion 8.0にしか対応していませんので，最新のVersion 9.1ではなく，Version 8.0 GA2 を選択しました．Base Installerの他に，Patch 2 (Released Jun 26, 2017)をダウンロードします．</p>
+<p>まず，Base Installerを実行します．「システムの互換性のチェック」で，次のような画面が表示されます．</p>
+<p><img alt="cuda-install" src="https://blog.daizutabi.net/images/20180131/cuda-install.png"></p>
+<p><a href="https://devtalk.nvidia.com/default/topic/1014305/cuda-setup-and-installation/cuda-8-0-installation-fail-quot-could-not-find-compatible-graphics-hardware-quot-/">このフォーラム</a>にあるように， インストーラが，GTX 1050の生産前に作成されているためです．[続行] &gt; [同意して続行する] &gt; [(カスタム)を選択して次へ]と進んで，カスタムインストールオプションで，CUDAのみを選択した状態にします．</p>
+<p><img alt="cuda-install" src="https://blog.daizutabi.net/images/20180131/cuda-install-2.png"></p>
+<p>[次へ]をクリックして進んでいくと，Visual Studioがないと警告が出ます．</p>
+<p><img alt="cuda-install" src="https://blog.daizutabi.net/images/20180131/cuda-install-3.png"></p>
+<p>特に問題ないので，そのままチェックボックスを選択して，[次へ]をクリックし，インストールを開始します．その後，先にダウンロードしていたPatch2を実行してパッチをインストールします．</p>
+<h2>3. NVIDIA cuDNN</h2>
+<p>インストールするにはメンバーシップが必要なので，<a href="https://developer.nvidia.com">https://developer.nvidia.com</a> の右上のJoinから登録します．ダウンロードページ <a href="https://developer.nvidia.com/rdp/cudnn-download">https://developer.nvidia.com/rdp/cudnn-download</a> で，同意ボタンを選択し，リストの中から，</p>
+<ul>
+<li>Download cuDNN v6.0 (April 27, 2017), for CUDA 8.0</li>
+</ul>
+<p>を選択します．（v7.0をインストールするとNeural Network Librariesが動作しません．） ダウンロードした圧縮ファイルを展開します．そして，展開してできた<code>cudnn-8.0-windows10-x64-v6\cuda</code>以下をすべて，<code>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0</code>にコピーします．</p>
+<h2>4. Miniconda</h2>
 <p><a href="https://conda.io/miniconda.html">https://conda.io/miniconda.html</a>で，</p>
 <ul>
 <li>Windows</li>
@@ -115,19 +127,19 @@
 </ul>
 <p>を選び，ダウンロードしたファイルを実行してインストールします．インストール中の選択肢は，すべてデフォルト設定のまま行います．Miniconda3 4.3.30 (64-bit)がインストールされました．</p>
 <p>以下のディープラーニング関連のパッケージは，仮想環境<code>dl</code>下にインストールすることにします．スタートメニューからAnaconda Promptを起動し，以下を実行します．</p>
-<div class="highlight"><pre><span></span>conda create -n dl
+<div class="highlight"><pre><span></span><span class="o">(</span>base<span class="o">)</span> &gt; conda create -n dl
 </pre></div>
 
 
-<h2>4. Theano</h2>
+<h2>5. Theano</h2>
 <p>Kerasのバックエンドとして，主にTensorFlowとTheanoという選択肢があります．ThensorFlowは，Kerasをインストールするときに自動でインストールされます．ここでは，Theanoをインストールしておきます．</p>
-<div class="highlight"><pre><span></span>activate dl
-conda install theano
+<div class="highlight"><pre><span></span><span class="o">(</span>base<span class="o">)</span> &gt; activate dl
+<span class="o">(</span>dl<span class="o">)</span> &gt; conda install theano
 </pre></div>
 
 
 <p><code>m2w64-toolchain</code>，<code>libpython</code>，<code>libgpuarray</code>などの依存パッケージも一緒にインストールされます．</p>
-<p>コントロールパネルで環境変数を設定します．</p>
+<p>コントロールパネルでユーザーの環境変数を設定します．</p>
 <ul>
 <li>変数名: <code>MKL_THREADING_LAYER</code></li>
 <li>変数値:  <code>GNU</code></li>
@@ -140,23 +152,32 @@ floatX = float32
 
 
 <p>実際にインポートしてみましょう．</p>
-<div class="highlight"><pre><span></span>python
+<div class="highlight"><pre><span></span><span class="o">(</span>dl<span class="o">)</span> &gt; python
 &gt;&gt;&gt; import theano
-Using cuDNN version <span class="m">7004</span> on context None
-Mapped name None to device cuda: GeForce GT 735M <span class="o">(</span><span class="m">0000</span>:01:00.0<span class="o">)</span>
+Using cuDNN version <span class="m">6021</span> on context None
+Mapped name None to device cuda: GeForce GTX <span class="m">1050</span> <span class="o">(</span><span class="m">0000</span>:01:00.0<span class="o">)</span>
 &gt;&gt;&gt; theano.__version__
-<span class="s1">&#39;1.0.0&#39;</span>
+<span class="s1">&#39;1.0.1&#39;</span>
 </pre></div>
 
 
 <p>正常に動いているようです．</p>
-<h2>5. Keras</h2>
+<h2>6. Keras</h2>
 <p>同じく仮想環境<code>dl</code>下で，Kerasをインストールします．</p>
-<div class="highlight"><pre><span></span>conda install keras
+<div class="highlight"><pre><span></span><span class="o">(</span>dl<span class="o">)</span> &gt; conda install keras
 </pre></div>
 
 
-<p>Kerasをインポートしてみます．Theanoをバックエンドに指定するために，<code>~\.keras\keras.json</code>を以下の内容で保存します．</p>
+<p>インポートしてみます．</p>
+<div class="highlight"><pre><span></span><span class="o">(</span>dl<span class="o">)</span> &gt; python
+&gt;&gt;&gt; import keras
+Using TensorFlow backend.
+&gt;&gt;&gt; keras.__version__
+<span class="s1">&#39;2.1.3&#39;</span>
+</pre></div>
+
+
+<p>Theanoをバックエンドに指定してみます．<code>~\.keras\keras.json</code>を以下の内容で保存します．</p>
 <div class="highlight"><pre><span></span><span class="p">{</span>
     <span class="nt">&quot;floatx&quot;</span><span class="p">:</span> <span class="s2">&quot;float32&quot;</span><span class="p">,</span>
     <span class="nt">&quot;epsilon&quot;</span><span class="p">:</span> <span class="mf">1e-07</span><span class="p">,</span>
@@ -167,28 +188,38 @@ Mapped name None to device cuda: GeForce GT 735M <span class="o">(</span><span c
 
 
 <p>インポートしてみます．</p>
-<div class="highlight"><pre><span></span>python
+<div class="highlight"><pre><span></span><span class="o">(</span>dl<span class="o">)</span> &gt; python
 &gt;&gt;&gt; import keras
 Using Theano backend.
-Using cuDNN version <span class="m">7004</span> on context None
-Mapped name None to device cuda: GeForce GT 735M <span class="o">(</span><span class="m">0000</span>:01:00.0<span class="o">)</span>
-&gt;&gt;&gt; keras.__version__
-<span class="s1">&#39;2.0.9&#39;</span>
+Using cuDNN version <span class="m">6021</span> on context None
+Mapped name None to device cuda: GeForce GTX <span class="m">1050</span> <span class="o">(</span><span class="m">0000</span>:01:00.0<span class="o">)</span>
 </pre></div>
 
 
-<h2>6. Neural Network Libraries</h2>
-<p>Neural Network Librariesは，VC++14（Visual Studio 2015相当）でコンパイルされているので、<a href="https://www.microsoft.com/ja-JP/download/details.aspx?id=52685">Visual Studio 2015のRuntime</a>が必要です．未インストールの場合はインストールしておきます．</p>
+<h2>7. Neural Network Libraries</h2>
 <p>以下の順番でNeural Network Librariesをインストールします．</p>
-<div class="highlight"><pre><span></span>conda install scipy scikit-image ipython
-pip install nnabla
-pip install nnabla-ext-cuda
-conda install pywin32
+<div class="highlight"><pre><span></span><span class="o">(</span>dl<span class="o">)</span> &gt; conda install scipy scikit-image ipython
+<span class="o">(</span>dl<span class="o">)</span> &gt; pip install nnabla
+<span class="o">(</span>dl<span class="o">)</span> &gt; pip install nnabla-ext-cuda
+<span class="o">(</span>dl<span class="o">)</span> &gt; conda install pywin32
+</pre></div>
+
+
+<p>インポートしてみます．</p>
+<div class="highlight"><pre><span></span><span class="o">(</span>dl<span class="o">)</span> &gt; python
+&gt;&gt;&gt; import nnabla
+<span class="m">2018</span>-02-04 <span class="m">10</span>:57:01,657 <span class="o">[</span>nnabla<span class="o">][</span>INFO<span class="o">]</span>: Initializing cuDNN extension...
+&gt;&gt;&gt; import nnabla_ext.cuda.cudnn
+<span class="m">2018</span>-02-04 <span class="m">10</span>:57:00,741 <span class="o">[</span>nnabla<span class="o">][</span>INFO<span class="o">]</span>: Initializing CUDA extension...
+<span class="m">2018</span>-02-04 <span class="m">10</span>:57:01,657 <span class="o">[</span>nnabla<span class="o">][</span>INFO<span class="o">]</span>: Initializing cuDNN extension...
 </pre></div>
 
 
 <p>以上で，ディープラーニングを実行する環境が整いました．</p>
-  </div>
+<p><span class="article-header-modified">
+      <i class="fa fa-pencil" aria-hidden="true"></i>
+      この記事は2018年02月04日 (日)に更新されました．
+    </span></p>  </div>
 
 
 </article>
