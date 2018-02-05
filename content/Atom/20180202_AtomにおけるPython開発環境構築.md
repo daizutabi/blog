@@ -1,4 +1,4 @@
-Modified: 2018-02-04
+Modified: 2018-02-05
 
 AtomテキストエディタにPython開発環境を構築します．細かい設定を丁寧に説明し，快適な開発環境を整備することを目指します．
 
@@ -251,6 +251,10 @@ autocomplete-plusのPython拡張です．本パッケージで提供される機
 * Use Fussy Matcher For Completions: false
 
 上のExtra Paths For Packagesの設定は一例です．Condaの`example`環境を登録しています．他にも登録したい仮想環境がある場合には，セミコロンで区切って追記します．
+
+## python-ident
+
+Pythonコード入力時にインデントを自動で調整します．
 
 ## atom-beautify
 

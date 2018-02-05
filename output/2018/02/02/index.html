@@ -288,30 +288,32 @@
 <li>Use Fussy Matcher For Completions: false</li>
 </ul>
 <p>上のExtra Paths For Packagesの設定は一例です．Condaの<code>example</code>環境を登録しています．他にも登録したい仮想環境がある場合には，セミコロンで区切って追記します．</p>
-<h2>11. atom-beautify</h2>
+<h2>11. python-ident</h2>
+<p>Pythonコード入力時にインデントを自動で調整します．</p>
+<h2>12. atom-beautify</h2>
 <p>Pythonコードを整形します．ide-pythonでも整形はできますが，atom-beautifyでは，<code>import</code>の並び替えができます．整形するためのPythonパッケージをインストールします：</p>
 <div class="highlight"><pre><span></span><span class="o">(</span>base<span class="o">)</span> &gt; pip install autopep8 isort
 </pre></div>
 
 
-<h3>11.1. Settings</h3>
+<h3>12.1. Settings</h3>
 <ul>
 <li>Executables &gt; autopep8: C:\Users\daizu\Miniconda3\Scripts\autopep8.exe</li>
 <li>Executables &gt; isort: C:\Users\daizu\Miniconda3\Scripts\isort.exe</li>
 <li>Sort imports: true</li>
 </ul>
-<h2>12. Hydrogen</h2>
+<h2>13. Hydrogen</h2>
 <p>Jupyter clientを使って，Atom上でPythonコードの実行ができます．インタラクティブな実行が可能なので，非常に重宝します．Hydrogenを使う仮想環境下で，以下を実行します：</p>
 <div class="highlight"><pre><span></span><span class="o">(</span>example<span class="o">)</span> &gt; conda install jupyter
 <span class="o">(</span>example<span class="o">)</span> &gt; python -m ipykernel install --user --name example
 </pre></div>
 
 
-<h3>12.1. Settings</h3>
+<h3>13.1. Settings</h3>
 <ul>
 <li>Language Mappings: {"python": "magicpython"}</li>
 </ul>
-<h3>12.2. Keymap</h3>
+<h3>13.2. Keymap</h3>
 <div class="highlight"><pre><span></span>&#39;atom-text-editor&#39;:
   &#39;f8&#39;: &#39;hydrogen:clear-results&#39;
   &#39;f9&#39;: &#39;hydrogen:run-all-above&#39;
@@ -319,29 +321,29 @@
 </pre></div>
 
 
-<h2>13. platformio-ide-terminal</h2>
+<h2>14. platformio-ide-terminal</h2>
 <p>Atom内でターミナルを実行します．</p>
-<h3>13.1. Settings</h3>
+<h3>14.1. Settings</h3>
 <ul>
 <li>Auto Run Command: C:\Users\daizu\Miniconda3\Scripts\activate.bat base</li>
 <li>Shell Override: C:\Windows\System32\cmd.exe</li>
 </ul>
-<h2>14. hydrogen-launcher</h2>
+<h2>15. hydrogen-launcher</h2>
 <p>Hydrogenで実行中のカーネルに接続されたJupyterコンソールを表示します．</p>
-<h3>14.1. Keymap</h3>
+<h3>15.1. Keymap</h3>
 <div class="highlight"><pre><span></span>&#39;atom-text-editor&#39;:
   &#39;ctrl-alt-j&#39;: &#39;hydrogen-launcher:launch-jupyter-console-in-platformio-terminal&#39;
 </pre></div>
 
 
-<h2>15. その他のパッケージ</h2>
+<h2>16. その他のパッケージ</h2>
 <p>Pythonとは直接関係ないですが，以下のパッケージもインストールするとよいでしょう．</p>
 <ul>
 <li>git-plus</li>
 <li>file-icons</li>
 <li>minimap系</li>
 </ul>
-<h2>16. 初期化スクリプト</h2>
+<h2>17. 初期化スクリプト</h2>
 <p>パッケージではありませんが，文字化けを防ぐために，[File] &gt; [Init Script...]を選択して，<code>init.coffee</code>を開き，次の行を追加します．</p>
 <div class="highlight"><pre><span></span><span class="c1"># init.coffee</span>
 <span class="nv">process.env.PYTHONIOENCODING = </span><span class="s">&quot;utf-8&quot;</span><span class="p">;</span>
@@ -351,7 +353,7 @@
 <p>以上で，開発環境が整いました．</p>
 <p><span class="article-header-modified">
       <i class="fa fa-pencil" aria-hidden="true"></i>
-      この記事は2018年02月04日 (日)に更新されました．
+      この記事は2018年02月05日 (月)に更新されました．
     </span></p>  </div>
 
 
