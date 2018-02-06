@@ -8,7 +8,7 @@
     <meta name="author" content="daizutabi" />
     <meta name="generator" content="Pelican (VoidyBootstrap theme)" />
 
-    <title>Pheasantでインラインコードを実行する - 大豆旅</title>
+    <title>Pheasantでソースコードを挿入する - 大豆旅</title>
 
         <link rel="stylesheet"
               href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
@@ -69,37 +69,46 @@
 <article itemscope="itemscope" itemtype="http://schema.org/BlogPosting">
   <header class="article-header">
 <div class="article-header">
-  <span class="article-header-date">2018年02月05日 (月)</span>
+  <span class="article-header-date">2018年02月06日 (火)</span>
   <span class="article-header-info">
     <i class="fa fa-folder"></i>
     <a href="../../../category/Pheasant/">Pheasant</a>
   </span>
-  <h1>Pheasantでインラインコードを実行する</h1>
+  <h1>Pheasantでソースコードを挿入する</h1>
 </div>  </header>
   <div class="content-body" itemprop="text articleBody">
-	<p>Pheasantパッケージは，MkDocsやPelicanなどの静的サイトジェネレータのプラグインです．これまで，Markdownのfenced codeの実行をサポートしていましたが，このたびインラインコードも実行できるように拡張しました．</p>
+	<p>Pheasantパッケージでは，Python実行環境にインポートされているオブジェクトのソースコードを記事の中に挿入することができます．</p>
 
 
-<p>インラインコードでは，<code>{{</code>と<code>}}</code>で囲んだ内部にPythonコードを書きます．次のようにfenced codeで変数を定義しておきましょう．</p>
-<div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">2</span>
+<p>この記事では，動作例を示すために，<code>nbformat</code>パッケージの<code>new_code_cell</code>関数の中身を見てみます．<a href="https://blog.daizutabi.net/2018/02/05/">「Pheasantでインラインコードを実行する」</a>で紹介した方法を早速使ってみましょう．</p>
+<div class="highlight"><pre><span></span><span class="p">{{</span><span class="kn">import</span> <span class="nn">nbformat</span><span class="p">}}</span>
+<span class="c1">#Code nbformat.v4.new_code_cell</span>
 </pre></div>
 
 
-<p>変数<code>a</code>に2が代入されました．この値は，どこからでも取得することができます．</p>
-<ul>
-<li><code>{{a}}</code> ⇒ 2</li>
-<li><code>{{3*a}}</code> ⇒ 6</li>
-</ul>
-<p>代入はインラインコード内で行うこともできます．</p>
-<ul>
-<li><code>{{b = 3}}a×b = {{a*b}}</code> ⇒ a×b = 6</li>
-</ul>
-<p>出力ないインラインコードは空文字列に変換されます．</p>
-<p>現在はまだ，テキストにしか対応していませんが，今後は画像なども出力できるように改良していく予定です．</p>
-<p><span class="article-header-modified">
-      <i class="fa fa-pencil" aria-hidden="true"></i>
-      この記事は2018年02月06日 (火)に更新されました．
-    </span></p>  </div>
+<p>一行目は，インラインコードを使って<code>nbformat</code>をインポートしています．二行目は，行頭に<code>#Code</code>を書いて，そのあとにスペースを挟んで表示させたいオブジェクト（ここでは関数）を記します．実行例を以下に示します．</p>
+<div class="pheasant-code">
+<p>Code 1. nbformat.v4.new_code_cell</p>
+<pre><code class="python">def new_code_cell(source='', **kwargs):
+    &quot;&quot;&quot;Create a new code cell&quot;&quot;&quot;
+    cell = NotebookNode(
+        cell_type='code',
+        metadata=NotebookNode(),
+        execution_count=None,
+        source=source,
+        outputs=[],
+    )
+    cell.update(kwargs)
+
+    validate(cell, 'code_cell')
+    return cell
+</code></pre>
+</div>
+
+<p><code>#Code</code>はPheasantの<code>number</code>プラグインで検出されて，自動でコード番号が付与されます．</p>
+<p>自作のパッケージを解説する場合などに役立つ機能だと思います．ソースファイルのほかにMarkdown記事の中にもソースを書くと，二重管理になってしまい，同一性を保つのに苦労します．今回の方法だと，常に最新の現に今使っているソースを表示させることができます．</p>
+<p>今後，表示する行数の指定やシンタックスハイライトなどの機能を追加していく予定です．</p>
+  </div>
 
 
 </article>
