@@ -8,7 +8,7 @@
     <meta name="author" content="daizutabi" />
     <meta name="generator" content="Pelican (VoidyBootstrap theme)" />
 
-    <title>Pheasantでソースコードを挿入する - 大豆旅</title>
+    <title>Happy Hacking Keyboardの設定 - 大豆旅</title>
 
         <link rel="stylesheet"
               href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
@@ -69,34 +69,46 @@
 <article itemscope="itemscope" itemtype="http://schema.org/BlogPosting">
   <header class="article-header">
 <div class="article-header">
-  <span class="article-header-date">2018年02月06日 (火)</span>
+  <span class="article-header-date">2018年02月11日 (日)</span>
   <span class="article-header-info">
     <i class="fa fa-folder"></i>
-    <a href="../../../category/Pheasant/">Pheasant</a>
+    <a href="../../../category/Misc/">Misc</a>
   </span>
-  <h1>Pheasantでソースコードを挿入する</h1>
+  <h1>Happy Hacking Keyboardの設定</h1>
 </div>  </header>
   <div class="content-body" itemprop="text articleBody">
-	<p>Pheasantパッケージでは，Python実行環境にインポートされているオブジェクトのソースコードを記事の中に挿入することができます．</p>
+	<p><a href="https://www.pfu.fujitsu.com/hhkeyboard/type-s/">Happy Hacking Keyboard Professional2 Type-S</a>英語配列モデルを購入しました．より快適に使うための設定をまとめておきます．</p>
 
 
-<p>この記事では，動作例を示すために，<code>nbformat</code>パッケージの<code>new_code_cell</code>関数の中身を見てみます．<a href="https://blog.daizutabi.net/2018/02/05/">「Pheasantでインラインコードを実行する」</a>で紹介した方法を早速使ってみましょう．</p>
-<div class="codehilite pheasant-fenced-code pheasant-jupyter-source"><pre>```markdown
-{{import nbformat}}
-#Code nbformat.v4.new_code_cell
-```</pre></div>
-
-<p>一行目は，インラインコードを使って<code>nbformat</code>をインポートしています．二行目は，行頭に<code>#Code</code>を書いて，そのあとにスペースを挟んで表示させたいオブジェクト（ここでは関数）を記します．実行例を以下に示します．</p>
-<div class="pheasant-fenced-code pheasant-jupyter-input codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">nbformat</span>
-</pre></div>
-
-<div class="pheasant-code">
-<p>Code 1 nbformat.v4.new_code_cell</p>
-<p><code>#Code</code>はPheasantの<code>number</code>プラグインで検出されて，自動でコード番号が付与されます．</p>
-</div>
-
-<p>自作のパッケージを解説する場合などに役立つ機能だと思います．ソースファイルのほかにMarkdown記事の中にもソースを書くと，二重管理になってしまい，同一性を保つのに苦労します．今回の方法だと，常に最新の現に今使っているソースを表示させることができます．</p>
-<p>今後，表示する行数の指定やシンタックスハイライトなどの機能を追加していく予定です．</p>
+<p>以下の記事を参考にしました．</p>
+<ul>
+<li><a href="http://blog.shos.info/archives/2012/11/windows_8_pc.html">[Windows 8/10] 日本語キーボードのノートPCで外付け英語キーボードを使用する方法</a></li>
+<li><a href="http://evacore.info/hardware-hhkb-alt/">【HHKB】英語キーボードの右Altキーに［全角／半角］キーを割り当てる</a></li>
+</ul>
+<h2>1 背面スイッチ</h2>
+<p>以下の設定にしています．</p>
+<ul>
+<li>Lite拡張モード（PC）: SW1 ON, SW2 OFF</li>
+<li>左◇ ⇒ Fn: SW4 ON</li>
+</ul>
+<h2>2 レジスタの設定</h2>
+<ul>
+<li>LayerDriver JPN: kbdax2.dll</li>
+<li>OverrideKeyboardIdentifier: AX_105KEY</li>
+<li>OverriedKeyboardSubtype: 2</li>
+</ul>
+<p><img alt="png" src="../../../images/20180211/reg.png"></p>
+<h2>3 言語の追加</h2>
+<p>「英語(米国)」を追加しました．</p>
+<p><img alt="png" src="../../../images/20180211/lang.png"></p>
+<h2>4 設定状況</h2>
+<p>以上の設定で以下のような動作になります．</p>
+<ul>
+<li>左◇キー ⇒ Fnキー</li>
+<li>右◇キー ⇒ Windowsキー</li>
+<li>右Altキー ⇒［全角／半角］キー</li>
+<li>ノートPCのキー配列は日本語のまま</li>
+</ul>
   </div>
 
 
