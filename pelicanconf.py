@@ -67,6 +67,7 @@ PHEASANT = {
     'jupyter': {'kernel_name': {'python': 'python3'},
                 'template_file': 'output_text_outside.jinja2'},
     'number': {'enabled': True, 'level': 2},
+    'code': {'enabled': True},
 }
 
 
