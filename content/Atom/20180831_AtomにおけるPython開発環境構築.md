@@ -226,17 +226,21 @@ Vimライクなキー操作で補完候補間を移動できるようにしま�
 
 ## ide-python
 
-Atom IDE を使ってPython開発をするためのパッケージです．言語サーバーが必要なので，Condaの`base`環境下にインストールします：
+Atom IDE を使ってPython開発をするためのパッケージです．言語サーバーが必要なので，Condaの`atom`環境下にインストールします：
 
 ```bash
-(base) > pip install python-language-server
+(base) > conda create -n atom python=3.6
+(base) > conda activate atom
+(atom) > pip install python-language-server[all]==0.19.0
 ```
+
+2018/9/1の時点では，Version 0.19.0を指定しないと動作しない．
 
 ### Settings
 
 Condaの`base`環境にインストールされた`pyls.exe`をフルパスで指定します．
 
-* Python Language Server Path: C:\Users\daizu\Miniconda3\Scripts\pyls.exe
+* Python Executable: C:\Users\daizu\Miniconda3\envs\atom\python.exe
 
 ## autocomplete-python
 
@@ -261,13 +265,13 @@ Pythonコード入力時にインデントを自動で調整します．
 Pythonコードを整形します．ide-pythonでも整形はできますが，atom-beautifyでは，`import`の並び替えができます．整形するためのPythonパッケージをインストールします：
 
 ```bash
-(base) > pip install autopep8 isort
+(atom) > pip install isort
 ```
 
 ### Settings
 
-* Executables > autopep8: C:\Users\daizu\Miniconda3\Scripts\autopep8.exe
-* Executables > isort: C:\Users\daizu\Miniconda3\Scripts\isort.exe
+* Executables > autopep8: C:\Users\daizu\Miniconda3\envs\atom\Scripts\autopep8.exe
+* Executables > isort: C:\Users\daizu\Miniconda3\envs\atom\Scripts\isort.exe
 * Sort imports: true
 
 ## Hydrogen
@@ -311,6 +315,15 @@ Hydrogenで実行中のカーネルに接続されたJupyterコンソールを�
 'atom-text-editor':
   'ctrl-alt-j': 'hydrogen-launcher:launch-jupyter-console-in-platformio-terminal'
 ```
+
+## linter-mypy
+
+タイプヒントを診断します．
+
+```bash
+(atom) pip install mypy
+```
+
 
 ## その他のパッケージ
 

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="daizutabi" />
+    <meta name="generator" content="Pelican (VoidyBootstrap theme)" />
+
+    <title>JupyterLabのカスタマイズ - 大豆旅</title>
+
+        <link rel="stylesheet"
+              href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+              integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+              crossorigin="anonymous" />
+      <link rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+            integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+            crossorigin="anonymous">
+
+
+      <link rel="stylesheet" href="https://blog.daizutabi.net/theme/css/custom/custom.css" />
+      <link rel="stylesheet" href="https://blog.daizutabi.net/theme/css/pygment.css" />
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js" integrity="sha384-FFgGfda92tXC8nCNOxrCQ3R8x1TNkMFqDZVQdDaaJiiVbjkPBXIJBx0o7ETjy8Bh" crossorigin="anonymous"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js" integrity="sha384-ZoaMbDF+4LeFxg6WdScQ9nnR1QC2MIRxA1O9KWEXQwns1G8UNyIEZIQidzb0T1fo" crossorigin="anonymous"></script>
+    <![endif]-->
+
+    <link rel="shortcut icon" href="https://blog.daizutabi.net/favicon.ico" type="image/vnd.microsoft.icon">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container">
+	   <div class="navbar-header">
+		<button type="button" class="navbar-toggle"
+				data-toggle="collapse" data-target="#main-navbar-collapse">
+		  <span class="sr-only">Toggle navigation</span>
+		  <span class="icon-bar"></span>
+		  <span class="icon-bar"></span>
+		  <span class="icon-bar"></span>
+		</button>
+		<a class="navbar-brand" href="https://blog.daizutabi.net/" rel="home">
+          <i class="fa fa-home fa-fw fa-lg"> </i> </a>
+       </div>
+
+      <div class="collapse navbar-collapse" id="main-navbar-collapse">
+        <ul class="nav navbar-nav">
+            <li class="divider"></li>
+            <li class="">
+              <a href="https://blog.daizutabi.net/archives.html">Archives</a>
+            </li>
+          <li class="divider"></li>
+        </ul> <!-- /nav -->
+      </div> <!-- /navbar-collapse -->
+	  </div> <!-- /container -->
+    </nav> <!-- /navbar -->
+
+<div class="jumbotron" id="overview">
+  <div class="container">
+	<h1><a href="https://blog.daizutabi.net/">大豆旅</a></h1>
+  </div>
+</div>
+
+    <div class="container" id="main-container">
+        <div class="" id="content">
+<article itemscope="itemscope" itemtype="http://schema.org/BlogPosting">
+  <header class="article-header">
+<div class="article-header">
+  <span class="article-header-date">2018年09月02日 (日)</span>
+  <span class="article-header-info">
+    <i class="fa fa-folder"></i>
+    <a href="https://blog.daizutabi.net/category/Jupyter/">Jupyter</a>
+  </span>
+  <h1>JupyterLabのカスタマイズ</h1>
+</div>  </header>
+  <div class="content-body" itemprop="text articleBody">
+	<p>この記事では，<a href="https://jupyterlab.readthedocs.io/en/latest/">JupyterLab</a>をカスタマイズする方法を説明します．</p>
+
+
+<h2>1 JupyterLab</h2>
+<div class="highlight"><pre><span></span><span class="o">(</span>base<span class="o">)</span> conda create -n jupyter <span class="nv">python</span><span class="o">=</span><span class="m">3</span>.6
+<span class="o">(</span>base<span class="o">)</span> conda activate jupyter
+<span class="o">(</span>jupyter<span class="o">)</span> conda install jupyterlab
+</pre></div>
+
+
+<h2>2 jupyterlab-vim</h2>
+<p><a href="https://nodejs.org/ja/">Node.js</a>のバージョン8.11.4 LTSをインストールする．</p>
+<div class="highlight"><pre><span></span><span class="o">(</span>jupyter<span class="o">)</span> &gt; conda install -c conda-forge <span class="nv">nodejs</span><span class="o">==</span><span class="m">9</span>.11.1
+<span class="o">(</span>jupyter<span class="o">)</span> &gt; npm install -g npm
+<span class="o">(</span>jupyter<span class="o">)</span> &gt; npm install -g --require webpack webpack-command
+<span class="o">(</span>jupyter<span class="o">)</span> &gt; jupyter labextension install jupyterlab_vim
+</pre></div>
+
+
+<h2>3 拡張機能の有効化</h2>
+<p><code>base</code>環境でJupyter Notebookを立ち上げます．Nbextensionsタブを開いて，以下の拡張をチェックして有効化します．</p>
+<ul>
+<li>Autopep8</li>
+<li>Codefolding</li>
+<li>ExecuteTime</li>
+<li>Table of Contents (2)</li>
+<li>VIM binding</li>
+</ul>
+<p>一度Jupyter Notebookをシャットダウンして，再度立ち上げると拡張機能が使えるようになっているはずです．</p>
+<h2>4 j, kキーのカスタマイズ</h2>
+<p>Notebookのセルのうち，Markdownセルはソフトラップで表示させるので，j, kキーで上下移動する際に，論理行ではなく，画面上の行で移動したほうが便利です．設定方法は，<a href="https://github.com/lambdalisue/jupyter-vim-binding">公式ページ</a>で説明されています．</p>
+<h2>5 スタイルシート</h2>
+<p>Notebookのスタイルを変更してみます．まずは設定ファイルを生成します．</p>
+<div class="highlight"><pre><span></span><span class="o">(</span>base<span class="o">)</span> &gt; jupyter notebook --generate-config
+</pre></div>
+
+
+<p>生成された<code>jupyter_notebook_config.py</code>をエディタで開いて，次の行を追加します．</p>
+<div class="highlight"><pre><span></span><span class="n">c</span><span class="o">.</span><span class="n">NotebookApp</span><span class="o">.</span><span class="n">extra_static_paths</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;custom/custom.css&#39;</span><span class="p">]</span>
+</pre></div>
+
+
+<p>スタイルシートは<code>~/.jupyter/custom/custom.css</code>に記載します．スタイルが変更されないようであれば，ブラウザのキャッシュをクリアするとよいでしょう．</p>
+<p>スタイルシートの例を以下に示します．</p>
+<div class="highlight"><pre><span></span><span class="nt">div</span><span class="p">.</span><span class="nc">container</span> <span class="p">{</span>
+    <span class="k">font-family</span><span class="p">:</span> <span class="s2">&quot;Meiryo UI&quot;</span><span class="p">;</span>
+    <span class="k">font-size</span><span class="p">:</span> <span class="mi">18</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">line-height</span><span class="p">:</span> <span class="mi">130</span><span class="kt">%</span>
+<span class="p">}</span>
+
+<span class="nt">pre</span> <span class="p">{</span>
+    <span class="k">font-family</span><span class="p">:</span>  <span class="s2">&quot;Migu 1M&quot;</span><span class="p">,</span> <span class="s2">&quot;consolas&quot;</span><span class="p">,</span> <span class="s2">&quot;IPAGothic&quot;</span><span class="p">;</span>
+    <span class="k">font-size</span><span class="p">:</span> <span class="mi">16</span><span class="kt">px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">div</span><span class="p">.</span><span class="nc">CodeMirror</span> <span class="p">{</span>
+    <span class="k">font-family</span><span class="p">:</span>  <span class="s2">&quot;Migu 1M&quot;</span><span class="p">,</span> <span class="s2">&quot;consolas&quot;</span><span class="p">,</span> <span class="s2">&quot;IPAGothic&quot;</span><span class="p">;</span>
+    <span class="k">font-size</span><span class="p">:</span> <span class="mi">16</span><span class="kt">px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">div</span><span class="p">.</span><span class="nc">cell</span> <span class="p">{</span>
+    <span class="k">padding-top</span><span class="p">:</span> <span class="mi">2</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">padding-bottom</span><span class="p">:</span> <span class="mi">2</span><span class="kt">px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">div</span><span class="p">.</span><span class="nc">inner_cell</span> <span class="p">{</span>
+    <span class="k">margin</span><span class="p">:</span> <span class="mi">0</span><span class="kt">px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">div</span><span class="p">.</span><span class="nc">prompt</span> <span class="p">{</span>
+    <span class="k">padding-top</span><span class="p">:</span> <span class="mi">8</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">font-family</span><span class="p">:</span> <span class="s2">&quot;Meiryo UI&quot;</span><span class="p">;</span>
+    <span class="k">font-size</span><span class="p">:</span> <span class="mi">8</span><span class="kt">px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">cm-s-ipython</span> <span class="nt">span</span><span class="p">.</span><span class="nc">cm-keyword</span> <span class="p">{</span>
+  <span class="k">font-weight</span><span class="p">:</span> <span class="kc">normal</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">#</span><span class="nn">notebook</span> <span class="p">{</span>
+    <span class="k">counter-reset</span><span class="p">:</span> <span class="n">chapter</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">rendered_html</span> <span class="nt">h1</span> <span class="p">{</span>
+    <span class="k">font-size</span><span class="p">:</span> <span class="mi">24</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">padding</span><span class="p">:</span> <span class="mf">.55</span><span class="kt">em</span> <span class="mi">1</span><span class="kt">em</span> <span class="mf">.55</span><span class="kt">em</span> <span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">border</span><span class="p">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="kc">solid</span> <span class="mh">#ccc</span><span class="p">;</span>
+    <span class="k">border-top</span><span class="p">:</span> <span class="mi">3</span><span class="kt">px</span> <span class="kc">solid</span> <span class="mh">#3498db</span><span class="p">;</span>
+    <span class="k">background</span><span class="p">:</span> <span class="bp">-webkit-</span><span class="nb">linear-gradient</span><span class="p">(</span><span class="kc">top</span><span class="p">,</span> <span class="mh">#fff</span> <span class="mi">0</span><span class="kt">%</span><span class="p">,</span> <span class="mh">#f0f0fa</span> <span class="mi">100</span><span class="kt">%</span><span class="p">);</span>
+    <span class="k">background</span><span class="p">:</span> <span class="nb">linear-gradient</span><span class="p">(</span><span class="kc">to</span> <span class="kc">bottom</span><span class="p">,</span> <span class="mh">#fff</span> <span class="mi">0</span><span class="kt">%</span><span class="p">,</span> <span class="mh">#f0f0fa</span> <span class="mi">100</span><span class="kt">%</span><span class="p">);</span>
+    <span class="k">box-shadow</span><span class="p">:</span> <span class="mi">0</span> <span class="mi">-1</span><span class="kt">px</span> <span class="mi">0</span> <span class="nb">rgba</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="kc">inset</span><span class="p">;</span>
+    <span class="k">border-radius</span><span class="p">:</span> <span class="mi">5</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">color</span><span class="p">:</span> <span class="mh">#333366</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">rendered_html</span> <span class="nt">h2</span> <span class="p">{</span>
+    <span class="k">font-size</span><span class="p">:</span> <span class="mi">20</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">padding</span><span class="p">:</span> <span class="mf">.35</span><span class="kt">em</span> <span class="mi">1</span><span class="kt">em</span> <span class="mf">.35</span><span class="kt">em</span> <span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">border</span><span class="p">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="kc">solid</span> <span class="mh">#ccc</span><span class="p">;</span>
+    <span class="k">background</span><span class="p">:</span> <span class="bp">-webkit-</span><span class="nb">linear-gradient</span><span class="p">(</span><span class="kc">top</span><span class="p">,</span> <span class="mh">#fff</span> <span class="mi">0</span><span class="kt">%</span><span class="p">,</span> <span class="mh">#f0f0fa</span> <span class="mi">100</span><span class="kt">%</span><span class="p">);</span>
+    <span class="k">background</span><span class="p">:</span> <span class="nb">linear-gradient</span><span class="p">(</span><span class="kc">to</span> <span class="kc">bottom</span><span class="p">,</span> <span class="mh">#fff</span> <span class="mi">0</span><span class="kt">%</span><span class="p">,</span> <span class="mh">#f0f0fa</span> <span class="mi">100</span><span class="kt">%</span><span class="p">);</span>
+    <span class="k">box-shadow</span><span class="p">:</span> <span class="mi">0</span> <span class="mi">-1</span><span class="kt">px</span> <span class="mi">0</span> <span class="nb">rgba</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="kc">inset</span><span class="p">;</span>
+    <span class="k">border-radius</span><span class="p">:</span> <span class="mi">5</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">color</span><span class="p">:</span> <span class="mh">#333366</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">rendered_html</span> <span class="nt">h3</span> <span class="p">{</span>
+    <span class="k">font-size</span><span class="p">:</span> <span class="mi">16</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">margin</span><span class="p">:</span> <span class="mi">10</span><span class="kt">px</span> <span class="mi">10</span><span class="kt">px</span> <span class="mi">0</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="k">padding</span><span class="p">:</span> <span class="mf">.15</span><span class="kt">em</span> <span class="mi">0</span><span class="kt">em</span> <span class="mf">.15</span><span class="kt">em</span> <span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">border-bottom</span><span class="p">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="kc">solid</span> <span class="mh">#d0d0fa</span><span class="p">;</span>
+    <span class="k">color</span><span class="p">:</span> <span class="mh">#333366</span><span class="p">;</span>
+    <span class="k">background</span><span class="p">:</span> <span class="bp">-webkit-</span><span class="nb">linear-gradient</span><span class="p">(</span><span class="kc">top</span><span class="p">,</span> <span class="mh">#fff</span> <span class="mi">80</span><span class="kt">%</span><span class="p">,</span> <span class="mh">#f0f0fa</span> <span class="mi">100</span><span class="kt">%</span><span class="p">);</span>
+    <span class="k">background</span><span class="p">:</span> <span class="nb">linear-gradient</span><span class="p">(</span><span class="kc">to</span> <span class="kc">bottom</span><span class="p">,</span> <span class="mh">#fff</span> <span class="mi">80</span><span class="kt">%</span><span class="p">,</span> <span class="mh">#f0f0fa</span> <span class="mi">100</span><span class="kt">%</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">rendered_html</span> <span class="nt">h4</span> <span class="p">{</span>
+    <span class="k">font-size</span><span class="p">:</span> <span class="mi">14</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">margin</span><span class="p">:</span> <span class="mi">8</span><span class="kt">px</span> <span class="mi">10</span><span class="kt">px</span> <span class="mi">0</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="k">padding</span><span class="p">:</span> <span class="mf">.15</span><span class="kt">em</span> <span class="mi">0</span><span class="kt">px</span> <span class="mf">.15</span><span class="kt">em</span> <span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">border-bottom</span><span class="p">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="kc">solid</span> <span class="mh">#d0d0fa</span><span class="p">;</span>
+    <span class="k">color</span><span class="p">:</span> <span class="mh">#333366</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">rendered_html</span> <span class="nt">h2</span><span class="p">:</span><span class="nd">before</span> <span class="p">{</span>
+    <span class="k">font-size</span><span class="p">:</span> <span class="mi">14</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">color</span><span class="p">:</span> <span class="kc">gray</span><span class="p">;</span>
+    <span class="k">content</span><span class="p">:</span> <span class="nb">counter</span><span class="p">(</span><span class="n">chapter</span><span class="p">)</span><span class="s2">&quot;. &quot;</span><span class="p">;</span>
+    <span class="k">counter-increment</span><span class="p">:</span> <span class="n">chapter</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">rendered_html</span> <span class="nt">h3</span><span class="p">:</span><span class="nd">before</span> <span class="p">{</span>
+    <span class="k">font-size</span><span class="p">:</span> <span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">color</span><span class="p">:</span> <span class="kc">gray</span><span class="p">;</span>
+    <span class="k">content</span><span class="p">:</span> <span class="s1">&#39;■ &#39;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">rendered_html</span> <span class="nt">h4</span><span class="p">:</span><span class="nd">before</span> <span class="p">{</span>
+    <span class="k">font-size</span><span class="p">:</span> <span class="mi">8</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">color</span><span class="p">:</span> <span class="kc">gray</span><span class="p">;</span>
+    <span class="k">content</span><span class="p">:</span> <span class="s1">&#39;- &#39;</span>
+<span class="p">}</span>
+
+<span class="nt">div</span><span class="p">.</span><span class="nc">text_cell_render</span> <span class="p">{</span>
+    <span class="k">padding-left</span><span class="p">:</span> <span class="mi">0</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">padding-right</span><span class="p">:</span> <span class="mi">0</span><span class="kt">px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">div</span><span class="p">.</span><span class="nc">text_cell_render</span> <span class="nt">p</span> <span class="p">{</span>
+    <span class="k">margin-left</span><span class="p">:</span> <span class="mi">20</span><span class="kt">px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">div</span><span class="p">.</span><span class="nc">output_subarea</span> <span class="p">{</span>
+    <span class="k">padding-left</span><span class="p">:</span> <span class="mi">20</span><span class="kt">px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">div</span><span class="p">.</span><span class="nc">timing_area</span> <span class="p">{</span>
+    <span class="k">color</span><span class="p">:</span> <span class="kc">gray</span><span class="p">;</span>
+    <span class="k">font-size</span><span class="p">:</span> <span class="mi">8</span><span class="kt">px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">table</span><span class="p">.</span><span class="nc">dataframe</span> <span class="p">{</span>
+    <span class="k">border-collapse</span><span class="p">:</span> <span class="kc">collapse</span><span class="p">;</span>
+    <span class="k">border</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
+    <span class="k">font-size</span><span class="p">:</span> <span class="mi">12</span><span class="kt">px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">dataframe</span> <span class="nt">thead</span> <span class="nt">tr</span><span class="o">,</span>
+<span class="p">.</span><span class="nc">dataframe</span> <span class="nt">thead</span> <span class="nt">th</span><span class="o">,</span>
+<span class="p">.</span><span class="nc">dataframe</span> <span class="nt">tbody</span> <span class="nt">tr</span><span class="o">,</span>
+<span class="p">.</span><span class="nc">dataframe</span> <span class="nt">tbody</span> <span class="nt">th</span><span class="o">,</span>
+<span class="p">.</span><span class="nc">dataframe</span> <span class="nt">tbody</span> <span class="nt">td</span> <span class="p">{</span>
+    <span class="k">border</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
+    <span class="k">text-align</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
+    <span class="k">padding-left</span><span class="p">:</span> <span class="mi">4</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">padding-right</span><span class="p">:</span> <span class="mi">4</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">padding-top</span><span class="p">:</span> <span class="mi">0</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">padding-bottom</span><span class="p">:</span> <span class="mi">0</span><span class="kt">px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">dataframe</span> <span class="nt">thead</span> <span class="nt">th</span> <span class="p">{</span>
+    <span class="k">color</span><span class="p">:</span> <span class="kc">darkblue</span><span class="p">;</span>
+    <span class="k">background-color</span><span class="p">:</span> <span class="kc">lightcyan</span><span class="p">;</span>
+    <span class="k">border</span><span class="p">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="kc">solid</span> <span class="mh">#333366</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">dataframe</span> <span class="nt">tbody</span> <span class="nt">th</span> <span class="p">{</span>
+    <span class="k">color</span><span class="p">:</span> <span class="kc">black</span><span class="p">;</span>
+    <span class="k">background-color</span><span class="p">:</span> <span class="mh">#ffffee</span><span class="p">;</span>
+    <span class="k">border</span><span class="p">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="kc">solid</span> <span class="mh">#666633</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">dataframe</span> <span class="nt">tbody</span> <span class="nt">td</span> <span class="p">{</span>
+    <span class="k">color</span><span class="p">:</span> <span class="kc">black</span><span class="p">;</span>
+    <span class="k">background-color</span><span class="p">:</span> <span class="mh">#fcfcfc</span><span class="p">;</span>
+    <span class="k">border-bottom</span><span class="p">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="kc">solid</span> <span class="mh">#b9b9b9</span><span class="p">;</span>
+    <span class="k">border-right</span><span class="p">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="kc">solid</span> <span class="mh">#b9b9b9</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">dataframe</span> <span class="nt">tr</span> <span class="nt">th</span><span class="p">:</span><span class="nd">last-child</span><span class="o">,</span>
+<span class="p">.</span><span class="nc">dataframe</span> <span class="nt">tr</span> <span class="nt">td</span><span class="p">:</span><span class="nd">last-child</span> <span class="p">{</span>
+    <span class="k">border-right</span><span class="p">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="kc">solid</span> <span class="mh">#555544</span><span class="p">;</span>
+    <span class="k">box-shadow</span><span class="p">:</span> <span class="mi">2</span><span class="kt">px</span> <span class="mi">2</span><span class="kt">px</span> <span class="mi">6</span><span class="kt">px</span> <span class="nb">rgba</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mf">0.1</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">dataframe</span> <span class="nt">tr</span><span class="p">:</span><span class="nd">last-child</span> <span class="nt">td</span><span class="o">,</span>
+<span class="p">.</span><span class="nc">dataframe</span> <span class="nt">tr</span><span class="p">:</span><span class="nd">last-child</span> <span class="nt">th</span> <span class="p">{</span>
+    <span class="k">border-bottom</span><span class="p">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="kc">solid</span> <span class="mh">#555544</span><span class="p">;</span>
+    <span class="k">box-shadow</span><span class="p">:</span> <span class="mi">2</span><span class="kt">px</span> <span class="mi">2</span><span class="kt">px</span> <span class="mi">6</span><span class="kt">px</span> <span class="nb">rgba</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mf">0.1</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">dataframe</span> <span class="nt">tbody</span> <span class="nt">tr</span><span class="p">:</span><span class="nd">nth-child</span><span class="o">(</span><span class="nt">2n</span><span class="o">+</span><span class="nt">1</span><span class="o">)</span> <span class="nt">td</span> <span class="p">{</span>
+    <span class="k">background</span><span class="p">:</span> <span class="mh">#f1f6fc</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+  </div>
+
+
+</article>
+        </div><!-- /content -->
+
+    </div><!--/.container /#main-container -->
+
+    <footer id="site-footer">
+      <address id="site-colophon">
+        <p class="text-center text-muted">
+        Site built using <a href="http://getpelican.com/" target="_blank">Pelican</a>
+        &nbsp;&bull;&nbsp; Theme based on
+        <a href="http://www.voidynullness.net/page/voidy-bootstrap-pelican-theme/"
+           target="_blank">VoidyBootstrap</a> by
+        <a href="http://www.robertiwancz.com/"
+           target="_blank">RKI</a>
+        </p>
+      </address><!-- /colophon  -->
+    </footer>
+
+
+    <!-- javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+
+
+  </body>
+</html>

@@ -72,7 +72,7 @@
   <span class="article-header-date">2018年09月01日 (土)</span>
   <span class="article-header-info">
     <i class="fa fa-folder"></i>
-    <a href="https://blog.daizutabi.net/category/Deep Learning/">Deep Learning</a>
+    <a href="https://blog.daizutabi.net/category/Machine Learning/">Machine Learning</a>
   </span>
   <h1>機械学習の準備</h1>
 </div>  </header>
@@ -130,11 +130,12 @@
 
 
 <h2>4 仮想環境の整備</h2>
-<p>仮想環境<code>ml</code>を作り，この下にインストールしていきます．TensorFlowがPython 3.7に対応していないので，Pythonバージョンを3.6にします．3行目は，TensorFlowおよびKerasで必要となる一般的なパッケージをインストールします（他にtermcolor，werkzeugなどを指定してもよい）．また，Numpyはバージョンを明示しておきます（TensorFlow用）．</p>
-<div class="highlight"><pre><span></span><span class="o">(</span>base<span class="o">)</span> &gt; conda create -n ml <span class="nv">python</span><span class="o">=</span><span class="m">3</span>.6 <span class="nv">setuptools</span><span class="o">=</span><span class="m">39</span>.1.0
+<p>仮想環境<code>ml</code>を作り，この下にインストールしていきます．TensorFlowがPython 3.7に対応していないので，Pythonバージョンを3.6にします．3，4行目では，TensorFlowおよびKerasで必要となる一般的なパッケージのインストールも行っています．また，NumpyはTensorFlow用にバージョンを明示しておきます．</p>
+<div class="highlight"><pre><span></span><span class="o">(</span>base<span class="o">)</span> &gt; conda install jupyterlab
+<span class="o">(</span>base<span class="o">)</span> &gt; conda create -n ml <span class="nv">python</span><span class="o">=</span><span class="m">3</span>.6 <span class="nv">setuptools</span><span class="o">=</span><span class="m">39</span>.1.0
 <span class="o">(</span>base<span class="o">)</span> &gt; conda activate ml
 <span class="o">(</span>ml<span class="o">)</span> &gt; conda install cython markdown pyyaml h5py <span class="nv">numpy</span><span class="o">==</span><span class="m">1</span>.14.5
-<span class="o">(</span>ml<span class="o">)</span> &gt; conda install jupyterlab scikit-learn seaborn
+<span class="o">(</span>ml<span class="o">)</span> &gt; conda install termcolor werkzeug ipykernel scikit-learn seaborn
 </pre></div>
 
 
@@ -164,8 +165,7 @@ Using TensorFlow backend.
 </pre></div>
 
 
-<p>Kerasの動作確認をします． [MNIST_CNN</p>
-<p><a href="https://raw.githubusercontent.com/keras-team/keras/master/examples/mnist_cnn.py">MNIST_CNN</a>のサンプルをダウンロードし，実行します．</p>
+<p>Kerasの動作確認をします． <a href="https://raw.githubusercontent.com/keras-team/keras/master/examples/mnist_cnn.py">MNIST_CNN</a>のサンプルをダウンロードし，実行します．</p>
 <div class="highlight"><pre><span></span><span class="o">(</span>ml<span class="o">)</span> &gt; python mnist_cnn.py
 <span class="o">(</span>中略<span class="o">)</span>
 <span class="m">60000</span>/60000 <span class="o">[==============================]</span> - 13s 220us/step - loss: <span class="m">0</span>.2662 - acc: <span class="m">0</span>.9178 - val_loss: <span class="m">0</span>.0609 - val_acc: <span class="m">0</span>.9817

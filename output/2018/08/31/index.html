@@ -20,15 +20,15 @@
             crossorigin="anonymous">
 
 
-      <link rel="stylesheet" href="../../../theme/css/custom/custom.css" />
-      <link rel="stylesheet" href="../../../theme/css/pygment.css" />
+      <link rel="stylesheet" href="https://blog.daizutabi.net/theme/css/custom/custom.css" />
+      <link rel="stylesheet" href="https://blog.daizutabi.net/theme/css/pygment.css" />
 
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js" integrity="sha384-FFgGfda92tXC8nCNOxrCQ3R8x1TNkMFqDZVQdDaaJiiVbjkPBXIJBx0o7ETjy8Bh" crossorigin="anonymous"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js" integrity="sha384-ZoaMbDF+4LeFxg6WdScQ9nnR1QC2MIRxA1O9KWEXQwns1G8UNyIEZIQidzb0T1fo" crossorigin="anonymous"></script>
     <![endif]-->
 
-    <link rel="shortcut icon" href="../../../favicon.ico" type="image/vnd.microsoft.icon">
+    <link rel="shortcut icon" href="https://blog.daizutabi.net/favicon.ico" type="image/vnd.microsoft.icon">
   </head>
 
   <body>
@@ -42,7 +42,7 @@
 		  <span class="icon-bar"></span>
 		  <span class="icon-bar"></span>
 		</button>
-		<a class="navbar-brand" href="../../../" rel="home">
+		<a class="navbar-brand" href="https://blog.daizutabi.net/" rel="home">
           <i class="fa fa-home fa-fw fa-lg"> </i> </a>
        </div>
 
@@ -50,7 +50,7 @@
         <ul class="nav navbar-nav">
             <li class="divider"></li>
             <li class="">
-              <a href="../../../archives.html">Archives</a>
+              <a href="https://blog.daizutabi.net/archives.html">Archives</a>
             </li>
           <li class="divider"></li>
         </ul> <!-- /nav -->
@@ -60,7 +60,7 @@
 
 <div class="jumbotron" id="overview">
   <div class="container">
-	<h1><a href="../../../">大豆旅</a></h1>
+	<h1><a href="https://blog.daizutabi.net/">大豆旅</a></h1>
   </div>
 </div>
 
@@ -69,10 +69,10 @@
 <article itemscope="itemscope" itemtype="http://schema.org/BlogPosting">
   <header class="article-header">
 <div class="article-header">
-  <span class="article-header-date">2018年02月02日 (金)</span>
+  <span class="article-header-date">2018年08月31日 (金)</span>
   <span class="article-header-info">
     <i class="fa fa-folder"></i>
-    <a href="../../../category/Atom/">Atom</a>
+    <a href="https://blog.daizutabi.net/category/Atom/">Atom</a>
   </span>
   <h1>AtomにおけるPython開発環境構築</h1>
 </div>  </header>
@@ -267,15 +267,18 @@
 
 
 <h2>9 ide-python</h2>
-<p>Atom IDE を使ってPython開発をするためのパッケージです．言語サーバーが必要なので，Condaの<code>base</code>環境下にインストールします：</p>
-<div class="highlight"><pre><span></span><span class="o">(</span>base<span class="o">)</span> &gt; pip install python-language-server
+<p>Atom IDE を使ってPython開発をするためのパッケージです．言語サーバーが必要なので，Condaの<code>atom</code>環境下にインストールします：</p>
+<div class="highlight"><pre><span></span><span class="o">(</span>base<span class="o">)</span> &gt; conda create -n atom <span class="nv">python</span><span class="o">=</span><span class="m">3</span>.6
+<span class="o">(</span>base<span class="o">)</span> &gt; conda activate atom
+<span class="o">(</span>atom<span class="o">)</span> &gt; pip install python-language-server<span class="o">[</span>all<span class="o">]==</span><span class="m">0</span>.19.0
 </pre></div>
 
 
+<p>2018/9/1の時点では，Version 0.19.0を指定しないと動作しない．</p>
 <h3>9.1 Settings</h3>
 <p>Condaの<code>base</code>環境にインストールされた<code>pyls.exe</code>をフルパスで指定します．</p>
 <ul>
-<li>Python Language Server Path: C:\Users\daizu\Miniconda3\Scripts\pyls.exe</li>
+<li>Python Executable: C:\Users\daizu\Miniconda3\envs\atom\python.exe</li>
 </ul>
 <h2>10 autocomplete-python</h2>
 <p>autocomplete-plusのPython拡張です．本パッケージで提供される機能は， ide-pythonと重複します．しかし，<code>base</code>環境以外の仮想環境下にインストールされたPythonパッケージへのジャンプなどがide-pythonではできない（or 設定方法がわからない）ので，autocomplete-plusも同時に入れておきます．</p>
@@ -292,14 +295,14 @@
 <p>Pythonコード入力時にインデントを自動で調整します．</p>
 <h2>12 atom-beautify</h2>
 <p>Pythonコードを整形します．ide-pythonでも整形はできますが，atom-beautifyでは，<code>import</code>の並び替えができます．整形するためのPythonパッケージをインストールします：</p>
-<div class="highlight"><pre><span></span><span class="o">(</span>base<span class="o">)</span> &gt; pip install autopep8 isort
+<div class="highlight"><pre><span></span><span class="o">(</span>atom<span class="o">)</span> &gt; pip install isort
 </pre></div>
 
 
 <h3>12.1 Settings</h3>
 <ul>
-<li>Executables &gt; autopep8: C:\Users\daizu\Miniconda3\Scripts\autopep8.exe</li>
-<li>Executables &gt; isort: C:\Users\daizu\Miniconda3\Scripts\isort.exe</li>
+<li>Executables &gt; autopep8: C:\Users\daizu\Miniconda3\envs\atom\Scripts\autopep8.exe</li>
+<li>Executables &gt; isort: C:\Users\daizu\Miniconda3\envs\atom\Scripts\isort.exe</li>
 <li>Sort imports: true</li>
 </ul>
 <h2>13 Hydrogen</h2>
@@ -336,14 +339,20 @@
 </pre></div>
 
 
-<h2>16 その他のパッケージ</h2>
+<h2>16 linter-mypy</h2>
+<p>タイプヒントを診断します．</p>
+<div class="highlight"><pre><span></span><span class="o">(</span>atom<span class="o">)</span> pip install mypy
+</pre></div>
+
+
+<h2>17 その他のパッケージ</h2>
 <p>Pythonとは直接関係ないですが，以下のパッケージもインストールするとよいでしょう．</p>
 <ul>
 <li>git-plus</li>
 <li>file-icons</li>
 <li>minimap系</li>
 </ul>
-<h2>17 初期化スクリプト</h2>
+<h2>18 初期化スクリプト</h2>
 <p>パッケージではありませんが，文字化けを防ぐために，[File] &gt; [Init Script...]を選択して，<code>init.coffee</code>を開き，次の行を追加します．</p>
 <div class="highlight"><pre><span></span><span class="c1"># init.coffee</span>
 <span class="nv">process.env.PYTHONIOENCODING = </span><span class="s">&quot;utf-8&quot;</span><span class="p">;</span>
