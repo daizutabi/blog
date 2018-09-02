@@ -7,7 +7,7 @@
 ```bash
 (base) conda create -n jupyter python=3.6
 (base) conda activate jupyter
-(jupyter) conda install jupyterlab
+(jupyter) pip install jupyterlab
 ```
 
 ## jupyterlab-vim

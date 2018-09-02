@@ -1,5 +1,3 @@
-Modified: 2018-02-05
-
 AtomテキストエディタにPython開発環境を構築します．細かい設定を丁寧に説明し，快適な開発環境を整備することを目指します．
 
 <!-- PELICAN_END_SUMMARY -->
@@ -279,7 +277,7 @@ Pythonコードを整形します．ide-pythonでも整形はできますが，a
 Jupyter clientを使って，Atom上でPythonコードの実行ができます．インタラクティブな実行が可能なので，非常に重宝します．Hydrogenを使う仮想環境下で，以下を実行します：
 
 ```bash
-(example) > conda install jupyter
+(example) > pip install jupyter
 (example) > python -m ipykernel install --user --name example
 ```
 
