@@ -81,21 +81,19 @@
 
 
 <h2>1 JupyterLab</h2>
-<div class="highlight"><pre><span></span><span class="o">(</span>base<span class="o">)</span> conda create -n jupyter <span class="nv">python</span><span class="o">=</span><span class="m">3</span>.6
-<span class="o">(</span>base<span class="o">)</span> conda activate jupyter
-<span class="o">(</span>jupyter<span class="o">)</span> pip install jupyterlab
+<p>JupyterLabを実行する仮想環境を作成し，必要なパッケージをインストールします．</p>
+<div class="highlight"><pre><span></span><span class="o">(</span>base<span class="o">)</span> conda create -y -n jupyter <span class="nv">python</span><span class="o">=</span><span class="m">3</span>.6 jupyterlab nodejs
 </pre></div>
 
 
 <h2>2 jupyterlab-vim</h2>
-<p><a href="https://nodejs.org/ja/">Node.js</a>のバージョン8.11.4 LTSをインストールする．</p>
-<div class="highlight"><pre><span></span><span class="o">(</span>jupyter<span class="o">)</span> &gt; conda install -c conda-forge <span class="nv">nodejs</span><span class="o">==</span><span class="m">9</span>.11.1
-<span class="o">(</span>jupyter<span class="o">)</span> &gt; npm install -g npm
-<span class="o">(</span>jupyter<span class="o">)</span> &gt; npm install -g --require webpack webpack-command
+<p>VIMを使えるようにします．</p>
+<div class="highlight"><pre><span></span><span class="o">(</span>base<span class="o">)</span> &gt; activate jupyter
 <span class="o">(</span>jupyter<span class="o">)</span> &gt; jupyter labextension install jupyterlab_vim
 </pre></div>
 
 
+<p>以下はJupyterの話なので参考程度．</p>
 <h2>3 拡張機能の有効化</h2>
 <p><code>base</code>環境でJupyter Notebookを立ち上げます．Nbextensionsタブを開いて，以下の拡張をチェックして有効化します．</p>
 <ul>

@@ -4,23 +4,21 @@
 
 ## JupyterLab
 
-```bash
-(base) conda create -n jupyter python=3.6
-(base) conda activate jupyter
-(jupyter) pip install jupyterlab
-```
+JupyterLabを実行する仮想環境を作成し，必要なパッケージをインストールします．
 
+```bash
+(base) conda create -y -n jupyter python=3.6 jupyterlab nodejs
+```
 ## jupyterlab-vim
 
-[Node.js](https://nodejs.org/ja/)のバージョン8.11.4 LTSをインストールする．
-
+VIMを使えるようにします．
 
 ```bash
-(jupyter) > conda install -c conda-forge nodejs==9.11.1
-(jupyter) > npm install -g npm
-(jupyter) > npm install -g --require webpack webpack-command
+(base) > activate jupyter
 (jupyter) > jupyter labextension install jupyterlab_vim
 ```
+
+以下はJupyterの話なので参考程度．
 
 ## 拡張機能の有効化
 
