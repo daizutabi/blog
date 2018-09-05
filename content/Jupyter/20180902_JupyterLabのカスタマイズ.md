@@ -17,5 +17,3 @@ VIMを使えるようにします．
 (base) > activate jupyter
 (jupyter) > jupyter labextension install jupyterlab_vim
 ```
-
-以下に設定＆拡張機能について執筆したい．
