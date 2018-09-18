@@ -20,15 +20,15 @@
             crossorigin="anonymous">
 
 
-      <link rel="stylesheet" href="https://blog.daizutabi.net/theme/css/custom/custom.css" />
-      <link rel="stylesheet" href="https://blog.daizutabi.net/theme/css/pygment.css" />
+      <link rel="stylesheet" href="../../theme/css/custom/custom.css" />
+      <link rel="stylesheet" href="../../theme/css/pygment.css" />
 
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js" integrity="sha384-FFgGfda92tXC8nCNOxrCQ3R8x1TNkMFqDZVQdDaaJiiVbjkPBXIJBx0o7ETjy8Bh" crossorigin="anonymous"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js" integrity="sha384-ZoaMbDF+4LeFxg6WdScQ9nnR1QC2MIRxA1O9KWEXQwns1G8UNyIEZIQidzb0T1fo" crossorigin="anonymous"></script>
     <![endif]-->
 
-    <link rel="shortcut icon" href="https://blog.daizutabi.net/favicon.ico" type="image/vnd.microsoft.icon">
+    <link rel="shortcut icon" href="../../favicon.ico" type="image/vnd.microsoft.icon">
   </head>
 
   <body>
@@ -42,7 +42,7 @@
 		  <span class="icon-bar"></span>
 		  <span class="icon-bar"></span>
 		</button>
-		<a class="navbar-brand" href="https://blog.daizutabi.net/" rel="home">
+		<a class="navbar-brand" href="../../" rel="home">
           <i class="fa fa-home fa-fw fa-lg"> </i> </a>
        </div>
 
@@ -50,7 +50,7 @@
         <ul class="nav navbar-nav">
             <li class="divider"></li>
             <li class="">
-              <a href="https://blog.daizutabi.net/archives.html">Archives</a>
+              <a href="../../archives.html">Archives</a>
             </li>
           <li class="divider"></li>
         </ul> <!-- /nav -->
@@ -60,14 +60,14 @@
 
 <div class="jumbotron" id="overview">
   <div class="container">
-	<h1><a href="https://blog.daizutabi.net/">大豆旅</a></h1>
+	<h1><a href="../../">大豆旅</a></h1>
   </div>
 </div>
 
     <div class="container" id="main-container">
         <div class="" id="content">
 <ol class="breadcrumb">
-    <li><a href="https://blog.daizutabi.net/" title="Home" rel="home">
+    <li><a href="../../" title="Home" rel="home">
 		<i class="fa fa-home fa-fw fa-lg"></i> </a></li>
     <li>Categories </li>
     <li class="active">Go</li>
@@ -75,13 +75,43 @@
     <article>
       <header class="article-header">
 <div class="index-article-header">
+  <span class="index-article-header-date">2018年09月06日 (木)</span>
+  <span class="index-article-header-info">
+    <i class="fa fa-folder"></i>
+    <a href="../../category/Go/">Go</a>
+  </span>
+  <h1>
+    <a href="../../2018/09/06/" rel="bookmark"
+       title="Permalink to GCC vs CL">
+    GCC vs CL
+  </a>
+  </h1>
+</div>      </header>
+<div class="summary">
+ <p>Go言語からCUDAを使うために，簡単な実験を行います．</p>
+<p>まずはCUDAの<code>cuInit</code>関数を呼ぶだけの簡単なCソースをコンパイルします．</p>
+
+<span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;cuda.h&gt;</span><span class="cp"></span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">printf</span><span class="p">(</span><span class="s">&quot;cuInit: %d&quot;</span><span class="p">,</span> <span class="n">cuInit</span><span class="p">(</span><span class="mi">0</span><span class="p">));</span>
+<span class="p">}</span>
+</pre>
+
+
+
+</div>    </article>
+    <article>
+      <header class="article-header">
+<div class="index-article-header">
   <span class="index-article-header-date">2018年09月05日 (水)</span>
   <span class="index-article-header-info">
     <i class="fa fa-folder"></i>
-    <a href="https://blog.daizutabi.net/category/Go/">Go</a>
+    <a href="../../category/Go/">Go</a>
   </span>
   <h1>
-    <a href="https://blog.daizutabi.net/2018/09/05/" rel="bookmark"
+    <a href="../../2018/09/05/" rel="bookmark"
        title="Permalink to mumax3のコンパイル">
     mumax3のコンパイル
   </a>

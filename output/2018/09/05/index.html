@@ -20,15 +20,15 @@
             crossorigin="anonymous">
 
 
-      <link rel="stylesheet" href="https://blog.daizutabi.net/theme/css/custom/custom.css" />
-      <link rel="stylesheet" href="https://blog.daizutabi.net/theme/css/pygment.css" />
+      <link rel="stylesheet" href="../../../theme/css/custom/custom.css" />
+      <link rel="stylesheet" href="../../../theme/css/pygment.css" />
 
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js" integrity="sha384-FFgGfda92tXC8nCNOxrCQ3R8x1TNkMFqDZVQdDaaJiiVbjkPBXIJBx0o7ETjy8Bh" crossorigin="anonymous"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js" integrity="sha384-ZoaMbDF+4LeFxg6WdScQ9nnR1QC2MIRxA1O9KWEXQwns1G8UNyIEZIQidzb0T1fo" crossorigin="anonymous"></script>
     <![endif]-->
 
-    <link rel="shortcut icon" href="https://blog.daizutabi.net/favicon.ico" type="image/vnd.microsoft.icon">
+    <link rel="shortcut icon" href="../../../favicon.ico" type="image/vnd.microsoft.icon">
   </head>
 
   <body>
@@ -42,7 +42,7 @@
 		  <span class="icon-bar"></span>
 		  <span class="icon-bar"></span>
 		</button>
-		<a class="navbar-brand" href="https://blog.daizutabi.net/" rel="home">
+		<a class="navbar-brand" href="../../../" rel="home">
           <i class="fa fa-home fa-fw fa-lg"> </i> </a>
        </div>
 
@@ -50,7 +50,7 @@
         <ul class="nav navbar-nav">
             <li class="divider"></li>
             <li class="">
-              <a href="https://blog.daizutabi.net/archives.html">Archives</a>
+              <a href="../../../archives.html">Archives</a>
             </li>
           <li class="divider"></li>
         </ul> <!-- /nav -->
@@ -60,7 +60,7 @@
 
 <div class="jumbotron" id="overview">
   <div class="container">
-	<h1><a href="https://blog.daizutabi.net/">大豆旅</a></h1>
+	<h1><a href="../../../">大豆旅</a></h1>
   </div>
 </div>
 
@@ -72,7 +72,7 @@
   <span class="article-header-date">2018年09月05日 (水)</span>
   <span class="article-header-info">
     <i class="fa fa-folder"></i>
-    <a href="https://blog.daizutabi.net/category/Go/">Go</a>
+    <a href="../../../category/Go/">Go</a>
   </span>
   <h1>mumax3のコンパイル</h1>
 </div>  </header>
@@ -97,13 +97,19 @@
 
 
 <p>ヘッダファイルが見つからないというエラーが出ます．</p>
-<p>mumax/3/cuda/cu/cgoflags.go
+<div class="highlight"><pre><span></span>mumax/3/cuda/cu/cgoflags.go
 mumax/3/cuda/cufft/cgoflags.go
-mumax/3/cuda/curand/cgoflags.go</p>
+mumax/3/cuda/curand/cgoflags.go
+</pre></div>
+
+
 <p>のなかのWindowsのパスを正しく設定します．</p>
-<p>////WINDOWS:
-//#cgo windows LDFLAGS:-LC:/cuda/v9.1/lib/x64
-//#cgo windows CFLAGS: -IC:/cuda/v9.1/include</p>
+<div class="highlight"><pre><span></span><span class="c1">////WINDOWS:</span>
+<span class="c1">//#cgo CFLAGS: -IC:/cuda/v9.1/include</span>
+<span class="c1">//#cgo LDFLAGS:-LC:/cuda/v9.1/lib/x64</span>
+</pre></div>
+
+
 <p>再度インストールをします．</p>
 <div class="highlight"><pre><span></span>go install -v github.com/mumax/3/cmd/mumax3
 </pre></div>
@@ -129,8 +135,8 @@ mumax/3/cuda/curand/cgoflags.go</p>
 <p>同様のGoソースは，</p>
 <div class="highlight"><pre><span></span><span class="kn">package</span> <span class="nx">main</span>
 
-<span class="c1">//#cgo windows LDFLAGS:-LC:/cuda/v9.1/lib/x64 -lcuda</span>
-<span class="c1">//#cgo windows CFLAGS: -IC:/cuda/v9.1/include</span>
+<span class="c1">//#cgo CFLAGS: -IC:/cuda/v9.1/include</span>
+<span class="c1">//#cgo LDFLAGS:-LC:/cuda/v9.1/lib/x64 -lcuda</span>
 <span class="c1">//#include &lt;stdio.h&gt;</span>
 <span class="c1">//#include &lt;cuda.h&gt;</span>
 <span class="kn">import</span> <span class="s">&quot;C&quot;</span>
