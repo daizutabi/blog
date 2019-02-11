@@ -20,15 +20,15 @@
             crossorigin="anonymous">
 
 
-      <link rel="stylesheet" href="https://blog.daizutabi.net/theme/css/custom/custom.css" />
-      <link rel="stylesheet" href="https://blog.daizutabi.net/theme/css/pygment.css" />
+      <link rel="stylesheet" href="../../theme/css/custom/custom.css" />
+      <link rel="stylesheet" href="../../theme/css/pygment.css" />
 
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js" integrity="sha384-FFgGfda92tXC8nCNOxrCQ3R8x1TNkMFqDZVQdDaaJiiVbjkPBXIJBx0o7ETjy8Bh" crossorigin="anonymous"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js" integrity="sha384-ZoaMbDF+4LeFxg6WdScQ9nnR1QC2MIRxA1O9KWEXQwns1G8UNyIEZIQidzb0T1fo" crossorigin="anonymous"></script>
     <![endif]-->
 
-    <link rel="shortcut icon" href="https://blog.daizutabi.net/favicon.ico" type="image/vnd.microsoft.icon">
+    <link rel="shortcut icon" href="../../favicon.ico" type="image/vnd.microsoft.icon">
   </head>
 
   <body>
@@ -42,7 +42,7 @@
 		  <span class="icon-bar"></span>
 		  <span class="icon-bar"></span>
 		</button>
-		<a class="navbar-brand" href="https://blog.daizutabi.net/" rel="home">
+		<a class="navbar-brand" href="../../" rel="home">
           <i class="fa fa-home fa-fw fa-lg"> </i> </a>
        </div>
 
@@ -50,7 +50,7 @@
         <ul class="nav navbar-nav">
             <li class="divider"></li>
             <li class="">
-              <a href="https://blog.daizutabi.net/archives.html">Archives</a>
+              <a href="../../archives.html">Archives</a>
             </li>
           <li class="divider"></li>
         </ul> <!-- /nav -->
@@ -60,14 +60,14 @@
 
 <div class="jumbotron" id="overview">
   <div class="container">
-	<h1><a href="https://blog.daizutabi.net/">大豆旅</a></h1>
+	<h1><a href="../../">大豆旅</a></h1>
   </div>
 </div>
 
     <div class="container" id="main-container">
         <div class="" id="content">
 <ol class="breadcrumb">
-    <li><a href="https://blog.daizutabi.net/" title="Home" rel="home">
+    <li><a href="../../" title="Home" rel="home">
 		<i class="fa fa-home fa-fw fa-lg"></i> </a></li>
     <li>Categories </li>
     <li class="active">Pheasant</li>
@@ -78,10 +78,10 @@
   <span class="index-article-header-date">2018年02月07日 (水)</span>
   <span class="index-article-header-info">
     <i class="fa fa-folder"></i>
-    <a href="https://blog.daizutabi.net/category/Pheasant/">Pheasant</a>
+    <a href="../../category/Pheasant/">Pheasant</a>
   </span>
   <h1>
-    <a href="https://blog.daizutabi.net/2018/02/07/" rel="bookmark"
+    <a href="../../2018/02/07/" rel="bookmark"
        title="Permalink to Pheasantでインラインコードを実行する その2">
     Pheasantでインラインコードを実行する その2
   </a>
@@ -90,6 +90,19 @@
 <div class="summary">
  <p><a href="../../../2018/02/05/">2018/2/5の記事</a>でインラインコードを実行して出力テキストをMarkdownのソースとして使う機能について説明しました．今回，この機能を拡張して，画像などのテキスト以外の形式にも対応させました．</p>
 
+
+<p>試しに画像を出力してみます．</p>
+<div class="pheasant-markdown pheasant-jupyter-input codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+
+<span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="n">axes</span><span class="o">=</span><span class="n">axes</span><span class="p">)</span>
+</pre></div>
+
+<div class="pheasant-markdown pheasant-jupyter-output codehilite"><pre><span></span><span class="p">[</span><span class="o">&lt;</span><span class="n">matplotlib</span><span class="o">.</span><span class="n">lines</span><span class="o">.</span><span class="n">Line2D</span> <span class="n">at</span> <span class="mh">0x2f0467fc978</span><span class="o">&gt;</span><span class="p">]</span>
+</pre></div>
+
+<p><img alt="png" src="data:image/png;base64,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"></p>
+<p>ここで，上の出力について少し説明しておきます．<code>plt.plot</code>関数の戻り値は，Lineオブジェクトのリストになります．．このようなセルの実行結果は，Jupyter Notebook Cellの中に，<code>output_type</code>属性が<code>execute_result</code>である<code>output</code>として格納されます．一方，Jupyterは，セルで作成された図を<code>output_type</code>属性が …</p>
 </div>    </article>
     <article>
       <header class="article-header">
@@ -97,10 +110,10 @@
   <span class="index-article-header-date">2018年02月06日 (火)</span>
   <span class="index-article-header-info">
     <i class="fa fa-folder"></i>
-    <a href="https://blog.daizutabi.net/category/Pheasant/">Pheasant</a>
+    <a href="../../category/Pheasant/">Pheasant</a>
   </span>
   <h1>
-    <a href="https://blog.daizutabi.net/2018/02/06/" rel="bookmark"
+    <a href="../../2018/02/06/" rel="bookmark"
        title="Permalink to Pheasantでソースコードを挿入する">
     Pheasantでソースコードを挿入する
   </a>
@@ -109,6 +122,25 @@
 <div class="summary">
  <p>Pheasantパッケージでは，Python実行環境にインポートされているオブジェクトのソースコードを記事の中に挿入することができます．</p>
 
+
+<p>この記事では，動作例を示すために，<code>nbformat</code>パッケージの<code>new_code_cell</code>関数の中身を見てみます．<a href="https://blog.daizutabi.net/2018/02/05/">「Pheasantでインラインコードを実行する」</a>で紹介した方法を早速使ってみましょう．</p>
+<div class="codehilite pheasant-markdown pheasant-source"><pre>```markdown
+{{import nbformat}}
+#Code nbformat.v4.new_code_cell
+```
+</pre></div>
+
+<p>一行目は，インラインコードを使って<code>nbformat</code>をインポートしています．二行目は，行頭に<code>#Code</code>を書いて，そのあとにスペースを挟んで表示させたいオブジェクト（ここでは関数）を記します．実行例を以下に示します．</p>
+<div class="pheasant-markdown pheasant-jupyter-input codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">nbformat</span>
+</pre></div>
+
+<div class="pheasant-number-code">
+<p>Code 1 nbformat.v4.new_code_cell</p>
+<p><code>#Code</code>はPheasantの<code>number</code>プラグインで検出されて，自動でコード番号が付与されます．</p>
+</div>
+
+<p>自作のパッケージを解説する場合などに役立つ機能だと思います．ソースファイルのほかにMarkdown記事の中にもソースを書くと，二重管理になってしまい，同一性を保つのに苦労します．今回の方法だと，常に最新の現に今使っているソースを表示させることができます．</p>
+<p>今後，表示する行数の指定やシンタックスハイライトなどの機能を追加していく予定です．</p>
 </div>    </article>
     <article>
       <header class="article-header">
@@ -116,10 +148,10 @@
   <span class="index-article-header-date">2018年02月05日 (月)</span>
   <span class="index-article-header-info">
     <i class="fa fa-folder"></i>
-    <a href="https://blog.daizutabi.net/category/Pheasant/">Pheasant</a>
+    <a href="../../category/Pheasant/">Pheasant</a>
   </span>
   <h1>
-    <a href="https://blog.daizutabi.net/2018/02/05/" rel="bookmark"
+    <a href="../../2018/02/05/" rel="bookmark"
        title="Permalink to Pheasantでインラインコードを実行する">
     Pheasantでインラインコードを実行する
   </a>
@@ -128,6 +160,23 @@
 <div class="summary">
  <p>Pheasantパッケージは，MkDocsやPelicanなどの静的サイトジェネレータのプラグインです．これまで，Markdownのfenced codeの実行をサポートしていましたが，このたびインラインコードも実行できるように拡張しました．</p>
 
+
+<p>インラインコードでは，<code>{{</code>と<code>}}</code>で囲んだ内部にPythonコードを書きます．次のようにfenced codeで変数を定義しておきましょう．</p>
+<div class="pheasant-markdown pheasant-jupyter-input codehilite"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">2</span>
+</pre></div>
+
+<p>変数<code>a</code>に2が代入されました．この値は，どこからでも取得することができます．</p>
+<ul>
+<li><code>{{a}}</code> ⇒ 2</li>
+<li><code>{{4*a}}</code> ⇒ 8</li>
+</ul>
+<p>代入はインラインコード内で行うこともできます．</p>
+<ul>
+<li><code>{{b = 3}}a×b = {{a*b}}</code> ⇒ a×b = 6</li>
+</ul>
+<p>出力ないインラインコードは空文字列に変換されます．</p>
+<p>現在はまだ，テキストにしか対応していませんが，今後は画像なども出力できるように改良していく予定です．</p>
+<p>（追記）<a href="../../../2018/02/07/">2018/2/7の記事</a>で画像などのテキスト以外の対応状況について説明しています．</p>
 </div>    </article>
     <article>
       <header class="article-header">
@@ -135,10 +184,10 @@
   <span class="index-article-header-date">2018年01月05日 (金)</span>
   <span class="index-article-header-info">
     <i class="fa fa-folder"></i>
-    <a href="https://blog.daizutabi.net/category/Pheasant/">Pheasant</a>
+    <a href="../../category/Pheasant/">Pheasant</a>
   </span>
   <h1>
-    <a href="https://blog.daizutabi.net/2018/01/05/" rel="bookmark"
+    <a href="../../2018/01/05/" rel="bookmark"
        title="Permalink to Pheasantパッケージを作成しました">
     Pheasantパッケージを作成しました
   </a>
@@ -147,6 +196,41 @@
 <div class="summary">
  <p>Pheasantパッケージは，MkDocsやPelicanなどの静的サイトジェネレータのプラグインです．Markdownのfenced code内のコードの実行やヘッダや図表の自動番号ふりを行います．</p>
 
+
+<p><a href="https://pheasant.daizutabi.net/">Pheasantパッケージ</a>は，<code>pip</code>でインストールできます．</p>
+<div class="highlight"><pre><span></span>$ pip install pheasant
+</pre></div>
+
+
+<h2>1 Fenced codeの実行</h2>
+<p>Markdownのfenced codeを自動で実行します．</p>
+<p>Markdownのソースコードで，</p>
+<div class="codehilite pheasant-markdown pheasant-source"><pre><span>```</span>python 
+<span></span><span class="k">print</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span>```</span>
+</pre></div>
+
+<p>と書くと，出力される結果は，</p>
+<div class="pheasant-markdown pheasant-jupyter-input codehilite"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+
+<div class="pheasant-markdown pheasant-jupyter-output codehilite"><pre><span></span><span class="mi">3</span>
+</pre></div>
+
+<p>となります．</p>
+<h2>2 図の出力</h2>
+<p>Matplotlibの図を出力することも可能です：</p>
+<div class="codehilite pheasant-markdown pheasant-source"><pre><span>```</span>python 
+<span></span><span class="c1">## hide</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;o&#39;</span><span class="p">)</span>
+<span>```</span>
+</pre></div>
+
+<p>とすると，</p>
+<p>となります．ここで2つの機能を紹介しましょう：</p>
+<ol>
+<li>グラフ出力の前に，<code>#Fig …</code></li></ol>
 </div>    </article>
 
 <nav class="index-pager">

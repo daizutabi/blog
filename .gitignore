@@ -1,3 +1,5 @@
 __pycache__/
 .ipynb_checkpoints/
 .ropeproject/
+.mypy_cache/
+.vscode/
