@@ -107,46 +107,6 @@
 <p>特に有用と考えている「相対URLと絶対URLの選択」について説明します．Takuhaiの実行コマンド<code>takuhai</code>はデフォルトで相対URLを設定します．これは<code>pelicanconf.py</code>の設定を上書きします．</p>
 <p>Pelicanドキュメントの<a href="http://docs.getpelican.com/en/stable/settings.html#url-settings">URL settings</a>によれば，絶対URLが望ましい選択とされています．しかし，これではローカルHTTPサーバを立ち上げても，リンク先が外部サイトになってしまいます．望ましい動作とは言えないでしょう …</p>
 </div>    </article>
-    <article>
-      <header class="article-header">
-<div class="index-article-header">
-  <span class="index-article-header-date">2017年12月16日 (土)</span>
-  <span class="index-article-header-info">
-    <i class="fa fa-folder"></i>
-    <a href="./category/Pelican/">Pelican</a>
-  </span>
-  <h1>
-    <a href="./2017/12/16/" rel="bookmark"
-       title="Permalink to ブログを始める">
-    ブログを始める
-  </a>
-  </h1>
-</div>      </header>
-
-<div class="summary">
- <p><a href="https://pages.github.com/">GitHub Pages</a>でブログを始めることにしました．<a href="https://blog.getpelican.com/">Pelican</a>を使って記事を生成します．フォーマットはマークダウンにします．</p>
-
-
-<p>Pelicanでは，各記事のファイルの先頭に以下のようなメタデータを書く必要があります．</p>
-<div class="highlight"><pre><span></span>Title: My First Review
-Date: 2010-12-03 10:20
-Category: Review
-Slug: URL
-</pre></div>
-
-
-<p>記事を書くたびにこれらのメタデータを入力するのは少々面倒です．そこで，ファイル名から自動的にメタデータを抽出するようにします．設定ファイル<code>pelicanconf.py</code>に以下の内容を追加します．</p>
-<div class="highlight"><pre><span></span><span class="n">PATH_METADATA</span> <span class="o">=</span> <span class="sa">r</span><span class="s1">&#39;(?P&lt;category&gt;.+?)/.*&#39;</span>
-<span class="n">FILENAME_METADATA</span> <span class="o">=</span> <span class="sa">r</span><span class="s1">&#39;(?P&lt;date&gt;\d{8}).(?P&lt;title&gt;.+)&#39;</span>
-</pre></div>
-
-
-<p>以下のようなルールで記事ファイルを<code>content</code>ディレクトリに配置します．</p>
-<ul>
-<li><code>content</code>ディレクトリ直下に置かれたディレクトリの名前がカテゴリー名になります．</li>
-<li>その下のディレクトリから各記事ファイルに至るまでは任意のディレクトリ構造をとることができます．</li>
-<li>記事ファイルの名前は<code>&lt;YYYYMMDD&gt;&lt;sep&gt;&lt;title&gt;.md …</code></li></ul>
-</div>    </article>
 
 <nav class="index-pager">
 	<ul class="pagination">
