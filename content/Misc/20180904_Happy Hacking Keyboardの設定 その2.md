@@ -32,7 +32,7 @@
 
 そこで，LayerDriver JPNだけkbd101.dllとすることで，うまく動作しました．レジストリエディタの設定を残しておきます．
 
-![reg]({filename}/images/20180904/reg.png)
+![reg]({static}/images/20180904/reg.png)
 
 この時点で，PCのキーボードは日本語配列，HHKBは英語配列になっています．また，［全角／半角］キーの入力は[Alt]+[`]となっています．
 

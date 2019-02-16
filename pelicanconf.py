@@ -64,7 +64,7 @@ PLUGINS = ['pheasant', 'summary', 'render_math']
 IGNORE_FILES = ['.#*', '__pycache__', '.ipynb_checkpoints']
 
 PHEASANT = {
-    'jupyter': {'kernel_name': {'python': 'doc'},
+    'jupyter': {'kernel_name': {'python': 'daizu'},
                 'template_file': 'output_text_outside.jinja2'},
     'number': {'enabled': True, 'level': 2},
     'code': {'enabled': True},

@@ -20,14 +20,14 @@
 + OverrideKeyboardIdentifier: AX_105KEY
 + OverriedKeyboardSubtype: 2
 
-![png]({filename}/images/20180211/reg.png)
+![png]({static}/images/20180211/reg.png)
 
 
 ## 言語の追加
 
 「英語(米国)」を追加しました．
 
-![png]({filename}/images/20180211/lang.png)
+![png]({static}/images/20180211/lang.png)
 
 
 ## 設定状況
