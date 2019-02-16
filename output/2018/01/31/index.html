@@ -20,15 +20,15 @@
             crossorigin="anonymous">
 
 
-      <link rel="stylesheet" href="../../../theme/css/custom/custom.css" />
-      <link rel="stylesheet" href="../../../theme/css/pygment.css" />
+      <link rel="stylesheet" href="https://blog.daizutabi.net/theme/css/custom/custom.css" />
+      <link rel="stylesheet" href="https://blog.daizutabi.net/theme/css/pygment.css" />
 
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js" integrity="sha384-FFgGfda92tXC8nCNOxrCQ3R8x1TNkMFqDZVQdDaaJiiVbjkPBXIJBx0o7ETjy8Bh" crossorigin="anonymous"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js" integrity="sha384-ZoaMbDF+4LeFxg6WdScQ9nnR1QC2MIRxA1O9KWEXQwns1G8UNyIEZIQidzb0T1fo" crossorigin="anonymous"></script>
     <![endif]-->
 
-    <link rel="shortcut icon" href="../../../favicon.ico" type="image/vnd.microsoft.icon">
+    <link rel="shortcut icon" href="https://blog.daizutabi.net/favicon.ico" type="image/vnd.microsoft.icon">
   </head>
 
   <body>
@@ -42,7 +42,7 @@
 		  <span class="icon-bar"></span>
 		  <span class="icon-bar"></span>
 		</button>
-		<a class="navbar-brand" href="../../../" rel="home">
+		<a class="navbar-brand" href="https://blog.daizutabi.net/" rel="home">
           <i class="fa fa-home fa-fw fa-lg"> </i> </a>
        </div>
 
@@ -50,7 +50,7 @@
         <ul class="nav navbar-nav">
             <li class="divider"></li>
             <li class="">
-              <a href="../../../archives.html">Archives</a>
+              <a href="https://blog.daizutabi.net/archives.html">Archives</a>
             </li>
           <li class="divider"></li>
         </ul> <!-- /nav -->
@@ -60,7 +60,7 @@
 
 <div class="jumbotron" id="overview">
   <div class="container">
-	<h1><a href="../../../">大豆旅</a></h1>
+	<h1><a href="https://blog.daizutabi.net/">大豆旅</a></h1>
   </div>
 </div>
 
@@ -72,7 +72,7 @@
   <span class="article-header-date">2018年01月31日 (水)</span>
   <span class="article-header-info">
     <i class="fa fa-folder"></i>
-    <a href="../../../category/Machine Learning/">Machine Learning</a>
+    <a href="https://blog.daizutabi.net/category/Machine Learning/">Machine Learning</a>
   </span>
   <h1>ディープラーニング学習の準備</h1>
 </div>  </header>
@@ -110,11 +110,11 @@
 </ul>
 <p>を選び，ダウンロードしたファイルを実行してインストールします．現時点(2018/1/31)で，Neural Network LibrariesはVersion 8.0にしか対応していませんので，最新のVersion 9.1ではなく，Version 8.0 GA2 を選択しました．Base Installerの他に，Patch 2 (Released Jun 26, 2017)をダウンロードします．</p>
 <p>まず，Base Installerを実行します．「システムの互換性のチェック」で，次のような画面が表示されます．</p>
-<p><img alt="cuda-install" src="../../../images/20180131/cuda-install.png"></p>
+<p><img alt="cuda-install" src="https://blog.daizutabi.net/images/20180131/cuda-install.png"></p>
 <p><a href="https://devtalk.nvidia.com/default/topic/1014305/cuda-setup-and-installation/cuda-8-0-installation-fail-quot-could-not-find-compatible-graphics-hardware-quot-/">このフォーラム</a>にあるように， インストーラが，GTX 1050の生産前に作成されているためです．[続行] &gt; [同意して続行する] &gt; [(カスタム)を選択して次へ]と進んで，カスタムインストールオプションで，CUDAのみを選択した状態にします．</p>
-<p><img alt="cuda-install" src="../../../images/20180131/cuda-install-2.png"></p>
+<p><img alt="cuda-install" src="https://blog.daizutabi.net/images/20180131/cuda-install-2.png"></p>
 <p>[次へ]をクリックして進んでいくと，Visual Studioがないと警告が出ます．</p>
-<p><img alt="cuda-install" src="../../../images/20180131/cuda-install-3.png"></p>
+<p><img alt="cuda-install" src="https://blog.daizutabi.net/images/20180131/cuda-install-3.png"></p>
 <p>特に問題ないので，そのままチェックボックスを選択して，[次へ]をクリックし，インストールを開始します．その後，先にダウンロードしていたPatch2を実行してパッチをインストールします．</p>
 <h2>3 NVIDIA cuDNN</h2>
 <p>インストールするにはメンバーシップが必要なので，<a href="https://developer.nvidia.com">https://developer.nvidia.com</a> の右上のJoinから登録します．ダウンロードページ <a href="https://developer.nvidia.com/rdp/cudnn-download">https://developer.nvidia.com/rdp/cudnn-download</a> で，同意ボタンを選択し，リストの中から，</p>

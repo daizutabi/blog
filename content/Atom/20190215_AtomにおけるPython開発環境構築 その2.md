@@ -196,6 +196,7 @@ process.env.PATH = ["C:\\Users\\daizu\\Miniconda3\\envs\\atom;C:\\Users\\daizu\\
   'f10': 'hydrogen:run-all'
 ```
 
+## autocomplete-python
 
 ## その他のパッケージ
 
