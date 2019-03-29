@@ -16,7 +16,14 @@ DATE_FORMATS = {"ja": "%Y年%m月%d日 (%a)"}
 PATH_METADATA = r"(?P<category>.+?)/.*"
 FILENAME_METADATA = r"(?P<date>\d{8}).(?P<title>.+)"
 
-THEME = 'themes/Flex'
+PLUGINS = [pelican]
+
+THEME = "theme/voidy-bootstrap"
+STYLESHEETS = ["custom/custom.css", "custom/theme_pheasant.css"]
+
+CUSTOM_SITE_HEADERS = ["custom/jumbotron.jinja2"]
+CUSTOM_ARTICLE_HEADERS = ["custom/article_header.jinja2"]
+CUSTOM_INDEX_ARTICLE_HEADERS = ["custom/index_article_header.jinja2"]
 
 ARTICLE_URL = "{date:%Y}/{date:%m}/{date:%d}/"
 ARTICLE_SAVE_AS = "{date:%Y}/{date:%m}/{date:%d}/index.html"
@@ -41,5 +48,3 @@ AUTHOR_FEED_RSS = None
 FAVICON = "favicon.ico"
 FAVICON_TYPE = "image/vnd.microsoft.icon"
 EXTRA_PATH_METADATA = {"extra/" + FAVICON: {"path": FAVICON}}
-
-PLUGINS = [pelican]

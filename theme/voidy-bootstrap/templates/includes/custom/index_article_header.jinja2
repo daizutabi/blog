@@ -1,0 +1,13 @@
+<div class="index-article-header">
+  <span class="index-article-header-date">{{ article.locale_date }}</span>
+  <span class="index-article-header-info">
+    <i class="fa fa-folder"></i>
+    <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
+  </span>
+  <h1>
+    <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark"
+       title="Permalink to {{ article.title|striptags|e }}">
+    {{ article.title }}
+  </a>
+  </h1>
+</div>
