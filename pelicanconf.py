@@ -18,12 +18,7 @@ FILENAME_METADATA = r"(?P<date>\d{8}).(?P<title>.+)"
 
 PLUGINS = [pelican]
 
-THEME = "theme/voidy-bootstrap"
-STYLESHEETS = ["custom/custom.css", "custom/theme_pheasant.css"]
-
-CUSTOM_SITE_HEADERS = ["custom/jumbotron.jinja2"]
-CUSTOM_ARTICLE_HEADERS = ["custom/article_header.jinja2"]
-CUSTOM_INDEX_ARTICLE_HEADERS = ["custom/index_article_header.jinja2"]
+THEME = "theme/daizu"
 
 ARTICLE_URL = "{date:%Y}/{date:%m}/{date:%d}/"
 ARTICLE_SAVE_AS = "{date:%Y}/{date:%m}/{date:%d}/index.html"
@@ -37,13 +32,6 @@ STATIC_PATHS = ["images", "extra"]
 DELETE_OUTPUT_DIRECTORY = True
 
 IGNORE_FILES = [".#*", "__pycache__"]
-
-# Feed generation is usually not desired when developing
-FEED_ALL_ATOM = None
-CATEGORY_FEED_ATOM = None
-TRANSLATION_FEED_ATOM = None
-AUTHOR_FEED_ATOM = None
-AUTHOR_FEED_RSS = None
 
 FAVICON = "favicon.ico"
 FAVICON_TYPE = "image/vnd.microsoft.icon"

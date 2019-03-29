@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="{{ DEFAULT_LANG }}">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/stylesheet/style.min.css">
+
+  {% if FAVICON %}
+    <link rel="shortcut icon" href="{{ FAVICON }}" type="image/x-icon">
+  {% endif %}
+
+  {% block meta %}
+    <meta name="author" content="{{ AUTHOR }}" />
+  {% endblock %}
+
+  <title>{{ SITENAME }}{% block title %}{% endblock %}</title>
+
+</head>
+<body>
+  <aside>
+    <div>
+      <a href="{{ SITEURL }}">
+        {% if SITELOGO %}
+        <img src="{{ SITELOGO }}" alt="{{ SITETITLE }}" title="{{ SITETITLE }}">
+        {% else %}
+        <img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/profile.png" alt="{{ SITETITLE }}" title="{{ SITETITLE }}">
+        {% endif %}
+      </a>
+      <h1><a href="{{ SITEURL }}">{{ SITETITLE }}</a></h1>
+
+      {% if SITESUBTITLE %}<p>{{ SITESUBTITLE }}</p>{% endif %}
+
+      {% if pages or LINKS %}
+      <nav>
+        <ul class="list">
+          {% if not PAGES_SORT_ATTRIBUTE -%}
+              {% set PAGES_SORT_ATTRIBUTE = 'title' %}
+          {%- endif %}
+          {% if DISPLAY_PAGES_ON_MENU %}
+          {% for page in pages|sort(attribute=PAGES_SORT_ATTRIBUTE) %}
+          <li><a href="{{ SITEURL }}/{{ page.url }}{% if not DISABLE_URL_HASH %}#{{ page.slug }}{% endif %}">{{ page.title }}</a></li>
+          {% endfor %}
+          {% endif %}
+
+          {% for name, link in LINKS %}
+          <li><a href="{{ link }}" target="_blank">{{ name }}</a></li>
+          {% endfor %}
+        </ul>
+      </nav>
+      {% endif %}
+    </div>
+  </aside>
+  <main>
+    {% if MAIN_MENU %}
+    <nav>
+      <a href="{{ SITEURL }}">{{ _('Home') }}</a>
+      {% for title, link in MENUITEMS %}
+      <a href="{{ link }}">{{ title }}</a>
+      {% endfor %}
+    </nav>
+    {% endif %}
+
+    {% block content %}
+    {% endblock %}
+
+    <footer>
+      {% if CC_LICENSE %}
+        {% include "partial/cc_license.html" %}
+      {% else %}
+        {% include "partial/copyright.html" %}
+      {% endif %}
+    </footer>
+  </main>
+
+  {% if GUAGES %}
+    {% include "partial/guages.html" %}
+  {% endif %}
+
+  {% if ADD_THIS_ID %}
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid={{ ADD_THIS_ID }}" async="async"></script>
+  {% endif %}
+
+  {% if PIWIK_URL and PIWIK_SITE_ID %}
+    {% include "partial/piwik.html" %}
+  {% endif %}
+
+  {% include "partial/jsonld.html" %}
+
+  {% block additional_js %}{% endblock %}
+
+  {% if GITHUB_CORNER_URL %}
+  {% include 'partial/github.html' %}
+  {% endif %}
+</body>
+</html>
