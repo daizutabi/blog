@@ -2,15 +2,19 @@
 <feed xmlns="http://www.w3.org/2005/Atom"><title>大豆旅 - Python</title><link href="https://blog.daizutabi.net/" rel="alternate"></link><link href="https://blog.daizutabi.net%5Cfeeds/python.atom.xml" rel="self"></link><id>https://blog.daizutabi.net/</id><updated>2019-03-29T00:00:00+09:00</updated><entry><title>Fluent Python 例18-2 スピナー</title><link href="https://blog.daizutabi.net%5C2019/03/29/" rel="alternate"></link><published>2019-03-29T00:00:00+09:00</published><updated>2019-03-29T00:00:00+09:00</updated><author><name>daizutabi</name></author><id>tag:blog.daizutabi.net\2019,2019-03-29:/03/29/</id><summary type="html">
 &lt;h1&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;1&lt;/span&gt; &lt;span class="title"&gt;test&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h1&gt;
 &lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;1.1&lt;/span&gt; &lt;span class="title"&gt;def&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-&lt;div class="pheasant-fenced-code"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="python"&gt;1&lt;/code&gt;&lt;/pre&gt;
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="python"&gt;1&lt;/code&gt;&lt;/pre&gt;
 &lt;p class="report"&gt;&lt;span class="count"&gt;[1]&lt;/span&gt;
-&lt;span class="start"&gt;2019-03-30 13:17:49&lt;/span&gt; (&lt;span class="elasped"&gt;11.1ms&lt;/span&gt;)
-&lt;span class="right"&gt;&lt;span class="kernel"&gt;python3&lt;/span&gt;&lt;span class="count"&gt; [2]&lt;/span&gt;
-&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class="output"&gt;&lt;pre&gt;&lt;code class="text"&gt;1&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">
+&lt;span class="start"&gt;2019-03-30 13:25:11&lt;/span&gt; (&lt;span class="elasped"&gt;15.7ms&lt;/span&gt;)
+&lt;span class="right"&gt;&lt;span class="kernel"&gt;python3&lt;/span&gt;&lt;span class="count"&gt; [3]&lt;/span&gt;
+&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class="output"&gt;&lt;pre&gt;&lt;code class="text"&gt;1&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">
 &lt;h1&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;1&lt;/span&gt; &lt;span class="title"&gt;test&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h1&gt;
 &lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;1.1&lt;/span&gt; &lt;span class="title"&gt;def&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-&lt;div class="pheasant-fenced-code"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="python"&gt;1&lt;/code&gt;&lt;/pre&gt;
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="python"&gt;1&lt;/code&gt;&lt;/pre&gt;
 &lt;p class="report"&gt;&lt;span class="count"&gt;[1]&lt;/span&gt;
-&lt;span class="start"&gt;2019-03-30 13:17:49&lt;/span&gt; (&lt;span class="elasped"&gt;11.1ms&lt;/span&gt;)
-&lt;span class="right"&gt;&lt;span class="kernel"&gt;python3&lt;/span&gt;&lt;span class="count"&gt; [2]&lt;/span&gt;
-&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class="output"&gt;&lt;pre&gt;&lt;code class="text"&gt;1&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content></entry></feed>
+&lt;span class="start"&gt;2019-03-30 13:25:11&lt;/span&gt; (&lt;span class="elasped"&gt;15.7ms&lt;/span&gt;)
+&lt;span class="right"&gt;&lt;span class="kernel"&gt;python3&lt;/span&gt;&lt;span class="count"&gt; [3]&lt;/span&gt;
+&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class="output"&gt;&lt;pre&gt;&lt;code class="text"&gt;1&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</content></entry><entry><title>Pythonパッケージの作り方</title><link href="https://blog.daizutabi.net%5C2017/12/18/" rel="alternate"></link><published>2017-12-18T00:00:00+09:00</published><updated>2017-12-18T00:00:00+09:00</updated><author><name>daizutabi</name></author><id>tag:blog.daizutabi.net\2017,2017-12-18:/12/18/</id><summary type="html">
+&lt;p&gt;&lt;a href="https://github.com/daizutabi/takuhai"&gt;Takuhai&lt;/a&gt;を作成するにあたってPythonパッケージの作り方について学びました．&lt;a href="https://iroha.daizutabi.net/"&gt;「Pythonパッケージの作り方」&lt;/a&gt;に公開しています．パッケージを作るたびに&lt;code&gt;PYTHONPATH&lt;/code&gt;を設定していたり，&lt;code&gt;setup.py&lt;/code&gt;を作るのが敷居が高いなと思っている方の参考になれば幸いです．&lt;/p&gt;
+&lt;!-- PELICAN_END_SUMMARY --&gt;</summary><content type="html">
+&lt;p&gt;&lt;a href="https://github.com/daizutabi/takuhai"&gt;Takuhai&lt;/a&gt;を作成するにあたってPythonパッケージの作り方について学びました．&lt;a href="https://iroha.daizutabi.net/"&gt;「Pythonパッケージの作り方」&lt;/a&gt;に公開しています．パッケージを作るたびに&lt;code&gt;PYTHONPATH&lt;/code&gt;を設定していたり，&lt;code&gt;setup.py&lt;/code&gt;を作るのが敷居が高いなと思っている方の参考になれば幸いです．&lt;/p&gt;
+&lt;!-- PELICAN_END_SUMMARY --&gt;</content></entry></feed>

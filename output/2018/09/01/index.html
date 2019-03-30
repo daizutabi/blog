@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" type="text/css" href="../../../theme/stylesheet/style.css">
+  <link rel="stylesheet" type="text/css" href="../../../theme/stylesheet/pheasant.css">
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="https://cdn.jsdelivr.net/gh/tonsky/FiraCode@1.206/distr/fira_code.css" rel="stylesheet">
+
+  <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon" />
+  <title>大豆旅 &ndash; 機械学習の準備</title>
+</head>
+
+<body>
+  <aside>
+    <div>
+      <a href="../../..">
+        <img src="https://www.gravatar.com/avatar/425bf792666d158202306d5dc73367d0?s=140" />
+      </a>
+      <h1><a href="../../..">大豆旅</a></h1>
+
+
+    </div>
+  </aside>
+  <main>
+
+<article class="single">
+  <header>
+    <h1 id="ji-jie-xue-xi-nozhun-bei">機械学習の準備</h1>
+    <p>Posted on 2018年09月01日 (土) in <a href="../../../category/Machine Learning/">Machine Learning</a>
+</p>
+  </header>
+  <div>
+<p>Pythonを使って機械学習の勉強をしていきます．今回は，scikit-learnとTensorFlowをインストールします．この記事では，必要なパッケージなどをインストールする方法を順を追って説明し，勉強を開始できる状態にします．今回インストールする主なPythonパッケージは，以下の通りです．</p>
+<ul>
+<li>JupyterLab 0.34.3</li>
+<li>scikit-learn 0.19.1</li>
+<li>TensorFlow (GPU) 1.10</li>
+<li>Keras 2.2.2</li>
+</ul>
+<!-- PELICAN_END_SUMMARY -->
+
+<p>GPUを使って計算するため，CUDA ToolkitおよびcuDNNもインストールします． これらは，使用するTensorFlowが対応しているバージョンをインストールする必要があります．特に何も指定しないと，最新版がインストールされて，TensorFlowパッケージが実行できないというケースがあるので注意が必要です．具体的には，以下のバージョンを使います：</p>
+<ul>
+<li>CUDA Toolkit: Version 9.0.176</li>
+<li>cuDNN: Version 7.2.1</li>
+</ul>
+<p>インストールするPC環境は以下の通りです：</p>
+<ul>
+<li>OS: Windows 10 Pro (64-bit)</li>
+<li>CPU: Intel Core i7-7700HQ @ 2.80 GHz</li>
+<li>GPU: NVIDIA GeForce GTX 1050</li>
+<li>RAM: 16 GB</li>
+</ul>
+<h2><span class="pheasant-header"><span class="header"><span class="number">0.1</span> <span class="title">CUDA Toolkit</span></span></span></h2>
+<p><a href="https://developer.nvidia.com/cuda-toolkit-archive">https://developer.nvidia.com/cuda-toolkit-archive</a>で，CUDA Toolkitのバージョンを選択した後，</p>
+<ul>
+<li>Operating System: Windows</li>
+<li>Architecture: x86_64</li>
+<li>Version: 10</li>
+<li>Installer Type: exe (local)</li>
+</ul>
+<p>を選び，ダウンロードしたファイルを実行してインストールします．現時点(2018/9/1)で，TensorFlow 1.10はVersion 9.0にしか対応していませんので，最新のVersion 9.2ではなく，Version 9.0を選択しました．Base Installerの他に，Patchもダウンロードします．</p>
+<p>まず，Base Installerを実行します．「NVIDIAソフトウェア使用承諾書」画面で，「同意して続行する」を選びます．「インストールオプション」画面では，「高速（推奨）」を選びます．次に，Visual Studioがない場合には，以下のように警告が出ます．</p>
+<p><img alt="cuda-install" src="../../../images/20180131/cuda-install-3.png"></p>
+<p>特に問題ないので，そのままチェックボックスを選択して，[NEXT]をクリックし，インストールを開始します．その後，先にダウンロードしていたPatchを実行してパッチをインストールします．</p>
+<h2><span class="pheasant-header"><span class="header"><span class="number">0.2</span> <span class="title">NVIDIA cuDNN</span></span></span></h2>
+<p>インストールするにはメンバーシップが必要なので，<a href="https://developer.nvidia.com">https://developer.nvidia.com</a> の右上のJoinから登録します．ダウンロードページ <a href="https://developer.nvidia.com/rdp/cudnn-download">https://developer.nvidia.com/rdp/cudnn-download</a> で，同意ボタンを選択し，リストの中から，</p>
+<ul>
+<li>Download cuDNN v7.2.1 (August 7, 2018), for CUDA 9.0</li>
+</ul>
+<p>を選択します．ダウンロードした圧縮ファイルを展開します．そして，展開してできた<code>cudnn-9.0-windows10-x64-v7.2.1.38</code>以下をすべて，<code>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0</code>にコピーします．</p>
+<h2><span class="pheasant-header"><span class="header"><span class="number">0.3</span> <span class="title">Miniconda</span></span></span></h2>
+<p><a href="https://conda.io/miniconda.html">https://conda.io/miniconda.html</a>で，</p>
+<ul>
+<li>Windows</li>
+<li>Python 3.6</li>
+<li>64-bit (exe installer)</li>
+</ul>
+<p>を選び，ダウンロードしたファイルを実行してインストールします．インストール中の選択肢は，すべてデフォルト設定のまま行います．Miniconda3 4.3.30 (64-bit)がインストールされました．</p>
+<p>condaを最新版にしておきます．</p>
+<div class="pheasant-fenced-code"><div class="cached"><div class="input"><pre><code class="bash">&gt; conda install conda</code></pre>
+<p class="report"><span class="count">[1]</span>
+<span class="start">2019-03-30 13:25:11</span> (<span class="elasped">31.3ms</span>)
+<span class="right"><span class="kernel"></span><span class="count"> [2]</span>
+</span></p></div></div></div>
+
+<h2><span class="pheasant-header"><span class="header"><span class="number">0.4</span> <span class="title">仮想環境の整備</span></span></span></h2>
+<p>仮想環境<code>ml</code>を作り，この下にインストールしていきます．TensorFlowがPython 3.7に対応していないので，Pythonバージョンを3.6にします．3，4行目では，TensorFlowおよびKerasで必要となる一般的なパッケージのインストールも行っています．また，NumpyはTensorFlow用にバージョンを明示しておきます．</p>
+<div class="pheasant-fenced-code"><div class="cached"><div class="input"><pre><code class="bash">(base) &gt; conda install jupyterlab
+(base) &gt; conda create -n ml python=3.6 setuptools=39.1.0
+(base) &gt; conda activate ml
+(ml) &gt; conda install cython markdown pyyaml h5py numpy==1.14.5
+(ml) &gt; conda install termcolor werkzeug ipykernel scikit-learn seaborn</code></pre>
+<p class="report"><span class="count">[2]</span>
+<span class="start">2019-03-30 13:25:11</span> (<span class="elasped">31.3ms</span>)
+<span class="right"><span class="kernel"></span><span class="count"> [2]</span>
+</span></p></div></div></div>
+
+<p>Jupyterが<code>ml</code>環境下のカーネルを認識できるように，以下を実行します．</p>
+<div class="pheasant-fenced-code"><div class="cached"><div class="input"><pre><code class="bash">(ml) &gt; python -m ipykernel install --user --name ml</code></pre>
+<p class="report"><span class="count">[3]</span>
+<span class="start">2019-03-30 13:25:11</span> (<span class="elasped">31.3ms</span>)
+<span class="right"><span class="kernel"></span><span class="count"> [2]</span>
+</span></p></div></div></div>
+
+<p>TensorFlowとKerasはpipでインストールします．PyHamCrestはTensorFlowのインストール時に存在しないと警告が出るので，先にインストールしておきます（必要かは不明）．</p>
+<div class="pheasant-fenced-code"><div class="cached"><div class="input"><pre><code class="bash">(ml) &gt; pip install pyhamcrest
+(ml) &gt; pip install tensorflow-gpu
+(ml) &gt; pip install keras</code></pre>
+<p class="report"><span class="count">[4]</span>
+<span class="start">2019-03-30 13:25:11</span> (<span class="elasped">31.3ms</span>)
+<span class="right"><span class="kernel"></span><span class="count"> [2]</span>
+</span></p></div></div></div>
+
+<h2><span class="pheasant-header"><span class="header"><span class="number">0.5</span> <span class="title">動作確認</span></span></span></h2>
+<p>インポートできることを確認します．</p>
+<div class="pheasant-fenced-code"><div class="cached"><div class="input"><pre><code class="bash">(ml) &gt; python
+&gt;&gt;&gt; import tensorflow as tf
+&gt;&gt;&gt; tf.__version__
+&#39;1.10.0&#39;
+&gt;&gt;&gt; import keras
+Using TensorFlow backend.
+&gt;&gt;&gt; keras.__version__
+&#39;2.2.2&#39;
+&gt;&gt;&gt; exit()</code></pre>
+<p class="report"><span class="count">[5]</span>
+<span class="start">2019-03-30 13:25:11</span> (<span class="elasped">31.3ms</span>)
+<span class="right"><span class="kernel"></span><span class="count"> [2]</span>
+</span></p></div></div></div>
+
+<p>Kerasの動作確認をします． <a href="https://raw.githubusercontent.com/keras-team/keras/master/examples/mnist_cnn.py">MNIST_CNN</a>のサンプルをダウンロードし，実行します．</p>
+<div class="pheasant-fenced-code"><div class="cached"><div class="input"><pre><code class="bash">(ml) &gt; python mnist_cnn.py
+(中略)
+60000/60000 [==============================] - 13s 220us/step - loss: 0.2662 - acc: 0.9178 - val_loss: 0.0609 - val_acc: 0.9817
+Epoch 2/12
+60000/60000 [==============================] - 10s 167us/step - loss: 0.0915 - acc: 0.9723 - val_loss: 0.0548 - val_acc: 0.9845
+Epoch 3/12
+60000/60000 [==============================] - 10s 167us/step - loss: 0.0688 - acc: 0.9795 - val_loss: 0.0348 - val_acc: 0.9881
+Epoch 4/12
+60000/60000 [==============================] - 10s 167us/step - loss: 0.0558 - acc: 0.9827 - val_loss: 0.0322 - val_acc: 0.9892
+Epoch 5/12
+18944/60000 [========&gt;.....................] - ETA: 6s - loss: 0.0466 - acc: 0.9860</code></pre>
+<p class="report"><span class="count">[6]</span>
+<span class="start">2019-03-30 13:25:11</span> (<span class="elasped">31.3ms</span>)
+<span class="right"><span class="kernel"></span><span class="count"> [2]</span>
+</span></p></div></div></div>
+
+<p>GPUの稼働状況です．</p>
+<p><img alt="gpu-status" src="../../../images/20180901/gpu-status.png"></p>
+<p>以上で，機械学習を実行する環境が整いました．</p></div>
+
+</article>
+
+    <footer>
+    </footer>
+  </main>
+</body>
+
+</html>

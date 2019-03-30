@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" type="text/css" href="../../../theme/stylesheet/style.css">
+  <link rel="stylesheet" type="text/css" href="../../../theme/stylesheet/pheasant.css">
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="https://cdn.jsdelivr.net/gh/tonsky/FiraCode@1.206/distr/fira_code.css" rel="stylesheet">
+
+  <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon" />
+  <title>大豆旅 &ndash; Condaを使ってGPU板TensorFlowを簡単にインストール</title>
+</head>
+
+<body>
+  <aside>
+    <div>
+      <a href="../../..">
+        <img src="https://www.gravatar.com/avatar/425bf792666d158202306d5dc73367d0?s=140" />
+      </a>
+      <h1><a href="../../..">大豆旅</a></h1>
+
+
+    </div>
+  </aside>
+  <main>
+
+<article class="single">
+  <header>
+    <h1 id="condawoshi-tsutegpuban-tensorflowwojian-dan-niinsutoru">Condaを使ってGPU板TensorFlowを簡単にインストール</h1>
+    <p>Posted on 2018年09月03日 (月) in <a href="../../../category/Machine Learning/">Machine Learning</a>
+</p>
+  </header>
+  <div>
+<p><a href="../../../2018/09/01/">2018/9/1の記事</a>では，CUDA Toolkitなどをインストールした上で，pip経由でTensorFlowおよびKerasをインストールしました．実は，Condaを使うと，CUDAを手動でインストールする必要がなくなります．実際に検証してみました．</p>
+<!-- PELICAN_END_SUMMARY -->
+
+<h2><span class="pheasant-header"><span class="header"><span class="number">0.1</span> <span class="title">準備</span></span></span></h2>
+<p>まず，コントロールパネルのプログラムのアンインストールで，CUDA関連のアプリを全て消去します．再起動後に，以下を実行してみます．</p>
+<div class="pheasant-fenced-code"><div class="cached"><div class="input"><pre><code class="bash">(base) &gt; activate ml
+(ml) &gt; python mnist_cnn.py
+(中略)
+ImportError: Could not find &#39;cudart64_90.dll&#39;. TensorFlow requires that this DLL be installed in a directory that is named in your %PATH% environment variable. Download and install CUDA 9.0
+ from this URL: https://developer.nvidia.com/cuda-90-download-archive</code></pre>
+<p class="report"><span class="count">[1]</span>
+<span class="start">2019-03-30 13:25:11</span> (<span class="elasped">15.7ms</span>)
+<span class="right"><span class="kernel"></span><span class="count"> [3]</span>
+</span></p></div></div></div>
+
+<p>当然エラーが出ます．</p>
+<p>Condaでインストールしていきます．</p>
+<div class="pheasant-fenced-code"><div class="cached"><div class="input"><pre><code class="bash">(ml) &gt; activate base
+(base) &gt; conda remove -y -n ml --all
+(base) &gt; conda create -y -n ml python=3.6
+(base) &gt; conda activate ml
+(ml) &gt; conda install tensorflow-gpu keras</code></pre>
+<p class="report"><span class="count">[2]</span>
+<span class="start">2019-03-30 13:25:11</span> (<span class="elasped">15.7ms</span>)
+<span class="right"><span class="kernel"></span><span class="count"> [3]</span>
+</span></p></div></div></div>
+
+<h2><span class="pheasant-header"><span class="header"><span class="number">0.2</span> <span class="title">動作確認</span></span></span></h2>
+<p>Kerasの動作確認をします． <a href="https://raw.githubusercontent.com/keras-team/keras/master/examples/mnist_cnn.py">MNIST_CNN</a>のサンプルをダウンロードし，実行します．</p>
+<div class="pheasant-fenced-code"><div class="cached"><div class="input"><pre><code class="bash">(ml) &gt; python mnist_cnn.py
+(中略)
+ GPU (device: 0, name: GeForce GTX 1050, pci bus id: 0000:01:00.0, compute capability: 6.1)
+60000/60000 [==============================] - 13s 208us/step - loss: 0.2567 - acc: 0.9233 - val_loss: 0.0768 - val_acc: 0.9760
+Epoch 2/12
+60000/60000 [==============================] - 10s 159us/step - loss: 0.0875 - acc: 0.9740 - val_loss: 0.0398 - val_acc: 0.9873
+Epoch 3/12
+60000/60000 [==============================] - 10s 159us/step - loss: 0.0669 - acc: 0.9805 - val_loss: 0.0326 - val_acc: 0.9886
+Epoch 4/12
+60000/60000 [==============================] - 10s 159us/step - loss: 0.0536 - acc: 0.9842 - val_loss: 0.0311 - val_acc: 0.9894
+Epoch 5/12
+60000/60000 [==============================] - 10s 159us/step - loss: 0.0466 - acc: 0.9856 - val_loss: 0.0321 - val_acc: 0.9891
+Epoch 6/12
+33536/60000 [===============&gt;..............] - ETA: 4s - loss: 0.0416 - acc: 0.9874</code></pre>
+<p class="report"><span class="count">[3]</span>
+<span class="start">2019-03-30 13:25:11</span> (<span class="elasped">15.7ms</span>)
+<span class="right"><span class="kernel"></span><span class="count"> [3]</span>
+</span></p></div></div></div>
+
+<p>問題なく動作しています．</p>
+<p>他のパッケージもインストールしておきます．</p>
+<div class="pheasant-fenced-code"><div class="cached"><div class="input"><pre><code class="bash">(ml) &gt; conda install ipykernel scikit-learn seaborn</code></pre>
+<p class="report"><span class="count">[4]</span>
+<span class="start">2019-03-30 13:25:11</span> (<span class="elasped">15.7ms</span>)
+<span class="right"><span class="kernel"></span><span class="count"> [3]</span>
+</span></p></div></div></div></div>
+
+</article>
+
+    <footer>
+    </footer>
+  </main>
+</body>
+
+</html>

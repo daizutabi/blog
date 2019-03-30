@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>大豆旅 - Pelican</title><link href="https://blog.daizutabi.net/" rel="alternate"></link><link href="https://blog.daizutabi.net%5Cfeeds/pelican.atom.xml" rel="self"></link><id>https://blog.daizutabi.net/</id><updated>2018-01-03T00:00:00+09:00</updated><entry><title>Google Web Fontの設定</title><link href="https://blog.daizutabi.net%5C2018/01/03/" rel="alternate"></link><published>2018-01-03T00:00:00+09:00</published><updated>2018-01-03T00:00:00+09:00</updated><author><name>daizutabi</name></author><id>tag:blog.daizutabi.net\2018,2018-01-03:/01/03/</id><summary type="html">
+&lt;p&gt;&lt;a href="https://googlefonts.github.io/japanese/"&gt;Google Fonts + 日本語早期アクセス&lt;/a&gt;の設定を行います．今回は，さわらびゴシックを使ってみます．本ブログのPelicanテーマである&lt;a href="http://www.voidynullness.net/page/voidy-bootstrap-pelican-theme/"&gt;VoidyBootstrap&lt;/a&gt;での設定方法になります．&lt;/p&gt;
+&lt;!-- PELICAN_END_SUMMARY --&gt;
+
+&lt;p&gt;&lt;code&gt;pelicanconf.py&lt;/code&gt;に以下を追加します．&lt;/p&gt;
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="cson"&gt;THEME = &amp;#39;voidy-bootstrap/&amp;#39;
+STYLESHEETS = (
+    &amp;#39;custom/custom.css&amp;#39;,
+    # other stylesheets
+)
+
+STYLESHEET_URLS = (
+    &amp;#39;https://fonts.googleapis.com/earlyaccess/sawarabigothic.css&amp;#39;,
+    # other stylesheet_urls
+)&lt;/code&gt;&lt;/pre&gt;
+&lt;p class="report"&gt;&lt;span class="count"&gt;[1]&lt;/span&gt;
+&lt;span class="start"&gt;2019-03-30 13:25:12&lt;/span&gt; (&lt;span class="elasped"&gt;15.6ms&lt;/span&gt;)
+&lt;span class="right"&gt;&lt;span class="option"&gt; (python) &lt;/span&gt;&lt;span class="kernel"&gt;&lt;/span&gt;&lt;span class="count"&gt; [2]&lt;/span&gt;
+&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;code&gt;voidy-bootstrap&lt;/code&gt;ディレクトリ下に&lt;code&gt;static/css/custom.css&lt;/code&gt;を作成し，以下を追加します．&lt;/p&gt;
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="css"&gt;body {
+  font-family: &amp;#39;Sawarabi …&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">
+&lt;p&gt;&lt;a href="https://googlefonts.github.io/japanese/"&gt;Google Fonts + 日本語早期アクセス&lt;/a&gt;の設定を行います．今回は，さわらびゴシックを使ってみます．本ブログのPelicanテーマである&lt;a href="http://www.voidynullness.net/page/voidy-bootstrap-pelican-theme/"&gt;VoidyBootstrap&lt;/a&gt;での設定方法になります．&lt;/p&gt;
+&lt;!-- PELICAN_END_SUMMARY --&gt;
+
+&lt;p&gt;&lt;code&gt;pelicanconf.py&lt;/code&gt;に以下を追加します．&lt;/p&gt;
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="cson"&gt;THEME = &amp;#39;voidy-bootstrap/&amp;#39;
+STYLESHEETS = (
+    &amp;#39;custom/custom.css&amp;#39;,
+    # other stylesheets
+)
+
+STYLESHEET_URLS = (
+    &amp;#39;https://fonts.googleapis.com/earlyaccess/sawarabigothic.css&amp;#39;,
+    # other stylesheet_urls
+)&lt;/code&gt;&lt;/pre&gt;
+&lt;p class="report"&gt;&lt;span class="count"&gt;[1]&lt;/span&gt;
+&lt;span class="start"&gt;2019-03-30 13:25:12&lt;/span&gt; (&lt;span class="elasped"&gt;15.6ms&lt;/span&gt;)
+&lt;span class="right"&gt;&lt;span class="option"&gt; (python) &lt;/span&gt;&lt;span class="kernel"&gt;&lt;/span&gt;&lt;span class="count"&gt; [2]&lt;/span&gt;
+&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;code&gt;voidy-bootstrap&lt;/code&gt;ディレクトリ下に&lt;code&gt;static/css/custom.css&lt;/code&gt;を作成し，以下を追加します．&lt;/p&gt;
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="css"&gt;body {
+  font-family: &amp;#39;Sawarabi Gothic&amp;#39;;
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;p class="report"&gt;&lt;span class="count"&gt;[2]&lt;/span&gt;
+&lt;span class="start"&gt;2019-03-30 13:25:12&lt;/span&gt; (&lt;span class="elasped"&gt;15.6ms&lt;/span&gt;)
+&lt;span class="right"&gt;&lt;span class="kernel"&gt;&lt;/span&gt;&lt;span class="count"&gt; [2]&lt;/span&gt;
+&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;簡単に設定できました．&lt;/p&gt;</content></entry><entry><title>DNS Zonesからネームサーバーを設定する方法</title><link href="https://blog.daizutabi.net%5C2017/12/21/" rel="alternate"></link><published>2017-12-21T00:00:00+09:00</published><updated>2017-12-28T00:00:00+09:00</updated><author><name>daizutabi</name></author><id>tag:blog.daizutabi.net\2017,2017-12-21:/12/21/</id><summary type="html">
+&lt;p&gt;&lt;a href="https://blog.daizutabi.net/2017/12/20/"&gt;2017/12/20&lt;/a&gt;に，ブログの公開を&lt;a href="https://pages.github.com"&gt;GitHub Pages&lt;/a&gt;から&lt;a href="https://www.netlify.com"&gt;Netlify&lt;/a&gt;に移行した件を書きました．ただ，その時の方法だと，最初にアップしたサイトが特権的な扱いを受けて，後続のサイトと非対称な形になってしまいました．少し気になっていたところ，DNS zonesから再設定することで，非対称性を解消できました．&lt;/p&gt;
+&lt;!-- PELICAN_END_SUMMARY --&gt;
+
+&lt;p&gt;以下，順を追って説明したいと思います．次の前提で話を進めます．&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;カスタムドメインとサイトをすでに登録していたので，すべて削除しました．&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.onamae.com"&gt;お名前.com&lt;/a&gt;で&lt;code&gt;daizutabi.net&lt;/code&gt;を取得済です．&lt;/li&gt;
+&lt;li&gt;GitHub上の&lt;a href="https://github.com/daizutabi/blog"&gt;「ブログ」&lt;/a&gt;レポジトリと&lt;a href="https://github.com/daizutabi/iroha"&gt;「Pythonパッケージの作り方」&lt;/a&gt;レポジトリを公開していきます．&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;（注）具体的な名前で説明したほうが分かりやすいと思いそのまま書いています．ドメイン名やレポジトリ名は適宜置き換えを行ってください．&lt;/p&gt;
+&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.1&lt;/span&gt; &lt;span class="title"&gt;DNS zonesの設定&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://www.netlify.com"&gt;Netlify&lt;/a&gt;にGitHubアカウントを使ってログインします．&lt;/p&gt;
+&lt;p&gt;&lt;img alt="daizutabi" src="https://blog.daizutabi.net/images/20171221/010.png"&gt;&lt;/p&gt;
+&lt;p&gt;左上のAll teamsからdaizutabiを選択します．&lt;/p&gt;
+&lt;p&gt;&lt;img alt="DNS zones" src="https://blog.daizutabi.net/images/20171221/020.png"&gt;&lt;/p&gt;
+&lt;p&gt;メニューからDNS zonesをクリックします．&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Add a domain" src="https://blog.daizutabi.net/images/20171221/030.png"&gt;&lt;/p&gt;
+&lt;p&gt;Add a domainをクリックします …&lt;/p&gt;</summary><content type="html">
+&lt;p&gt;&lt;a href="https://blog.daizutabi.net/2017/12/20/"&gt;2017/12/20&lt;/a&gt;に，ブログの公開を&lt;a href="https://pages.github.com"&gt;GitHub Pages&lt;/a&gt;から&lt;a href="https://www.netlify.com"&gt;Netlify&lt;/a&gt;に移行した件を書きました．ただ，その時の方法だと，最初にアップしたサイトが特権的な扱いを受けて，後続のサイトと非対称な形になってしまいました．少し気になっていたところ，DNS zonesから再設定することで，非対称性を解消できました．&lt;/p&gt;
+&lt;!-- PELICAN_END_SUMMARY --&gt;
+
+&lt;p&gt;以下，順を追って説明したいと思います．次の前提で話を進めます．&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;カスタムドメインとサイトをすでに登録していたので，すべて削除しました．&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.onamae.com"&gt;お名前.com&lt;/a&gt;で&lt;code&gt;daizutabi.net&lt;/code&gt;を取得済です．&lt;/li&gt;
+&lt;li&gt;GitHub上の&lt;a href="https://github.com/daizutabi/blog"&gt;「ブログ」&lt;/a&gt;レポジトリと&lt;a href="https://github.com/daizutabi/iroha"&gt;「Pythonパッケージの作り方」&lt;/a&gt;レポジトリを公開していきます．&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;（注）具体的な名前で説明したほうが分かりやすいと思いそのまま書いています．ドメイン名やレポジトリ名は適宜置き換えを行ってください．&lt;/p&gt;
+&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.1&lt;/span&gt; &lt;span class="title"&gt;DNS zonesの設定&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://www.netlify.com"&gt;Netlify&lt;/a&gt;にGitHubアカウントを使ってログインします．&lt;/p&gt;
+&lt;p&gt;&lt;img alt="daizutabi" src="https://blog.daizutabi.net/images/20171221/010.png"&gt;&lt;/p&gt;
+&lt;p&gt;左上のAll teamsからdaizutabiを選択します．&lt;/p&gt;
+&lt;p&gt;&lt;img alt="DNS zones" src="https://blog.daizutabi.net/images/20171221/020.png"&gt;&lt;/p&gt;
+&lt;p&gt;メニューからDNS zonesをクリックします．&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Add a domain" src="https://blog.daizutabi.net/images/20171221/030.png"&gt;&lt;/p&gt;
+&lt;p&gt;Add a domainをクリックします．&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Create DNS zone" src="https://blog.daizutabi.net/images/20171221/040.png"&gt;&lt;/p&gt;
+&lt;p&gt;Domainにdaizutabi.netを入力して，Create DNS zoneをクリックします．&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Add new record" src="https://blog.daizutabi.net/images/20171221/050.png"&gt;&lt;/p&gt;
+&lt;p&gt;Add new recordをクリックします．&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Save" src="https://blog.daizutabi.net/images/20171221/060.png"&gt;&lt;/p&gt;
+&lt;p&gt;上のように入力して，Saveをクリックします．つづけて，Add new recordをクリックして，次にように入力して，Saveをクリックします．&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Type: CNAME&lt;/li&gt;
+&lt;li&gt;Hostname: iroha.daizutabi.net&lt;/li&gt;
+&lt;li&gt;Value: www.netlify.com&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Continueをクリックします．Update your domain's nameserversと表示されて，ネームサーバー一覧が表示されるので，これをお名前.comの自ドメインのネームサーバーに登録します．Doneをクリックして，DNS zonesの設定を終えます．&lt;/p&gt;
+&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.2&lt;/span&gt; &lt;span class="title"&gt;Siteの設定&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;p&gt;daizutabiのメニューに戻ります．&lt;/p&gt;
+&lt;p&gt;&lt;img alt="New site from Git" src="https://blog.daizutabi.net/images/20171221/070.png"&gt;&lt;/p&gt;
+&lt;p&gt;Sitesをクリックしたあと，New site from Gitを選びます．&lt;/p&gt;
+&lt;p&gt;&lt;img alt="GitHub" src="https://blog.daizutabi.net/images/20171221/080.png"&gt;&lt;/p&gt;
+&lt;p&gt;GitHubを選びます．&lt;/p&gt;
+&lt;p&gt;&lt;img alt="daizutabi/blog" src="https://blog.daizutabi.net/images/20171221/090.png"&gt;&lt;/p&gt;
+&lt;p&gt;レポジトリ一覧が表示されるので，&lt;a href="https://github.com/daizutabi/blog"&gt;「ブログ」&lt;/a&gt;用のレポジトリdaizutabi/blogを選びます．&lt;/p&gt;
+&lt;p&gt;サイトの設定を入力していきます．blogレポジトリは，Pelicanを使っているのでPublish directoryにoutputを入力します．それ以外はデフォルトのままです．Deploy siteをクリックします．しばらくすると，サイトが自動で生成されます．&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Domain settings" src="https://blog.daizutabi.net/images/20171221/100.png"&gt;&lt;/p&gt;
+&lt;p&gt;Domain settingsをクリックします．ページ中ほどのAdd Custom domainをクリックします．表示されたダイアログで，blog.daizutabi.netと入力します．&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/daizutabi/iroha"&gt;「Pythonパッケージの作り方」&lt;/a&gt;レポジトリについても同様です．ただし，こちらはMkDocsを使っているのでPublish directoryにはsiteを入力し，URLはiroha.daizutabi.netとします．他は同じです．&lt;/p&gt;</content></entry><entry><title>NetlifyでPelicanページを公開する</title><link href="https://blog.daizutabi.net%5C2017/12/20/" rel="alternate"></link><published>2017-12-20T00:00:00+09:00</published><updated>2017-12-21T00:00:00+09:00</updated><author><name>daizutabi</name></author><id>tag:blog.daizutabi.net\2017,2017-12-20:/12/20/</id><summary type="html">
+&lt;p&gt;これまで&lt;a href="https://pages.github.com"&gt;GitHub Pages&lt;/a&gt;をブログなどの公開に使っていましたが，&lt;a href="https://www.netlify.com"&gt;Netlify&lt;/a&gt;に移行します．とても簡単に独自ドメインを使うことができます．&lt;/p&gt;
+&lt;!-- PELICAN_END_SUMMARY --&gt;
+
+&lt;p&gt;（追記）以下の内容よりも，2017/12/21の&lt;a href="https://blog.daizutabi.net/2017/12/21/"&gt;「DNS Zonesからネームサーバーを設定する方法」&lt;/a&gt;のほうがお勧めです．&lt;/p&gt;
+&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.1&lt;/span&gt; &lt;span class="title"&gt;お名前.comで独自ドメインの取得&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://www.onamae.com"&gt;お名前.com&lt;/a&gt;で独自ドメインを取得します．金額に関しては，初年度だけでなく２年目以降の金額についてもチェックしておきましょう．また，「1.お申込み内容」のところで，&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Whois情報公開代行（新規登録と同時なら無料）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;は，個人情報を公開したくない場合にはチェックを入れておきます．&lt;/p&gt;
+&lt;p&gt;お名前.comのサイト内ですることは，取得したドメインのネームサーバをNetlify DNSに設定することだけです．それ以外の設定はすべて，Netlify内で完結します．&lt;/p&gt;
+&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.2&lt;/span&gt; &lt;span class="title"&gt;静的サイトの作成&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;p&gt;Pelicanを使ってサイトを作成し，GitHubレポジトリにPushしておきます．&lt;/p&gt;
+&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.3&lt;/span&gt; &lt;span class="title"&gt;Netifyでサイトの作成&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://www.netlify.com"&gt;Netlify&lt;/a&gt;にはGitHubアカウントを使ってログインします．ログイン後に，&lt;a href="https://app.netlify.com/"&gt;https …&lt;/a&gt;&lt;/p&gt;</summary><content type="html">
+&lt;p&gt;これまで&lt;a href="https://pages.github.com"&gt;GitHub Pages&lt;/a&gt;をブログなどの公開に使っていましたが，&lt;a href="https://www.netlify.com"&gt;Netlify&lt;/a&gt;に移行します．とても簡単に独自ドメインを使うことができます．&lt;/p&gt;
+&lt;!-- PELICAN_END_SUMMARY --&gt;
+
+&lt;p&gt;（追記）以下の内容よりも，2017/12/21の&lt;a href="https://blog.daizutabi.net/2017/12/21/"&gt;「DNS Zonesからネームサーバーを設定する方法」&lt;/a&gt;のほうがお勧めです．&lt;/p&gt;
+&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.1&lt;/span&gt; &lt;span class="title"&gt;お名前.comで独自ドメインの取得&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://www.onamae.com"&gt;お名前.com&lt;/a&gt;で独自ドメインを取得します．金額に関しては，初年度だけでなく２年目以降の金額についてもチェックしておきましょう．また，「1.お申込み内容」のところで，&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Whois情報公開代行（新規登録と同時なら無料）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;は，個人情報を公開したくない場合にはチェックを入れておきます．&lt;/p&gt;
+&lt;p&gt;お名前.comのサイト内ですることは，取得したドメインのネームサーバをNetlify DNSに設定することだけです．それ以外の設定はすべて，Netlify内で完結します．&lt;/p&gt;
+&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.2&lt;/span&gt; &lt;span class="title"&gt;静的サイトの作成&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;p&gt;Pelicanを使ってサイトを作成し，GitHubレポジトリにPushしておきます．&lt;/p&gt;
+&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.3&lt;/span&gt; &lt;span class="title"&gt;Netifyでサイトの作成&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://www.netlify.com"&gt;Netlify&lt;/a&gt;にはGitHubアカウントを使ってログインします．ログイン後に，&lt;a href="https://app.netlify.com/"&gt;https://app.netlify.com&lt;/a&gt;を開き，右上のNew Site From Gitをクリックします．GitHubを選ぶと，自分のレポジトリ一覧が表示されるので，公開したいレポジトリを選択します．（以下はblogレポジトリを選択した前提で進めます．）&lt;/p&gt;
+&lt;p&gt;"Deploy settings for daizutabi/iroha"で，次の選択をします．&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Branch to deploy: master&lt;/li&gt;
+&lt;li&gt;Build commant: (何も入力しない)&lt;/li&gt;
+&lt;li&gt;Publish directory: output&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;"Deply site"をクリックすると（すでに生成されていた）サイトが公開されます．&lt;/p&gt;
+&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.4&lt;/span&gt; &lt;span class="title"&gt;カスタムドメインの設定&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;p&gt;"Add a custom domain"をクリックします．&lt;/p&gt;
+&lt;p&gt;"Your custom domain"に
+&lt;code&gt;http://blog.daizutabi.net&lt;/code&gt;を入力し，Saveをクリックします．&lt;/p&gt;
+&lt;p&gt;"Change your domain's name servers"を開くと，Netlify DNSが表示されるので，これをお名前.comのネームサーバーに設定します．&lt;/p&gt;
+&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.5&lt;/span&gt; &lt;span class="title"&gt;HTTPS&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;p&gt;画面の案内に従えばすんなり設定できます．&lt;/p&gt;</content></entry><entry><title>Gravater画像を貼り付ける</title><link href="https://blog.daizutabi.net%5C2017/12/19/" rel="alternate"></link><published>2017-12-19T00:00:00+09:00</published><updated>2017-12-19T00:00:00+09:00</updated><author><name>daizutabi</name></author><id>tag:blog.daizutabi.net\2017,2017-12-19:/12/19/</id><summary type="html">
+&lt;p&gt;ブログサイトの右上のほうに&lt;a href="https://ja.gravatar.com"&gt;Gravater&lt;/a&gt;の画像を表示させてみます．画像の取得方法は&lt;a href="https://ja.gravatar.com/site/implement/images/"&gt;Image Requests&lt;/a&gt;や&lt;a href="https://ja.gravatar.com/site/implement/images/python/"&gt;Python Image Requests&lt;/a&gt;に記載されています．&lt;/p&gt;
+&lt;!-- PELICAN_END_SUMMARY --&gt;
+
+&lt;p&gt;Gravaterに登録したアドレスからハッシュ値を生成します．&lt;/p&gt;
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="python"&gt;import hashlib
+hashlib.md5(b&amp;#39;daizutabi@gmail.com&amp;#39;).hexdigest()&lt;/code&gt;&lt;/pre&gt;
+&lt;p class="report"&gt;&lt;span class="count"&gt;[1]&lt;/span&gt;
+&lt;span class="start"&gt;2019-03-30 13:25:11&lt;/span&gt; (&lt;span class="elasped"&gt;31.3ms&lt;/span&gt;)
+&lt;span class="right"&gt;&lt;span class="kernel"&gt;python3&lt;/span&gt;&lt;span class="count"&gt; [2]&lt;/span&gt;
+&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class="output"&gt;&lt;pre&gt;&lt;code class="text"&gt;&amp;#39;425bf792666d158202306d5dc73367d0&amp;#39;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;ハッシュ値を使って，画像を読み込みます．&lt;/p&gt;
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="html"&gt;&amp;lt;img src=&amp;#34;https://www.gravatar.com/avatar/425bf792666d158202306d5dc73367d0&amp;#34;/&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p class="report"&gt;&lt;span class="count"&gt;[2]&lt;/span&gt;
+&lt;span class="start"&gt;2019-03-30 13:25:11&lt;/span&gt; (&lt;span class="elasped"&gt;31.3ms&lt;/span&gt;)
+&lt;span class="right"&gt;&lt;span class="kernel"&gt;&lt;/span&gt;&lt;span class="count"&gt; [2]&lt;/span&gt;
+&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;実際の表示は以下の通りです …&lt;/p&gt;</summary><content type="html">
+&lt;p&gt;ブログサイトの右上のほうに&lt;a href="https://ja.gravatar.com"&gt;Gravater&lt;/a&gt;の画像を表示させてみます．画像の取得方法は&lt;a href="https://ja.gravatar.com/site/implement/images/"&gt;Image Requests&lt;/a&gt;や&lt;a href="https://ja.gravatar.com/site/implement/images/python/"&gt;Python Image Requests&lt;/a&gt;に記載されています．&lt;/p&gt;
+&lt;!-- PELICAN_END_SUMMARY --&gt;
+
+&lt;p&gt;Gravaterに登録したアドレスからハッシュ値を生成します．&lt;/p&gt;
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="python"&gt;import hashlib
+hashlib.md5(b&amp;#39;daizutabi@gmail.com&amp;#39;).hexdigest()&lt;/code&gt;&lt;/pre&gt;
+&lt;p class="report"&gt;&lt;span class="count"&gt;[1]&lt;/span&gt;
+&lt;span class="start"&gt;2019-03-30 13:25:11&lt;/span&gt; (&lt;span class="elasped"&gt;31.3ms&lt;/span&gt;)
+&lt;span class="right"&gt;&lt;span class="kernel"&gt;python3&lt;/span&gt;&lt;span class="count"&gt; [2]&lt;/span&gt;
+&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class="output"&gt;&lt;pre&gt;&lt;code class="text"&gt;&amp;#39;425bf792666d158202306d5dc73367d0&amp;#39;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;ハッシュ値を使って，画像を読み込みます．&lt;/p&gt;
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="html"&gt;&amp;lt;img src=&amp;#34;https://www.gravatar.com/avatar/425bf792666d158202306d5dc73367d0&amp;#34;/&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p class="report"&gt;&lt;span class="count"&gt;[2]&lt;/span&gt;
+&lt;span class="start"&gt;2019-03-30 13:25:11&lt;/span&gt; (&lt;span class="elasped"&gt;31.3ms&lt;/span&gt;)
+&lt;span class="right"&gt;&lt;span class="kernel"&gt;&lt;/span&gt;&lt;span class="count"&gt; [2]&lt;/span&gt;
+&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;実際の表示は以下の通りです．&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.gravatar.com/avatar/425bf792666d158202306d5dc73367d0"/&gt;&lt;/p&gt;
+&lt;p&gt;画像サイズを変えてみます．&lt;/p&gt;
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="html"&gt;&amp;lt;img src=&amp;#34;https://www.gravatar.com/avatar/425bf792666d158202306d5dc73367d0?s=200&amp;#34;/&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p class="report"&gt;&lt;span class="count"&gt;[3]&lt;/span&gt;
+&lt;span class="start"&gt;2019-03-30 13:25:11&lt;/span&gt; (&lt;span class="elasped"&gt;31.3ms&lt;/span&gt;)
+&lt;span class="right"&gt;&lt;span class="kernel"&gt;&lt;/span&gt;&lt;span class="count"&gt; [2]&lt;/span&gt;
+&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src="https://www.gravatar.com/avatar/425bf792666d158202306d5dc73367d0?s=200"/&gt;&lt;/p&gt;
+&lt;p&gt;ここまで出来たら，CSSを編集して完成です．&lt;/p&gt;
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="css"&gt;.jumbotron h1 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-image: url(https://www.gravatar.com/avatar/425bf792666d158202306d5dc73367d0?s=30);
+  background-repeat: no-repeat;
+  background-position: right center;
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;p class="report"&gt;&lt;span class="count"&gt;[4]&lt;/span&gt;
+&lt;span class="start"&gt;2019-03-30 13:25:11&lt;/span&gt; (&lt;span class="elasped"&gt;31.3ms&lt;/span&gt;)
+&lt;span class="right"&gt;&lt;span class="kernel"&gt;&lt;/span&gt;&lt;span class="count"&gt; [2]&lt;/span&gt;
+&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</content></entry><entry><title>記事の自動ビルドとページのリロード</title><link href="https://blog.daizutabi.net%5C2017/12/17/" rel="alternate"></link><published>2017-12-17T00:00:00+09:00</published><updated>2017-12-17T00:00:00+09:00</updated><author><name>daizutabi</name></author><id>tag:blog.daizutabi.net\2017,2017-12-17:/12/17/</id><summary type="html">
+&lt;p&gt;&lt;a href="https://github.com/daizutabi/takuhai"&gt;Takuhai&lt;/a&gt;パッケージを作りました．Pelicanプロジェクト内の記事ファイルが更新されたら次のことを実行します：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;記事をビルドしてHTMLファイルを生成します．&lt;/li&gt;
+&lt;li&gt;ローカルのHTTPサーバを立ち上げて，生成した記事をブラウザで表示します．&lt;/li&gt;
+&lt;li&gt;記事が更新されたら，その都度ビルドして，ブラウザのページを自動でリロードします．&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- PELICAN_END_SUMMARY --&gt;
+
+&lt;p&gt;本パッケージを作成するにあたって，次の記事を参考にしました：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://merlijn.vandeen.nl/2015/pelican-livereload.html"&gt;Using LiveReload with Pelican&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://tech.agilitynerd.com/livereload-with-pelican.html"&gt;LiveReload with Pelican&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;これらの記事が提供する機能に加えて，Takuhaiでは以下の改善を加えています：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://pypi.org"&gt;PyPI&lt;/a&gt;および&lt;a href="https://anaconda.org"&gt;Anaconda Cloud&lt;/a&gt;からのインストール．&lt;/li&gt;
+&lt;li&gt;実行コマンド&lt;code&gt;takuhai&lt;/code&gt;の実装．&lt;/li&gt;
+&lt;li&gt;ホスト名やポート番号の指定．&lt;/li&gt;
+&lt;li&gt;ブラウザの自動起動．&lt;/li&gt;
+&lt;li&gt;相対URLと絶対URLの選択．&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;特に有用と考えている「相対URLと絶対URLの選択」について説明します．Takuhaiの実行コマンド&lt;code&gt;takuhai&lt;/code&gt;はデフォルトで相対URLを設定します．これは&lt;code&gt;pelicanconf.py&lt;/code&gt;の設定を上書きします．&lt;/p&gt;
+&lt;p&gt;Pelicanドキュメントの&lt;a href="http://docs.getpelican.com/en/stable/settings.html#url-settings"&gt;URL settings&lt;/a&gt;によれば，絶対URLが望ましい選択とされています．しかし，これではローカルHTTPサーバを立ち上げても，リンク先が外部サイトになってしまいます．望ましい動作とは言えないでしょう …&lt;/p&gt;</summary><content type="html">
+&lt;p&gt;&lt;a href="https://github.com/daizutabi/takuhai"&gt;Takuhai&lt;/a&gt;パッケージを作りました．Pelicanプロジェクト内の記事ファイルが更新されたら次のことを実行します：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;記事をビルドしてHTMLファイルを生成します．&lt;/li&gt;
+&lt;li&gt;ローカルのHTTPサーバを立ち上げて，生成した記事をブラウザで表示します．&lt;/li&gt;
+&lt;li&gt;記事が更新されたら，その都度ビルドして，ブラウザのページを自動でリロードします．&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- PELICAN_END_SUMMARY --&gt;
+
+&lt;p&gt;本パッケージを作成するにあたって，次の記事を参考にしました：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://merlijn.vandeen.nl/2015/pelican-livereload.html"&gt;Using LiveReload with Pelican&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://tech.agilitynerd.com/livereload-with-pelican.html"&gt;LiveReload with Pelican&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;これらの記事が提供する機能に加えて，Takuhaiでは以下の改善を加えています：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://pypi.org"&gt;PyPI&lt;/a&gt;および&lt;a href="https://anaconda.org"&gt;Anaconda Cloud&lt;/a&gt;からのインストール．&lt;/li&gt;
+&lt;li&gt;実行コマンド&lt;code&gt;takuhai&lt;/code&gt;の実装．&lt;/li&gt;
+&lt;li&gt;ホスト名やポート番号の指定．&lt;/li&gt;
+&lt;li&gt;ブラウザの自動起動．&lt;/li&gt;
+&lt;li&gt;相対URLと絶対URLの選択．&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;特に有用と考えている「相対URLと絶対URLの選択」について説明します．Takuhaiの実行コマンド&lt;code&gt;takuhai&lt;/code&gt;はデフォルトで相対URLを設定します．これは&lt;code&gt;pelicanconf.py&lt;/code&gt;の設定を上書きします．&lt;/p&gt;
+&lt;p&gt;Pelicanドキュメントの&lt;a href="http://docs.getpelican.com/en/stable/settings.html#url-settings"&gt;URL settings&lt;/a&gt;によれば，絶対URLが望ましい選択とされています．しかし，これではローカルHTTPサーバを立ち上げても，リンク先が外部サイトになってしまいます．望ましい動作とは言えないでしょう．&lt;/p&gt;
+&lt;p&gt;Takuhaiでは，&lt;code&gt;pelicanconf.py&lt;/code&gt;の設定を上書きすることで，ローカルHTTPサーバの場合に限って相対URLを使うことができます．&lt;code&gt;pelicanconf.py&lt;/code&gt;の&lt;code&gt;RELATIVE_URLS&lt;/code&gt;は常に&lt;code&gt;False&lt;/code&gt;にしておきましょう．開発用に&lt;code&gt;takuhai content&lt;/code&gt;としたときには相対URLを使い，公開用に&lt;code&gt;pelican content&lt;/code&gt;としたときには絶対URLを使います．公開前には忘れずに&lt;code&gt;pelican content&lt;/code&gt;を実行しましょう．&lt;/p&gt;
+&lt;p&gt;Takuhaiのインストールは簡単です．&lt;/p&gt;
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="bash"&gt;&amp;gt; pip install takuhai&lt;/code&gt;&lt;/pre&gt;
+&lt;p class="report"&gt;&lt;span class="count"&gt;[1]&lt;/span&gt;
+&lt;span class="start"&gt;2019-03-30 13:25:10&lt;/span&gt; (&lt;span class="elasped"&gt;953ms&lt;/span&gt;)
+&lt;span class="right"&gt;&lt;span class="kernel"&gt;&lt;/span&gt;&lt;span class="count"&gt; [1]&lt;/span&gt;
+&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;condaパッケージも用意しています．&lt;/p&gt;
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="bash"&gt;&amp;gt; conda install -c daizutabi -c conda-forge takuhai&lt;/code&gt;&lt;/pre&gt;
+&lt;p class="report"&gt;&lt;span class="count"&gt;[2]&lt;/span&gt;
+&lt;span class="start"&gt;2019-03-30 13:25:10&lt;/span&gt; (&lt;span class="elasped"&gt;953ms&lt;/span&gt;)
+&lt;span class="right"&gt;&lt;span class="kernel"&gt;&lt;/span&gt;&lt;span class="count"&gt; [1]&lt;/span&gt;
+&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;インストールができたら，いつも実行している&lt;/p&gt;
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="bash"&gt;&amp;gt; pelican content&lt;/code&gt;&lt;/pre&gt;
+&lt;p class="report"&gt;&lt;span class="count"&gt;[3]&lt;/span&gt;
+&lt;span class="start"&gt;2019-03-30 13:25:10&lt;/span&gt; (&lt;span class="elasped"&gt;953ms&lt;/span&gt;)
+&lt;span class="right"&gt;&lt;span class="kernel"&gt;&lt;/span&gt;&lt;span class="count"&gt; [1]&lt;/span&gt;
+&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;の代わりに&lt;/p&gt;
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="bash"&gt;&amp;gt; takuhai content&lt;/code&gt;&lt;/pre&gt;
+&lt;p class="report"&gt;&lt;span class="count"&gt;[4]&lt;/span&gt;
+&lt;span class="start"&gt;2019-03-30 13:25:10&lt;/span&gt; (&lt;span class="elasped"&gt;953ms&lt;/span&gt;)
+&lt;span class="right"&gt;&lt;span class="kernel"&gt;&lt;/span&gt;&lt;span class="count"&gt; [1]&lt;/span&gt;
+&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;を実行してみましょう．&lt;code&gt;http://localhost:8000&lt;/code&gt;にアクセスすると記事が表示されます．記事ファイルを更新すると，ブラウザのページが自動でリロードされ，最新の内容に変更されることが確認できます．&lt;/p&gt;</content></entry><entry><title>ブログを始める</title><link href="https://blog.daizutabi.net%5C2017/12/16/" rel="alternate"></link><published>2017-12-16T00:00:00+09:00</published><updated>2017-12-16T00:00:00+09:00</updated><author><name>daizutabi</name></author><id>tag:blog.daizutabi.net\2017,2017-12-16:/12/16/</id><summary type="html">
+&lt;p&gt;&lt;a href="https://pages.github.com/"&gt;GitHub Pages&lt;/a&gt;でブログを始めることにしました．&lt;a href="https://blog.getpelican.com/"&gt;Pelican&lt;/a&gt;を使って記事を生成します．フォーマットはマークダウンにします．&lt;/p&gt;
+&lt;!-- PELICAN_END_SUMMARY --&gt;
+
+&lt;p&gt;Pelicanでは，各記事のファイルの先頭に以下のようなメタデータを書く必要があります．&lt;/p&gt;
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="text"&gt;Title: My First Review
+Date: 2010-12-03 10:20
+Category: Review
+Slug: URL&lt;/code&gt;&lt;/pre&gt;
+&lt;p class="report"&gt;&lt;span class="count"&gt;[1]&lt;/span&gt;
+&lt;span class="start"&gt;2019-03-30 13:25:11&lt;/span&gt; (&lt;span class="elasped"&gt;15.7ms&lt;/span&gt;)
+&lt;span class="right"&gt;&lt;span class="kernel"&gt;&lt;/span&gt;&lt;span class="count"&gt; [3]&lt;/span&gt;
+&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;記事を書くたびにこれらのメタデータを入力するのは少々面倒です．そこで，ファイル名から自動的にメタデータを抽出するようにします．設定ファイル&lt;code&gt;pelicanconf.py&lt;/code&gt;に以下の内容を追加します．&lt;/p&gt;
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="text"&gt;PATH_METADATA = r&amp;#39;(?P&amp;lt;category&amp;gt;.+?)/.*&amp;#39;
+FILENAME_METADATA = r&amp;#39;(?P&amp;lt;date&amp;gt;\d{8}).(?P&amp;lt;title&amp;gt;.+)&amp;#39;&lt;/code&gt;&lt;/pre&gt;
+&lt;p class="report"&gt;&lt;span class="count"&gt;[2]&lt;/span&gt;
+&lt;span class="start"&gt;2019-03-30 13 …&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">
+&lt;p&gt;&lt;a href="https://pages.github.com/"&gt;GitHub Pages&lt;/a&gt;でブログを始めることにしました．&lt;a href="https://blog.getpelican.com/"&gt;Pelican&lt;/a&gt;を使って記事を生成します．フォーマットはマークダウンにします．&lt;/p&gt;
+&lt;!-- PELICAN_END_SUMMARY --&gt;
+
+&lt;p&gt;Pelicanでは，各記事のファイルの先頭に以下のようなメタデータを書く必要があります．&lt;/p&gt;
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="text"&gt;Title: My First Review
+Date: 2010-12-03 10:20
+Category: Review
+Slug: URL&lt;/code&gt;&lt;/pre&gt;
+&lt;p class="report"&gt;&lt;span class="count"&gt;[1]&lt;/span&gt;
+&lt;span class="start"&gt;2019-03-30 13:25:11&lt;/span&gt; (&lt;span class="elasped"&gt;15.7ms&lt;/span&gt;)
+&lt;span class="right"&gt;&lt;span class="kernel"&gt;&lt;/span&gt;&lt;span class="count"&gt; [3]&lt;/span&gt;
+&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;記事を書くたびにこれらのメタデータを入力するのは少々面倒です．そこで，ファイル名から自動的にメタデータを抽出するようにします．設定ファイル&lt;code&gt;pelicanconf.py&lt;/code&gt;に以下の内容を追加します．&lt;/p&gt;
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="text"&gt;PATH_METADATA = r&amp;#39;(?P&amp;lt;category&amp;gt;.+?)/.*&amp;#39;
+FILENAME_METADATA = r&amp;#39;(?P&amp;lt;date&amp;gt;\d{8}).(?P&amp;lt;title&amp;gt;.+)&amp;#39;&lt;/code&gt;&lt;/pre&gt;
+&lt;p class="report"&gt;&lt;span class="count"&gt;[2]&lt;/span&gt;
+&lt;span class="start"&gt;2019-03-30 13:25:11&lt;/span&gt; (&lt;span class="elasped"&gt;15.7ms&lt;/span&gt;)
+&lt;span class="right"&gt;&lt;span class="option"&gt; (python) &lt;/span&gt;&lt;span class="kernel"&gt;&lt;/span&gt;&lt;span class="count"&gt; [3]&lt;/span&gt;
+&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;以下のようなルールで記事ファイルを&lt;code&gt;content&lt;/code&gt;ディレクトリに配置します．&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;content&lt;/code&gt;ディレクトリ直下に置かれたディレクトリの名前がカテゴリー名になります．&lt;/li&gt;
+&lt;li&gt;その下のディレクトリから各記事ファイルに至るまでは任意のディレクトリ構造をとることができます．&lt;/li&gt;
+&lt;li&gt;記事ファイルの名前は&lt;code&gt;&amp;lt;YYYYMMDD&amp;gt;&amp;lt;sep&amp;gt;&amp;lt;title&amp;gt;.md&lt;/code&gt;とします．&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;YYYYMMDD&amp;gt;&lt;/code&gt;は記事の作成日です．例えば2017年12月6日であれば&lt;code&gt;20171206&lt;/code&gt;とします．&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;sep&amp;gt;&lt;/code&gt;は任意の1文字です．ファイル名が読みやすくなるように選びます．典型的にはアンダースコア(&lt;code&gt;_&lt;/code&gt;)やピリオド(&lt;code&gt;.&lt;/code&gt;)となるでしょう．&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;title&amp;gt;&lt;/code&gt;はタイトルにそのまま用います．&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;なお，記事内部で，&lt;code&gt;Title:&lt;/code&gt;などのメタデータを指定した場合には，上の設定を上書きできます．ファイル名に含めることができない文字をタイトルに使いたいときも問題ありません．&lt;/p&gt;
+&lt;p&gt;このルールを採用した理由を述べておきます．&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;ルートディレクトリ直下にカテゴリを置いたのは，同じカテゴリに属する記事が近い位置にあると参照しやすいためです．逆に，まったく関連のない記事が同じディレクトリ内にあると，とても邪魔になるでしょう．また，カテゴリーの名前を変更するときには，たった一か所のディレクトリをリネームするだけで済みます．&lt;/li&gt;
+&lt;li&gt;ルートディレクトリから記事ファイルに至るまでのディレクトリ構造はどのようにしても構いませんでした．例えば，ひとつめの記事を書くのに，わざわざ&lt;code&gt;2017/12/06&lt;/code&gt;といったディレクトリ構造を作るのは大げさでしょう．はじめのうちは，カテゴリーディレクトリの直下に&lt;code&gt;20171206_something.md&lt;/code&gt;を作っておけばよいのです．記事の数が多くなって，ディレクトリ内の見通しが悪くなったら，その時に初めて月ごとあるいは年ごとのディレクトリを作り，そこに記事を移動しましょう．どのようなディレクトリ構造の中にあっても，ファイル名で記事の日付，タイトルを指定できます．&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;記事およびカテゴリーページのURLと出力先のファイル名は以下のように設定しています．一日に２本の記事を書くことはないため，記事のタイトルなどをURLに含めていません．また&lt;code&gt;CATEGORY_*&lt;/code&gt;には&lt;code&gt;slug&lt;/code&gt;を用いるとおかしなローマ字になるときがあるので，&lt;code&gt;name&lt;/code&gt;をそのまま使います．&lt;/p&gt;
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="text"&gt;ARTICLE_URL = &amp;#39;{date:%Y}/{date:%m}/{date:%d}/&amp;#39;
+ARTICLE_SAVE_AS = &amp;#39;{date:%Y}/{date:%m}/{date:%d}/index.html&amp;#39;
+CATEGORY_URL = &amp;#39;category/{name}/&amp;#39;
+CATEGORY_SAVE_AS = &amp;#39;category/{name}/index.html&amp;#39;&lt;/code&gt;&lt;/pre&gt;
+&lt;p class="report"&gt;&lt;span class="count"&gt;[3]&lt;/span&gt;
+&lt;span class="start"&gt;2019-03-30 13:25:11&lt;/span&gt; (&lt;span class="elasped"&gt;15.7ms&lt;/span&gt;)
+&lt;span class="right"&gt;&lt;span class="option"&gt; (python) &lt;/span&gt;&lt;span class="kernel"&gt;&lt;/span&gt;&lt;span class="count"&gt; [3]&lt;/span&gt;
+&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;日付の設定は，以下の通りです．&lt;/p&gt;
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="text"&gt;TIMEZONE = &amp;#39;Asia/Tokyo&amp;#39;
+DEFAULT_LANG = &amp;#39;ja&amp;#39;
+DATE_FORMATS = {
+    &amp;#39;ja&amp;#39;: &amp;#39;%Y年%m月%d日 (%a)&amp;#39;,
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;p class="report"&gt;&lt;span class="count"&gt;[4]&lt;/span&gt;
+&lt;span class="start"&gt;2019-03-30 13:25:11&lt;/span&gt; (&lt;span class="elasped"&gt;15.7ms&lt;/span&gt;)
+&lt;span class="right"&gt;&lt;span class="option"&gt; (python) &lt;/span&gt;&lt;span class="kernel"&gt;&lt;/span&gt;&lt;span class="count"&gt; [3]&lt;/span&gt;
+&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</content></entry></feed>

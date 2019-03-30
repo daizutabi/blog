@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" type="text/css" href="../../../theme/stylesheet/style.css">
+  <link rel="stylesheet" type="text/css" href="../../../theme/stylesheet/pheasant.css">
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="https://cdn.jsdelivr.net/gh/tonsky/FiraCode@1.206/distr/fira_code.css" rel="stylesheet">
+
+  <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon" />
+  <title>大豆旅 &ndash; Happy Hacking Keyboardの設定 その2</title>
+</head>
+
+<body>
+  <aside>
+    <div>
+      <a href="../../..">
+        <img src="https://www.gravatar.com/avatar/425bf792666d158202306d5dc73367d0?s=140" />
+      </a>
+      <h1><a href="../../..">大豆旅</a></h1>
+
+
+    </div>
+  </aside>
+  <main>
+
+<article class="single">
+  <header>
+    <h1 id="happy-hacking-keyboardnoshe-ding-sono2">Happy Hacking Keyboardの設定 その2</h1>
+    <p>Posted on 2018年09月04日 (火) in <a href="../../../category/Misc/">Misc</a>
+</p>
+  </header>
+  <div>
+<p><a href="../../../2018/02/11/">2018/2/11の記事</a>では，Happy Hacking Keybordの設定を行いました．その時には，右Altキーを［全角／半角］キー，すなわち，全角と半角のトグルキーとして設定しました．今回は，以下の参照記事をもとに，右Altキーを全角，左Altキーを半角に設定します．</p>
+<ul>
+<li><a href="https://blog.k-san.info/hhkb-key-mapping">HHKB英語配列にしたらキー配列設定に試行錯誤した話。</a></li>
+<li><a href="https://www.karakaram.com/alt-ime-on-off">WindowsのAlt空打ちで日本語入力(IME)を切り替えるツールを作った</a></li>
+</ul>
+<!-- PELICAN_END_SUMMARY -->
+
+<p>まずは，右Altキーを［全角／半角］キーした設定をもとに戻します．次の記事を参照しました．</p>
+<ul>
+<li><a href="http://www.atmarkit.co.jp/ait/articles/0001/26/news001.html">Windowsで右Altキーに［漢字］キーを割り当てる方法（AXキーボード設定を利用する方法）</a></li>
+<li><a href="https://evacore.info/hardware-hhkb-alt/">【HHKB】英語キーボードの右Altキーに［全角／半角］キーを割り当てる</a></li>
+</ul>
+<p>［スタート］ボタンを右クリックして［ファイルを指定して実行］を選択し，「regedit」と入力して，レジストリエディタを起動します.</p>
+<p>左ペインから，【HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\i8042prt\Parameters】とたどりまます．</p>
+<p>(注) 以下の手順はうまくいかない．</p>
+<p>現在の設定を下記のように変更します．</p>
+<table>
+<thead>
+<tr>
+<th align="center">レジストリ値</th>
+<th align="center">変更前</th>
+<th align="center">変更後</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">LayerDriver JPN</td>
+<td align="center">kbdax2.dll</td>
+<td align="center">kbd101.dll</td>
+</tr>
+<tr>
+<td align="center">OverrideKeyboardIdentifier</td>
+<td align="center">AX_105KEY</td>
+<td align="center">PCAT_101KEY</td>
+</tr>
+<tr>
+<td align="center">OverrideKeyboardSubtype</td>
+<td align="center">2</td>
+<td align="center">0</td>
+</tr>
+</tbody>
+</table>
+<p>レジストリエディタを閉じ，再起動します．</p>
+<p>すると，もとのノートPCのキーボードもUS配列になってしまいした．</p>
+<p>(注) 以下の手順が正しい．</p>
+<p>そこで，LayerDriver JPNだけkbd101.dllとすることで，うまく動作しました．レジストリエディタの設定を残しておきます．</p>
+<p><img alt="reg" src="../../../images/20180904/reg.png"></p>
+<p>この時点で，PCのキーボードは日本語配列，HHKBは英語配列になっています．また，［全角／半角］キーの入力は[Alt]+[`]となっています．</p>
+<p>あとは，<a href="https://www.karakaram.com/alt-ime-on-off">WindowsのAlt空打ちで日本語入力(IME)を切り替えるツールを作った</a>の手順に従うだけです．</p></div>
+
+</article>
+
+    <footer>
+    </footer>
+  </main>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" type="text/css" href="../../../theme/stylesheet/style.css">
+  <link rel="stylesheet" type="text/css" href="../../../theme/stylesheet/pheasant.css">
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="https://cdn.jsdelivr.net/gh/tonsky/FiraCode@1.206/distr/fira_code.css" rel="stylesheet">
+
+  <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon" />
+  <title>大豆旅 &ndash; DNS Zonesからネームサーバーを設定する方法</title>
+</head>
+
+<body>
+  <aside>
+    <div>
+      <a href="../../..">
+        <img src="https://www.gravatar.com/avatar/425bf792666d158202306d5dc73367d0?s=140" />
+      </a>
+      <h1><a href="../../..">大豆旅</a></h1>
+
+
+    </div>
+  </aside>
+  <main>
+
+<article class="single">
+  <header>
+    <h1 id="dns-zoneskaranemusabawoshe-ding-surufang-fa">DNS Zonesからネームサーバーを設定する方法</h1>
+    <p>Posted on 2017年12月21日 (木) in <a href="../../../category/Pelican/">Pelican</a>
+</p>
+  </header>
+  <div>
+<p><a href="https://blog.daizutabi.net/2017/12/20/">2017/12/20</a>に，ブログの公開を<a href="https://pages.github.com">GitHub Pages</a>から<a href="https://www.netlify.com">Netlify</a>に移行した件を書きました．ただ，その時の方法だと，最初にアップしたサイトが特権的な扱いを受けて，後続のサイトと非対称な形になってしまいました．少し気になっていたところ，DNS zonesから再設定することで，非対称性を解消できました．</p>
+<!-- PELICAN_END_SUMMARY -->
+
+<p>以下，順を追って説明したいと思います．次の前提で話を進めます．</p>
+<ul>
+<li>カスタムドメインとサイトをすでに登録していたので，すべて削除しました．</li>
+<li><a href="https://www.onamae.com">お名前.com</a>で<code>daizutabi.net</code>を取得済です．</li>
+<li>GitHub上の<a href="https://github.com/daizutabi/blog">「ブログ」</a>レポジトリと<a href="https://github.com/daizutabi/iroha">「Pythonパッケージの作り方」</a>レポジトリを公開していきます．</li>
+</ul>
+<p>（注）具体的な名前で説明したほうが分かりやすいと思いそのまま書いています．ドメイン名やレポジトリ名は適宜置き換えを行ってください．</p>
+<h2><span class="pheasant-header"><span class="header"><span class="number">0.1</span> <span class="title">DNS zonesの設定</span></span></span></h2>
+<p><a href="https://www.netlify.com">Netlify</a>にGitHubアカウントを使ってログインします．</p>
+<p><img alt="daizutabi" src="../../../images/20171221/010.png"></p>
+<p>左上のAll teamsからdaizutabiを選択します．</p>
+<p><img alt="DNS zones" src="../../../images/20171221/020.png"></p>
+<p>メニューからDNS zonesをクリックします．</p>
+<p><img alt="Add a domain" src="../../../images/20171221/030.png"></p>
+<p>Add a domainをクリックします．</p>
+<p><img alt="Create DNS zone" src="../../../images/20171221/040.png"></p>
+<p>Domainにdaizutabi.netを入力して，Create DNS zoneをクリックします．</p>
+<p><img alt="Add new record" src="../../../images/20171221/050.png"></p>
+<p>Add new recordをクリックします．</p>
+<p><img alt="Save" src="../../../images/20171221/060.png"></p>
+<p>上のように入力して，Saveをクリックします．つづけて，Add new recordをクリックして，次にように入力して，Saveをクリックします．</p>
+<ul>
+<li>Type: CNAME</li>
+<li>Hostname: iroha.daizutabi.net</li>
+<li>Value: www.netlify.com</li>
+</ul>
+<p>Continueをクリックします．Update your domain's nameserversと表示されて，ネームサーバー一覧が表示されるので，これをお名前.comの自ドメインのネームサーバーに登録します．Doneをクリックして，DNS zonesの設定を終えます．</p>
+<h2><span class="pheasant-header"><span class="header"><span class="number">0.2</span> <span class="title">Siteの設定</span></span></span></h2>
+<p>daizutabiのメニューに戻ります．</p>
+<p><img alt="New site from Git" src="../../../images/20171221/070.png"></p>
+<p>Sitesをクリックしたあと，New site from Gitを選びます．</p>
+<p><img alt="GitHub" src="../../../images/20171221/080.png"></p>
+<p>GitHubを選びます．</p>
+<p><img alt="daizutabi/blog" src="../../../images/20171221/090.png"></p>
+<p>レポジトリ一覧が表示されるので，<a href="https://github.com/daizutabi/blog">「ブログ」</a>用のレポジトリdaizutabi/blogを選びます．</p>
+<p>サイトの設定を入力していきます．blogレポジトリは，Pelicanを使っているのでPublish directoryにoutputを入力します．それ以外はデフォルトのままです．Deploy siteをクリックします．しばらくすると，サイトが自動で生成されます．</p>
+<p><img alt="Domain settings" src="../../../images/20171221/100.png"></p>
+<p>Domain settingsをクリックします．ページ中ほどのAdd Custom domainをクリックします．表示されたダイアログで，blog.daizutabi.netと入力します．</p>
+<p><a href="https://github.com/daizutabi/iroha">「Pythonパッケージの作り方」</a>レポジトリについても同様です．ただし，こちらはMkDocsを使っているのでPublish directoryにはsiteを入力し，URLはiroha.daizutabi.netとします．他は同じです．</p></div>
+
+</article>
+
+    <footer>
+    </footer>
+  </main>
+</body>
+
+</html>

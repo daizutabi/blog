@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" type="text/css" href="../../../theme/stylesheet/style.css">
+  <link rel="stylesheet" type="text/css" href="../../../theme/stylesheet/pheasant.css">
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="https://cdn.jsdelivr.net/gh/tonsky/FiraCode@1.206/distr/fira_code.css" rel="stylesheet">
+
+  <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon" />
+  <title>大豆旅 &ndash; Google Web Fontの設定</title>
+</head>
+
+<body>
+  <aside>
+    <div>
+      <a href="../../..">
+        <img src="https://www.gravatar.com/avatar/425bf792666d158202306d5dc73367d0?s=140" />
+      </a>
+      <h1><a href="../../..">大豆旅</a></h1>
+
+
+    </div>
+  </aside>
+  <main>
+
+<article class="single">
+  <header>
+    <h1 id="google-web-fontnoshe-ding">Google Web Fontの設定</h1>
+    <p>Posted on 2018年01月03日 (水) in <a href="../../../category/Pelican/">Pelican</a>
+</p>
+  </header>
+  <div>
+<p><a href="https://googlefonts.github.io/japanese/">Google Fonts + 日本語早期アクセス</a>の設定を行います．今回は，さわらびゴシックを使ってみます．本ブログのPelicanテーマである<a href="http://www.voidynullness.net/page/voidy-bootstrap-pelican-theme/">VoidyBootstrap</a>での設定方法になります．</p>
+<!-- PELICAN_END_SUMMARY -->
+
+<p><code>pelicanconf.py</code>に以下を追加します．</p>
+<div class="pheasant-fenced-code"><div class="cached"><div class="input"><pre><code class="cson">THEME = &#39;voidy-bootstrap/&#39;
+STYLESHEETS = (
+    &#39;custom/custom.css&#39;,
+    # other stylesheets
+)
+
+STYLESHEET_URLS = (
+    &#39;https://fonts.googleapis.com/earlyaccess/sawarabigothic.css&#39;,
+    # other stylesheet_urls
+)</code></pre>
+<p class="report"><span class="count">[1]</span>
+<span class="start">2019-03-30 13:25:12</span> (<span class="elasped">15.6ms</span>)
+<span class="right"><span class="option"> (python) </span><span class="kernel"></span><span class="count"> [2]</span>
+</span></p></div></div></div>
+
+<p><code>voidy-bootstrap</code>ディレクトリ下に<code>static/css/custom.css</code>を作成し，以下を追加します．</p>
+<div class="pheasant-fenced-code"><div class="cached"><div class="input"><pre><code class="css">body {
+  font-family: &#39;Sawarabi Gothic&#39;;
+}</code></pre>
+<p class="report"><span class="count">[2]</span>
+<span class="start">2019-03-30 13:25:12</span> (<span class="elasped">15.6ms</span>)
+<span class="right"><span class="kernel"></span><span class="count"> [2]</span>
+</span></p></div></div></div>
+
+<p>簡単に設定できました．</p></div>
+
+</article>
+
+    <footer>
+    </footer>
+  </main>
+</body>
+
+</html>
