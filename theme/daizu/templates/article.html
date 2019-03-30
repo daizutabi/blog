@@ -6,13 +6,13 @@
 
 {% block content %}
 <article class="single">
-  <header>
-    <h1 id="{{ article.slug }}">{{ article.title }}</h1>
-    <p>{{ _('Posted on %(when)s in %(category)s',
-           when=article.locale_date,
-           category='<a href="%s/%s">%s</a>'|format(SITEURL, article.category.url, article.category)|safe) }}</p>
+  <header class="article">
+    <p><span class="date">{{ article.locale_date }}</span>
+    <span class="info"><i class="fa fa-folder"></i> <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a></span></p>
+    <h1>{{ article.title }}</h1>
   </header>
-  <div>{{ article.content }}</div>
+  <div class="content">{{ article.content }}</div>
+
   {% if article.tags %}
   <div class="tag-cloud">
     <p>
@@ -22,11 +22,10 @@
     </p>
   </div>
   {% endif %}
-  {% include "partial/neighbors.html" %}
 
   {% if article.related_posts %}
   <div class="related-posts">
-    <h4>{{ _('You might enjoy') }}</h4>
+    <h4>You might enjoy</h4>
     <ul class="related-posts">
       {% for related_post in article.related_posts %}
       <li><a href="{{ SITEURL }}/{{ related_post.url }}">{{ related_post.title }}</a></li>
@@ -34,6 +33,6 @@
     </ul>
   </div>
   {% endif %}
-  {% include "partial/disqus.html" %}
+
 </article>
-{% endblock %}
+{% endblock content %}

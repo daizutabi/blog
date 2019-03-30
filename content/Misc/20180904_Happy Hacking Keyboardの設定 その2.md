@@ -3,7 +3,7 @@
 * [HHKB英語配列にしたらキー配列設定に試行錯誤した話。](https://blog.k-san.info/hhkb-key-mapping)
 * [WindowsのAlt空打ちで日本語入力(IME)を切り替えるツールを作った](https://www.karakaram.com/alt-ime-on-off)
 
-<!-- PELICAN_END_SUMMARY -->
+
 
 まずは，右Altキーを［全角／半角］キーした設定をもとに戻します．次の記事を参照しました．
 

@@ -2,6 +2,6 @@
 
 ## def
 
-```python
+~~~python
 1
-```
+~~~

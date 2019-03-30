@@ -1,7 +1,5 @@
 AtomテキストエディタにPython開発環境を構築します．細かい設定を丁寧に説明し，快適な開発環境を整備することを目指します．
 
-<!-- PELICAN_END_SUMMARY -->
-
 それでは，Python開発に役立つパッケージを紹介していきます．各節のヘッダがパッケージ名になっているので，特に記載のない限り，その名前でパッケージを検索してインストールしてください．その後，Settings，Keymap，Stylesheetの各項目を必要に応じて設定していきます．
 
 ## vim-mode-plus
@@ -28,20 +26,20 @@ Markdownなどのファイルを編集するときには，ソフトラップを
 
 [File] > [Keymap...]を選択して，`keymap.cson`を開き，次の行を追加します．好みに応じて変更してください．
 
-```cson
+~~~cson
 # keymap.cson
 'atom-text-editor.vim-mode-plus:not(.insert-mode)':
   'j': 'vim-mode-plus:move-down-screen'
   'k': 'vim-mode-plus:move-up-screen'
   'g j': 'vim-mode-plus:move-down'
   'g k': 'vim-mode-plus:move-up'
-```
+~~~
 
 （以下のキーマップの設定では，同様に`keymap.cson`を編集します．）
 
 `s`キーに，ツリービュー，ペーン，タブ間の移動のプレフィックスの役割を割り当てます．
 
-```cson
+~~~cson
 'atom-text-editor.vim-mode-plus.normal-mode':
   's': 'vim-mode-plus:nop'
   's f': 'tree-view:toggle-focus'
@@ -66,15 +64,15 @@ Markdownなどのファイルを編集するときには，ソフトラップを
 
 '.tree-view':
   's f': 'tree-view:toggle-focus'
-```
+~~~
 
 関数内で，引数の位置をローテーションします．
 
-```cson
+~~~cson
 'atom-text-editor.vim-mode-plus.normal-mode':
   'g >': 'vim-mode-plus:rotate-arguments-of-inner-pair'
   'g <': 'vim-mode-plus:rotate-arguments-backwards-of-inner-pair'
-```
+~~~
 
 ## ex-mode
 
@@ -90,11 +88,11 @@ Markdownなどのファイルを編集するときには，ソフトラップを
 
 ### Keymap
 
-```cson
+~~~cson
 'atom-text-editor.vim-mode-plus.normal-mode':
   'ctrl-i': 'cursor-history:next'
   'ctrl-o': 'cursor-history:prev'
-```
+~~~
 
 ## quick-highlight
 
@@ -102,12 +100,12 @@ Markdownなどのファイルを編集するときには，ソフトラップを
 
 ### Keymap
 
-```cson
+~~~cson
 'atom-text-editor.vim-mode-plus.normal-mode, atom-text-editor.vim-mode-plus.visual-mode':
   'ctrl-m': 'vim-mode-plus-user:quick-highlight-word'
   'g m': 'vim-mode-plus-user:quick-highlight'
   'space m': 'quick-highlight:clear'
-```
+~~~
 
 ## tab-numbers
 
@@ -125,7 +123,7 @@ Pythonコードのシンタックスハイライターに，MagicPythonを使い
 
 色の設定を追加します．[File] > [Stylesheet]を選択して，`styles.less`を開き，次の行を追加します．好みに応じて変更してください．
 
-```css
+~~~css
 /* styles.less */
 atom-text-editor .syntax--source.syntax--python {
   .syntax--keyword.syntax--control,
@@ -182,7 +180,7 @@ atom-text-editor .syntax--source.syntax--python {
     color: #D69696;
   }
 }
-```
+~~~
 
 （以下のスタイルシートの設定では，同様に`styles.less`を編集します．）
 
@@ -202,7 +200,7 @@ atom-text-editor .syntax--source.syntax--python {
 
 Vimライクなキー操作で補完候補間を移動できるようにします．この設定を有効にするには，上のUse Core Movement Commandsを非選択にする必要があります．
 
-```cson
+~~~cson
 'atom-text-editor.autocomplete-active':
   'ctrl-k': 'autocomplete-plus:move-up'
   'ctrl-j': 'autocomplete-plus:move-down'
@@ -210,27 +208,27 @@ Vimライクなキー操作で補完候補間を移動できるようにしま�
   'ctrl-l': 'autocomplete-plus:move-to-bottom'
   'pageup': 'autocomplete-plus:page-up'
   'pagedown': 'autocomplete-plus:page-down'
-```
+~~~
 
 ### Stylesheet
 
 補完リストのフォントサイズを小さめに設定します．
 
-```css
+~~~css
 .autocomplete-plus li {
   font-size: 11pt;
 }
-```
+~~~
 
 ## ide-python
 
 Atom IDE を使ってPython開発をするためのパッケージです．言語サーバーが必要なので，Condaの`atom`環境下にインストールします：
 
-```bash
+~~~bash
 (base) > conda create -n atom python=3.6
 (base) > conda activate atom
 (atom) > pip install python-language-server[all]==0.19.0
-```
+~~~
 
 2018/9/1の時点では，Version 0.19.0を指定しないと動作しない．
 
@@ -262,9 +260,9 @@ Pythonコード入力時にインデントを自動で調整します．
 
 Pythonコードを整形します．ide-pythonでも整形はできますが，atom-beautifyでは，`import`の並び替えができます．整形するためのPythonパッケージをインストールします：
 
-```bash
+~~~bash
 (atom) > pip install isort
-```
+~~~
 
 ### Settings
 
@@ -276,10 +274,10 @@ Pythonコードを整形します．ide-pythonでも整形はできますが，a
 
 Jupyter clientを使って，Atom上でPythonコードの実行ができます．インタラクティブな実行が可能なので，非常に重宝します．Hydrogenを使う仮想環境下で，以下を実行します：
 
-```bash
+~~~bash
 (example) > pip install jupyter
 (example) > python -m ipykernel install --user --name example
-```
+~~~
 
 ### Settings
 
@@ -287,12 +285,12 @@ Jupyter clientを使って，Atom上でPythonコードの実行ができます�
 
 ### Keymap
 
-```cson
+~~~cson
 'atom-text-editor':
   'f8': 'hydrogen:clear-results'
   'f9': 'hydrogen:run-all-above'
   'f10': 'hydrogen:run-all'
-```
+~~~
 
 ## platformio-ide-terminal
 
@@ -309,18 +307,18 @@ Hydrogenで実行中のカーネルに接続されたJupyterコンソールを�
 
 ### Keymap
 
-```cson
+~~~cson
 'atom-text-editor':
   'ctrl-alt-j': 'hydrogen-launcher:launch-jupyter-console-in-platformio-terminal'
-```
+~~~
 
 ## linter-mypy
 
 タイプヒントを診断します．
 
-```bash
+~~~bash
 (atom) pip install mypy
-```
+~~~
 
 
 ## その他のパッケージ
@@ -335,9 +333,9 @@ Pythonとは直接関係ないですが，以下のパッケージもインス�
 
 パッケージではありませんが，文字化けを防ぐために，[File] > [Init Script...]を選択して，`init.coffee`を開き，次の行を追加します．
 
-```coffee
+~~~coffee
 # init.coffee
 process.env.PYTHONIOENCODING = "utf-8";
-```
+~~~
 
 以上で，開発環境が整いました．

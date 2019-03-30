@@ -6,12 +6,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="HandheldFriendly" content="True" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="daizutabi" />
 
-  <link rel="stylesheet" type="text/css" href="../../../theme/stylesheet/style.css">
-  <link rel="stylesheet" type="text/css" href="../../../theme/stylesheet/pheasant.css">
-  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
-  <link href="https://cdn.jsdelivr.net/gh/tonsky/FiraCode@1.206/distr/fira_code.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://blog.daizutabi.net/theme/stylesheet/style.css" />
+  <link rel="stylesheet" href="https://blog.daizutabi.net/theme/stylesheet/pheasant.css" />
+  <link rel='stylesheet' href="//fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  <link rel='stylesheet' href="//cdn.jsdelivr.net/gh/tonsky/FiraCode@1.206/distr/fira_code.css" />
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 
   <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon" />
   <title>大豆旅 &ndash; Gravater画像を貼り付ける</title>
@@ -20,10 +22,10 @@
 <body>
   <aside>
     <div>
-      <a href="../../..">
+      <a href="https://blog.daizutabi.net">
         <img src="https://www.gravatar.com/avatar/425bf792666d158202306d5dc73367d0?s=140" />
       </a>
-      <h1><a href="../../..">大豆旅</a></h1>
+      <h1><a href="https://blog.daizutabi.net">大豆旅</a></h1>
 
 
     </div>
@@ -31,52 +33,36 @@
   <main>
 
 <article class="single">
-  <header>
-    <h1 id="gravaterhua-xiang-wotie-rifu-keru">Gravater画像を貼り付ける</h1>
-    <p>Posted on 2017年12月19日 (火) in <a href="../../../category/Pelican/">Pelican</a>
-</p>
+  <header class="article">
+    <p><span class="date">2017年12月19日 (火)</span>
+    <span class="info"><i class="fa fa-folder"></i> <a href="https://blog.daizutabi.net/category/Pelican/">Pelican</a></span></p>
+    <h1>Gravater画像を貼り付ける</h1>
   </header>
-  <div>
+  <div class="content">
 <p>ブログサイトの右上のほうに<a href="https://ja.gravatar.com">Gravater</a>の画像を表示させてみます．画像の取得方法は<a href="https://ja.gravatar.com/site/implement/images/">Image Requests</a>や<a href="https://ja.gravatar.com/site/implement/images/python/">Python Image Requests</a>に記載されています．</p>
-<!-- PELICAN_END_SUMMARY -->
-
 <p>Gravaterに登録したアドレスからハッシュ値を生成します．</p>
-<div class="pheasant-fenced-code"><div class="cached"><div class="input"><pre><code class="python">import hashlib
-hashlib.md5(b&#39;daizutabi@gmail.com&#39;).hexdigest()</code></pre>
-<p class="report"><span class="count">[1]</span>
-<span class="start">2019-03-30 13:25:11</span> (<span class="elasped">31.3ms</span>)
-<span class="right"><span class="kernel">python3</span><span class="count"> [2]</span>
-</span></p></div><div class="output"><pre><code class="text">&#39;425bf792666d158202306d5dc73367d0&#39;</code></pre></div></div></div>
+<div class="pheasant-fenced-code"><div class="source"><pre><code class="python">import hashlib
+hashlib.md5(b&#39;daizutabi@gmail.com&#39;).hexdigest()</code></pre></div></div>
 
 <p>ハッシュ値を使って，画像を読み込みます．</p>
-<div class="pheasant-fenced-code"><div class="cached"><div class="input"><pre><code class="html">&lt;img src=&#34;https://www.gravatar.com/avatar/425bf792666d158202306d5dc73367d0&#34;/&gt;</code></pre>
-<p class="report"><span class="count">[2]</span>
-<span class="start">2019-03-30 13:25:11</span> (<span class="elasped">31.3ms</span>)
-<span class="right"><span class="kernel"></span><span class="count"> [2]</span>
-</span></p></div></div></div>
+<div class="pheasant-fenced-code"><div class="source"><pre><code class="html">&lt;img src=&#34;https://www.gravatar.com/avatar/425bf792666d158202306d5dc73367d0&#34;/&gt;</code></pre></div></div>
 
 <p>実際の表示は以下の通りです．</p>
 <p><img src="https://www.gravatar.com/avatar/425bf792666d158202306d5dc73367d0"/></p>
 <p>画像サイズを変えてみます．</p>
-<div class="pheasant-fenced-code"><div class="cached"><div class="input"><pre><code class="html">&lt;img src=&#34;https://www.gravatar.com/avatar/425bf792666d158202306d5dc73367d0?s=200&#34;/&gt;</code></pre>
-<p class="report"><span class="count">[3]</span>
-<span class="start">2019-03-30 13:25:11</span> (<span class="elasped">31.3ms</span>)
-<span class="right"><span class="kernel"></span><span class="count"> [2]</span>
-</span></p></div></div></div>
+<div class="pheasant-fenced-code"><div class="source"><pre><code class="html">&lt;img src=&#34;https://www.gravatar.com/avatar/425bf792666d158202306d5dc73367d0?s=200&#34;/&gt;</code></pre></div></div>
 
 <p><img src="https://www.gravatar.com/avatar/425bf792666d158202306d5dc73367d0?s=200"/></p>
 <p>ここまで出来たら，CSSを編集して完成です．</p>
-<div class="pheasant-fenced-code"><div class="cached"><div class="input"><pre><code class="css">.jumbotron h1 {
+<div class="pheasant-fenced-code"><div class="source"><pre><code class="css">.jumbotron h1 {
   padding-top: 15px;
   padding-bottom: 15px;
   background-image: url(https://www.gravatar.com/avatar/425bf792666d158202306d5dc73367d0?s=30);
   background-repeat: no-repeat;
   background-position: right center;
-}</code></pre>
-<p class="report"><span class="count">[4]</span>
-<span class="start">2019-03-30 13:25:11</span> (<span class="elasped">31.3ms</span>)
-<span class="right"><span class="kernel"></span><span class="count"> [2]</span>
-</span></p></div></div></div></div>
+}</code></pre></div></div></div>
+
+
 
 </article>
 

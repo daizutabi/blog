@@ -6,43 +6,42 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="HandheldFriendly" content="True" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="daizutabi" />
 
-  <link rel="stylesheet" type="text/css" href="../../theme/stylesheet/style.css">
-  <link rel="stylesheet" type="text/css" href="../../theme/stylesheet/pheasant.css">
-  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
-  <link href="https://cdn.jsdelivr.net/gh/tonsky/FiraCode@1.206/distr/fira_code.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://blog.daizutabi.net/theme/stylesheet/style.css" />
+  <link rel="stylesheet" href="https://blog.daizutabi.net/theme/stylesheet/pheasant.css" />
+  <link rel='stylesheet' href="//fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  <link rel='stylesheet' href="//cdn.jsdelivr.net/gh/tonsky/FiraCode@1.206/distr/fira_code.css" />
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 
   <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon" />
-  <meta name="author" content="daizutabi" />
-  <title>大豆旅 &ndash; Category Machine Learning
-</title>
+  <title>大豆旅 &ndash; Category Machine Learning</title>
 </head>
 
 <body>
   <aside>
     <div>
-      <a href="../..">
+      <a href="https://blog.daizutabi.net">
         <img src="https://www.gravatar.com/avatar/425bf792666d158202306d5dc73367d0?s=140" />
       </a>
-      <h1><a href="../..">大豆旅</a></h1>
+      <h1><a href="https://blog.daizutabi.net">大豆旅</a></h1>
 
 
     </div>
   </aside>
   <main>
 
-<article>
-  <header>
-    <h2><a href="../../2019/01/20/">機械学習の準備 その2</a></h2>
-    <p>
-      Posted on 2019年01月20日 (日) in <a href="../../category/Machine Learning/">Machine Learning</a>
-
-
-    </p>
+<article class="index">
+  <header class="article">
+    <p><span class="date">2019年01月20日 (日)</span>
+    <span class="info"><i class="fa fa-folder"></i> <a href="https://blog.daizutabi.net/category/Machine Learning/">Machine Learning</a></span></p>
+    <h1>
+      <a href="https://blog.daizutabi.net/2019/01/20/" rel="bookmark" title="Permalink to 機械学習の準備 その2">機械学習の準備 その2</a>
+    </h1>
   </header>
-  <div>
-      
+
+<div class="abstract">
 <p><a href="../../../2018/09/03/">2018/9/3の記事</a>のアップデート版です．今回は，ソニー製<a href="https://nnabla.org/ja/">Neural Network Libraries</a>もインストールし，今後両者を比較する準備とします．</p>
 <p>今回インストールする主なPythonパッケージは，以下の通りです．</p>
 <ul>
@@ -50,8 +49,6 @@
 <li>Keras 2.2.4</li>
 <li>Neural Network Libraries 1.0.10</li>
 </ul>
-<!-- PELICAN_END_SUMMARY -->
-
 <p>インストールするPC環境は以下の通りです：</p>
 <ul>
 <li>OS: Windows 10 Pro (64-bit)</li>
@@ -59,50 +56,31 @@
 <li>GPU: NVIDIA GeForce GTX 1050</li>
 <li>RAM: 16 GB</li>
 </ul>
-<h2><span class="pheasant-header"><span class="header"><span class="number">0 …</span></span></span></h2>
-        <br>
-        <a class="btn" href="../../2019/01/20/">Continue reading
-</a>
-  </div>
-  <hr />
+</div>
 </article>
-<article>
-  <header>
-    <h2><a href="../../2018/09/03/">Condaを使ってGPU板TensorFlowを簡単にインストール</a></h2>
-    <p>
-      Posted on 2018年09月03日 (月) in <a href="../../category/Machine Learning/">Machine Learning</a>
-
-
-    </p>
+<article class="index">
+  <header class="article">
+    <p><span class="date">2018年09月03日 (月)</span>
+    <span class="info"><i class="fa fa-folder"></i> <a href="https://blog.daizutabi.net/category/Machine Learning/">Machine Learning</a></span></p>
+    <h1>
+      <a href="https://blog.daizutabi.net/2018/09/03/" rel="bookmark" title="Permalink to Condaを使ってGPU板TensorFlowを簡単にインストール">Condaを使ってGPU板TensorFlowを簡単にインストール</a>
+    </h1>
   </header>
-  <div>
-      
+
+<div class="abstract">
 <p><a href="../../../2018/09/01/">2018/9/1の記事</a>では，CUDA Toolkitなどをインストールした上で，pip経由でTensorFlowおよびKerasをインストールしました．実は，Condaを使うと，CUDAを手動でインストールする必要がなくなります．実際に検証してみました．</p>
-<!-- PELICAN_END_SUMMARY -->
-
-<h2><span class="pheasant-header"><span class="header"><span class="number">0.1</span> <span class="title">準備</span></span></span></h2>
-<p>まず，コントロールパネルのプログラムのアンインストールで，CUDA関連のアプリを全て消去します．再起動後に，以下を実行してみます．</p>
-<div class="pheasant-fenced-code"><div class="cached"><div class="input"><pre><code class="bash">(base) &gt; activate ml
-(ml) &gt; python mnist_cnn.py
-(中略)
-ImportError: Could not find &#39;cudart64_90.dll&#39;. TensorFlow requires that this DLL be installed in a directory that is named in your %PATH% environment …</code></pre></div></div></div>
-        <br>
-        <a class="btn" href="../../2018/09/03/">Continue reading
-</a>
-  </div>
-  <hr />
+</div>
 </article>
-<article>
-  <header>
-    <h2><a href="../../2018/09/01/">機械学習の準備</a></h2>
-    <p>
-      Posted on 2018年09月01日 (土) in <a href="../../category/Machine Learning/">Machine Learning</a>
-
-
-    </p>
+<article class="index">
+  <header class="article">
+    <p><span class="date">2018年09月01日 (土)</span>
+    <span class="info"><i class="fa fa-folder"></i> <a href="https://blog.daizutabi.net/category/Machine Learning/">Machine Learning</a></span></p>
+    <h1>
+      <a href="https://blog.daizutabi.net/2018/09/01/" rel="bookmark" title="Permalink to 機械学習の準備">機械学習の準備</a>
+    </h1>
   </header>
-  <div>
-      
+
+<div class="abstract">
 <p>Pythonを使って機械学習の勉強をしていきます．今回は，scikit-learnとTensorFlowをインストールします．この記事では，必要なパッケージなどをインストールする方法を順を追って説明し，勉強を開始できる状態にします．今回インストールする主なPythonパッケージは，以下の通りです．</p>
 <ul>
 <li>JupyterLab 0.34.3</li>
@@ -110,8 +88,6 @@ ImportError: Could not find &#39;cudart64_90.dll&#39;. TensorFlow requires that 
 <li>TensorFlow (GPU) 1.10</li>
 <li>Keras 2.2.2</li>
 </ul>
-<!-- PELICAN_END_SUMMARY -->
-
 <p>GPUを使って計算するため，CUDA ToolkitおよびcuDNNもインストールします． これらは，使用するTensorFlowが対応しているバージョンをインストールする必要があります．特に何も指定しないと，最新版がインストールされて，TensorFlowパッケージが実行できないというケースがあるので注意が必要です．具体的には，以下のバージョンを使います：</p>
 <ul>
 <li>CUDA Toolkit: Version 9.0.176</li>
@@ -119,24 +95,23 @@ ImportError: Could not find &#39;cudart64_90.dll&#39;. TensorFlow requires that 
 </ul>
 <p>インストールするPC環境は以下の通りです：</p>
 <ul>
-<li>OS: Windows 10 Pro …</li></ul>
-        <br>
-        <a class="btn" href="../../2018/09/01/">Continue reading
-</a>
-  </div>
-  <hr />
+<li>OS: Windows 10 Pro (64-bit)</li>
+<li>CPU: Intel Core i7-7700HQ @ 2.80 GHz</li>
+<li>GPU: NVIDIA GeForce GTX 1050</li>
+<li>RAM: 16 GB</li>
+</ul>
+</div>
 </article>
-<article>
-  <header>
-    <h2><a href="../../2018/01/31/">ディープラーニング学習の準備</a></h2>
-    <p>
-      Posted on 2018年01月31日 (水) in <a href="../../category/Machine Learning/">Machine Learning</a>
-
-
-    </p>
+<article class="index">
+  <header class="article">
+    <p><span class="date">2018年01月31日 (水)</span>
+    <span class="info"><i class="fa fa-folder"></i> <a href="https://blog.daizutabi.net/category/Machine Learning/">Machine Learning</a></span></p>
+    <h1>
+      <a href="https://blog.daizutabi.net/2018/01/31/" rel="bookmark" title="Permalink to ディープラーニング学習の準備">ディープラーニング学習の準備</a>
+    </h1>
   </header>
-  <div>
-      
+
+<div class="abstract">
 <p>Pythonを使ってディープラーニングの学習をしていきます．この記事では，必要なパッケージなどをインストールする方法を順を追って説明し，学習を開始できる状態にします．今回インストールする主なPythonパッケージは，以下の通りです．</p>
 <ul>
 <li>Theano</li>
@@ -144,8 +119,6 @@ ImportError: Could not find &#39;cudart64_90.dll&#39;. TensorFlow requires that 
 <li>Keras</li>
 <li>Neural Network Libraries</li>
 </ul>
-<!-- PELICAN_END_SUMMARY -->
-
 <p>GPUを使って計算するため，CUDA ToolkitおよびcuDNNもインストールします． これらは，使用するPythonパッケージが対応しているバージョンをインストールする必要があります．特に何も指定しないと，最新版がインストールされて，Pythonパッケージが実行できないというケースがあるので注意が必要です．具体的には，以下のバージョンを使います：</p>
 <ul>
 <li>CUDA Toolkit: Version 8.0 GA2</li>
@@ -155,15 +128,14 @@ ImportError: Could not find &#39;cudart64_90.dll&#39;. TensorFlow requires that 
 <ul>
 <li>OS: Windows 10 Home (64-bit)</li>
 <li>CPU: Intel Core i7-7700HQ @ 2.80 GHz</li>
-<li>GPU: NVIDIA …</li></ul>
-        <br>
-        <a class="btn" href="../../2018/01/31/">Continue reading
-</a>
-  </div>
+<li>GPU: NVIDIA GeForce GTX 1050</li>
+<li>RAM: 16 GB</li>
+</ul>
+</div>
 </article>
 
-  <div class="pagination">
-  </div>
+<div class="pagination">
+</div>
 
     <footer>
     </footer>

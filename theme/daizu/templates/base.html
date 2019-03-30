@@ -1,9 +1,3 @@
-{% if 'jinja2.ext.i18n' not in JINJA_ENVIRONMENT.extensions and 'jinja2.ext.i18n' not in JINJA_EXTENSIONS %}
-{% macro _(msg) %}
-{{ msg % kwargs }}
-{% endmacro %}
-{% endif -%}
-
 <!DOCTYPE html>
 <html lang="{{ DEFAULT_LANG }}">
 
@@ -12,19 +6,19 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="HandheldFriendly" content="True" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="{{ AUTHOR }}" />
+  {% block meta %}{% endblock %}
 
-  <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/stylesheet/style.css">
-  <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/stylesheet/pheasant.css">
-  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
-  <link href="https://cdn.jsdelivr.net/gh/tonsky/FiraCode@1.206/distr/fira_code.css" rel="stylesheet">
+  <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/stylesheet/style.css" />
+  <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/stylesheet/pheasant.css" />
+  <link rel='stylesheet' href="//fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  <link rel='stylesheet' href="//cdn.jsdelivr.net/gh/tonsky/FiraCode@1.206/distr/fira_code.css" />
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 
   {% if FAVICON %}
   <link rel="shortcut icon" href="{{ FAVICON }}" type="{{ FAVICON_TYPE }}" />
   {% endif %}
-  {% block meta %}
-  <meta name="author" content="{{ AUTHOR }}" />
-  {% endblock %}
   <title>{{ SITENAME }}{% block title %}{% endblock %}</title>
 </head>
 
@@ -60,7 +54,7 @@
   <main>
     {% if MAIN_MENU %}
     <nav>
-      <a href="{{ SITEURL }}">{{ _('Home') }}</a>
+      <a href="{{ SITEURL }}">Home</a>
       {% for title, link in MENUITEMS %}
       <a href="{{ link }}">{{ title }}</a>
       {% endfor %}

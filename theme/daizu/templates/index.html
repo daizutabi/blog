@@ -1,42 +1,21 @@
 {% extends "base.html" %}
+{% block title %}{{ super() }}{% if articles_page and articles_page.number > 1 %} - Page {{ articles_page.number }}{% endif %}{% endblock %}
 
 {% block content %}
 {% for article in articles_page.object_list %}
-<article>
-  <header>
-    <h2><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h2>
-    <p>
-      {{ _('Posted on %(when)s in %(category)s',
-           when=article.locale_date,
-           category='<a href="%s/%s">%s</a>'|format(SITEURL, article.category.url, article.category)|safe) }}
-
-      {% if article.tags and not HOME_HIDE_TAGS %}
-          &#8226; {{ _('Tagged with') }}
-          {% for tag in article.tags %}
-              <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>{% if not loop.last %},{% endif %}
-          {% endfor %}
-      {% endif %}
-    </p>
+<article class="index">
+  <header class="article">
+    <p><span class="date">{{ article.locale_date }}</span>
+    <span class="info"><i class="fa fa-folder"></i> <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a></span></p>
+    <h1>
+      <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags|e }}">{{ article.title }}</a>
+    </h1>
   </header>
-  <div>
-    {% if summarise or article.metadata['summary'] or SUMMARY_MAX_LENGTH %}
-      {% if  article.featured_image %}
-        <img src="{{ article.featured_image }}">
-      {% endif %}
-      {{ article.summary }}
-      {% if article.content != article.summary %}
-        <br>
-        <a class="btn" href="{{ SITEURL }}/{{ article.url }}">{{ _('Continue reading') }}</a>
-      {% endif %}
-    {% else %}
-      {{ article.content }}
-    {% endif %}
-  </div>
-  {% if not loop.last %}
-  <hr />
-  {% endif %}
+
+  {% if article.abstract %}<div class="abstract">{{ article.abstract }}</div>{% endif %}
+
 </article>
 {% endfor %}
 
 {% include "partial/pagination.html" %}
-{% endblock %}
+{% endblock content %}

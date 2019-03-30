@@ -6,12 +6,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="HandheldFriendly" content="True" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="daizutabi" />
 
-  <link rel="stylesheet" type="text/css" href="../../../theme/stylesheet/style.css">
-  <link rel="stylesheet" type="text/css" href="../../../theme/stylesheet/pheasant.css">
-  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
-  <link href="https://cdn.jsdelivr.net/gh/tonsky/FiraCode@1.206/distr/fira_code.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://blog.daizutabi.net/theme/stylesheet/style.css" />
+  <link rel="stylesheet" href="https://blog.daizutabi.net/theme/stylesheet/pheasant.css" />
+  <link rel='stylesheet' href="//fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  <link rel='stylesheet' href="//cdn.jsdelivr.net/gh/tonsky/FiraCode@1.206/distr/fira_code.css" />
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 
   <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon" />
   <title>大豆旅 &ndash; ディープラーニング学習の準備</title>
@@ -20,10 +22,10 @@
 <body>
   <aside>
     <div>
-      <a href="../../..">
+      <a href="https://blog.daizutabi.net">
         <img src="https://www.gravatar.com/avatar/425bf792666d158202306d5dc73367d0?s=140" />
       </a>
-      <h1><a href="../../..">大豆旅</a></h1>
+      <h1><a href="https://blog.daizutabi.net">大豆旅</a></h1>
 
 
     </div>
@@ -31,12 +33,12 @@
   <main>
 
 <article class="single">
-  <header>
-    <h1 id="deipuraninguxue-xi-nozhun-bei">ディープラーニング学習の準備</h1>
-    <p>Posted on 2018年01月31日 (水) in <a href="../../../category/Machine Learning/">Machine Learning</a>
-</p>
+  <header class="article">
+    <p><span class="date">2018年01月31日 (水)</span>
+    <span class="info"><i class="fa fa-folder"></i> <a href="https://blog.daizutabi.net/category/Machine Learning/">Machine Learning</a></span></p>
+    <h1>ディープラーニング学習の準備</h1>
   </header>
-  <div>
+  <div class="content">
 <p>Pythonを使ってディープラーニングの学習をしていきます．この記事では，必要なパッケージなどをインストールする方法を順を追って説明し，学習を開始できる状態にします．今回インストールする主なPythonパッケージは，以下の通りです．</p>
 <ul>
 <li>Theano</li>
@@ -44,8 +46,6 @@
 <li>Keras</li>
 <li>Neural Network Libraries</li>
 </ul>
-<!-- PELICAN_END_SUMMARY -->
-
 <p>GPUを使って計算するため，CUDA ToolkitおよびcuDNNもインストールします． これらは，使用するPythonパッケージが対応しているバージョンをインストールする必要があります．特に何も指定しないと，最新版がインストールされて，Pythonパッケージが実行できないというケースがあるので注意が必要です．具体的には，以下のバージョンを使います：</p>
 <ul>
 <li>CUDA Toolkit: Version 8.0 GA2</li>
@@ -58,9 +58,9 @@
 <li>GPU: NVIDIA GeForce GTX 1050</li>
 <li>RAM: 16 GB</li>
 </ul>
-<h2><span class="pheasant-header"><span class="header"><span class="number">0.1</span> <span class="title">Microsoft Visual C++ 2015 再頒布可能パッケージ</span></span></span></h2>
+<h2><span class="pheasant-header"><span class="header"><span class="number">1</span> <span class="title">Microsoft Visual C++ 2015 再頒布可能パッケージ</span></span></span></h2>
 <p>Neural Network Librariesは，VC++14（Visual Studio 2015相当）でコンパイルされているので、<a href="https://www.microsoft.com/ja-JP/download/details.aspx?id=52685">Visual Studio 2015のRuntime</a>が必要です．未インストールの場合はインストールしておきます．Visual Studio本体はインストールする必要はありません．</p>
-<h2><span class="pheasant-header"><span class="header"><span class="number">0.2</span> <span class="title">CUDA Toolkit</span></span></span></h2>
+<h2><span class="pheasant-header"><span class="header"><span class="number">2</span> <span class="title">CUDA Toolkit</span></span></span></h2>
 <p><a href="https://developer.nvidia.com/cuda-toolkit-archive">https://developer.nvidia.com/cuda-toolkit-archive</a>で，CUDA Toolkitのバージョンを選択した後，</p>
 <ul>
 <li>Operating System: Windows</li>
@@ -70,19 +70,19 @@
 </ul>
 <p>を選び，ダウンロードしたファイルを実行してインストールします．現時点(2018/1/31)で，Neural Network LibrariesはVersion 8.0にしか対応していませんので，最新のVersion 9.1ではなく，Version 8.0 GA2 を選択しました．Base Installerの他に，Patch 2 (Released Jun 26, 2017)をダウンロードします．</p>
 <p>まず，Base Installerを実行します．「システムの互換性のチェック」で，次のような画面が表示されます．</p>
-<p><img alt="cuda-install" src="../../../images/20180131/cuda-install.png"></p>
+<p><img alt="cuda-install" src="https://blog.daizutabi.net/images/20180131/cuda-install.png"></p>
 <p><a href="https://devtalk.nvidia.com/default/topic/1014305/cuda-setup-and-installation/cuda-8-0-installation-fail-quot-could-not-find-compatible-graphics-hardware-quot-/">このフォーラム</a>にあるように， インストーラが，GTX 1050の生産前に作成されているためです．[続行] &gt; [同意して続行する] &gt; [(カスタム)を選択して次へ]と進んで，カスタムインストールオプションで，CUDAのみを選択した状態にします．</p>
-<p><img alt="cuda-install" src="../../../images/20180131/cuda-install-2.png"></p>
+<p><img alt="cuda-install" src="https://blog.daizutabi.net/images/20180131/cuda-install-2.png"></p>
 <p>[次へ]をクリックして進んでいくと，Visual Studioがないと警告が出ます．</p>
-<p><img alt="cuda-install" src="../../../images/20180131/cuda-install-3.png"></p>
+<p><img alt="cuda-install" src="https://blog.daizutabi.net/images/20180131/cuda-install-3.png"></p>
 <p>特に問題ないので，そのままチェックボックスを選択して，[次へ]をクリックし，インストールを開始します．その後，先にダウンロードしていたPatch2を実行してパッチをインストールします．</p>
-<h2><span class="pheasant-header"><span class="header"><span class="number">0.3</span> <span class="title">NVIDIA cuDNN</span></span></span></h2>
+<h2><span class="pheasant-header"><span class="header"><span class="number">3</span> <span class="title">NVIDIA cuDNN</span></span></span></h2>
 <p>インストールするにはメンバーシップが必要なので，<a href="https://developer.nvidia.com">https://developer.nvidia.com</a> の右上のJoinから登録します．ダウンロードページ <a href="https://developer.nvidia.com/rdp/cudnn-download">https://developer.nvidia.com/rdp/cudnn-download</a> で，同意ボタンを選択し，リストの中から，</p>
 <ul>
 <li>Download cuDNN v6.0 (April 27, 2017), for CUDA 8.0</li>
 </ul>
 <p>を選択します．（v7.0をインストールするとNeural Network Librariesが動作しません．） ダウンロードした圧縮ファイルを展開します．そして，展開してできた<code>cudnn-8.0-windows10-x64-v6\cuda</code>以下をすべて，<code>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0</code>にコピーします．</p>
-<h2><span class="pheasant-header"><span class="header"><span class="number">0.4</span> <span class="title">Miniconda</span></span></span></h2>
+<h2><span class="pheasant-header"><span class="header"><span class="number">4</span> <span class="title">Miniconda</span></span></span></h2>
 <p><a href="https://conda.io/miniconda.html">https://conda.io/miniconda.html</a>で，</p>
 <ul>
 <li>Windows</li>
@@ -91,44 +91,24 @@
 </ul>
 <p>を選び，ダウンロードしたファイルを実行してインストールします．インストール中の選択肢は，すべてデフォルト設定のまま行います．Miniconda3 4.3.30 (64-bit)がインストールされました．</p>
 <p>condaを最新版にしておきます．</p>
-<div class="pheasant-fenced-code"><div class="cached"><div class="input"><pre><code class="bash">&gt; conda install conda</code></pre>
-<p class="report"><span class="count">[1]</span>
-<span class="start">2019-03-30 13:25:10</span> (<span class="elasped">953ms</span>)
-<span class="right"><span class="kernel"></span><span class="count"> [1]</span>
-</span></p></div></div></div>
+<div class="pheasant-fenced-code"><div class="source"><pre><code class="bash">&gt; conda install conda</code></pre></div></div>
 
 <p>仮想環境<code>dl</code>を作り，この下にインストールしていきます．</p>
-<div class="pheasant-fenced-code"><div class="cached"><div class="input"><pre><code class="bash">(base) &gt; conda create -n dl
-(base) &gt; activate dl</code></pre>
-<p class="report"><span class="count">[2]</span>
-<span class="start">2019-03-30 13:25:10</span> (<span class="elasped">953ms</span>)
-<span class="right"><span class="kernel"></span><span class="count"> [1]</span>
-</span></p></div></div></div>
+<div class="pheasant-fenced-code"><div class="source"><pre><code class="bash">(base) &gt; conda create -n dl
+(base) &gt; activate dl</code></pre></div></div>
 
 <p>pipでインストールされるパッケージのうち，condaで用意されているものはこの段階でインストールしておきます．bleach, html5lib, cythonについては，バージョン指定があるので，明示します．</p>
-<div class="pheasant-fenced-code"><div class="cached"><div class="input"><pre><code class="bash">(dl) &gt; conda install bleach==1.5.0 html5lib==0.9999999 cython==0.25.2
+<div class="pheasant-fenced-code"><div class="source"><pre><code class="bash">(dl) &gt; conda install bleach==1.5.0 html5lib==0.9999999 cython==0.25.2
 (dl) &gt; conda install werkzeug numpy markdown protobuf pyyaml contextlib2
-(dl) &gt; conda install urllib3 tqdm requests s3transfer h5py boto3</code></pre>
-<p class="report"><span class="count">[3]</span>
-<span class="start">2019-03-30 13:25:10</span> (<span class="elasped">953ms</span>)
-<span class="right"><span class="kernel"></span><span class="count"> [1]</span>
-</span></p></div></div></div>
+(dl) &gt; conda install urllib3 tqdm requests s3transfer h5py boto3</code></pre></div></div>
 
-<h2><span class="pheasant-header"><span class="header"><span class="number">0.5</span> <span class="title">TensorFlow</span></span></span></h2>
+<h2><span class="pheasant-header"><span class="header"><span class="number">5</span> <span class="title">TensorFlow</span></span></span></h2>
 <p>TensorFlowは，CUDA Toolkit Version 8.0, cuDNN Version 6.0に適合するVersion 1.4を選択します．</p>
-<div class="pheasant-fenced-code"><div class="cached"><div class="input"><pre><code class="bash">(dl) &gt; pip install tensorflow-gpu==1.4.0</code></pre>
-<p class="report"><span class="count">[4]</span>
-<span class="start">2019-03-30 13:25:10</span> (<span class="elasped">953ms</span>)
-<span class="right"><span class="kernel"></span><span class="count"> [1]</span>
-</span></p></div></div></div>
+<div class="pheasant-fenced-code"><div class="source"><pre><code class="bash">(dl) &gt; pip install tensorflow-gpu==1.4.0</code></pre></div></div>
 
-<h2><span class="pheasant-header"><span class="header"><span class="number">0.6</span> <span class="title">Theano</span></span></span></h2>
+<h2><span class="pheasant-header"><span class="header"><span class="number">6</span> <span class="title">Theano</span></span></span></h2>
 <p>Theanoはcondaでインストールします．</p>
-<div class="pheasant-fenced-code"><div class="cached"><div class="input"><pre><code class="bash">(dl) &gt; conda install theano</code></pre>
-<p class="report"><span class="count">[5]</span>
-<span class="start">2019-03-30 13:25:10</span> (<span class="elasped">953ms</span>)
-<span class="right"><span class="kernel"></span><span class="count"> [1]</span>
-</span></p></div></div></div>
+<div class="pheasant-fenced-code"><div class="source"><pre><code class="bash">(dl) &gt; conda install theano</code></pre></div></div>
 
 <p>m2w64-toolchain，libpython，libgpuarray，pygpuなどの依存パッケージも一緒にインストールされます．</p>
 <p>コントロールパネルでユーザーの環境変数を設定します．</p>
@@ -137,51 +117,31 @@
 <li>変数値:  <code>GNU</code></li>
 </ul>
 <p>GPUを使用するために，<code>~\.theanorc.txt</code>を作成して，以下の内容で保存します．</p>
-<div class="pheasant-fenced-code"><div class="cached"><div class="input"><pre><code class="text">[global]
+<div class="pheasant-fenced-code"><div class="source"><pre><code class="text">[global]
 device = cuda
-floatX = float32</code></pre>
-<p class="report"><span class="count">[6]</span>
-<span class="start">2019-03-30 13:25:10</span> (<span class="elasped">953ms</span>)
-<span class="right"><span class="kernel"></span><span class="count"> [1]</span>
-</span></p></div></div></div>
+floatX = float32</code></pre></div></div>
 
-<h2><span class="pheasant-header"><span class="header"><span class="number">0.7</span> <span class="title">Keras</span></span></span></h2>
+<h2><span class="pheasant-header"><span class="header"><span class="number">7</span> <span class="title">Keras</span></span></span></h2>
 <p>Kerasをインストールします．condaでインストールすると，CPUベースのTensorFlowが勝手にインストールされるので，pipを使います．</p>
-<div class="pheasant-fenced-code"><div class="cached"><div class="input"><pre><code class="bash">(dl) &gt; pip install keras</code></pre>
-<p class="report"><span class="count">[7]</span>
-<span class="start">2019-03-30 13:25:10</span> (<span class="elasped">953ms</span>)
-<span class="right"><span class="kernel"></span><span class="count"> [1]</span>
-</span></p></div></div></div>
+<div class="pheasant-fenced-code"><div class="source"><pre><code class="bash">(dl) &gt; pip install keras</code></pre></div></div>
 
-<h2><span class="pheasant-header"><span class="header"><span class="number">0.8</span> <span class="title">Neural Network Libraries</span></span></span></h2>
+<h2><span class="pheasant-header"><span class="header"><span class="number">8</span> <span class="title">Neural Network Libraries</span></span></span></h2>
 <p>Neural Network Librariesが必要とするパッケージをcondaでインストールした後，本体をpipでインストールします．最後に，依存性は明示されていないですが，pywin32もインストールする必要があります．</p>
-<div class="pheasant-fenced-code"><div class="cached"><div class="input"><pre><code class="bash">(dl) &gt; conda install scipy scikit-image
+<div class="pheasant-fenced-code"><div class="source"><pre><code class="bash">(dl) &gt; conda install scipy scikit-image
 (dl) &gt; pip install nnabla
 (dl) &gt; pip install nnabla-ext-cuda
-(dl) &gt; conda install pywin32</code></pre>
-<p class="report"><span class="count">[8]</span>
-<span class="start">2019-03-30 13:25:10</span> (<span class="elasped">953ms</span>)
-<span class="right"><span class="kernel"></span><span class="count"> [1]</span>
-</span></p></div></div></div>
+(dl) &gt; conda install pywin32</code></pre></div></div>
 
-<h2><span class="pheasant-header"><span class="header"><span class="number">0.9</span> <span class="title">Jupyter</span></span></span></h2>
+<h2><span class="pheasant-header"><span class="header"><span class="number">9</span> <span class="title">Jupyter</span></span></span></h2>
 <p>ディープラーニングを学習する際に，Jupyter Notebookを使いますので，Jupyter関連のパッケージ一式をインストールしておきます．</p>
-<div class="pheasant-fenced-code"><div class="cached"><div class="input"><pre><code class="bash">(dl) &gt; conda install jupyter</code></pre>
-<p class="report"><span class="count">[9]</span>
-<span class="start">2019-03-30 13:25:10</span> (<span class="elasped">953ms</span>)
-<span class="right"><span class="kernel"></span><span class="count"> [1]</span>
-</span></p></div></div></div>
+<div class="pheasant-fenced-code"><div class="source"><pre><code class="bash">(dl) &gt; conda install jupyter</code></pre></div></div>
 
 <p>Jupyterが<code>dl</code>環境下のカーネルを認識できるように，以下を実行します．</p>
-<div class="pheasant-fenced-code"><div class="cached"><div class="input"><pre><code class="bash">(dl) &gt; python -m ipykernel install --user --name dl</code></pre>
-<p class="report"><span class="count">[10]</span>
-<span class="start">2019-03-30 13:25:10</span> (<span class="elasped">953ms</span>)
-<span class="right"><span class="kernel"></span><span class="count"> [1]</span>
-</span></p></div></div></div>
+<div class="pheasant-fenced-code"><div class="source"><pre><code class="bash">(dl) &gt; python -m ipykernel install --user --name dl</code></pre></div></div>
 
-<h2><span class="pheasant-header"><span class="header"><span class="number">0.10</span> <span class="title">インストールの確認</span></span></span></h2>
+<h2><span class="pheasant-header"><span class="header"><span class="number">10</span> <span class="title">インストールの確認</span></span></span></h2>
 <p>インポートできることを確認します．</p>
-<div class="pheasant-fenced-code"><div class="cached"><div class="input"><pre><code class="bash">(dl) &gt; python
+<div class="pheasant-fenced-code"><div class="source"><pre><code class="bash">(dl) &gt; python
 &gt;&gt;&gt; import tensorflow
 &gt;&gt;&gt; tensorflow.__version__
 &#39;1.4.0&#39;
@@ -193,48 +153,34 @@ Mapped name None to device cuda: GeForce GTX 1050 (0000:01:00.0)
 &gt;&gt;&gt; import keras
 Using TensorFlow backend.
 &gt;&gt;&gt; keras.__version__
-&#39;2.1.3&#39;</code></pre>
-<p class="report"><span class="count">[11]</span>
-<span class="start">2019-03-30 13:25:10</span> (<span class="elasped">953ms</span>)
-<span class="right"><span class="kernel"></span><span class="count"> [1]</span>
-</span></p></div></div></div>
+&#39;2.1.3&#39;</code></pre></div></div>
 
 <p>KerasのTheanoをバックエンドに指定してみます．<code>~\.keras\keras.json</code>を以下の内容で保存します．</p>
-<div class="pheasant-fenced-code"><div class="cached"><div class="input"><pre><code class="json">{
+<div class="pheasant-fenced-code"><div class="source"><pre><code class="json">{
     &#34;floatx&#34;: &#34;float32&#34;,
     &#34;epsilon&#34;: 1e-07,
     &#34;backend&#34;: &#34;theano&#34;,
     &#34;image_data_format&#34;: &#34;channels_last&#34;
-}</code></pre>
-<p class="report"><span class="count">[12]</span>
-<span class="start">2019-03-30 13:25:10</span> (<span class="elasped">953ms</span>)
-<span class="right"><span class="kernel"></span><span class="count"> [1]</span>
-</span></p></div></div></div>
+}</code></pre></div></div>
 
 <p>インポートしてみます．</p>
-<div class="pheasant-fenced-code"><div class="cached"><div class="input"><pre><code class="bash">(dl) &gt; python
+<div class="pheasant-fenced-code"><div class="source"><pre><code class="bash">(dl) &gt; python
 &gt;&gt;&gt; import keras
 Using Theano backend.
 Using cuDNN version 6021 on context None
-Mapped name None to device cuda: GeForce GTX 1050 (0000:01:00.0)</code></pre>
-<p class="report"><span class="count">[13]</span>
-<span class="start">2019-03-30 13:25:10</span> (<span class="elasped">953ms</span>)
-<span class="right"><span class="kernel"></span><span class="count"> [1]</span>
-</span></p></div></div></div>
+Mapped name None to device cuda: GeForce GTX 1050 (0000:01:00.0)</code></pre></div></div>
 
 <p>最後にNeural Network Librariesです．</p>
-<div class="pheasant-fenced-code"><div class="cached"><div class="input"><pre><code class="bash">(dl) &gt; python
+<div class="pheasant-fenced-code"><div class="source"><pre><code class="bash">(dl) &gt; python
 &gt;&gt;&gt; import nnabla
 2018-02-04 20:19:37,163 [nnabla][INFO]: Initializing CPU extension...
 &gt;&gt;&gt; import nnabla_ext.cuda.cudnn
 2018-02-04 20:19:47,262 [nnabla][INFO]: Initializing CUDA extension...
-2018-02-04 20:19:47,545 [nnabla][INFO]: Initializing cuDNN extension...</code></pre>
-<p class="report"><span class="count">[14]</span>
-<span class="start">2019-03-30 13:25:10</span> (<span class="elasped">953ms</span>)
-<span class="right"><span class="kernel"></span><span class="count"> [1]</span>
-</span></p></div></div></div>
+2018-02-04 20:19:47,545 [nnabla][INFO]: Initializing cuDNN extension...</code></pre></div></div>
 
 <p>以上で，ディープラーニングを実行する環境が整いました．</p></div>
+
+
 
 </article>
 

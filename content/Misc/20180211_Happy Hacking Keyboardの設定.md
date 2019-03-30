@@ -1,6 +1,6 @@
 [Happy Hacking Keyboard Professional2 Type-S](https://www.pfu.fujitsu.com/hhkeyboard/type-s/)英語配列モデルを購入しました．より快適に使うための設定をまとめておきます．
 
-<!-- PELICAN_END_SUMMARY -->
+
 
 以下の記事を参考にしました．
 

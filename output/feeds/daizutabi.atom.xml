@@ -1,47 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>大豆旅 - daizutabi</title><link href="https://blog.daizutabi.net/" rel="alternate"></link><link href="https://blog.daizutabi.net%5Cfeeds/daizutabi.atom.xml" rel="self"></link><id>https://blog.daizutabi.net/</id><updated>2019-03-29T00:00:00+09:00</updated><entry><title>Fluent Python 例18-2 スピナー</title><link href="https://blog.daizutabi.net%5C2019/03/29/" rel="alternate"></link><published>2019-03-29T00:00:00+09:00</published><updated>2019-03-29T00:00:00+09:00</updated><author><name>daizutabi</name></author><id>tag:blog.daizutabi.net\2019,2019-03-29:/03/29/</id><summary type="html">
+<feed xmlns="http://www.w3.org/2005/Atom"><title>大豆旅 - daizutabi</title><link href="https://blog.daizutabi.net/" rel="alternate"></link><link href="https://blog.daizutabi.net/feeds/daizutabi.atom.xml" rel="self"></link><id>https://blog.daizutabi.net/</id><updated>2019-03-29T00:00:00+09:00</updated><entry><title>Fluent Python 例18-2 スピナー</title><link href="https://blog.daizutabi.net/2019/03/29/" rel="alternate"></link><published>2019-03-29T00:00:00+09:00</published><updated>2019-03-29T00:00:00+09:00</updated><author><name>daizutabi</name></author><id>tag:blog.daizutabi.net,2019-03-29:/2019/03/29/</id><summary type="html">
 &lt;h1&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;1&lt;/span&gt; &lt;span class="title"&gt;test&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h1&gt;
 &lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;1.1&lt;/span&gt; &lt;span class="title"&gt;def&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="python"&gt;1&lt;/code&gt;&lt;/pre&gt;
-&lt;p class="report"&gt;&lt;span class="count"&gt;[1]&lt;/span&gt;
-&lt;span class="start"&gt;2019-03-30 13:25:11&lt;/span&gt; (&lt;span class="elasped"&gt;15.7ms&lt;/span&gt;)
-&lt;span class="right"&gt;&lt;span class="kernel"&gt;python3&lt;/span&gt;&lt;span class="count"&gt; [3]&lt;/span&gt;
-&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class="output"&gt;&lt;pre&gt;&lt;code class="text"&gt;1&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="source"&gt;&lt;pre&gt;&lt;code class="python"&gt;1&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">
 &lt;h1&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;1&lt;/span&gt; &lt;span class="title"&gt;test&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h1&gt;
 &lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;1.1&lt;/span&gt; &lt;span class="title"&gt;def&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="python"&gt;1&lt;/code&gt;&lt;/pre&gt;
-&lt;p class="report"&gt;&lt;span class="count"&gt;[1]&lt;/span&gt;
-&lt;span class="start"&gt;2019-03-30 13:25:11&lt;/span&gt; (&lt;span class="elasped"&gt;15.7ms&lt;/span&gt;)
-&lt;span class="right"&gt;&lt;span class="kernel"&gt;python3&lt;/span&gt;&lt;span class="count"&gt; [3]&lt;/span&gt;
-&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class="output"&gt;&lt;pre&gt;&lt;code class="text"&gt;1&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</content></entry><entry><title>AtomにおけるPython開発環境構築 その2</title><link href="https://blog.daizutabi.net%5C2019/02/15/" rel="alternate"></link><published>2019-02-15T00:00:00+09:00</published><updated>2019-02-15T00:00:00+09:00</updated><author><name>daizutabi</name></author><id>tag:blog.daizutabi.net\2019,2019-02-15:/02/15/</id><summary type="html">
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="source"&gt;&lt;pre&gt;&lt;code class="python"&gt;1&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content></entry><entry><title>AtomにおけるPython開発環境構築 その2</title><link href="https://blog.daizutabi.net/2019/02/15/" rel="alternate"></link><published>2019-02-15T00:00:00+09:00</published><updated>2019-02-15T00:00:00+09:00</updated><author><name>daizutabi</name></author><id>tag:blog.daizutabi.net,2019-02-15:/2019/02/15/</id><summary type="html">
 &lt;p&gt;AtomテキストエディタにPython開発環境を構築します。細かい設定を丁寧に説明し、快適な開発環境を整備することを目指します。&lt;/p&gt;
-&lt;!-- PELICAN_END_SUMMARY --&gt;
-
 &lt;p&gt;それでは，Python開発に役立つパッケージを紹介していきます．各節のヘッダがパッケージ名になっているので，特に記載のない限り，その名前でパッケージを検索してインストールしてください．その後，Settings，Keymap，Stylesheetの各項目を必要に応じて設定していきます．&lt;/p&gt;
-&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.1&lt;/span&gt; &lt;span class="title"&gt;platformio-ide-terminal&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;1&lt;/span&gt; &lt;span class="title"&gt;platformio-ide-terminal&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
 &lt;p&gt;Atom内でターミナルを実行します．&lt;/p&gt;
-&lt;h3&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.1.1&lt;/span&gt; &lt;span class="title"&gt;Settings&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;1.1&lt;/span&gt; &lt;span class="title"&gt;Settings&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Auto Run Command: C:\Users\daizu\Miniconda3\Scripts\activate.bat base&lt;/li&gt;
 &lt;li&gt;Shell Override: C:\Windows\System32\cmd.exe&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.2&lt;/span&gt; &lt;span class="title"&gt;vim-mode-plus, ex-mode, vim-mode-plus-keymaps-for-surround, cursor-history, quick-highlight&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;2&lt;/span&gt; &lt;span class="title"&gt;vim-mode-plus, ex-mode, vim-mode-plus-keymaps-for-surround, cursor-history, quick-highlight&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
 &lt;p&gt;AtomでVimキーバインドを実現します。&lt;/p&gt;
-&lt;h3&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.2.1&lt;/span&gt; &lt;span class="title"&gt;Settings …&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;</summary><content type="html">
+&lt;h3&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;2.1&lt;/span&gt; &lt;span class="title"&gt;Settings&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
+&lt;p&gt;vim-mode-plusで、以下のキーマップを有効にします．&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Y&lt;/code&gt;: 'yank-to-last-character-of-line' …&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">
 &lt;p&gt;AtomテキストエディタにPython開発環境を構築します。細かい設定を丁寧に説明し、快適な開発環境を整備することを目指します。&lt;/p&gt;
-&lt;!-- PELICAN_END_SUMMARY --&gt;
-
 &lt;p&gt;それでは，Python開発に役立つパッケージを紹介していきます．各節のヘッダがパッケージ名になっているので，特に記載のない限り，その名前でパッケージを検索してインストールしてください．その後，Settings，Keymap，Stylesheetの各項目を必要に応じて設定していきます．&lt;/p&gt;
-&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.1&lt;/span&gt; &lt;span class="title"&gt;platformio-ide-terminal&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;1&lt;/span&gt; &lt;span class="title"&gt;platformio-ide-terminal&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
 &lt;p&gt;Atom内でターミナルを実行します．&lt;/p&gt;
-&lt;h3&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.1.1&lt;/span&gt; &lt;span class="title"&gt;Settings&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;1.1&lt;/span&gt; &lt;span class="title"&gt;Settings&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Auto Run Command: C:\Users\daizu\Miniconda3\Scripts\activate.bat base&lt;/li&gt;
 &lt;li&gt;Shell Override: C:\Windows\System32\cmd.exe&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.2&lt;/span&gt; &lt;span class="title"&gt;vim-mode-plus, ex-mode, vim-mode-plus-keymaps-for-surround, cursor-history, quick-highlight&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;2&lt;/span&gt; &lt;span class="title"&gt;vim-mode-plus, ex-mode, vim-mode-plus-keymaps-for-surround, cursor-history, quick-highlight&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
 &lt;p&gt;AtomでVimキーバインドを実現します。&lt;/p&gt;
-&lt;h3&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.2.1&lt;/span&gt; &lt;span class="title"&gt;Settings&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;2.1&lt;/span&gt; &lt;span class="title"&gt;Settings&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
 &lt;p&gt;vim-mode-plusで、以下のキーマップを有効にします．&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;Y&lt;/code&gt;: 'yank-to-last-character-of-line'&lt;/li&gt;
@@ -54,8 +45,8 @@
 &lt;ul&gt;
 &lt;li&gt;Automatically Escape Insert Mode On Activate Pane Item Change&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.2.2&lt;/span&gt; &lt;span class="title"&gt;Keymap&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
-&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="cson"&gt;&amp;#39;atom-text-editor.vim-mode-plus:not(.insert-mode)&amp;#39;:
+&lt;h3&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;2.2&lt;/span&gt; &lt;span class="title"&gt;Keymap&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="source"&gt;&lt;pre&gt;&lt;code class="cson"&gt;&amp;#39;atom-text-editor.vim-mode-plus:not(.insert-mode)&amp;#39;:
   &amp;#39;j&amp;#39;: &amp;#39;vim-mode-plus:move-down-screen&amp;#39;
   &amp;#39;k&amp;#39;: &amp;#39;vim-mode-plus:move-up-screen&amp;#39;
   &amp;#39;g j&amp;#39;: &amp;#39;vim-mode-plus:move-down&amp;#39;
@@ -92,21 +83,17 @@
   &amp;#39;ctrl-o&amp;#39;: &amp;#39;cursor-history:prev&amp;#39;
 
 &amp;#39;.tree-view&amp;#39;:
-  &amp;#39;s f&amp;#39;: &amp;#39;tree-view:toggle-focus&amp;#39;&lt;/code&gt;&lt;/pre&gt;
-&lt;p class="report"&gt;&lt;span class="count"&gt;[1]&lt;/span&gt;
-&lt;span class="start"&gt;2019-03-30 13:25:11&lt;/span&gt; (&lt;span class="elasped"&gt;15.7ms&lt;/span&gt;)
-&lt;span class="right"&gt;&lt;span class="kernel"&gt;&lt;/span&gt;&lt;span class="count"&gt; [3]&lt;/span&gt;
-&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+  &amp;#39;s f&amp;#39;: &amp;#39;tree-view:toggle-focus&amp;#39;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.3&lt;/span&gt; &lt;span class="title"&gt;MagicPython&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;3&lt;/span&gt; &lt;span class="title"&gt;MagicPython&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
 &lt;p&gt;Pythonコードのシンタックスハイライターに，MagicPythonを使います．コアパッケージのlanguage-pythonはdisableにします．&lt;/p&gt;
-&lt;h3&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.3.1&lt;/span&gt; &lt;span class="title"&gt;Settings&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;3.1&lt;/span&gt; &lt;span class="title"&gt;Settings&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Tab Type: soft&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.3.2&lt;/span&gt; &lt;span class="title"&gt;Stylesheet&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;3.2&lt;/span&gt; &lt;span class="title"&gt;Stylesheet&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
 &lt;p&gt;色の設定を追加します．[File] &amp;gt; [Stylesheet]を選択して，&lt;code&gt;styles.less&lt;/code&gt;を開き，次の行を追加します．好みに応じて変更してください．&lt;/p&gt;
-&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="css"&gt;/* styles.less */
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="source"&gt;&lt;pre&gt;&lt;code class="css"&gt;/* styles.less */
 atom-text-editor .syntax--source.syntax--python {
   .syntax--keyword.syntax--control,
   .syntax--keyword.syntax--operator.syntax--logical,
@@ -161,61 +148,37 @@ atom-text-editor .syntax--source.syntax--python {
   .syntax--constant.syntax--other {
     color: #D69696;
   }
-}&lt;/code&gt;&lt;/pre&gt;
-&lt;p class="report"&gt;&lt;span class="count"&gt;[2]&lt;/span&gt;
-&lt;span class="start"&gt;2019-03-30 13:25:11&lt;/span&gt; (&lt;span class="elasped"&gt;15.7ms&lt;/span&gt;)
-&lt;span class="right"&gt;&lt;span class="kernel"&gt;&lt;/span&gt;&lt;span class="count"&gt; [3]&lt;/span&gt;
-&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.4&lt;/span&gt; &lt;span class="title"&gt;atom-ide-ui, ide-python&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;4&lt;/span&gt; &lt;span class="title"&gt;atom-ide-ui, ide-python&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
 &lt;p&gt;Minicondaの仮想環境&lt;code&gt;atom&lt;/code&gt;を作成します。&lt;/p&gt;
-&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="bash"&gt;(base) &amp;gt; conda create -n atom python
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="source"&gt;&lt;pre&gt;&lt;code class="bash"&gt;(base) &amp;gt; conda create -n atom python
 (base) &amp;gt; activate atom
 (atom) &amp;gt; pip install python-language-server[all]
-(atom) &amp;gt; pip install pyls-isort pyls-mypy&lt;/code&gt;&lt;/pre&gt;
-&lt;p class="report"&gt;&lt;span class="count"&gt;[3]&lt;/span&gt;
-&lt;span class="start"&gt;2019-03-30 13:25:11&lt;/span&gt; (&lt;span class="elasped"&gt;15.7ms&lt;/span&gt;)
-&lt;span class="right"&gt;&lt;span class="kernel"&gt;&lt;/span&gt;&lt;span class="count"&gt; [3]&lt;/span&gt;
-&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+(atom) &amp;gt; pip install pyls-isort pyls-mypy&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Atom実行時のパスに、Pythonの仮想環境を追加します。AtomのFile-&amp;gt;Init Script...でinit.coffeeを開き、&lt;/p&gt;
-&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="javascript"&gt;process.env.PATH = [&amp;#34;C:\\Users\\daizu\\Miniconda3\\envs\\atom;C:\\Users\\daizu\\Miniconda3\\envs\\atom\\Library\\bin;C:\\Users\\daizu\\Miniconda3\\envs\\atom\\Scripts&amp;#34;, process.env.PATH].join(&amp;#34;;&amp;#34;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p class="report"&gt;&lt;span class="count"&gt;[4]&lt;/span&gt;
-&lt;span class="start"&gt;2019-03-30 13:25:12&lt;/span&gt; (&lt;span class="elasped"&gt;578ms&lt;/span&gt;)
-&lt;span class="right"&gt;&lt;span class="kernel"&gt;javascript&lt;/span&gt;&lt;span class="count"&gt; [1]&lt;/span&gt;
-&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class="output"&gt;&lt;pre&gt;&lt;code class="text"&gt;&amp;#39;C:\\Users\\daizu\\Miniconda3\\envs\\atom;C:\\Users\\daizu\\Miniconda3\\envs\\atom\\Library\\bin;C:\\Users\\daizu\\Miniconda3\\envs\\atom\\Scripts;C:\\Users\\daizu\\Miniconda3\\envs\\daizu;C:\\Users\\daizu\\Miniconda3\\envs\\daizu\\Library\\mingw-w64\\bin;C:\\Users\\daizu\\Miniconda3\\envs\\daizu\\Library\\usr\\bin;C:\\Users\\daizu\\Miniconda3\\envs\\daizu\\Library\\bin;C:\\Users\\daizu\\Miniconda3\\envs\\daizu\\Scripts;C:\\Users\\daizu\\Miniconda3\\envs\\daizu\\bin;C:\\Users\\daizu\\Miniconda3\\condabin;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v10.0\\bin;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v10.0\\libnvvp;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Users\\daizu\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\daizu\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\daizu\\AppData\\Local\\bin;C:\\Local\\texlive\\2018\\bin\\win32;C:\\Users\\daizu\\AppData\\Local\\atom\\bin&amp;#39;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="source"&gt;&lt;pre&gt;&lt;code class="javascript"&gt;process.env.PATH = [&amp;#34;C:\\Users\\daizu\\Miniconda3\\envs\\atom;C:\\Users\\daizu\\Miniconda3\\envs\\atom\\Library\\bin;C:\\Users\\daizu\\Miniconda3\\envs\\atom\\Scripts&amp;#34;, process.env.PATH].join(&amp;#34;;&amp;#34;)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;を追加します。&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://github.com/facebookarchive/atom-ide-ui/blob/master/docs/keybindings.md"&gt;キーマッピング&lt;/a&gt;&lt;/p&gt;
-&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.5&lt;/span&gt; &lt;span class="title"&gt;Hydrogen&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;5&lt;/span&gt; &lt;span class="title"&gt;Hydrogen&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
 &lt;p&gt;Jupyter clientを使って，Atom上でPythonコードの実行ができます．インタラクティブな実行が可能なので，非常に重宝します．Hydrogenを使う仮想環境下(仮に&lt;code&gt;example&lt;/code&gt;とします)で，以下を実行します。&lt;/p&gt;
-&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="bash"&gt;(base) &amp;gt; conda create -n daizu python
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="source"&gt;&lt;pre&gt;&lt;code class="bash"&gt;(base) &amp;gt; conda create -n daizu python
 (base) &amp;gt; active daizu
 (daizu) &amp;gt; conda install jupyter
-(daizu) &amp;gt; python -m ipykernel install --user --name daizu&lt;/code&gt;&lt;/pre&gt;
-&lt;p class="report"&gt;&lt;span class="count"&gt;[5]&lt;/span&gt;
-&lt;span class="start"&gt;2019-03-30 13:25:12&lt;/span&gt; (&lt;span class="elasped"&gt;578ms&lt;/span&gt;)
-&lt;span class="right"&gt;&lt;span class="kernel"&gt;&lt;/span&gt;&lt;span class="count"&gt; [1]&lt;/span&gt;
-&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+(daizu) &amp;gt; python -m ipykernel install --user --name daizu&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Atom実行時のパスに、Pythonの仮想環境を追加します。AtomのFile-&amp;gt;Init Script...でinit.coffeeを開き、以下のように変更します。&lt;/p&gt;
-&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="javascript"&gt;process.env.PATH = [&amp;#34;C:\\Users\\daizu\\Miniconda3\\envs\\atom;C:\\Users\\daizu\\Miniconda3\\envs\\atom\\Library\\bin;C:\\Users\\daizu\\Miniconda3\\envs\\atom\\Scripts;C:\\Users\\daizu\\Miniconda3\\envs\\daizu;C:\\Users\\daizu\\Miniconda3\\envs\\daizu\\Library\\bin;C:\\Users\\daizu\\Miniconda3\\envs\\daizu\\Scripts&amp;#34;, process.env.PATH].join(&amp;#34;;&amp;#34;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p class="report"&gt;&lt;span class="count"&gt;[6]&lt;/span&gt;
-&lt;span class="start"&gt;2019-03-30 13:25:12&lt;/span&gt; (&lt;span class="elasped"&gt;15.6ms&lt;/span&gt;)
-&lt;span class="right"&gt;&lt;span class="kernel"&gt;javascript&lt;/span&gt;&lt;span class="count"&gt; [2]&lt;/span&gt;
-&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class="output"&gt;&lt;pre&gt;&lt;code class="text"&gt;&amp;#39;C:\\Users\\daizu\\Miniconda3\\envs\\atom;C:\\Users\\daizu\\Miniconda3\\envs\\atom\\Library\\bin;C:\\Users\\daizu\\Miniconda3\\envs\\atom\\Scripts;C:\\Users\\daizu\\Miniconda3\\envs\\daizu;C:\\Users\\daizu\\Miniconda3\\envs\\daizu\\Library\\bin;C:\\Users\\daizu\\Miniconda3\\envs\\daizu\\Scripts;C:\\Users\\daizu\\Miniconda3\\envs\\atom;C:\\Users\\daizu\\Miniconda3\\envs\\atom\\Library\\bin;C:\\Users\\daizu\\Miniconda3\\envs\\atom\\Scripts;C:\\Users\\daizu\\Miniconda3\\envs\\daizu;C:\\Users\\daizu\\Miniconda3\\envs\\daizu\\Library\\mingw-w64\\bin;C:\\Users\\daizu\\Miniconda3\\envs\\daizu\\Library\\usr\\bin;C:\\Users\\daizu\\Miniconda3\\envs\\daizu\\Library\\bin;C:\\Users\\daizu\\Miniconda3\\envs\\daizu\\Scripts;C:\\Users\\daizu\\Miniconda3\\envs\\daizu\\bin;C:\\Users\\daizu\\Miniconda3\\condabin;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v10.0\\bin;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v10.0\\libnvvp;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Users\\daizu\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\daizu\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\daizu\\AppData\\Local\\bin;C:\\Local\\texlive\\2018\\bin\\win32;C:\\Users\\daizu\\AppData\\Local\\atom\\bin&amp;#39;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="source"&gt;&lt;pre&gt;&lt;code class="javascript"&gt;process.env.PATH = [&amp;#34;C:\\Users\\daizu\\Miniconda3\\envs\\atom;C:\\Users\\daizu\\Miniconda3\\envs\\atom\\Library\\bin;C:\\Users\\daizu\\Miniconda3\\envs\\atom\\Scripts;C:\\Users\\daizu\\Miniconda3\\envs\\daizu;C:\\Users\\daizu\\Miniconda3\\envs\\daizu\\Library\\bin;C:\\Users\\daizu\\Miniconda3\\envs\\daizu\\Scripts&amp;#34;, process.env.PATH].join(&amp;#34;;&amp;#34;)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h3&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.5.1&lt;/span&gt; &lt;span class="title"&gt;Keymap&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
-&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="cson"&gt;&amp;#39;atom-text-editor&amp;#39;:
+&lt;h3&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;5.1&lt;/span&gt; &lt;span class="title"&gt;Keymap&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="source"&gt;&lt;pre&gt;&lt;code class="cson"&gt;&amp;#39;atom-text-editor&amp;#39;:
   &amp;#39;f8&amp;#39;: &amp;#39;hydrogen:clear-results&amp;#39;
   &amp;#39;f9&amp;#39;: &amp;#39;hydrogen:run-all-above&amp;#39;
-  &amp;#39;f10&amp;#39;: &amp;#39;hydrogen:run-all&amp;#39;&lt;/code&gt;&lt;/pre&gt;
-&lt;p class="report"&gt;&lt;span class="count"&gt;[7]&lt;/span&gt;
-&lt;span class="start"&gt;2019-03-30 13:25:12&lt;/span&gt; (&lt;span class="elasped"&gt;15.6ms&lt;/span&gt;)
-&lt;span class="right"&gt;&lt;span class="kernel"&gt;&lt;/span&gt;&lt;span class="count"&gt; [2]&lt;/span&gt;
-&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+  &amp;#39;f10&amp;#39;: &amp;#39;hydrogen:run-all&amp;#39;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.6&lt;/span&gt; &lt;span class="title"&gt;その他のパッケージ&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;6&lt;/span&gt; &lt;span class="title"&gt;その他のパッケージ&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
 &lt;p&gt;Pythonとは直接関係ないですが，以下のパッケージもインストールするとよいでしょう．&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;tab-numbers&lt;/li&gt;
@@ -224,7 +187,7 @@ atom-text-editor .syntax--source.syntax--python {
 &lt;li&gt;file-icons&lt;/li&gt;
 &lt;li&gt;minimap系&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;以上で，開発環境が整いました．&lt;/p&gt;</content></entry><entry><title>機械学習の準備 その2</title><link href="https://blog.daizutabi.net%5C2019/01/20/" rel="alternate"></link><published>2019-01-20T00:00:00+09:00</published><updated>2019-01-20T00:00:00+09:00</updated><author><name>daizutabi</name></author><id>tag:blog.daizutabi.net\2019,2019-01-20:/01/20/</id><summary type="html">
+&lt;p&gt;以上で，開発環境が整いました．&lt;/p&gt;</content></entry><entry><title>機械学習の準備 その2</title><link href="https://blog.daizutabi.net/2019/01/20/" rel="alternate"></link><published>2019-01-20T00:00:00+09:00</published><updated>2019-01-20T00:00:00+09:00</updated><author><name>daizutabi</name></author><id>tag:blog.daizutabi.net,2019-01-20:/2019/01/20/</id><summary type="html">
 &lt;p&gt;&lt;a href="../../../2018/09/03/"&gt;2018/9/3の記事&lt;/a&gt;のアップデート版です．今回は，ソニー製&lt;a href="https://nnabla.org/ja/"&gt;Neural Network Libraries&lt;/a&gt;もインストールし，今後両者を比較する準備とします．&lt;/p&gt;
 &lt;p&gt;今回インストールする主なPythonパッケージは，以下の通りです．&lt;/p&gt;
 &lt;ul&gt;
@@ -232,8 +195,6 @@ atom-text-editor .syntax--source.syntax--python {
 &lt;li&gt;Keras 2.2.4&lt;/li&gt;
 &lt;li&gt;Neural Network Libraries 1.0.10&lt;/li&gt;
 &lt;/ul&gt;
-&lt;!-- PELICAN_END_SUMMARY --&gt;
-
 &lt;p&gt;インストールするPC環境は以下の通りです：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;OS: Windows 10 Pro (64-bit)&lt;/li&gt;
@@ -241,7 +202,7 @@ atom-text-editor .syntax--source.syntax--python {
 &lt;li&gt;GPU: NVIDIA GeForce GTX 1050&lt;/li&gt;
 &lt;li&gt;RAM: 16 GB&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0 …&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;</summary><content type="html">
+&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;1 …&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;</summary><content type="html">
 &lt;p&gt;&lt;a href="../../../2018/09/03/"&gt;2018/9/3の記事&lt;/a&gt;のアップデート版です．今回は，ソニー製&lt;a href="https://nnabla.org/ja/"&gt;Neural Network Libraries&lt;/a&gt;もインストールし，今後両者を比較する準備とします．&lt;/p&gt;
 &lt;p&gt;今回インストールする主なPythonパッケージは，以下の通りです．&lt;/p&gt;
 &lt;ul&gt;
@@ -249,8 +210,6 @@ atom-text-editor .syntax--source.syntax--python {
 &lt;li&gt;Keras 2.2.4&lt;/li&gt;
 &lt;li&gt;Neural Network Libraries 1.0.10&lt;/li&gt;
 &lt;/ul&gt;
-&lt;!-- PELICAN_END_SUMMARY --&gt;
-
 &lt;p&gt;インストールするPC環境は以下の通りです：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;OS: Windows 10 Pro (64-bit)&lt;/li&gt;
@@ -258,17 +217,13 @@ atom-text-editor .syntax--source.syntax--python {
 &lt;li&gt;GPU: NVIDIA GeForce GTX 1050&lt;/li&gt;
 &lt;li&gt;RAM: 16 GB&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.1&lt;/span&gt; &lt;span class="title"&gt;TensorFlow, Kerasのインストール&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="bash"&gt;(base) &amp;gt; conda create -y -n ml python=3.6
+&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;1&lt;/span&gt; &lt;span class="title"&gt;TensorFlow, Kerasのインストール&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="source"&gt;&lt;pre&gt;&lt;code class="bash"&gt;(base) &amp;gt; conda create -y -n ml python=3.6
 (base) &amp;gt; conda activate ml
-(ml) &amp;gt; conda install tensorflow-gpu keras&lt;/code&gt;&lt;/pre&gt;
-&lt;p class="report"&gt;&lt;span class="count"&gt;[1]&lt;/span&gt;
-&lt;span class="start"&gt;2019-03-30 13:25:10&lt;/span&gt; (&lt;span class="elasped"&gt;953ms&lt;/span&gt;)
-&lt;span class="right"&gt;&lt;span class="kernel"&gt;&lt;/span&gt;&lt;span class="count"&gt; [1]&lt;/span&gt;
-&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+(ml) &amp;gt; conda install tensorflow-gpu keras&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;バージョンを確認します．&lt;/p&gt;
-&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="bash"&gt;(ml) &amp;gt; conda list tensorflow
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="source"&gt;&lt;pre&gt;&lt;code class="bash"&gt;(ml) &amp;gt; conda list tensorflow
 # Name                    Version                   Build  Channel
 tensorflow                1.12.0          gpu_py36ha5f9131_0
 tensorflow-base           1.12.0          gpu_py36h6e53903_0
@@ -287,19 +242,11 @@ cudatoolkit               9.0                           1
 
 (ml) &amp;gt; conda list cudnn
 # Name                    Version                   Build  Channel
-cudnn                     7.1.4                 cuda9.0_0&lt;/code&gt;&lt;/pre&gt;
-&lt;p class="report"&gt;&lt;span class="count"&gt;[2]&lt;/span&gt;
-&lt;span class="start"&gt;2019-03-30 13:25:10&lt;/span&gt; (&lt;span class="elasped"&gt;953ms&lt;/span&gt;)
-&lt;span class="right"&gt;&lt;span class="kernel"&gt;&lt;/span&gt;&lt;span class="count"&gt; [1]&lt;/span&gt;
-&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+cudnn                     7.1.4                 cuda9.0_0&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.2&lt;/span&gt; &lt;span class="title"&gt;Neural Network Libraries のインストール&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="bash"&gt;(ml) &amp;gt; conda install pywin32
-(ml) &amp;gt; pip install nnabla nnabla-ext-cuda90&lt;/code&gt;&lt;/pre&gt;
-&lt;p class="report"&gt;&lt;span class="count"&gt;[3]&lt;/span&gt;
-&lt;span class="start"&gt;2019-03-30 13:25:10&lt;/span&gt; (&lt;span class="elasped"&gt;953ms&lt;/span&gt;)
-&lt;span class="right"&gt;&lt;span class="kernel"&gt;&lt;/span&gt;&lt;span class="count"&gt; [1]&lt;/span&gt;
-&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;2&lt;/span&gt; &lt;span class="title"&gt;Neural Network Libraries のインストール&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="source"&gt;&lt;pre&gt;&lt;code class="bash"&gt;(ml) &amp;gt; conda install pywin32
+(ml) &amp;gt; pip install nnabla nnabla-ext-cuda90&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;div class="pheasant-fenced-code"&gt;&lt;div class="source"&gt;&lt;pre&gt;&lt;code class="python"&gt;&amp;gt;&amp;gt;&amp;gt; import nnabla_ext.cuda, nnabla_ext.cudnn
 2019-01-20 12:39:48,708 [nnabla][INFO]: Initializing CPU extension...
@@ -310,20 +257,14 @@ cudnn                     7.1.4                 cuda9.0_0&lt;/code&gt;&lt;/pre&g
 &amp;gt;&amp;gt;&amp;gt; list_extensions()
 [&amp;#39;cpu&amp;#39;, &amp;#39;cuda&amp;#39;, &amp;#39;cudnn&amp;#39;]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.3&lt;/span&gt; &lt;span class="title"&gt;JupyterLab のインストール&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="bash"&gt;(ml) &amp;gt; conda install jupyterlab nodejs
-(ml) &amp;gt; jupyter labextension install jupyterlab_vim&lt;/code&gt;&lt;/pre&gt;
-&lt;p class="report"&gt;&lt;span class="count"&gt;[4]&lt;/span&gt;
-&lt;span class="start"&gt;2019-03-30 13:25:10&lt;/span&gt; (&lt;span class="elasped"&gt;953ms&lt;/span&gt;)
-&lt;span class="right"&gt;&lt;span class="kernel"&gt;&lt;/span&gt;&lt;span class="count"&gt; [1]&lt;/span&gt;
-&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</content></entry><entry><title>Happy Hacking Keyboardの設定 その2</title><link href="https://blog.daizutabi.net%5C2018/09/04/" rel="alternate"></link><published>2018-09-04T00:00:00+09:00</published><updated>2018-09-04T00:00:00+09:00</updated><author><name>daizutabi</name></author><id>tag:blog.daizutabi.net\2018,2018-09-04:/09/04/</id><summary type="html">
+&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;3&lt;/span&gt; &lt;span class="title"&gt;JupyterLab のインストール&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="source"&gt;&lt;pre&gt;&lt;code class="bash"&gt;(ml) &amp;gt; conda install jupyterlab nodejs
+(ml) &amp;gt; jupyter labextension install jupyterlab_vim&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content></entry><entry><title>Happy Hacking Keyboardの設定 その2</title><link href="https://blog.daizutabi.net/2018/09/04/" rel="alternate"></link><published>2018-09-04T00:00:00+09:00</published><updated>2018-09-04T00:00:00+09:00</updated><author><name>daizutabi</name></author><id>tag:blog.daizutabi.net,2018-09-04:/2018/09/04/</id><summary type="html">
 &lt;p&gt;&lt;a href="../../../2018/02/11/"&gt;2018/2/11の記事&lt;/a&gt;では，Happy Hacking Keybordの設定を行いました．その時には，右Altキーを［全角／半角］キー，すなわち，全角と半角のトグルキーとして設定しました．今回は，以下の参照記事をもとに，右Altキーを全角，左Altキーを半角に設定します．&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://blog.k-san.info/hhkb-key-mapping"&gt;HHKB英語配列にしたらキー配列設定に試行錯誤した話。&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.karakaram.com/alt-ime-on-off"&gt;WindowsのAlt空打ちで日本語入力(IME)を切り替えるツールを作った&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;!-- PELICAN_END_SUMMARY --&gt;
-
 &lt;p&gt;まずは，右Altキーを［全角／半角］キーした設定をもとに戻します．次の記事を参照しました．&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://www.atmarkit.co.jp/ait/articles/0001/26/news001.html"&gt;Windowsで右Altキーに［漢字］キーを割り当てる方法（AXキーボード設定を利用する方法）&lt;/a&gt;&lt;/li&gt;
@@ -336,8 +277,6 @@ cudnn                     7.1.4                 cuda9.0_0&lt;/code&gt;&lt;/pre&g
 &lt;li&gt;&lt;a href="https://blog.k-san.info/hhkb-key-mapping"&gt;HHKB英語配列にしたらキー配列設定に試行錯誤した話。&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.karakaram.com/alt-ime-on-off"&gt;WindowsのAlt空打ちで日本語入力(IME)を切り替えるツールを作った&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;!-- PELICAN_END_SUMMARY --&gt;
-
 &lt;p&gt;まずは，右Altキーを［全角／半角］キーした設定をもとに戻します．次の記事を参照しました．&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://www.atmarkit.co.jp/ait/articles/0001/26/news001.html"&gt;Windowsで右Altキーに［漢字］キーを割り当てる方法（AXキーボード設定を利用する方法）&lt;/a&gt;&lt;/li&gt;
@@ -379,46 +318,34 @@ cudnn                     7.1.4                 cuda9.0_0&lt;/code&gt;&lt;/pre&g
 &lt;p&gt;そこで，LayerDriver JPNだけkbd101.dllとすることで，うまく動作しました．レジストリエディタの設定を残しておきます．&lt;/p&gt;
 &lt;p&gt;&lt;img alt="reg" src="https://blog.daizutabi.net/images/20180904/reg.png"&gt;&lt;/p&gt;
 &lt;p&gt;この時点で，PCのキーボードは日本語配列，HHKBは英語配列になっています．また，［全角／半角］キーの入力は[Alt]+[`]となっています．&lt;/p&gt;
-&lt;p&gt;あとは，&lt;a href="https://www.karakaram.com/alt-ime-on-off"&gt;WindowsのAlt空打ちで日本語入力(IME)を切り替えるツールを作った&lt;/a&gt;の手順に従うだけです．&lt;/p&gt;</content></entry><entry><title>Condaを使ってGPU板TensorFlowを簡単にインストール</title><link href="https://blog.daizutabi.net%5C2018/09/03/" rel="alternate"></link><published>2018-09-03T00:00:00+09:00</published><updated>2018-09-03T00:00:00+09:00</updated><author><name>daizutabi</name></author><id>tag:blog.daizutabi.net\2018,2018-09-03:/09/03/</id><summary type="html">
+&lt;p&gt;あとは，&lt;a href="https://www.karakaram.com/alt-ime-on-off"&gt;WindowsのAlt空打ちで日本語入力(IME)を切り替えるツールを作った&lt;/a&gt;の手順に従うだけです．&lt;/p&gt;</content></entry><entry><title>Condaを使ってGPU板TensorFlowを簡単にインストール</title><link href="https://blog.daizutabi.net/2018/09/03/" rel="alternate"></link><published>2018-09-03T00:00:00+09:00</published><updated>2018-09-03T00:00:00+09:00</updated><author><name>daizutabi</name></author><id>tag:blog.daizutabi.net,2018-09-03:/2018/09/03/</id><summary type="html">
 &lt;p&gt;&lt;a href="../../../2018/09/01/"&gt;2018/9/1の記事&lt;/a&gt;では，CUDA Toolkitなどをインストールした上で，pip経由でTensorFlowおよびKerasをインストールしました．実は，Condaを使うと，CUDAを手動でインストールする必要がなくなります．実際に検証してみました．&lt;/p&gt;
-&lt;!-- PELICAN_END_SUMMARY --&gt;
-
-&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.1&lt;/span&gt; &lt;span class="title"&gt;準備&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;1&lt;/span&gt; &lt;span class="title"&gt;準備&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
 &lt;p&gt;まず，コントロールパネルのプログラムのアンインストールで，CUDA関連のアプリを全て消去します．再起動後に，以下を実行してみます．&lt;/p&gt;
-&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="bash"&gt;(base) &amp;gt; activate ml
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="source"&gt;&lt;pre&gt;&lt;code class="bash"&gt;(base) &amp;gt; activate ml
 (ml) &amp;gt; python mnist_cnn.py
 (中略)
-ImportError: Could not find &amp;#39;cudart64_90.dll&amp;#39;. TensorFlow requires that this DLL be installed in a directory that is named in your %PATH% environment …&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">
+ImportError: Could not find &amp;#39;cudart64_90.dll&amp;#39;. TensorFlow requires that this DLL be installed in a directory that is named in your %PATH% environment variable …&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">
 &lt;p&gt;&lt;a href="../../../2018/09/01/"&gt;2018/9/1の記事&lt;/a&gt;では，CUDA Toolkitなどをインストールした上で，pip経由でTensorFlowおよびKerasをインストールしました．実は，Condaを使うと，CUDAを手動でインストールする必要がなくなります．実際に検証してみました．&lt;/p&gt;
-&lt;!-- PELICAN_END_SUMMARY --&gt;
-
-&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.1&lt;/span&gt; &lt;span class="title"&gt;準備&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;1&lt;/span&gt; &lt;span class="title"&gt;準備&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
 &lt;p&gt;まず，コントロールパネルのプログラムのアンインストールで，CUDA関連のアプリを全て消去します．再起動後に，以下を実行してみます．&lt;/p&gt;
-&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="bash"&gt;(base) &amp;gt; activate ml
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="source"&gt;&lt;pre&gt;&lt;code class="bash"&gt;(base) &amp;gt; activate ml
 (ml) &amp;gt; python mnist_cnn.py
 (中略)
 ImportError: Could not find &amp;#39;cudart64_90.dll&amp;#39;. TensorFlow requires that this DLL be installed in a directory that is named in your %PATH% environment variable. Download and install CUDA 9.0
- from this URL: https://developer.nvidia.com/cuda-90-download-archive&lt;/code&gt;&lt;/pre&gt;
-&lt;p class="report"&gt;&lt;span class="count"&gt;[1]&lt;/span&gt;
-&lt;span class="start"&gt;2019-03-30 13:25:11&lt;/span&gt; (&lt;span class="elasped"&gt;15.7ms&lt;/span&gt;)
-&lt;span class="right"&gt;&lt;span class="kernel"&gt;&lt;/span&gt;&lt;span class="count"&gt; [3]&lt;/span&gt;
-&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+ from this URL: https://developer.nvidia.com/cuda-90-download-archive&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;当然エラーが出ます．&lt;/p&gt;
 &lt;p&gt;Condaでインストールしていきます．&lt;/p&gt;
-&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="bash"&gt;(ml) &amp;gt; activate base
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="source"&gt;&lt;pre&gt;&lt;code class="bash"&gt;(ml) &amp;gt; activate base
 (base) &amp;gt; conda remove -y -n ml --all
 (base) &amp;gt; conda create -y -n ml python=3.6
 (base) &amp;gt; conda activate ml
-(ml) &amp;gt; conda install tensorflow-gpu keras&lt;/code&gt;&lt;/pre&gt;
-&lt;p class="report"&gt;&lt;span class="count"&gt;[2]&lt;/span&gt;
-&lt;span class="start"&gt;2019-03-30 13:25:11&lt;/span&gt; (&lt;span class="elasped"&gt;15.7ms&lt;/span&gt;)
-&lt;span class="right"&gt;&lt;span class="kernel"&gt;&lt;/span&gt;&lt;span class="count"&gt; [3]&lt;/span&gt;
-&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+(ml) &amp;gt; conda install tensorflow-gpu keras&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.2&lt;/span&gt; &lt;span class="title"&gt;動作確認&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;2&lt;/span&gt; &lt;span class="title"&gt;動作確認&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
 &lt;p&gt;Kerasの動作確認をします． &lt;a href="https://raw.githubusercontent.com/keras-team/keras/master/examples/mnist_cnn.py"&gt;MNIST_CNN&lt;/a&gt;のサンプルをダウンロードし，実行します．&lt;/p&gt;
-&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="bash"&gt;(ml) &amp;gt; python mnist_cnn.py
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="source"&gt;&lt;pre&gt;&lt;code class="bash"&gt;(ml) &amp;gt; python mnist_cnn.py
 (中略)
  GPU (device: 0, name: GeForce GTX 1050, pci bus id: 0000:01:00.0, compute capability: 6.1)
 60000/60000 [==============================] - 13s 208us/step - loss: 0.2567 - acc: 0.9233 - val_loss: 0.0768 - val_acc: 0.9760
@@ -431,19 +358,11 @@ Epoch 4/12
 Epoch 5/12
 60000/60000 [==============================] - 10s 159us/step - loss: 0.0466 - acc: 0.9856 - val_loss: 0.0321 - val_acc: 0.9891
 Epoch 6/12
-33536/60000 [===============&amp;gt;..............] - ETA: 4s - loss: 0.0416 - acc: 0.9874&lt;/code&gt;&lt;/pre&gt;
-&lt;p class="report"&gt;&lt;span class="count"&gt;[3]&lt;/span&gt;
-&lt;span class="start"&gt;2019-03-30 13:25:11&lt;/span&gt; (&lt;span class="elasped"&gt;15.7ms&lt;/span&gt;)
-&lt;span class="right"&gt;&lt;span class="kernel"&gt;&lt;/span&gt;&lt;span class="count"&gt; [3]&lt;/span&gt;
-&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+33536/60000 [===============&amp;gt;..............] - ETA: 4s - loss: 0.0416 - acc: 0.9874&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;問題なく動作しています．&lt;/p&gt;
 &lt;p&gt;他のパッケージもインストールしておきます．&lt;/p&gt;
-&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="bash"&gt;(ml) &amp;gt; conda install ipykernel scikit-learn seaborn&lt;/code&gt;&lt;/pre&gt;
-&lt;p class="report"&gt;&lt;span class="count"&gt;[4]&lt;/span&gt;
-&lt;span class="start"&gt;2019-03-30 13:25:11&lt;/span&gt; (&lt;span class="elasped"&gt;15.7ms&lt;/span&gt;)
-&lt;span class="right"&gt;&lt;span class="kernel"&gt;&lt;/span&gt;&lt;span class="count"&gt; [3]&lt;/span&gt;
-&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</content></entry><entry><title>機械学習の準備</title><link href="https://blog.daizutabi.net%5C2018/09/01/" rel="alternate"></link><published>2018-09-01T00:00:00+09:00</published><updated>2018-09-01T00:00:00+09:00</updated><author><name>daizutabi</name></author><id>tag:blog.daizutabi.net\2018,2018-09-01:/09/01/</id><summary type="html">
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="source"&gt;&lt;pre&gt;&lt;code class="bash"&gt;(ml) &amp;gt; conda install ipykernel scikit-learn seaborn&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content></entry><entry><title>機械学習の準備</title><link href="https://blog.daizutabi.net/2018/09/01/" rel="alternate"></link><published>2018-09-01T00:00:00+09:00</published><updated>2018-09-01T00:00:00+09:00</updated><author><name>daizutabi</name></author><id>tag:blog.daizutabi.net,2018-09-01:/2018/09/01/</id><summary type="html">
 &lt;p&gt;Pythonを使って機械学習の勉強をしていきます．今回は，scikit-learnとTensorFlowをインストールします．この記事では，必要なパッケージなどをインストールする方法を順を追って説明し，勉強を開始できる状態にします．今回インストールする主なPythonパッケージは，以下の通りです．&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;JupyterLab 0.34.3&lt;/li&gt;
@@ -451,8 +370,6 @@ Epoch 6/12
 &lt;li&gt;TensorFlow (GPU) 1.10&lt;/li&gt;
 &lt;li&gt;Keras 2.2.2&lt;/li&gt;
 &lt;/ul&gt;
-&lt;!-- PELICAN_END_SUMMARY --&gt;
-
 &lt;p&gt;GPUを使って計算するため，CUDA ToolkitおよびcuDNNもインストールします． これらは，使用するTensorFlowが対応しているバージョンをインストールする必要があります．特に何も指定しないと，最新版がインストールされて，TensorFlowパッケージが実行できないというケースがあるので注意が必要です．具体的には，以下のバージョンを使います：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;CUDA Toolkit: Version 9.0.176&lt;/li&gt;
@@ -468,8 +385,6 @@ Epoch 6/12
 &lt;li&gt;TensorFlow (GPU) 1.10&lt;/li&gt;
 &lt;li&gt;Keras 2.2.2&lt;/li&gt;
 &lt;/ul&gt;
-&lt;!-- PELICAN_END_SUMMARY --&gt;
-
 &lt;p&gt;GPUを使って計算するため，CUDA ToolkitおよびcuDNNもインストールします． これらは，使用するTensorFlowが対応しているバージョンをインストールする必要があります．特に何も指定しないと，最新版がインストールされて，TensorFlowパッケージが実行できないというケースがあるので注意が必要です．具体的には，以下のバージョンを使います：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;CUDA Toolkit: Version 9.0.176&lt;/li&gt;
@@ -482,7 +397,7 @@ Epoch 6/12
 &lt;li&gt;GPU: NVIDIA GeForce GTX 1050&lt;/li&gt;
 &lt;li&gt;RAM: 16 GB&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.1&lt;/span&gt; &lt;span class="title"&gt;CUDA Toolkit&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;1&lt;/span&gt; &lt;span class="title"&gt;CUDA Toolkit&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;a href="https://developer.nvidia.com/cuda-toolkit-archive"&gt;https://developer.nvidia.com/cuda-toolkit-archive&lt;/a&gt;で，CUDA Toolkitのバージョンを選択した後，&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Operating System: Windows&lt;/li&gt;
@@ -494,13 +409,13 @@ Epoch 6/12
 &lt;p&gt;まず，Base Installerを実行します．「NVIDIAソフトウェア使用承諾書」画面で，「同意して続行する」を選びます．「インストールオプション」画面では，「高速（推奨）」を選びます．次に，Visual Studioがない場合には，以下のように警告が出ます．&lt;/p&gt;
 &lt;p&gt;&lt;img alt="cuda-install" src="https://blog.daizutabi.net/images/20180131/cuda-install-3.png"&gt;&lt;/p&gt;
 &lt;p&gt;特に問題ないので，そのままチェックボックスを選択して，[NEXT]をクリックし，インストールを開始します．その後，先にダウンロードしていたPatchを実行してパッチをインストールします．&lt;/p&gt;
-&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.2&lt;/span&gt; &lt;span class="title"&gt;NVIDIA cuDNN&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;2&lt;/span&gt; &lt;span class="title"&gt;NVIDIA cuDNN&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
 &lt;p&gt;インストールするにはメンバーシップが必要なので，&lt;a href="https://developer.nvidia.com"&gt;https://developer.nvidia.com&lt;/a&gt; の右上のJoinから登録します．ダウンロードページ &lt;a href="https://developer.nvidia.com/rdp/cudnn-download"&gt;https://developer.nvidia.com/rdp/cudnn-download&lt;/a&gt; で，同意ボタンを選択し，リストの中から，&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Download cuDNN v7.2.1 (August 7, 2018), for CUDA 9.0&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;を選択します．ダウンロードした圧縮ファイルを展開します．そして，展開してできた&lt;code&gt;cudnn-9.0-windows10-x64-v7.2.1.38&lt;/code&gt;以下をすべて，&lt;code&gt;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0&lt;/code&gt;にコピーします．&lt;/p&gt;
-&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.3&lt;/span&gt; &lt;span class="title"&gt;Miniconda&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;3&lt;/span&gt; &lt;span class="title"&gt;Miniconda&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;a href="https://conda.io/miniconda.html"&gt;https://conda.io/miniconda.html&lt;/a&gt;で，&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Windows&lt;/li&gt;
@@ -509,43 +424,27 @@ Epoch 6/12
 &lt;/ul&gt;
 &lt;p&gt;を選び，ダウンロードしたファイルを実行してインストールします．インストール中の選択肢は，すべてデフォルト設定のまま行います．Miniconda3 4.3.30 (64-bit)がインストールされました．&lt;/p&gt;
 &lt;p&gt;condaを最新版にしておきます．&lt;/p&gt;
-&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="bash"&gt;&amp;gt; conda install conda&lt;/code&gt;&lt;/pre&gt;
-&lt;p class="report"&gt;&lt;span class="count"&gt;[1]&lt;/span&gt;
-&lt;span class="start"&gt;2019-03-30 13:25:11&lt;/span&gt; (&lt;span class="elasped"&gt;31.3ms&lt;/span&gt;)
-&lt;span class="right"&gt;&lt;span class="kernel"&gt;&lt;/span&gt;&lt;span class="count"&gt; [2]&lt;/span&gt;
-&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="source"&gt;&lt;pre&gt;&lt;code class="bash"&gt;&amp;gt; conda install conda&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.4&lt;/span&gt; &lt;span class="title"&gt;仮想環境の整備&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;4&lt;/span&gt; &lt;span class="title"&gt;仮想環境の整備&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
 &lt;p&gt;仮想環境&lt;code&gt;ml&lt;/code&gt;を作り，この下にインストールしていきます．TensorFlowがPython 3.7に対応していないので，Pythonバージョンを3.6にします．3，4行目では，TensorFlowおよびKerasで必要となる一般的なパッケージのインストールも行っています．また，NumpyはTensorFlow用にバージョンを明示しておきます．&lt;/p&gt;
-&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="bash"&gt;(base) &amp;gt; conda install jupyterlab
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="source"&gt;&lt;pre&gt;&lt;code class="bash"&gt;(base) &amp;gt; conda install jupyterlab
 (base) &amp;gt; conda create -n ml python=3.6 setuptools=39.1.0
 (base) &amp;gt; conda activate ml
 (ml) &amp;gt; conda install cython markdown pyyaml h5py numpy==1.14.5
-(ml) &amp;gt; conda install termcolor werkzeug ipykernel scikit-learn seaborn&lt;/code&gt;&lt;/pre&gt;
-&lt;p class="report"&gt;&lt;span class="count"&gt;[2]&lt;/span&gt;
-&lt;span class="start"&gt;2019-03-30 13:25:11&lt;/span&gt; (&lt;span class="elasped"&gt;31.3ms&lt;/span&gt;)
-&lt;span class="right"&gt;&lt;span class="kernel"&gt;&lt;/span&gt;&lt;span class="count"&gt; [2]&lt;/span&gt;
-&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+(ml) &amp;gt; conda install termcolor werkzeug ipykernel scikit-learn seaborn&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Jupyterが&lt;code&gt;ml&lt;/code&gt;環境下のカーネルを認識できるように，以下を実行します．&lt;/p&gt;
-&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="bash"&gt;(ml) &amp;gt; python -m ipykernel install --user --name ml&lt;/code&gt;&lt;/pre&gt;
-&lt;p class="report"&gt;&lt;span class="count"&gt;[3]&lt;/span&gt;
-&lt;span class="start"&gt;2019-03-30 13:25:11&lt;/span&gt; (&lt;span class="elasped"&gt;31.3ms&lt;/span&gt;)
-&lt;span class="right"&gt;&lt;span class="kernel"&gt;&lt;/span&gt;&lt;span class="count"&gt; [2]&lt;/span&gt;
-&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="source"&gt;&lt;pre&gt;&lt;code class="bash"&gt;(ml) &amp;gt; python -m ipykernel install --user --name ml&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;TensorFlowとKerasはpipでインストールします．PyHamCrestはTensorFlowのインストール時に存在しないと警告が出るので，先にインストールしておきます（必要かは不明）．&lt;/p&gt;
-&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="bash"&gt;(ml) &amp;gt; pip install pyhamcrest
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="source"&gt;&lt;pre&gt;&lt;code class="bash"&gt;(ml) &amp;gt; pip install pyhamcrest
 (ml) &amp;gt; pip install tensorflow-gpu
-(ml) &amp;gt; pip install keras&lt;/code&gt;&lt;/pre&gt;
-&lt;p class="report"&gt;&lt;span class="count"&gt;[4]&lt;/span&gt;
-&lt;span class="start"&gt;2019-03-30 13:25:11&lt;/span&gt; (&lt;span class="elasped"&gt;31.3ms&lt;/span&gt;)
-&lt;span class="right"&gt;&lt;span class="kernel"&gt;&lt;/span&gt;&lt;span class="count"&gt; [2]&lt;/span&gt;
-&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+(ml) &amp;gt; pip install keras&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.5&lt;/span&gt; &lt;span class="title"&gt;動作確認&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;5&lt;/span&gt; &lt;span class="title"&gt;動作確認&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
 &lt;p&gt;インポートできることを確認します．&lt;/p&gt;
-&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="bash"&gt;(ml) &amp;gt; python
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="source"&gt;&lt;pre&gt;&lt;code class="bash"&gt;(ml) &amp;gt; python
 &amp;gt;&amp;gt;&amp;gt; import tensorflow as tf
 &amp;gt;&amp;gt;&amp;gt; tf.__version__
 &amp;#39;1.10.0&amp;#39;
@@ -553,14 +452,10 @@ Epoch 6/12
 Using TensorFlow backend.
 &amp;gt;&amp;gt;&amp;gt; keras.__version__
 &amp;#39;2.2.2&amp;#39;
-&amp;gt;&amp;gt;&amp;gt; exit()&lt;/code&gt;&lt;/pre&gt;
-&lt;p class="report"&gt;&lt;span class="count"&gt;[5]&lt;/span&gt;
-&lt;span class="start"&gt;2019-03-30 13:25:11&lt;/span&gt; (&lt;span class="elasped"&gt;31.3ms&lt;/span&gt;)
-&lt;span class="right"&gt;&lt;span class="kernel"&gt;&lt;/span&gt;&lt;span class="count"&gt; [2]&lt;/span&gt;
-&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&amp;gt;&amp;gt;&amp;gt; exit()&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Kerasの動作確認をします． &lt;a href="https://raw.githubusercontent.com/keras-team/keras/master/examples/mnist_cnn.py"&gt;MNIST_CNN&lt;/a&gt;のサンプルをダウンロードし，実行します．&lt;/p&gt;
-&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="bash"&gt;(ml) &amp;gt; python mnist_cnn.py
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="source"&gt;&lt;pre&gt;&lt;code class="bash"&gt;(ml) &amp;gt; python mnist_cnn.py
 (中略)
 60000/60000 [==============================] - 13s 220us/step - loss: 0.2662 - acc: 0.9178 - val_loss: 0.0609 - val_acc: 0.9817
 Epoch 2/12
@@ -570,22 +465,16 @@ Epoch 3/12
 Epoch 4/12
 60000/60000 [==============================] - 10s 167us/step - loss: 0.0558 - acc: 0.9827 - val_loss: 0.0322 - val_acc: 0.9892
 Epoch 5/12
-18944/60000 [========&amp;gt;.....................] - ETA: 6s - loss: 0.0466 - acc: 0.9860&lt;/code&gt;&lt;/pre&gt;
-&lt;p class="report"&gt;&lt;span class="count"&gt;[6]&lt;/span&gt;
-&lt;span class="start"&gt;2019-03-30 13:25:11&lt;/span&gt; (&lt;span class="elasped"&gt;31.3ms&lt;/span&gt;)
-&lt;span class="right"&gt;&lt;span class="kernel"&gt;&lt;/span&gt;&lt;span class="count"&gt; [2]&lt;/span&gt;
-&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+18944/60000 [========&amp;gt;.....................] - ETA: 6s - loss: 0.0466 - acc: 0.9860&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;GPUの稼働状況です．&lt;/p&gt;
 &lt;p&gt;&lt;img alt="gpu-status" src="https://blog.daizutabi.net/images/20180901/gpu-status.png"&gt;&lt;/p&gt;
-&lt;p&gt;以上で，機械学習を実行する環境が整いました．&lt;/p&gt;</content></entry><entry><title>AtomにおけるPython開発環境構築</title><link href="https://blog.daizutabi.net%5C2018/08/31/" rel="alternate"></link><published>2018-08-31T00:00:00+09:00</published><updated>2018-08-31T00:00:00+09:00</updated><author><name>daizutabi</name></author><id>tag:blog.daizutabi.net\2018,2018-08-31:/08/31/</id><summary type="html">
+&lt;p&gt;以上で，機械学習を実行する環境が整いました．&lt;/p&gt;</content></entry><entry><title>AtomにおけるPython開発環境構築</title><link href="https://blog.daizutabi.net/2018/08/31/" rel="alternate"></link><published>2018-08-31T00:00:00+09:00</published><updated>2018-08-31T00:00:00+09:00</updated><author><name>daizutabi</name></author><id>tag:blog.daizutabi.net,2018-08-31:/2018/08/31/</id><summary type="html">
 &lt;p&gt;AtomテキストエディタにPython開発環境を構築します．細かい設定を丁寧に説明し，快適な開発環境を整備することを目指します．&lt;/p&gt;
-&lt;!-- PELICAN_END_SUMMARY --&gt;
-
 &lt;p&gt;それでは，Python開発に役立つパッケージを紹介していきます．各節のヘッダがパッケージ名になっているので，特に記載のない限り，その名前でパッケージを検索してインストールしてください．その後，Settings，Keymap，Stylesheetの各項目を必要に応じて設定していきます．&lt;/p&gt;
-&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.1&lt;/span&gt; &lt;span class="title"&gt;vim-mode-plus&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;1&lt;/span&gt; &lt;span class="title"&gt;vim-mode-plus&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
 &lt;p&gt;AtomでVimキーバインドを実現します．このパッケージがなかったら，Atomを使っていないでしょう．&lt;/p&gt;
-&lt;h3&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.1.1&lt;/span&gt; &lt;span class="title"&gt;Settings&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;1.1&lt;/span&gt; &lt;span class="title"&gt;Settings&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
 &lt;p&gt;以下のキーマップを有効にします．&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;Y&lt;/code&gt;: 'yank-to-last-character-of-line'&lt;/li&gt;
@@ -598,14 +487,13 @@ Epoch 5/12
 &lt;ul&gt;
 &lt;li&gt;Automatically Escape Insert Mode On Activate Pane Item Change&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.1.2 …&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;</summary><content type="html">
+&lt;h3&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;1.2&lt;/span&gt; &lt;span class="title"&gt;Keymap&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
+&lt;p&gt;Markdownなどのファイルを編集するときには，ソフトラップを有効にするので …&lt;/p&gt;</summary><content type="html">
 &lt;p&gt;AtomテキストエディタにPython開発環境を構築します．細かい設定を丁寧に説明し，快適な開発環境を整備することを目指します．&lt;/p&gt;
-&lt;!-- PELICAN_END_SUMMARY --&gt;
-
 &lt;p&gt;それでは，Python開発に役立つパッケージを紹介していきます．各節のヘッダがパッケージ名になっているので，特に記載のない限り，その名前でパッケージを検索してインストールしてください．その後，Settings，Keymap，Stylesheetの各項目を必要に応じて設定していきます．&lt;/p&gt;
-&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.1&lt;/span&gt; &lt;span class="title"&gt;vim-mode-plus&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;1&lt;/span&gt; &lt;span class="title"&gt;vim-mode-plus&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
 &lt;p&gt;AtomでVimキーバインドを実現します．このパッケージがなかったら，Atomを使っていないでしょう．&lt;/p&gt;
-&lt;h3&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.1.1&lt;/span&gt; &lt;span class="title"&gt;Settings&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;1.1&lt;/span&gt; &lt;span class="title"&gt;Settings&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
 &lt;p&gt;以下のキーマップを有効にします．&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;Y&lt;/code&gt;: 'yank-to-last-character-of-line'&lt;/li&gt;
@@ -618,23 +506,19 @@ Epoch 5/12
 &lt;ul&gt;
 &lt;li&gt;Automatically Escape Insert Mode On Activate Pane Item Change&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.1.2&lt;/span&gt; &lt;span class="title"&gt;Keymap&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;1.2&lt;/span&gt; &lt;span class="title"&gt;Keymap&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
 &lt;p&gt;Markdownなどのファイルを編集するときには，ソフトラップを有効にするので，論理行の移動キーと物理行の移動キーをスワップします．&lt;/p&gt;
 &lt;p&gt;[File] &amp;gt; [Keymap...]を選択して，&lt;code&gt;keymap.cson&lt;/code&gt;を開き，次の行を追加します．好みに応じて変更してください．&lt;/p&gt;
-&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="cson"&gt;# keymap.cson
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="source"&gt;&lt;pre&gt;&lt;code class="cson"&gt;# keymap.cson
 &amp;#39;atom-text-editor.vim-mode-plus:not(.insert-mode)&amp;#39;:
   &amp;#39;j&amp;#39;: &amp;#39;vim-mode-plus:move-down-screen&amp;#39;
   &amp;#39;k&amp;#39;: &amp;#39;vim-mode-plus:move-up-screen&amp;#39;
   &amp;#39;g j&amp;#39;: &amp;#39;vim-mode-plus:move-down&amp;#39;
-  &amp;#39;g k&amp;#39;: &amp;#39;vim-mode-plus:move-up&amp;#39;&lt;/code&gt;&lt;/pre&gt;
-&lt;p class="report"&gt;&lt;span class="count"&gt;[1]&lt;/span&gt;
-&lt;span class="start"&gt;2019-03-30 13:25:12&lt;/span&gt; (&lt;span class="elasped"&gt;15.6ms&lt;/span&gt;)
-&lt;span class="right"&gt;&lt;span class="kernel"&gt;&lt;/span&gt;&lt;span class="count"&gt; [2]&lt;/span&gt;
-&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+  &amp;#39;g k&amp;#39;: &amp;#39;vim-mode-plus:move-up&amp;#39;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;（以下のキーマップの設定では，同様に&lt;code&gt;keymap.cson&lt;/code&gt;を編集します．）&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;s&lt;/code&gt;キーに，ツリービュー，ペーン，タブ間の移動のプレフィックスの役割を割り当てます．&lt;/p&gt;
-&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="cson"&gt;&amp;#39;atom-text-editor.vim-mode-plus.normal-mode&amp;#39;:
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="source"&gt;&lt;pre&gt;&lt;code class="cson"&gt;&amp;#39;atom-text-editor.vim-mode-plus.normal-mode&amp;#39;:
   &amp;#39;s&amp;#39;: &amp;#39;vim-mode-plus:nop&amp;#39;
   &amp;#39;s f&amp;#39;: &amp;#39;tree-view:toggle-focus&amp;#39;
   &amp;#39;s v&amp;#39;: &amp;#39;pane:split-left-and-copy-active-item&amp;#39;
@@ -657,59 +541,43 @@ Epoch 5/12
   &amp;#39;s c&amp;#39;: &amp;#39;pane:close&amp;#39;
 
 &amp;#39;.tree-view&amp;#39;:
-  &amp;#39;s f&amp;#39;: &amp;#39;tree-view:toggle-focus&amp;#39;&lt;/code&gt;&lt;/pre&gt;
-&lt;p class="report"&gt;&lt;span class="count"&gt;[2]&lt;/span&gt;
-&lt;span class="start"&gt;2019-03-30 13:25:12&lt;/span&gt; (&lt;span class="elasped"&gt;15.6ms&lt;/span&gt;)
-&lt;span class="right"&gt;&lt;span class="kernel"&gt;&lt;/span&gt;&lt;span class="count"&gt; [2]&lt;/span&gt;
-&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+  &amp;#39;s f&amp;#39;: &amp;#39;tree-view:toggle-focus&amp;#39;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;関数内で，引数の位置をローテーションします．&lt;/p&gt;
-&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="cson"&gt;&amp;#39;atom-text-editor.vim-mode-plus.normal-mode&amp;#39;:
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="source"&gt;&lt;pre&gt;&lt;code class="cson"&gt;&amp;#39;atom-text-editor.vim-mode-plus.normal-mode&amp;#39;:
   &amp;#39;g &amp;gt;&amp;#39;: &amp;#39;vim-mode-plus:rotate-arguments-of-inner-pair&amp;#39;
-  &amp;#39;g &amp;lt;&amp;#39;: &amp;#39;vim-mode-plus:rotate-arguments-backwards-of-inner-pair&amp;#39;&lt;/code&gt;&lt;/pre&gt;
-&lt;p class="report"&gt;&lt;span class="count"&gt;[3]&lt;/span&gt;
-&lt;span class="start"&gt;2019-03-30 13:25:12&lt;/span&gt; (&lt;span class="elasped"&gt;15.6ms&lt;/span&gt;)
-&lt;span class="right"&gt;&lt;span class="kernel"&gt;&lt;/span&gt;&lt;span class="count"&gt; [2]&lt;/span&gt;
-&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+  &amp;#39;g &amp;lt;&amp;#39;: &amp;#39;vim-mode-plus:rotate-arguments-backwards-of-inner-pair&amp;#39;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.2&lt;/span&gt; &lt;span class="title"&gt;ex-mode&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;2&lt;/span&gt; &lt;span class="title"&gt;ex-mode&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;:w&lt;/code&gt;などのコマンドを使えるようにします．&lt;/p&gt;
-&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.3&lt;/span&gt; &lt;span class="title"&gt;vim-mode-plus-keymaps-for-surround&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;3&lt;/span&gt; &lt;span class="title"&gt;vim-mode-plus-keymaps-for-surround&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
 &lt;p&gt;サラウンド機能のキーマップ設定です．たとえば，ある単語にカーソルを合わせて，&lt;code&gt;y s i w (&lt;/code&gt;と入力すると，その単語をカッコでくくります．他に&lt;code&gt;c s&lt;/code&gt;，&lt;code&gt;d s&lt;/code&gt;などもあります．&lt;/p&gt;
-&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.4&lt;/span&gt; &lt;span class="title"&gt;cursor-history&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;4&lt;/span&gt; &lt;span class="title"&gt;cursor-history&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
 &lt;p&gt;オリジナルのVimと同様にカーソルのジャンプ履歴に素早くアクセスします．&lt;/p&gt;
-&lt;h3&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.4.1&lt;/span&gt; &lt;span class="title"&gt;Keymap&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
-&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="cson"&gt;&amp;#39;atom-text-editor.vim-mode-plus.normal-mode&amp;#39;:
+&lt;h3&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;4.1&lt;/span&gt; &lt;span class="title"&gt;Keymap&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="source"&gt;&lt;pre&gt;&lt;code class="cson"&gt;&amp;#39;atom-text-editor.vim-mode-plus.normal-mode&amp;#39;:
   &amp;#39;ctrl-i&amp;#39;: &amp;#39;cursor-history:next&amp;#39;
-  &amp;#39;ctrl-o&amp;#39;: &amp;#39;cursor-history:prev&amp;#39;&lt;/code&gt;&lt;/pre&gt;
-&lt;p class="report"&gt;&lt;span class="count"&gt;[4]&lt;/span&gt;
-&lt;span class="start"&gt;2019-03-30 13:25:12&lt;/span&gt; (&lt;span class="elasped"&gt;15.6ms&lt;/span&gt;)
-&lt;span class="right"&gt;&lt;span class="kernel"&gt;&lt;/span&gt;&lt;span class="count"&gt; [2]&lt;/span&gt;
-&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+  &amp;#39;ctrl-o&amp;#39;: &amp;#39;cursor-history:prev&amp;#39;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.5&lt;/span&gt; &lt;span class="title"&gt;quick-highlight&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;5&lt;/span&gt; &lt;span class="title"&gt;quick-highlight&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
 &lt;p&gt;コードを編集するときに，同じ文字列をハイライトすると，どこで再利用されているか一目でわかります．&lt;/p&gt;
-&lt;h3&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.5.1&lt;/span&gt; &lt;span class="title"&gt;Keymap&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
-&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="cson"&gt;&amp;#39;atom-text-editor.vim-mode-plus.normal-mode, atom-text-editor.vim-mode-plus.visual-mode&amp;#39;:
+&lt;h3&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;5.1&lt;/span&gt; &lt;span class="title"&gt;Keymap&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="source"&gt;&lt;pre&gt;&lt;code class="cson"&gt;&amp;#39;atom-text-editor.vim-mode-plus.normal-mode, atom-text-editor.vim-mode-plus.visual-mode&amp;#39;:
   &amp;#39;ctrl-m&amp;#39;: &amp;#39;vim-mode-plus-user:quick-highlight-word&amp;#39;
   &amp;#39;g m&amp;#39;: &amp;#39;vim-mode-plus-user:quick-highlight&amp;#39;
-  &amp;#39;space m&amp;#39;: &amp;#39;quick-highlight:clear&amp;#39;&lt;/code&gt;&lt;/pre&gt;
-&lt;p class="report"&gt;&lt;span class="count"&gt;[5]&lt;/span&gt;
-&lt;span class="start"&gt;2019-03-30 13:25:12&lt;/span&gt; (&lt;span class="elasped"&gt;15.6ms&lt;/span&gt;)
-&lt;span class="right"&gt;&lt;span class="kernel"&gt;&lt;/span&gt;&lt;span class="count"&gt; [2]&lt;/span&gt;
-&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+  &amp;#39;space m&amp;#39;: &amp;#39;quick-highlight:clear&amp;#39;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.6&lt;/span&gt; &lt;span class="title"&gt;tab-numbers&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;6&lt;/span&gt; &lt;span class="title"&gt;tab-numbers&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
 &lt;p&gt;タブの横にタブの番号を表示します．この数値をもとに&lt;code&gt;s &amp;lt;number&amp;gt;&lt;/code&gt;で移動できます．&lt;/p&gt;
-&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.7&lt;/span&gt; &lt;span class="title"&gt;MagicPython&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;7&lt;/span&gt; &lt;span class="title"&gt;MagicPython&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
 &lt;p&gt;Pythonコードのシンタックスハイライターに，MagicPythonを使います．コアパッケージのlanguage-pythonはdisableにします．&lt;/p&gt;
-&lt;h3&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.7.1&lt;/span&gt; &lt;span class="title"&gt;Settings&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;7.1&lt;/span&gt; &lt;span class="title"&gt;Settings&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Tab Type: soft&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.7.2&lt;/span&gt; &lt;span class="title"&gt;Stylesheet&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;7.2&lt;/span&gt; &lt;span class="title"&gt;Stylesheet&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
 &lt;p&gt;色の設定を追加します．[File] &amp;gt; [Stylesheet]を選択して，&lt;code&gt;styles.less&lt;/code&gt;を開き，次の行を追加します．好みに応じて変更してください．&lt;/p&gt;
-&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="css"&gt;/* styles.less */
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="source"&gt;&lt;pre&gt;&lt;code class="css"&gt;/* styles.less */
 atom-text-editor .syntax--source.syntax--python {
   .syntax--keyword.syntax--control,
   .syntax--keyword.syntax--operator.syntax--logical,
@@ -764,65 +632,49 @@ atom-text-editor .syntax--source.syntax--python {
   .syntax--constant.syntax--other {
     color: #D69696;
   }
-}&lt;/code&gt;&lt;/pre&gt;
-&lt;p class="report"&gt;&lt;span class="count"&gt;[6]&lt;/span&gt;
-&lt;span class="start"&gt;2019-03-30 13:25:12&lt;/span&gt; (&lt;span class="elasped"&gt;15.6ms&lt;/span&gt;)
-&lt;span class="right"&gt;&lt;span class="kernel"&gt;&lt;/span&gt;&lt;span class="count"&gt; [2]&lt;/span&gt;
-&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;（以下のスタイルシートの設定では，同様に&lt;code&gt;styles.less&lt;/code&gt;を編集します．）&lt;/p&gt;
-&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.8&lt;/span&gt; &lt;span class="title"&gt;autocomplete-plus&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;8&lt;/span&gt; &lt;span class="title"&gt;autocomplete-plus&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
 &lt;p&gt;コアパッケージに含まれているので，インストールの必要はありません．&lt;/p&gt;
-&lt;h3&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.8.1&lt;/span&gt; &lt;span class="title"&gt;Settings&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;8.1&lt;/span&gt; &lt;span class="title"&gt;Settings&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
 &lt;p&gt;補完の方法，カーソル移動の方法などを設定します．&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Keymap For Confirming A Suggestion: tab always, enter when suggestion explicitly selected&lt;/li&gt;
 &lt;li&gt;Use Core Movement Commands: false&lt;/li&gt;
 &lt;li&gt;Suppress Activation For Editor Classes: vim-mode-plus.normal-mode, vim-mode-plus.visual-mode, vim-mode-plus.operator-pending-mode, vim-mode-plus.insert-mode.replace&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.8.2&lt;/span&gt; &lt;span class="title"&gt;Keymap&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;8.2&lt;/span&gt; &lt;span class="title"&gt;Keymap&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
 &lt;p&gt;Vimライクなキー操作で補完候補間を移動できるようにします．この設定を有効にするには，上のUse Core Movement Commandsを非選択にする必要があります．&lt;/p&gt;
-&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="cson"&gt;&amp;#39;atom-text-editor.autocomplete-active&amp;#39;:
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="source"&gt;&lt;pre&gt;&lt;code class="cson"&gt;&amp;#39;atom-text-editor.autocomplete-active&amp;#39;:
   &amp;#39;ctrl-k&amp;#39;: &amp;#39;autocomplete-plus:move-up&amp;#39;
   &amp;#39;ctrl-j&amp;#39;: &amp;#39;autocomplete-plus:move-down&amp;#39;
   &amp;#39;ctrl-h&amp;#39;: &amp;#39;autocomplete-plus:move-to-top&amp;#39;
   &amp;#39;ctrl-l&amp;#39;: &amp;#39;autocomplete-plus:move-to-bottom&amp;#39;
   &amp;#39;pageup&amp;#39;: &amp;#39;autocomplete-plus:page-up&amp;#39;
-  &amp;#39;pagedown&amp;#39;: &amp;#39;autocomplete-plus:page-down&amp;#39;&lt;/code&gt;&lt;/pre&gt;
-&lt;p class="report"&gt;&lt;span class="count"&gt;[7]&lt;/span&gt;
-&lt;span class="start"&gt;2019-03-30 13:25:12&lt;/span&gt; (&lt;span class="elasped"&gt;15.6ms&lt;/span&gt;)
-&lt;span class="right"&gt;&lt;span class="kernel"&gt;&lt;/span&gt;&lt;span class="count"&gt; [2]&lt;/span&gt;
-&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+  &amp;#39;pagedown&amp;#39;: &amp;#39;autocomplete-plus:page-down&amp;#39;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h3&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.8.3&lt;/span&gt; &lt;span class="title"&gt;Stylesheet&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;8.3&lt;/span&gt; &lt;span class="title"&gt;Stylesheet&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
 &lt;p&gt;補完リストのフォントサイズを小さめに設定します．&lt;/p&gt;
-&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="css"&gt;.autocomplete-plus li {
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="source"&gt;&lt;pre&gt;&lt;code class="css"&gt;.autocomplete-plus li {
   font-size: 11pt;
-}&lt;/code&gt;&lt;/pre&gt;
-&lt;p class="report"&gt;&lt;span class="count"&gt;[8]&lt;/span&gt;
-&lt;span class="start"&gt;2019-03-30 13:25:12&lt;/span&gt; (&lt;span class="elasped"&gt;15.6ms&lt;/span&gt;)
-&lt;span class="right"&gt;&lt;span class="kernel"&gt;&lt;/span&gt;&lt;span class="count"&gt; [2]&lt;/span&gt;
-&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.9&lt;/span&gt; &lt;span class="title"&gt;ide-python&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;9&lt;/span&gt; &lt;span class="title"&gt;ide-python&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
 &lt;p&gt;Atom IDE を使ってPython開発をするためのパッケージです．言語サーバーが必要なので，Condaの&lt;code&gt;atom&lt;/code&gt;環境下にインストールします：&lt;/p&gt;
-&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="bash"&gt;(base) &amp;gt; conda create -n atom python=3.6
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="source"&gt;&lt;pre&gt;&lt;code class="bash"&gt;(base) &amp;gt; conda create -n atom python=3.6
 (base) &amp;gt; conda activate atom
-(atom) &amp;gt; pip install python-language-server[all]==0.19.0&lt;/code&gt;&lt;/pre&gt;
-&lt;p class="report"&gt;&lt;span class="count"&gt;[9]&lt;/span&gt;
-&lt;span class="start"&gt;2019-03-30 13:25:12&lt;/span&gt; (&lt;span class="elasped"&gt;15.6ms&lt;/span&gt;)
-&lt;span class="right"&gt;&lt;span class="kernel"&gt;&lt;/span&gt;&lt;span class="count"&gt; [2]&lt;/span&gt;
-&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+(atom) &amp;gt; pip install python-language-server[all]==0.19.0&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;2018/9/1の時点では，Version 0.19.0を指定しないと動作しない．&lt;/p&gt;
-&lt;h3&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.9.1&lt;/span&gt; &lt;span class="title"&gt;Settings&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;9.1&lt;/span&gt; &lt;span class="title"&gt;Settings&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
 &lt;p&gt;Condaの&lt;code&gt;base&lt;/code&gt;環境にインストールされた&lt;code&gt;pyls.exe&lt;/code&gt;をフルパスで指定します．&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Python Executable: C:\Users\daizu\Miniconda3\envs\atom\python.exe&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.10&lt;/span&gt; &lt;span class="title"&gt;autocomplete-python&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;10&lt;/span&gt; &lt;span class="title"&gt;autocomplete-python&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
 &lt;p&gt;autocomplete-plusのPython拡張です．本パッケージで提供される機能は， ide-pythonと重複します．しかし，&lt;code&gt;base&lt;/code&gt;環境以外の仮想環境下にインストールされたPythonパッケージへのジャンプなどがide-pythonではできない（or 設定方法がわからない）ので，autocomplete-plusも同時に入れておきます．&lt;/p&gt;
-&lt;h3&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.10.1&lt;/span&gt; &lt;span class="title"&gt;Settings&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;10.1&lt;/span&gt; &lt;span class="title"&gt;Settings&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Use Kite-powered Completions: false&lt;/li&gt;
 &lt;li&gt;Python Executable Paths: C:\Users\daizu\Miniconda3\python.exe&lt;/li&gt;
@@ -831,144 +683,119 @@ atom-text-editor .syntax--source.syntax--python {
 &lt;li&gt;Use Fussy Matcher For Completions: false&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;上のExtra Paths For Packagesの設定は一例です．Condaの&lt;code&gt;example&lt;/code&gt;環境を登録しています．他にも登録したい仮想環境がある場合には，セミコロンで区切って追記します．&lt;/p&gt;
-&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.11&lt;/span&gt; &lt;span class="title"&gt;python-ident&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;11&lt;/span&gt; &lt;span class="title"&gt;python-ident&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
 &lt;p&gt;Pythonコード入力時にインデントを自動で調整します．&lt;/p&gt;
-&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.12&lt;/span&gt; &lt;span class="title"&gt;atom-beautify&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;12&lt;/span&gt; &lt;span class="title"&gt;atom-beautify&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
 &lt;p&gt;Pythonコードを整形します．ide-pythonでも整形はできますが，atom-beautifyでは，&lt;code&gt;import&lt;/code&gt;の並び替えができます．整形するためのPythonパッケージをインストールします：&lt;/p&gt;
-&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="bash"&gt;(atom) &amp;gt; pip install isort&lt;/code&gt;&lt;/pre&gt;
-&lt;p class="report"&gt;&lt;span class="count"&gt;[10]&lt;/span&gt;
-&lt;span class="start"&gt;2019-03-30 13:25:12&lt;/span&gt; (&lt;span class="elasped"&gt;15.6ms&lt;/span&gt;)
-&lt;span class="right"&gt;&lt;span class="kernel"&gt;&lt;/span&gt;&lt;span class="count"&gt; [2]&lt;/span&gt;
-&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="source"&gt;&lt;pre&gt;&lt;code class="bash"&gt;(atom) &amp;gt; pip install isort&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h3&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.12.1&lt;/span&gt; &lt;span class="title"&gt;Settings&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;12.1&lt;/span&gt; &lt;span class="title"&gt;Settings&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Executables &amp;gt; autopep8: C:\Users\daizu\Miniconda3\envs\atom\Scripts\autopep8.exe&lt;/li&gt;
 &lt;li&gt;Executables &amp;gt; isort: C:\Users\daizu\Miniconda3\envs\atom\Scripts\isort.exe&lt;/li&gt;
 &lt;li&gt;Sort imports: true&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.13&lt;/span&gt; &lt;span class="title"&gt;Hydrogen&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;13&lt;/span&gt; &lt;span class="title"&gt;Hydrogen&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
 &lt;p&gt;Jupyter clientを使って，Atom上でPythonコードの実行ができます．インタラクティブな実行が可能なので，非常に重宝します．Hydrogenを使う仮想環境下で，以下を実行します：&lt;/p&gt;
-&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="bash"&gt;(example) &amp;gt; pip install jupyter
-(example) &amp;gt; python -m ipykernel install --user --name example&lt;/code&gt;&lt;/pre&gt;
-&lt;p class="report"&gt;&lt;span class="count"&gt;[11]&lt;/span&gt;
-&lt;span class="start"&gt;2019-03-30 13:25:12&lt;/span&gt; (&lt;span class="elasped"&gt;15.6ms&lt;/span&gt;)
-&lt;span class="right"&gt;&lt;span class="kernel"&gt;&lt;/span&gt;&lt;span class="count"&gt; [2]&lt;/span&gt;
-&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="source"&gt;&lt;pre&gt;&lt;code class="bash"&gt;(example) &amp;gt; pip install jupyter
+(example) &amp;gt; python -m ipykernel install --user --name example&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h3&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.13.1&lt;/span&gt; &lt;span class="title"&gt;Settings&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;13.1&lt;/span&gt; &lt;span class="title"&gt;Settings&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Language Mappings: {"python": "magicpython"}&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.13.2&lt;/span&gt; &lt;span class="title"&gt;Keymap&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
-&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="cson"&gt;&amp;#39;atom-text-editor&amp;#39;:
+&lt;h3&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;13.2&lt;/span&gt; &lt;span class="title"&gt;Keymap&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="source"&gt;&lt;pre&gt;&lt;code class="cson"&gt;&amp;#39;atom-text-editor&amp;#39;:
   &amp;#39;f8&amp;#39;: &amp;#39;hydrogen:clear-results&amp;#39;
   &amp;#39;f9&amp;#39;: &amp;#39;hydrogen:run-all-above&amp;#39;
-  &amp;#39;f10&amp;#39;: &amp;#39;hydrogen:run-all&amp;#39;&lt;/code&gt;&lt;/pre&gt;
-&lt;p class="report"&gt;&lt;span class="count"&gt;[12]&lt;/span&gt;
-&lt;span class="start"&gt;2019-03-30 13:25:12&lt;/span&gt; (&lt;span class="elasped"&gt;15.6ms&lt;/span&gt;)
-&lt;span class="right"&gt;&lt;span class="kernel"&gt;&lt;/span&gt;&lt;span class="count"&gt; [2]&lt;/span&gt;
-&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+  &amp;#39;f10&amp;#39;: &amp;#39;hydrogen:run-all&amp;#39;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.14&lt;/span&gt; &lt;span class="title"&gt;platformio-ide-terminal&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;14&lt;/span&gt; &lt;span class="title"&gt;platformio-ide-terminal&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
 &lt;p&gt;Atom内でターミナルを実行します．&lt;/p&gt;
-&lt;h3&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.14.1&lt;/span&gt; &lt;span class="title"&gt;Settings&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;14.1&lt;/span&gt; &lt;span class="title"&gt;Settings&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Auto Run Command: C:\Users\daizu\Miniconda3\Scripts\activate.bat base&lt;/li&gt;
 &lt;li&gt;Shell Override: C:\Windows\System32\cmd.exe&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.15&lt;/span&gt; &lt;span class="title"&gt;hydrogen-launcher&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;15&lt;/span&gt; &lt;span class="title"&gt;hydrogen-launcher&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
 &lt;p&gt;Hydrogenで実行中のカーネルに接続されたJupyterコンソールを表示します．&lt;/p&gt;
-&lt;h3&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.15.1&lt;/span&gt; &lt;span class="title"&gt;Keymap&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
-&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="cson"&gt;&amp;#39;atom-text-editor&amp;#39;:
-  &amp;#39;ctrl-alt-j&amp;#39;: &amp;#39;hydrogen-launcher:launch-jupyter-console-in-platformio-terminal&amp;#39;&lt;/code&gt;&lt;/pre&gt;
-&lt;p class="report"&gt;&lt;span class="count"&gt;[13]&lt;/span&gt;
-&lt;span class="start"&gt;2019-03-30 13:25:12&lt;/span&gt; (&lt;span class="elasped"&gt;15.6ms&lt;/span&gt;)
-&lt;span class="right"&gt;&lt;span class="kernel"&gt;&lt;/span&gt;&lt;span class="count"&gt; [2]&lt;/span&gt;
-&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h3&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;15.1&lt;/span&gt; &lt;span class="title"&gt;Keymap&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="source"&gt;&lt;pre&gt;&lt;code class="cson"&gt;&amp;#39;atom-text-editor&amp;#39;:
+  &amp;#39;ctrl-alt-j&amp;#39;: &amp;#39;hydrogen-launcher:launch-jupyter-console-in-platformio-terminal&amp;#39;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.16&lt;/span&gt; &lt;span class="title"&gt;linter-mypy&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;16&lt;/span&gt; &lt;span class="title"&gt;linter-mypy&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
 &lt;p&gt;タイプヒントを診断します．&lt;/p&gt;
-&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="bash"&gt;(atom) pip install mypy&lt;/code&gt;&lt;/pre&gt;
-&lt;p class="report"&gt;&lt;span class="count"&gt;[14]&lt;/span&gt;
-&lt;span class="start"&gt;2019-03-30 13:25:12&lt;/span&gt; (&lt;span class="elasped"&gt;15.6ms&lt;/span&gt;)
-&lt;span class="right"&gt;&lt;span class="kernel"&gt;&lt;/span&gt;&lt;span class="count"&gt; [2]&lt;/span&gt;
-&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="source"&gt;&lt;pre&gt;&lt;code class="bash"&gt;(atom) pip install mypy&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.17&lt;/span&gt; &lt;span class="title"&gt;その他のパッケージ&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;17&lt;/span&gt; &lt;span class="title"&gt;その他のパッケージ&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
 &lt;p&gt;Pythonとは直接関係ないですが，以下のパッケージもインストールするとよいでしょう．&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;git-plus&lt;/li&gt;
 &lt;li&gt;file-icons&lt;/li&gt;
 &lt;li&gt;minimap系&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.18&lt;/span&gt; &lt;span class="title"&gt;初期化スクリプト&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;18&lt;/span&gt; &lt;span class="title"&gt;初期化スクリプト&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
 &lt;p&gt;パッケージではありませんが，文字化けを防ぐために，[File] &amp;gt; [Init Script...]を選択して，&lt;code&gt;init.coffee&lt;/code&gt;を開き，次の行を追加します．&lt;/p&gt;
-&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="coffee"&gt;# init.coffee
-process.env.PYTHONIOENCODING = &amp;#34;utf-8&amp;#34;;&lt;/code&gt;&lt;/pre&gt;
-&lt;p class="report"&gt;&lt;span class="count"&gt;[15]&lt;/span&gt;
-&lt;span class="start"&gt;2019-03-30 13:25:12&lt;/span&gt; (&lt;span class="elasped"&gt;15.6ms&lt;/span&gt;)
-&lt;span class="right"&gt;&lt;span class="kernel"&gt;&lt;/span&gt;&lt;span class="count"&gt; [2]&lt;/span&gt;
-&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="source"&gt;&lt;pre&gt;&lt;code class="coffee"&gt;# init.coffee
+process.env.PYTHONIOENCODING = &amp;#34;utf-8&amp;#34;;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;以上で，開発環境が整いました．&lt;/p&gt;</content></entry><entry><title>Happy Hacking Keyboardの設定</title><link href="https://blog.daizutabi.net%5C2018/02/11/" rel="alternate"></link><published>2018-02-11T00:00:00+09:00</published><updated>2018-02-11T00:00:00+09:00</updated><author><name>daizutabi</name></author><id>tag:blog.daizutabi.net\2018,2018-02-11:/02/11/</id><summary type="html">
+&lt;p&gt;以上で，開発環境が整いました．&lt;/p&gt;</content></entry><entry><title>Happy Hacking Keyboardの設定</title><link href="https://blog.daizutabi.net/2018/02/11/" rel="alternate"></link><published>2018-02-11T00:00:00+09:00</published><updated>2018-02-11T00:00:00+09:00</updated><author><name>daizutabi</name></author><id>tag:blog.daizutabi.net,2018-02-11:/2018/02/11/</id><summary type="html">
 &lt;p&gt;&lt;a href="https://www.pfu.fujitsu.com/hhkeyboard/type-s/"&gt;Happy Hacking Keyboard Professional2 Type-S&lt;/a&gt;英語配列モデルを購入しました．より快適に使うための設定をまとめておきます．&lt;/p&gt;
-&lt;!-- PELICAN_END_SUMMARY --&gt;
-
 &lt;p&gt;以下の記事を参考にしました．&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://blog.shos.info/archives/2012/11/windows_8_pc.html"&gt;[Windows 8/10] 日本語キーボードのノートPCで外付け英語キーボードを使用する方法&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://evacore.info/hardware-hhkb-alt/"&gt;【HHKB】英語キーボードの右Altキーに［全角／半角］キーを割り当てる&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.1&lt;/span&gt; &lt;span class="title"&gt;背面スイッチ&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;1&lt;/span&gt; &lt;span class="title"&gt;背面スイッチ&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
 &lt;p&gt;以下の設定にしています．&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Lite拡張モード（PC）: SW1 ON, SW2 OFF&lt;/li&gt;
 &lt;li&gt;左◇ ⇒ Fn: SW4 ON&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.2&lt;/span&gt; &lt;span class="title"&gt;レジスタの設定&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;2&lt;/span&gt; &lt;span class="title"&gt;レジスタの設定&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;LayerDriver JPN: kbdax2.dll&lt;/li&gt;
 &lt;li&gt;OverrideKeyboardIdentifier: AX_105KEY&lt;/li&gt;
 &lt;li&gt;OverriedKeyboardSubtype: 2&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;img alt="png" src="https://blog.daizutabi.net/images/20180211/reg.png"&gt;&lt;/p&gt;
-&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.3&lt;/span&gt; &lt;span class="title"&gt;言語の追加&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;3&lt;/span&gt; &lt;span class="title"&gt;言語の追加&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
 &lt;p&gt;「英語(米国)」を追加しました．&lt;/p&gt;
 &lt;p&gt;&lt;img alt="png" src="https://blog.daizutabi.net/images/20180211/lang.png"&gt;&lt;/p&gt;
-&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.4 …&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;</summary><content type="html">
+&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;4&lt;/span&gt; &lt;span class="title"&gt;設定状況&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;p&gt;以上の設定で以下のような動作になります．&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;左◇キー …&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">
 &lt;p&gt;&lt;a href="https://www.pfu.fujitsu.com/hhkeyboard/type-s/"&gt;Happy Hacking Keyboard Professional2 Type-S&lt;/a&gt;英語配列モデルを購入しました．より快適に使うための設定をまとめておきます．&lt;/p&gt;
-&lt;!-- PELICAN_END_SUMMARY --&gt;
-
 &lt;p&gt;以下の記事を参考にしました．&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://blog.shos.info/archives/2012/11/windows_8_pc.html"&gt;[Windows 8/10] 日本語キーボードのノートPCで外付け英語キーボードを使用する方法&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://evacore.info/hardware-hhkb-alt/"&gt;【HHKB】英語キーボードの右Altキーに［全角／半角］キーを割り当てる&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.1&lt;/span&gt; &lt;span class="title"&gt;背面スイッチ&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;1&lt;/span&gt; &lt;span class="title"&gt;背面スイッチ&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
 &lt;p&gt;以下の設定にしています．&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Lite拡張モード（PC）: SW1 ON, SW2 OFF&lt;/li&gt;
 &lt;li&gt;左◇ ⇒ Fn: SW4 ON&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.2&lt;/span&gt; &lt;span class="title"&gt;レジスタの設定&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;2&lt;/span&gt; &lt;span class="title"&gt;レジスタの設定&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;LayerDriver JPN: kbdax2.dll&lt;/li&gt;
 &lt;li&gt;OverrideKeyboardIdentifier: AX_105KEY&lt;/li&gt;
 &lt;li&gt;OverriedKeyboardSubtype: 2&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;img alt="png" src="https://blog.daizutabi.net/images/20180211/reg.png"&gt;&lt;/p&gt;
-&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.3&lt;/span&gt; &lt;span class="title"&gt;言語の追加&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;3&lt;/span&gt; &lt;span class="title"&gt;言語の追加&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
 &lt;p&gt;「英語(米国)」を追加しました．&lt;/p&gt;
 &lt;p&gt;&lt;img alt="png" src="https://blog.daizutabi.net/images/20180211/lang.png"&gt;&lt;/p&gt;
-&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.4&lt;/span&gt; &lt;span class="title"&gt;設定状況&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;4&lt;/span&gt; &lt;span class="title"&gt;設定状況&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
 &lt;p&gt;以上の設定で以下のような動作になります．&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;左◇キー ⇒ Fnキー&lt;/li&gt;
 &lt;li&gt;右◇キー ⇒ Windowsキー&lt;/li&gt;
 &lt;li&gt;右Altキー ⇒［全角／半角］キー&lt;/li&gt;
 &lt;li&gt;ノートPCのキー配列は日本語のまま&lt;/li&gt;
-&lt;/ul&gt;</content></entry><entry><title>ディープラーニング学習の準備</title><link href="https://blog.daizutabi.net%5C2018/01/31/" rel="alternate"></link><published>2018-01-31T00:00:00+09:00</published><updated>2018-02-04T00:00:00+09:00</updated><author><name>daizutabi</name></author><id>tag:blog.daizutabi.net\2018,2018-01-31:/01/31/</id><summary type="html">
+&lt;/ul&gt;</content></entry><entry><title>ディープラーニング学習の準備</title><link href="https://blog.daizutabi.net/2018/01/31/" rel="alternate"></link><published>2018-01-31T00:00:00+09:00</published><updated>2018-02-04T00:00:00+09:00</updated><author><name>daizutabi</name></author><id>tag:blog.daizutabi.net,2018-01-31:/2018/01/31/</id><summary type="html">
 &lt;p&gt;Pythonを使ってディープラーニングの学習をしていきます．この記事では，必要なパッケージなどをインストールする方法を順を追って説明し，学習を開始できる状態にします．今回インストールする主なPythonパッケージは，以下の通りです．&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Theano&lt;/li&gt;
@@ -976,8 +803,6 @@ process.env.PYTHONIOENCODING = &amp;#34;utf-8&amp;#34;;&lt;/code&gt;&lt;/pre&gt;
 &lt;li&gt;Keras&lt;/li&gt;
 &lt;li&gt;Neural Network Libraries&lt;/li&gt;
 &lt;/ul&gt;
-&lt;!-- PELICAN_END_SUMMARY --&gt;
-
 &lt;p&gt;GPUを使って計算するため，CUDA ToolkitおよびcuDNNもインストールします． これらは，使用するPythonパッケージが対応しているバージョンをインストールする必要があります．特に何も指定しないと，最新版がインストールされて，Pythonパッケージが実行できないというケースがあるので注意が必要です．具体的には，以下のバージョンを使います：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;CUDA Toolkit: Version 8.0 GA2&lt;/li&gt;
@@ -995,8 +820,6 @@ process.env.PYTHONIOENCODING = &amp;#34;utf-8&amp;#34;;&lt;/code&gt;&lt;/pre&gt;
 &lt;li&gt;Keras&lt;/li&gt;
 &lt;li&gt;Neural Network Libraries&lt;/li&gt;
 &lt;/ul&gt;
-&lt;!-- PELICAN_END_SUMMARY --&gt;
-
 &lt;p&gt;GPUを使って計算するため，CUDA ToolkitおよびcuDNNもインストールします． これらは，使用するPythonパッケージが対応しているバージョンをインストールする必要があります．特に何も指定しないと，最新版がインストールされて，Pythonパッケージが実行できないというケースがあるので注意が必要です．具体的には，以下のバージョンを使います：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;CUDA Toolkit: Version 8.0 GA2&lt;/li&gt;
@@ -1009,9 +832,9 @@ process.env.PYTHONIOENCODING = &amp;#34;utf-8&amp;#34;;&lt;/code&gt;&lt;/pre&gt;
 &lt;li&gt;GPU: NVIDIA GeForce GTX 1050&lt;/li&gt;
 &lt;li&gt;RAM: 16 GB&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.1&lt;/span&gt; &lt;span class="title"&gt;Microsoft Visual C++ 2015 再頒布可能パッケージ&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;1&lt;/span&gt; &lt;span class="title"&gt;Microsoft Visual C++ 2015 再頒布可能パッケージ&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
 &lt;p&gt;Neural Network Librariesは，VC++14（Visual Studio 2015相当）でコンパイルされているので、&lt;a href="https://www.microsoft.com/ja-JP/download/details.aspx?id=52685"&gt;Visual Studio 2015のRuntime&lt;/a&gt;が必要です．未インストールの場合はインストールしておきます．Visual Studio本体はインストールする必要はありません．&lt;/p&gt;
-&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.2&lt;/span&gt; &lt;span class="title"&gt;CUDA Toolkit&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;2&lt;/span&gt; &lt;span class="title"&gt;CUDA Toolkit&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;a href="https://developer.nvidia.com/cuda-toolkit-archive"&gt;https://developer.nvidia.com/cuda-toolkit-archive&lt;/a&gt;で，CUDA Toolkitのバージョンを選択した後，&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Operating System: Windows&lt;/li&gt;
@@ -1027,13 +850,13 @@ process.env.PYTHONIOENCODING = &amp;#34;utf-8&amp;#34;;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;[次へ]をクリックして進んでいくと，Visual Studioがないと警告が出ます．&lt;/p&gt;
 &lt;p&gt;&lt;img alt="cuda-install" src="https://blog.daizutabi.net/images/20180131/cuda-install-3.png"&gt;&lt;/p&gt;
 &lt;p&gt;特に問題ないので，そのままチェックボックスを選択して，[次へ]をクリックし，インストールを開始します．その後，先にダウンロードしていたPatch2を実行してパッチをインストールします．&lt;/p&gt;
-&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.3&lt;/span&gt; &lt;span class="title"&gt;NVIDIA cuDNN&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;3&lt;/span&gt; &lt;span class="title"&gt;NVIDIA cuDNN&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
 &lt;p&gt;インストールするにはメンバーシップが必要なので，&lt;a href="https://developer.nvidia.com"&gt;https://developer.nvidia.com&lt;/a&gt; の右上のJoinから登録します．ダウンロードページ &lt;a href="https://developer.nvidia.com/rdp/cudnn-download"&gt;https://developer.nvidia.com/rdp/cudnn-download&lt;/a&gt; で，同意ボタンを選択し，リストの中から，&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Download cuDNN v6.0 (April 27, 2017), for CUDA 8.0&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;を選択します．（v7.0をインストールするとNeural Network Librariesが動作しません．） ダウンロードした圧縮ファイルを展開します．そして，展開してできた&lt;code&gt;cudnn-8.0-windows10-x64-v6\cuda&lt;/code&gt;以下をすべて，&lt;code&gt;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0&lt;/code&gt;にコピーします．&lt;/p&gt;
-&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.4&lt;/span&gt; &lt;span class="title"&gt;Miniconda&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;4&lt;/span&gt; &lt;span class="title"&gt;Miniconda&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;a href="https://conda.io/miniconda.html"&gt;https://conda.io/miniconda.html&lt;/a&gt;で，&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Windows&lt;/li&gt;
@@ -1042,44 +865,24 @@ process.env.PYTHONIOENCODING = &amp;#34;utf-8&amp;#34;;&lt;/code&gt;&lt;/pre&gt;
 &lt;/ul&gt;
 &lt;p&gt;を選び，ダウンロードしたファイルを実行してインストールします．インストール中の選択肢は，すべてデフォルト設定のまま行います．Miniconda3 4.3.30 (64-bit)がインストールされました．&lt;/p&gt;
 &lt;p&gt;condaを最新版にしておきます．&lt;/p&gt;
-&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="bash"&gt;&amp;gt; conda install conda&lt;/code&gt;&lt;/pre&gt;
-&lt;p class="report"&gt;&lt;span class="count"&gt;[1]&lt;/span&gt;
-&lt;span class="start"&gt;2019-03-30 13:25:10&lt;/span&gt; (&lt;span class="elasped"&gt;953ms&lt;/span&gt;)
-&lt;span class="right"&gt;&lt;span class="kernel"&gt;&lt;/span&gt;&lt;span class="count"&gt; [1]&lt;/span&gt;
-&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="source"&gt;&lt;pre&gt;&lt;code class="bash"&gt;&amp;gt; conda install conda&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;仮想環境&lt;code&gt;dl&lt;/code&gt;を作り，この下にインストールしていきます．&lt;/p&gt;
-&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="bash"&gt;(base) &amp;gt; conda create -n dl
-(base) &amp;gt; activate dl&lt;/code&gt;&lt;/pre&gt;
-&lt;p class="report"&gt;&lt;span class="count"&gt;[2]&lt;/span&gt;
-&lt;span class="start"&gt;2019-03-30 13:25:10&lt;/span&gt; (&lt;span class="elasped"&gt;953ms&lt;/span&gt;)
-&lt;span class="right"&gt;&lt;span class="kernel"&gt;&lt;/span&gt;&lt;span class="count"&gt; [1]&lt;/span&gt;
-&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="source"&gt;&lt;pre&gt;&lt;code class="bash"&gt;(base) &amp;gt; conda create -n dl
+(base) &amp;gt; activate dl&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;pipでインストールされるパッケージのうち，condaで用意されているものはこの段階でインストールしておきます．bleach, html5lib, cythonについては，バージョン指定があるので，明示します．&lt;/p&gt;
-&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="bash"&gt;(dl) &amp;gt; conda install bleach==1.5.0 html5lib==0.9999999 cython==0.25.2
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="source"&gt;&lt;pre&gt;&lt;code class="bash"&gt;(dl) &amp;gt; conda install bleach==1.5.0 html5lib==0.9999999 cython==0.25.2
 (dl) &amp;gt; conda install werkzeug numpy markdown protobuf pyyaml contextlib2
-(dl) &amp;gt; conda install urllib3 tqdm requests s3transfer h5py boto3&lt;/code&gt;&lt;/pre&gt;
-&lt;p class="report"&gt;&lt;span class="count"&gt;[3]&lt;/span&gt;
-&lt;span class="start"&gt;2019-03-30 13:25:10&lt;/span&gt; (&lt;span class="elasped"&gt;953ms&lt;/span&gt;)
-&lt;span class="right"&gt;&lt;span class="kernel"&gt;&lt;/span&gt;&lt;span class="count"&gt; [1]&lt;/span&gt;
-&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+(dl) &amp;gt; conda install urllib3 tqdm requests s3transfer h5py boto3&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.5&lt;/span&gt; &lt;span class="title"&gt;TensorFlow&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;5&lt;/span&gt; &lt;span class="title"&gt;TensorFlow&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
 &lt;p&gt;TensorFlowは，CUDA Toolkit Version 8.0, cuDNN Version 6.0に適合するVersion 1.4を選択します．&lt;/p&gt;
-&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="bash"&gt;(dl) &amp;gt; pip install tensorflow-gpu==1.4.0&lt;/code&gt;&lt;/pre&gt;
-&lt;p class="report"&gt;&lt;span class="count"&gt;[4]&lt;/span&gt;
-&lt;span class="start"&gt;2019-03-30 13:25:10&lt;/span&gt; (&lt;span class="elasped"&gt;953ms&lt;/span&gt;)
-&lt;span class="right"&gt;&lt;span class="kernel"&gt;&lt;/span&gt;&lt;span class="count"&gt; [1]&lt;/span&gt;
-&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="source"&gt;&lt;pre&gt;&lt;code class="bash"&gt;(dl) &amp;gt; pip install tensorflow-gpu==1.4.0&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.6&lt;/span&gt; &lt;span class="title"&gt;Theano&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;6&lt;/span&gt; &lt;span class="title"&gt;Theano&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
 &lt;p&gt;Theanoはcondaでインストールします．&lt;/p&gt;
-&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="bash"&gt;(dl) &amp;gt; conda install theano&lt;/code&gt;&lt;/pre&gt;
-&lt;p class="report"&gt;&lt;span class="count"&gt;[5]&lt;/span&gt;
-&lt;span class="start"&gt;2019-03-30 13:25:10&lt;/span&gt; (&lt;span class="elasped"&gt;953ms&lt;/span&gt;)
-&lt;span class="right"&gt;&lt;span class="kernel"&gt;&lt;/span&gt;&lt;span class="count"&gt; [1]&lt;/span&gt;
-&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="source"&gt;&lt;pre&gt;&lt;code class="bash"&gt;(dl) &amp;gt; conda install theano&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;m2w64-toolchain，libpython，libgpuarray，pygpuなどの依存パッケージも一緒にインストールされます．&lt;/p&gt;
 &lt;p&gt;コントロールパネルでユーザーの環境変数を設定します．&lt;/p&gt;
@@ -1088,51 +891,31 @@ process.env.PYTHONIOENCODING = &amp;#34;utf-8&amp;#34;;&lt;/code&gt;&lt;/pre&gt;
 &lt;li&gt;変数値:  &lt;code&gt;GNU&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;GPUを使用するために，&lt;code&gt;~\.theanorc.txt&lt;/code&gt;を作成して，以下の内容で保存します．&lt;/p&gt;
-&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="text"&gt;[global]
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="source"&gt;&lt;pre&gt;&lt;code class="text"&gt;[global]
 device = cuda
-floatX = float32&lt;/code&gt;&lt;/pre&gt;
-&lt;p class="report"&gt;&lt;span class="count"&gt;[6]&lt;/span&gt;
-&lt;span class="start"&gt;2019-03-30 13:25:10&lt;/span&gt; (&lt;span class="elasped"&gt;953ms&lt;/span&gt;)
-&lt;span class="right"&gt;&lt;span class="kernel"&gt;&lt;/span&gt;&lt;span class="count"&gt; [1]&lt;/span&gt;
-&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+floatX = float32&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.7&lt;/span&gt; &lt;span class="title"&gt;Keras&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;7&lt;/span&gt; &lt;span class="title"&gt;Keras&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
 &lt;p&gt;Kerasをインストールします．condaでインストールすると，CPUベースのTensorFlowが勝手にインストールされるので，pipを使います．&lt;/p&gt;
-&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="bash"&gt;(dl) &amp;gt; pip install keras&lt;/code&gt;&lt;/pre&gt;
-&lt;p class="report"&gt;&lt;span class="count"&gt;[7]&lt;/span&gt;
-&lt;span class="start"&gt;2019-03-30 13:25:10&lt;/span&gt; (&lt;span class="elasped"&gt;953ms&lt;/span&gt;)
-&lt;span class="right"&gt;&lt;span class="kernel"&gt;&lt;/span&gt;&lt;span class="count"&gt; [1]&lt;/span&gt;
-&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="source"&gt;&lt;pre&gt;&lt;code class="bash"&gt;(dl) &amp;gt; pip install keras&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.8&lt;/span&gt; &lt;span class="title"&gt;Neural Network Libraries&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;8&lt;/span&gt; &lt;span class="title"&gt;Neural Network Libraries&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
 &lt;p&gt;Neural Network Librariesが必要とするパッケージをcondaでインストールした後，本体をpipでインストールします．最後に，依存性は明示されていないですが，pywin32もインストールする必要があります．&lt;/p&gt;
-&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="bash"&gt;(dl) &amp;gt; conda install scipy scikit-image
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="source"&gt;&lt;pre&gt;&lt;code class="bash"&gt;(dl) &amp;gt; conda install scipy scikit-image
 (dl) &amp;gt; pip install nnabla
 (dl) &amp;gt; pip install nnabla-ext-cuda
-(dl) &amp;gt; conda install pywin32&lt;/code&gt;&lt;/pre&gt;
-&lt;p class="report"&gt;&lt;span class="count"&gt;[8]&lt;/span&gt;
-&lt;span class="start"&gt;2019-03-30 13:25:10&lt;/span&gt; (&lt;span class="elasped"&gt;953ms&lt;/span&gt;)
-&lt;span class="right"&gt;&lt;span class="kernel"&gt;&lt;/span&gt;&lt;span class="count"&gt; [1]&lt;/span&gt;
-&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+(dl) &amp;gt; conda install pywin32&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.9&lt;/span&gt; &lt;span class="title"&gt;Jupyter&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;9&lt;/span&gt; &lt;span class="title"&gt;Jupyter&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
 &lt;p&gt;ディープラーニングを学習する際に，Jupyter Notebookを使いますので，Jupyter関連のパッケージ一式をインストールしておきます．&lt;/p&gt;
-&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="bash"&gt;(dl) &amp;gt; conda install jupyter&lt;/code&gt;&lt;/pre&gt;
-&lt;p class="report"&gt;&lt;span class="count"&gt;[9]&lt;/span&gt;
-&lt;span class="start"&gt;2019-03-30 13:25:10&lt;/span&gt; (&lt;span class="elasped"&gt;953ms&lt;/span&gt;)
-&lt;span class="right"&gt;&lt;span class="kernel"&gt;&lt;/span&gt;&lt;span class="count"&gt; [1]&lt;/span&gt;
-&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="source"&gt;&lt;pre&gt;&lt;code class="bash"&gt;(dl) &amp;gt; conda install jupyter&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Jupyterが&lt;code&gt;dl&lt;/code&gt;環境下のカーネルを認識できるように，以下を実行します．&lt;/p&gt;
-&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="bash"&gt;(dl) &amp;gt; python -m ipykernel install --user --name dl&lt;/code&gt;&lt;/pre&gt;
-&lt;p class="report"&gt;&lt;span class="count"&gt;[10]&lt;/span&gt;
-&lt;span class="start"&gt;2019-03-30 13:25:10&lt;/span&gt; (&lt;span class="elasped"&gt;953ms&lt;/span&gt;)
-&lt;span class="right"&gt;&lt;span class="kernel"&gt;&lt;/span&gt;&lt;span class="count"&gt; [1]&lt;/span&gt;
-&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="source"&gt;&lt;pre&gt;&lt;code class="bash"&gt;(dl) &amp;gt; python -m ipykernel install --user --name dl&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.10&lt;/span&gt; &lt;span class="title"&gt;インストールの確認&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;10&lt;/span&gt; &lt;span class="title"&gt;インストールの確認&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
 &lt;p&gt;インポートできることを確認します．&lt;/p&gt;
-&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="bash"&gt;(dl) &amp;gt; python
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="source"&gt;&lt;pre&gt;&lt;code class="bash"&gt;(dl) &amp;gt; python
 &amp;gt;&amp;gt;&amp;gt; import tensorflow
 &amp;gt;&amp;gt;&amp;gt; tensorflow.__version__
 &amp;#39;1.4.0&amp;#39;
@@ -1144,53 +927,35 @@ Mapped name None to device cuda: GeForce GTX 1050 (0000:01:00.0)
 &amp;gt;&amp;gt;&amp;gt; import keras
 Using TensorFlow backend.
 &amp;gt;&amp;gt;&amp;gt; keras.__version__
-&amp;#39;2.1.3&amp;#39;&lt;/code&gt;&lt;/pre&gt;
-&lt;p class="report"&gt;&lt;span class="count"&gt;[11]&lt;/span&gt;
-&lt;span class="start"&gt;2019-03-30 13:25:10&lt;/span&gt; (&lt;span class="elasped"&gt;953ms&lt;/span&gt;)
-&lt;span class="right"&gt;&lt;span class="kernel"&gt;&lt;/span&gt;&lt;span class="count"&gt; [1]&lt;/span&gt;
-&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&amp;#39;2.1.3&amp;#39;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;KerasのTheanoをバックエンドに指定してみます．&lt;code&gt;~\.keras\keras.json&lt;/code&gt;を以下の内容で保存します．&lt;/p&gt;
-&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="json"&gt;{
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="source"&gt;&lt;pre&gt;&lt;code class="json"&gt;{
     &amp;#34;floatx&amp;#34;: &amp;#34;float32&amp;#34;,
     &amp;#34;epsilon&amp;#34;: 1e-07,
     &amp;#34;backend&amp;#34;: &amp;#34;theano&amp;#34;,
     &amp;#34;image_data_format&amp;#34;: &amp;#34;channels_last&amp;#34;
-}&lt;/code&gt;&lt;/pre&gt;
-&lt;p class="report"&gt;&lt;span class="count"&gt;[12]&lt;/span&gt;
-&lt;span class="start"&gt;2019-03-30 13:25:10&lt;/span&gt; (&lt;span class="elasped"&gt;953ms&lt;/span&gt;)
-&lt;span class="right"&gt;&lt;span class="kernel"&gt;&lt;/span&gt;&lt;span class="count"&gt; [1]&lt;/span&gt;
-&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;インポートしてみます．&lt;/p&gt;
-&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="bash"&gt;(dl) &amp;gt; python
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="source"&gt;&lt;pre&gt;&lt;code class="bash"&gt;(dl) &amp;gt; python
 &amp;gt;&amp;gt;&amp;gt; import keras
 Using Theano backend.
 Using cuDNN version 6021 on context None
-Mapped name None to device cuda: GeForce GTX 1050 (0000:01:00.0)&lt;/code&gt;&lt;/pre&gt;
-&lt;p class="report"&gt;&lt;span class="count"&gt;[13]&lt;/span&gt;
-&lt;span class="start"&gt;2019-03-30 13:25:10&lt;/span&gt; (&lt;span class="elasped"&gt;953ms&lt;/span&gt;)
-&lt;span class="right"&gt;&lt;span class="kernel"&gt;&lt;/span&gt;&lt;span class="count"&gt; [1]&lt;/span&gt;
-&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+Mapped name None to device cuda: GeForce GTX 1050 (0000:01:00.0)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;最後にNeural Network Librariesです．&lt;/p&gt;
-&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="bash"&gt;(dl) &amp;gt; python
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="source"&gt;&lt;pre&gt;&lt;code class="bash"&gt;(dl) &amp;gt; python
 &amp;gt;&amp;gt;&amp;gt; import nnabla
 2018-02-04 20:19:37,163 [nnabla][INFO]: Initializing CPU extension...
 &amp;gt;&amp;gt;&amp;gt; import nnabla_ext.cuda.cudnn
 2018-02-04 20:19:47,262 [nnabla][INFO]: Initializing CUDA extension...
-2018-02-04 20:19:47,545 [nnabla][INFO]: Initializing cuDNN extension...&lt;/code&gt;&lt;/pre&gt;
-&lt;p class="report"&gt;&lt;span class="count"&gt;[14]&lt;/span&gt;
-&lt;span class="start"&gt;2019-03-30 13:25:10&lt;/span&gt; (&lt;span class="elasped"&gt;953ms&lt;/span&gt;)
-&lt;span class="right"&gt;&lt;span class="kernel"&gt;&lt;/span&gt;&lt;span class="count"&gt; [1]&lt;/span&gt;
-&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+2018-02-04 20:19:47,545 [nnabla][INFO]: Initializing cuDNN extension...&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;以上で，ディープラーニングを実行する環境が整いました．&lt;/p&gt;</content></entry><entry><title>Google Web Fontの設定</title><link href="https://blog.daizutabi.net%5C2018/01/03/" rel="alternate"></link><published>2018-01-03T00:00:00+09:00</published><updated>2018-01-03T00:00:00+09:00</updated><author><name>daizutabi</name></author><id>tag:blog.daizutabi.net\2018,2018-01-03:/01/03/</id><summary type="html">
+&lt;p&gt;以上で，ディープラーニングを実行する環境が整いました．&lt;/p&gt;</content></entry><entry><title>Google Web Fontの設定</title><link href="https://blog.daizutabi.net/2018/01/03/" rel="alternate"></link><published>2018-01-03T00:00:00+09:00</published><updated>2018-01-03T00:00:00+09:00</updated><author><name>daizutabi</name></author><id>tag:blog.daizutabi.net,2018-01-03:/2018/01/03/</id><summary type="html">
 &lt;p&gt;&lt;a href="https://googlefonts.github.io/japanese/"&gt;Google Fonts + 日本語早期アクセス&lt;/a&gt;の設定を行います．今回は，さわらびゴシックを使ってみます．本ブログのPelicanテーマである&lt;a href="http://www.voidynullness.net/page/voidy-bootstrap-pelican-theme/"&gt;VoidyBootstrap&lt;/a&gt;での設定方法になります．&lt;/p&gt;
-&lt;!-- PELICAN_END_SUMMARY --&gt;
-
 &lt;p&gt;&lt;code&gt;pelicanconf.py&lt;/code&gt;に以下を追加します．&lt;/p&gt;
-&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="cson"&gt;THEME = &amp;#39;voidy-bootstrap/&amp;#39;
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="source"&gt;&lt;pre&gt;&lt;code class="markdown"&gt;THEME = &amp;#39;voidy-bootstrap/&amp;#39;
 STYLESHEETS = (
     &amp;#39;custom/custom.css&amp;#39;,
     # other stylesheets
@@ -1199,47 +964,34 @@ STYLESHEETS = (
 STYLESHEET_URLS = (
     &amp;#39;https://fonts.googleapis.com/earlyaccess/sawarabigothic.css&amp;#39;,
     # other stylesheet_urls
-)&lt;/code&gt;&lt;/pre&gt;
-&lt;p class="report"&gt;&lt;span class="count"&gt;[1]&lt;/span&gt;
-&lt;span class="start"&gt;2019-03-30 13:25:12&lt;/span&gt; (&lt;span class="elasped"&gt;15.6ms&lt;/span&gt;)
-&lt;span class="right"&gt;&lt;span class="option"&gt; (python) &lt;/span&gt;&lt;span class="kernel"&gt;&lt;/span&gt;&lt;span class="count"&gt; [2]&lt;/span&gt;
-&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;code&gt;voidy-bootstrap&lt;/code&gt;ディレクトリ下に&lt;code&gt;static/css/custom.css&lt;/code&gt;を作成し，以下を追加します．&lt;/p&gt;
-&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="css"&gt;body {
-  font-family: &amp;#39;Sawarabi …&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">
-&lt;p&gt;&lt;a href="https://googlefonts.github.io/japanese/"&gt;Google Fonts + 日本語早期アクセス&lt;/a&gt;の設定を行います．今回は，さわらびゴシックを使ってみます．本ブログのPelicanテーマである&lt;a href="http://www.voidynullness.net/page/voidy-bootstrap-pelican-theme/"&gt;VoidyBootstrap&lt;/a&gt;での設定方法になります．&lt;/p&gt;
-&lt;!-- PELICAN_END_SUMMARY --&gt;
-
-&lt;p&gt;&lt;code&gt;pelicanconf.py&lt;/code&gt;に以下を追加します．&lt;/p&gt;
-&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="cson"&gt;THEME = &amp;#39;voidy-bootstrap/&amp;#39;
-STYLESHEETS = (
-    &amp;#39;custom/custom.css&amp;#39;,
-    # other stylesheets
-)
-
-STYLESHEET_URLS = (
-    &amp;#39;https://fonts.googleapis.com/earlyaccess/sawarabigothic.css&amp;#39;,
-    # other stylesheet_urls
-)&lt;/code&gt;&lt;/pre&gt;
-&lt;p class="report"&gt;&lt;span class="count"&gt;[1]&lt;/span&gt;
-&lt;span class="start"&gt;2019-03-30 13:25:12&lt;/span&gt; (&lt;span class="elasped"&gt;15.6ms&lt;/span&gt;)
-&lt;span class="right"&gt;&lt;span class="option"&gt; (python) &lt;/span&gt;&lt;span class="kernel"&gt;&lt;/span&gt;&lt;span class="count"&gt; [2]&lt;/span&gt;
-&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;code&gt;voidy-bootstrap&lt;/code&gt;ディレクトリ下に&lt;code&gt;static/css/custom.css&lt;/code&gt;を作成し，以下を追加します．&lt;/p&gt;
-&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="css"&gt;body {
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="source"&gt;&lt;pre&gt;&lt;code class="css"&gt;body {
   font-family: &amp;#39;Sawarabi Gothic&amp;#39;;
-}&lt;/code&gt;&lt;/pre&gt;
-&lt;p class="report"&gt;&lt;span class="count"&gt;[2]&lt;/span&gt;
-&lt;span class="start"&gt;2019-03-30 13:25:12&lt;/span&gt; (&lt;span class="elasped"&gt;15.6ms&lt;/span&gt;)
-&lt;span class="right"&gt;&lt;span class="kernel"&gt;&lt;/span&gt;&lt;span class="count"&gt; [2]&lt;/span&gt;
-&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;簡単に設定できました．&lt;/p&gt;</content></entry><entry><title>DNS Zonesからネームサーバーを設定する方法</title><link href="https://blog.daizutabi.net%5C2017/12/21/" rel="alternate"></link><published>2017-12-21T00:00:00+09:00</published><updated>2017-12-28T00:00:00+09:00</updated><author><name>daizutabi</name></author><id>tag:blog.daizutabi.net\2017,2017-12-21:/12/21/</id><summary type="html">
+&lt;p&gt;簡単に設定できました．&lt;/p&gt;</summary><content type="html">
+&lt;p&gt;&lt;a href="https://googlefonts.github.io/japanese/"&gt;Google Fonts + 日本語早期アクセス&lt;/a&gt;の設定を行います．今回は，さわらびゴシックを使ってみます．本ブログのPelicanテーマである&lt;a href="http://www.voidynullness.net/page/voidy-bootstrap-pelican-theme/"&gt;VoidyBootstrap&lt;/a&gt;での設定方法になります．&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;pelicanconf.py&lt;/code&gt;に以下を追加します．&lt;/p&gt;
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="source"&gt;&lt;pre&gt;&lt;code class="markdown"&gt;THEME = &amp;#39;voidy-bootstrap/&amp;#39;
+STYLESHEETS = (
+    &amp;#39;custom/custom.css&amp;#39;,
+    # other stylesheets
+)
+
+STYLESHEET_URLS = (
+    &amp;#39;https://fonts.googleapis.com/earlyaccess/sawarabigothic.css&amp;#39;,
+    # other stylesheet_urls
+)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;code&gt;voidy-bootstrap&lt;/code&gt;ディレクトリ下に&lt;code&gt;static/css/custom.css&lt;/code&gt;を作成し，以下を追加します．&lt;/p&gt;
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="source"&gt;&lt;pre&gt;&lt;code class="css"&gt;body {
+  font-family: &amp;#39;Sawarabi Gothic&amp;#39;;
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;簡単に設定できました．&lt;/p&gt;</content></entry><entry><title>DNS Zonesからネームサーバーを設定する方法</title><link href="https://blog.daizutabi.net/2017/12/21/" rel="alternate"></link><published>2017-12-21T00:00:00+09:00</published><updated>2017-12-28T00:00:00+09:00</updated><author><name>daizutabi</name></author><id>tag:blog.daizutabi.net,2017-12-21:/2017/12/21/</id><summary type="html">
 &lt;p&gt;&lt;a href="https://blog.daizutabi.net/2017/12/20/"&gt;2017/12/20&lt;/a&gt;に，ブログの公開を&lt;a href="https://pages.github.com"&gt;GitHub Pages&lt;/a&gt;から&lt;a href="https://www.netlify.com"&gt;Netlify&lt;/a&gt;に移行した件を書きました．ただ，その時の方法だと，最初にアップしたサイトが特権的な扱いを受けて，後続のサイトと非対称な形になってしまいました．少し気になっていたところ，DNS zonesから再設定することで，非対称性を解消できました．&lt;/p&gt;
-&lt;!-- PELICAN_END_SUMMARY --&gt;
-
 &lt;p&gt;以下，順を追って説明したいと思います．次の前提で話を進めます．&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;カスタムドメインとサイトをすでに登録していたので，すべて削除しました．&lt;/li&gt;
@@ -1247,17 +999,17 @@ STYLESHEET_URLS = (
 &lt;li&gt;GitHub上の&lt;a href="https://github.com/daizutabi/blog"&gt;「ブログ」&lt;/a&gt;レポジトリと&lt;a href="https://github.com/daizutabi/iroha"&gt;「Pythonパッケージの作り方」&lt;/a&gt;レポジトリを公開していきます．&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;（注）具体的な名前で説明したほうが分かりやすいと思いそのまま書いています．ドメイン名やレポジトリ名は適宜置き換えを行ってください．&lt;/p&gt;
-&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.1&lt;/span&gt; &lt;span class="title"&gt;DNS zonesの設定&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;1&lt;/span&gt; &lt;span class="title"&gt;DNS zonesの設定&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;a href="https://www.netlify.com"&gt;Netlify&lt;/a&gt;にGitHubアカウントを使ってログインします．&lt;/p&gt;
 &lt;p&gt;&lt;img alt="daizutabi" src="https://blog.daizutabi.net/images/20171221/010.png"&gt;&lt;/p&gt;
 &lt;p&gt;左上のAll teamsからdaizutabiを選択します．&lt;/p&gt;
 &lt;p&gt;&lt;img alt="DNS zones" src="https://blog.daizutabi.net/images/20171221/020.png"&gt;&lt;/p&gt;
 &lt;p&gt;メニューからDNS zonesをクリックします．&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Add a domain" src="https://blog.daizutabi.net/images/20171221/030.png"&gt;&lt;/p&gt;
-&lt;p&gt;Add a domainをクリックします …&lt;/p&gt;</summary><content type="html">
+&lt;p&gt;Add a domainをクリックします．&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Create DNS zone" src="https://blog.daizutabi.net/images/20171221/040.png"&gt;&lt;/p&gt;
+&lt;p&gt;Domainにdaizutabi …&lt;/p&gt;</summary><content type="html">
 &lt;p&gt;&lt;a href="https://blog.daizutabi.net/2017/12/20/"&gt;2017/12/20&lt;/a&gt;に，ブログの公開を&lt;a href="https://pages.github.com"&gt;GitHub Pages&lt;/a&gt;から&lt;a href="https://www.netlify.com"&gt;Netlify&lt;/a&gt;に移行した件を書きました．ただ，その時の方法だと，最初にアップしたサイトが特権的な扱いを受けて，後続のサイトと非対称な形になってしまいました．少し気になっていたところ，DNS zonesから再設定することで，非対称性を解消できました．&lt;/p&gt;
-&lt;!-- PELICAN_END_SUMMARY --&gt;
-
 &lt;p&gt;以下，順を追って説明したいと思います．次の前提で話を進めます．&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;カスタムドメインとサイトをすでに登録していたので，すべて削除しました．&lt;/li&gt;
@@ -1265,7 +1017,7 @@ STYLESHEET_URLS = (
 &lt;li&gt;GitHub上の&lt;a href="https://github.com/daizutabi/blog"&gt;「ブログ」&lt;/a&gt;レポジトリと&lt;a href="https://github.com/daizutabi/iroha"&gt;「Pythonパッケージの作り方」&lt;/a&gt;レポジトリを公開していきます．&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;（注）具体的な名前で説明したほうが分かりやすいと思いそのまま書いています．ドメイン名やレポジトリ名は適宜置き換えを行ってください．&lt;/p&gt;
-&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.1&lt;/span&gt; &lt;span class="title"&gt;DNS zonesの設定&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;1&lt;/span&gt; &lt;span class="title"&gt;DNS zonesの設定&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;a href="https://www.netlify.com"&gt;Netlify&lt;/a&gt;にGitHubアカウントを使ってログインします．&lt;/p&gt;
 &lt;p&gt;&lt;img alt="daizutabi" src="https://blog.daizutabi.net/images/20171221/010.png"&gt;&lt;/p&gt;
 &lt;p&gt;左上のAll teamsからdaizutabiを選択します．&lt;/p&gt;
@@ -1285,7 +1037,7 @@ STYLESHEET_URLS = (
 &lt;li&gt;Value: www.netlify.com&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Continueをクリックします．Update your domain's nameserversと表示されて，ネームサーバー一覧が表示されるので，これをお名前.comの自ドメインのネームサーバーに登録します．Doneをクリックして，DNS zonesの設定を終えます．&lt;/p&gt;
-&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.2&lt;/span&gt; &lt;span class="title"&gt;Siteの設定&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;2&lt;/span&gt; &lt;span class="title"&gt;Siteの設定&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
 &lt;p&gt;daizutabiのメニューに戻ります．&lt;/p&gt;
 &lt;p&gt;&lt;img alt="New site from Git" src="https://blog.daizutabi.net/images/20171221/070.png"&gt;&lt;/p&gt;
 &lt;p&gt;Sitesをクリックしたあと，New site from Gitを選びます．&lt;/p&gt;
@@ -1296,36 +1048,32 @@ STYLESHEET_URLS = (
 &lt;p&gt;サイトの設定を入力していきます．blogレポジトリは，Pelicanを使っているのでPublish directoryにoutputを入力します．それ以外はデフォルトのままです．Deploy siteをクリックします．しばらくすると，サイトが自動で生成されます．&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Domain settings" src="https://blog.daizutabi.net/images/20171221/100.png"&gt;&lt;/p&gt;
 &lt;p&gt;Domain settingsをクリックします．ページ中ほどのAdd Custom domainをクリックします．表示されたダイアログで，blog.daizutabi.netと入力します．&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://github.com/daizutabi/iroha"&gt;「Pythonパッケージの作り方」&lt;/a&gt;レポジトリについても同様です．ただし，こちらはMkDocsを使っているのでPublish directoryにはsiteを入力し，URLはiroha.daizutabi.netとします．他は同じです．&lt;/p&gt;</content></entry><entry><title>NetlifyでPelicanページを公開する</title><link href="https://blog.daizutabi.net%5C2017/12/20/" rel="alternate"></link><published>2017-12-20T00:00:00+09:00</published><updated>2017-12-21T00:00:00+09:00</updated><author><name>daizutabi</name></author><id>tag:blog.daizutabi.net\2017,2017-12-20:/12/20/</id><summary type="html">
+&lt;p&gt;&lt;a href="https://github.com/daizutabi/iroha"&gt;「Pythonパッケージの作り方」&lt;/a&gt;レポジトリについても同様です．ただし，こちらはMkDocsを使っているのでPublish directoryにはsiteを入力し，URLはiroha.daizutabi.netとします．他は同じです．&lt;/p&gt;</content></entry><entry><title>NetlifyでPelicanページを公開する</title><link href="https://blog.daizutabi.net/2017/12/20/" rel="alternate"></link><published>2017-12-20T00:00:00+09:00</published><updated>2017-12-21T00:00:00+09:00</updated><author><name>daizutabi</name></author><id>tag:blog.daizutabi.net,2017-12-20:/2017/12/20/</id><summary type="html">
 &lt;p&gt;これまで&lt;a href="https://pages.github.com"&gt;GitHub Pages&lt;/a&gt;をブログなどの公開に使っていましたが，&lt;a href="https://www.netlify.com"&gt;Netlify&lt;/a&gt;に移行します．とても簡単に独自ドメインを使うことができます．&lt;/p&gt;
-&lt;!-- PELICAN_END_SUMMARY --&gt;
-
 &lt;p&gt;（追記）以下の内容よりも，2017/12/21の&lt;a href="https://blog.daizutabi.net/2017/12/21/"&gt;「DNS Zonesからネームサーバーを設定する方法」&lt;/a&gt;のほうがお勧めです．&lt;/p&gt;
-&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.1&lt;/span&gt; &lt;span class="title"&gt;お名前.comで独自ドメインの取得&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;1&lt;/span&gt; &lt;span class="title"&gt;お名前.comで独自ドメインの取得&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;a href="https://www.onamae.com"&gt;お名前.com&lt;/a&gt;で独自ドメインを取得します．金額に関しては，初年度だけでなく２年目以降の金額についてもチェックしておきましょう．また，「1.お申込み内容」のところで，&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Whois情報公開代行（新規登録と同時なら無料）&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;は，個人情報を公開したくない場合にはチェックを入れておきます．&lt;/p&gt;
 &lt;p&gt;お名前.comのサイト内ですることは，取得したドメインのネームサーバをNetlify DNSに設定することだけです．それ以外の設定はすべて，Netlify内で完結します．&lt;/p&gt;
-&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.2&lt;/span&gt; &lt;span class="title"&gt;静的サイトの作成&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;2&lt;/span&gt; &lt;span class="title"&gt;静的サイトの作成&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
 &lt;p&gt;Pelicanを使ってサイトを作成し，GitHubレポジトリにPushしておきます．&lt;/p&gt;
-&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.3&lt;/span&gt; &lt;span class="title"&gt;Netifyでサイトの作成&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;a href="https://www.netlify.com"&gt;Netlify&lt;/a&gt;にはGitHubアカウントを使ってログインします．ログイン後に，&lt;a href="https://app.netlify.com/"&gt;https …&lt;/a&gt;&lt;/p&gt;</summary><content type="html">
+&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;3&lt;/span&gt; &lt;span class="title"&gt;Netifyでサイトの作成&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://www.netlify.com"&gt;Netlify&lt;/a&gt;にはGitHubアカウントを使ってログインします．ログイン後に，&lt;a href="https://app.netlify.com/"&gt;https://app.netlify.com …&lt;/a&gt;&lt;/p&gt;</summary><content type="html">
 &lt;p&gt;これまで&lt;a href="https://pages.github.com"&gt;GitHub Pages&lt;/a&gt;をブログなどの公開に使っていましたが，&lt;a href="https://www.netlify.com"&gt;Netlify&lt;/a&gt;に移行します．とても簡単に独自ドメインを使うことができます．&lt;/p&gt;
-&lt;!-- PELICAN_END_SUMMARY --&gt;
-
 &lt;p&gt;（追記）以下の内容よりも，2017/12/21の&lt;a href="https://blog.daizutabi.net/2017/12/21/"&gt;「DNS Zonesからネームサーバーを設定する方法」&lt;/a&gt;のほうがお勧めです．&lt;/p&gt;
-&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.1&lt;/span&gt; &lt;span class="title"&gt;お名前.comで独自ドメインの取得&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;1&lt;/span&gt; &lt;span class="title"&gt;お名前.comで独自ドメインの取得&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;a href="https://www.onamae.com"&gt;お名前.com&lt;/a&gt;で独自ドメインを取得します．金額に関しては，初年度だけでなく２年目以降の金額についてもチェックしておきましょう．また，「1.お申込み内容」のところで，&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Whois情報公開代行（新規登録と同時なら無料）&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;は，個人情報を公開したくない場合にはチェックを入れておきます．&lt;/p&gt;
 &lt;p&gt;お名前.comのサイト内ですることは，取得したドメインのネームサーバをNetlify DNSに設定することだけです．それ以外の設定はすべて，Netlify内で完結します．&lt;/p&gt;
-&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.2&lt;/span&gt; &lt;span class="title"&gt;静的サイトの作成&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;2&lt;/span&gt; &lt;span class="title"&gt;静的サイトの作成&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
 &lt;p&gt;Pelicanを使ってサイトを作成し，GitHubレポジトリにPushしておきます．&lt;/p&gt;
-&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.3&lt;/span&gt; &lt;span class="title"&gt;Netifyでサイトの作成&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;3&lt;/span&gt; &lt;span class="title"&gt;Netifyでサイトの作成&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;a href="https://www.netlify.com"&gt;Netlify&lt;/a&gt;にはGitHubアカウントを使ってログインします．ログイン後に，&lt;a href="https://app.netlify.com/"&gt;https://app.netlify.com&lt;/a&gt;を開き，右上のNew Site From Gitをクリックします．GitHubを選ぶと，自分のレポジトリ一覧が表示されるので，公開したいレポジトリを選択します．（以下はblogレポジトリを選択した前提で進めます．）&lt;/p&gt;
 &lt;p&gt;"Deploy settings for daizutabi/iroha"で，次の選択をします．&lt;/p&gt;
 &lt;ul&gt;
@@ -1334,84 +1082,61 @@ STYLESHEET_URLS = (
 &lt;li&gt;Publish directory: output&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;"Deply site"をクリックすると（すでに生成されていた）サイトが公開されます．&lt;/p&gt;
-&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.4&lt;/span&gt; &lt;span class="title"&gt;カスタムドメインの設定&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;4&lt;/span&gt; &lt;span class="title"&gt;カスタムドメインの設定&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
 &lt;p&gt;"Add a custom domain"をクリックします．&lt;/p&gt;
 &lt;p&gt;"Your custom domain"に
 &lt;code&gt;http://blog.daizutabi.net&lt;/code&gt;を入力し，Saveをクリックします．&lt;/p&gt;
 &lt;p&gt;"Change your domain's name servers"を開くと，Netlify DNSが表示されるので，これをお名前.comのネームサーバーに設定します．&lt;/p&gt;
-&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;0.5&lt;/span&gt; &lt;span class="title"&gt;HTTPS&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-&lt;p&gt;画面の案内に従えばすんなり設定できます．&lt;/p&gt;</content></entry><entry><title>Gravater画像を貼り付ける</title><link href="https://blog.daizutabi.net%5C2017/12/19/" rel="alternate"></link><published>2017-12-19T00:00:00+09:00</published><updated>2017-12-19T00:00:00+09:00</updated><author><name>daizutabi</name></author><id>tag:blog.daizutabi.net\2017,2017-12-19:/12/19/</id><summary type="html">
+&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;5&lt;/span&gt; &lt;span class="title"&gt;HTTPS&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;p&gt;画面の案内に従えばすんなり設定できます．&lt;/p&gt;</content></entry><entry><title>Gravater画像を貼り付ける</title><link href="https://blog.daizutabi.net/2017/12/19/" rel="alternate"></link><published>2017-12-19T00:00:00+09:00</published><updated>2017-12-19T00:00:00+09:00</updated><author><name>daizutabi</name></author><id>tag:blog.daizutabi.net,2017-12-19:/2017/12/19/</id><summary type="html">
 &lt;p&gt;ブログサイトの右上のほうに&lt;a href="https://ja.gravatar.com"&gt;Gravater&lt;/a&gt;の画像を表示させてみます．画像の取得方法は&lt;a href="https://ja.gravatar.com/site/implement/images/"&gt;Image Requests&lt;/a&gt;や&lt;a href="https://ja.gravatar.com/site/implement/images/python/"&gt;Python Image Requests&lt;/a&gt;に記載されています．&lt;/p&gt;
-&lt;!-- PELICAN_END_SUMMARY --&gt;
-
 &lt;p&gt;Gravaterに登録したアドレスからハッシュ値を生成します．&lt;/p&gt;
-&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="python"&gt;import hashlib
-hashlib.md5(b&amp;#39;daizutabi@gmail.com&amp;#39;).hexdigest()&lt;/code&gt;&lt;/pre&gt;
-&lt;p class="report"&gt;&lt;span class="count"&gt;[1]&lt;/span&gt;
-&lt;span class="start"&gt;2019-03-30 13:25:11&lt;/span&gt; (&lt;span class="elasped"&gt;31.3ms&lt;/span&gt;)
-&lt;span class="right"&gt;&lt;span class="kernel"&gt;python3&lt;/span&gt;&lt;span class="count"&gt; [2]&lt;/span&gt;
-&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class="output"&gt;&lt;pre&gt;&lt;code class="text"&gt;&amp;#39;425bf792666d158202306d5dc73367d0&amp;#39;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="source"&gt;&lt;pre&gt;&lt;code class="python"&gt;import hashlib
+hashlib.md5(b&amp;#39;daizutabi@gmail.com&amp;#39;).hexdigest()&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;ハッシュ値を使って，画像を読み込みます．&lt;/p&gt;
-&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="html"&gt;&amp;lt;img src=&amp;#34;https://www.gravatar.com/avatar/425bf792666d158202306d5dc73367d0&amp;#34;/&amp;gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;p class="report"&gt;&lt;span class="count"&gt;[2]&lt;/span&gt;
-&lt;span class="start"&gt;2019-03-30 13:25:11&lt;/span&gt; (&lt;span class="elasped"&gt;31.3ms&lt;/span&gt;)
-&lt;span class="right"&gt;&lt;span class="kernel"&gt;&lt;/span&gt;&lt;span class="count"&gt; [2]&lt;/span&gt;
-&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;実際の表示は以下の通りです …&lt;/p&gt;</summary><content type="html">
-&lt;p&gt;ブログサイトの右上のほうに&lt;a href="https://ja.gravatar.com"&gt;Gravater&lt;/a&gt;の画像を表示させてみます．画像の取得方法は&lt;a href="https://ja.gravatar.com/site/implement/images/"&gt;Image Requests&lt;/a&gt;や&lt;a href="https://ja.gravatar.com/site/implement/images/python/"&gt;Python Image Requests&lt;/a&gt;に記載されています．&lt;/p&gt;
-&lt;!-- PELICAN_END_SUMMARY --&gt;
-
-&lt;p&gt;Gravaterに登録したアドレスからハッシュ値を生成します．&lt;/p&gt;
-&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="python"&gt;import hashlib
-hashlib.md5(b&amp;#39;daizutabi@gmail.com&amp;#39;).hexdigest()&lt;/code&gt;&lt;/pre&gt;
-&lt;p class="report"&gt;&lt;span class="count"&gt;[1]&lt;/span&gt;
-&lt;span class="start"&gt;2019-03-30 13:25:11&lt;/span&gt; (&lt;span class="elasped"&gt;31.3ms&lt;/span&gt;)
-&lt;span class="right"&gt;&lt;span class="kernel"&gt;python3&lt;/span&gt;&lt;span class="count"&gt; [2]&lt;/span&gt;
-&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class="output"&gt;&lt;pre&gt;&lt;code class="text"&gt;&amp;#39;425bf792666d158202306d5dc73367d0&amp;#39;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;ハッシュ値を使って，画像を読み込みます．&lt;/p&gt;
-&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="html"&gt;&amp;lt;img src=&amp;#34;https://www.gravatar.com/avatar/425bf792666d158202306d5dc73367d0&amp;#34;/&amp;gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;p class="report"&gt;&lt;span class="count"&gt;[2]&lt;/span&gt;
-&lt;span class="start"&gt;2019-03-30 13:25:11&lt;/span&gt; (&lt;span class="elasped"&gt;31.3ms&lt;/span&gt;)
-&lt;span class="right"&gt;&lt;span class="kernel"&gt;&lt;/span&gt;&lt;span class="count"&gt; [2]&lt;/span&gt;
-&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="source"&gt;&lt;pre&gt;&lt;code class="html"&gt;&amp;lt;img src=&amp;#34;https://www.gravatar.com/avatar/425bf792666d158202306d5dc73367d0&amp;#34;/&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;実際の表示は以下の通りです．&lt;/p&gt;
 &lt;p&gt;&lt;img src="https://www.gravatar.com/avatar/425bf792666d158202306d5dc73367d0"/&gt;&lt;/p&gt;
 &lt;p&gt;画像サイズを変えてみます．&lt;/p&gt;
-&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="html"&gt;&amp;lt;img src=&amp;#34;https://www.gravatar.com/avatar/425bf792666d158202306d5dc73367d0?s=200&amp;#34;/&amp;gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;p class="report"&gt;&lt;span class="count"&gt;[3]&lt;/span&gt;
-&lt;span class="start"&gt;2019-03-30 13:25:11&lt;/span&gt; (&lt;span class="elasped"&gt;31.3ms&lt;/span&gt;)
-&lt;span class="right"&gt;&lt;span class="kernel"&gt;&lt;/span&gt;&lt;span class="count"&gt; [2]&lt;/span&gt;
-&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="source"&gt;&lt;pre&gt;&lt;code class="html"&gt;&amp;lt;img src=&amp;#34;https://www.gravatar.com/avatar/425bf792666d158202306d5dc73367d0?s=200&amp;#34;/&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;img src="https://www.gravatar.com/avatar/425bf792666d158202306d5dc73367d0?s=200"/&gt;&lt;/p&gt;
 &lt;p&gt;ここまで出来たら，CSSを編集して完成です．&lt;/p&gt;
-&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="css"&gt;.jumbotron h1 {
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="source"&gt;&lt;pre&gt;&lt;code class="css"&gt;.jumbotron h1 {
+  padding-top: 15px;
+  padding-bottom …&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">
+&lt;p&gt;ブログサイトの右上のほうに&lt;a href="https://ja.gravatar.com"&gt;Gravater&lt;/a&gt;の画像を表示させてみます．画像の取得方法は&lt;a href="https://ja.gravatar.com/site/implement/images/"&gt;Image Requests&lt;/a&gt;や&lt;a href="https://ja.gravatar.com/site/implement/images/python/"&gt;Python Image Requests&lt;/a&gt;に記載されています．&lt;/p&gt;
+&lt;p&gt;Gravaterに登録したアドレスからハッシュ値を生成します．&lt;/p&gt;
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="source"&gt;&lt;pre&gt;&lt;code class="python"&gt;import hashlib
+hashlib.md5(b&amp;#39;daizutabi@gmail.com&amp;#39;).hexdigest()&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;ハッシュ値を使って，画像を読み込みます．&lt;/p&gt;
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="source"&gt;&lt;pre&gt;&lt;code class="html"&gt;&amp;lt;img src=&amp;#34;https://www.gravatar.com/avatar/425bf792666d158202306d5dc73367d0&amp;#34;/&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;実際の表示は以下の通りです．&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.gravatar.com/avatar/425bf792666d158202306d5dc73367d0"/&gt;&lt;/p&gt;
+&lt;p&gt;画像サイズを変えてみます．&lt;/p&gt;
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="source"&gt;&lt;pre&gt;&lt;code class="html"&gt;&amp;lt;img src=&amp;#34;https://www.gravatar.com/avatar/425bf792666d158202306d5dc73367d0?s=200&amp;#34;/&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src="https://www.gravatar.com/avatar/425bf792666d158202306d5dc73367d0?s=200"/&gt;&lt;/p&gt;
+&lt;p&gt;ここまで出来たら，CSSを編集して完成です．&lt;/p&gt;
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="source"&gt;&lt;pre&gt;&lt;code class="css"&gt;.jumbotron h1 {
   padding-top: 15px;
   padding-bottom: 15px;
   background-image: url(https://www.gravatar.com/avatar/425bf792666d158202306d5dc73367d0?s=30);
   background-repeat: no-repeat;
   background-position: right center;
-}&lt;/code&gt;&lt;/pre&gt;
-&lt;p class="report"&gt;&lt;span class="count"&gt;[4]&lt;/span&gt;
-&lt;span class="start"&gt;2019-03-30 13:25:11&lt;/span&gt; (&lt;span class="elasped"&gt;31.3ms&lt;/span&gt;)
-&lt;span class="right"&gt;&lt;span class="kernel"&gt;&lt;/span&gt;&lt;span class="count"&gt; [2]&lt;/span&gt;
-&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</content></entry><entry><title>Pythonパッケージの作り方</title><link href="https://blog.daizutabi.net%5C2017/12/18/" rel="alternate"></link><published>2017-12-18T00:00:00+09:00</published><updated>2017-12-18T00:00:00+09:00</updated><author><name>daizutabi</name></author><id>tag:blog.daizutabi.net\2017,2017-12-18:/12/18/</id><summary type="html">
-&lt;p&gt;&lt;a href="https://github.com/daizutabi/takuhai"&gt;Takuhai&lt;/a&gt;を作成するにあたってPythonパッケージの作り方について学びました．&lt;a href="https://iroha.daizutabi.net/"&gt;「Pythonパッケージの作り方」&lt;/a&gt;に公開しています．パッケージを作るたびに&lt;code&gt;PYTHONPATH&lt;/code&gt;を設定していたり，&lt;code&gt;setup.py&lt;/code&gt;を作るのが敷居が高いなと思っている方の参考になれば幸いです．&lt;/p&gt;
-&lt;!-- PELICAN_END_SUMMARY --&gt;</summary><content type="html">
-&lt;p&gt;&lt;a href="https://github.com/daizutabi/takuhai"&gt;Takuhai&lt;/a&gt;を作成するにあたってPythonパッケージの作り方について学びました．&lt;a href="https://iroha.daizutabi.net/"&gt;「Pythonパッケージの作り方」&lt;/a&gt;に公開しています．パッケージを作るたびに&lt;code&gt;PYTHONPATH&lt;/code&gt;を設定していたり，&lt;code&gt;setup.py&lt;/code&gt;を作るのが敷居が高いなと思っている方の参考になれば幸いです．&lt;/p&gt;
-&lt;!-- PELICAN_END_SUMMARY --&gt;</content></entry><entry><title>記事の自動ビルドとページのリロード</title><link href="https://blog.daizutabi.net%5C2017/12/17/" rel="alternate"></link><published>2017-12-17T00:00:00+09:00</published><updated>2017-12-17T00:00:00+09:00</updated><author><name>daizutabi</name></author><id>tag:blog.daizutabi.net\2017,2017-12-17:/12/17/</id><summary type="html">
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content></entry><entry><title>Pythonパッケージの作り方</title><link href="https://blog.daizutabi.net/2017/12/18/" rel="alternate"></link><published>2017-12-18T00:00:00+09:00</published><updated>2017-12-18T00:00:00+09:00</updated><author><name>daizutabi</name></author><id>tag:blog.daizutabi.net,2017-12-18:/2017/12/18/</id><summary type="html">
+&lt;p&gt;&lt;a href="https://github.com/daizutabi/takuhai"&gt;Takuhai&lt;/a&gt;を作成するにあたってPythonパッケージの作り方について学びました．&lt;a href="https://iroha.daizutabi.net/"&gt;「Pythonパッケージの作り方」&lt;/a&gt;に公開しています．パッケージを作るたびに&lt;code&gt;PYTHONPATH&lt;/code&gt;を設定していたり，&lt;code&gt;setup.py&lt;/code&gt;を作るのが敷居が高いなと思っている方の参考になれば幸いです．&lt;/p&gt;</summary><content type="html">
+&lt;p&gt;&lt;a href="https://github.com/daizutabi/takuhai"&gt;Takuhai&lt;/a&gt;を作成するにあたってPythonパッケージの作り方について学びました．&lt;a href="https://iroha.daizutabi.net/"&gt;「Pythonパッケージの作り方」&lt;/a&gt;に公開しています．パッケージを作るたびに&lt;code&gt;PYTHONPATH&lt;/code&gt;を設定していたり，&lt;code&gt;setup.py&lt;/code&gt;を作るのが敷居が高いなと思っている方の参考になれば幸いです．&lt;/p&gt;</content></entry><entry><title>記事の自動ビルドとページのリロード</title><link href="https://blog.daizutabi.net/2017/12/17/" rel="alternate"></link><published>2017-12-17T00:00:00+09:00</published><updated>2017-12-17T00:00:00+09:00</updated><author><name>daizutabi</name></author><id>tag:blog.daizutabi.net,2017-12-17:/2017/12/17/</id><summary type="html">
 &lt;p&gt;&lt;a href="https://github.com/daizutabi/takuhai"&gt;Takuhai&lt;/a&gt;パッケージを作りました．Pelicanプロジェクト内の記事ファイルが更新されたら次のことを実行します：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;記事をビルドしてHTMLファイルを生成します．&lt;/li&gt;
 &lt;li&gt;ローカルのHTTPサーバを立ち上げて，生成した記事をブラウザで表示します．&lt;/li&gt;
 &lt;li&gt;記事が更新されたら，その都度ビルドして，ブラウザのページを自動でリロードします．&lt;/li&gt;
 &lt;/ul&gt;
-&lt;!-- PELICAN_END_SUMMARY --&gt;
-
 &lt;p&gt;本パッケージを作成するにあたって，次の記事を参考にしました：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://merlijn.vandeen.nl/2015/pelican-livereload.html"&gt;Using LiveReload with Pelican&lt;/a&gt;&lt;/li&gt;
@@ -1433,8 +1158,6 @@ hashlib.md5(b&amp;#39;daizutabi@gmail.com&amp;#39;).hexdigest()&lt;/code&gt;&lt;
 &lt;li&gt;ローカルのHTTPサーバを立ち上げて，生成した記事をブラウザで表示します．&lt;/li&gt;
 &lt;li&gt;記事が更新されたら，その都度ビルドして，ブラウザのページを自動でリロードします．&lt;/li&gt;
 &lt;/ul&gt;
-&lt;!-- PELICAN_END_SUMMARY --&gt;
-
 &lt;p&gt;本パッケージを作成するにあたって，次の記事を参考にしました：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://merlijn.vandeen.nl/2015/pelican-livereload.html"&gt;Using LiveReload with Pelican&lt;/a&gt;&lt;/li&gt;
@@ -1452,72 +1175,44 @@ hashlib.md5(b&amp;#39;daizutabi@gmail.com&amp;#39;).hexdigest()&lt;/code&gt;&lt;
 &lt;p&gt;Pelicanドキュメントの&lt;a href="http://docs.getpelican.com/en/stable/settings.html#url-settings"&gt;URL settings&lt;/a&gt;によれば，絶対URLが望ましい選択とされています．しかし，これではローカルHTTPサーバを立ち上げても，リンク先が外部サイトになってしまいます．望ましい動作とは言えないでしょう．&lt;/p&gt;
 &lt;p&gt;Takuhaiでは，&lt;code&gt;pelicanconf.py&lt;/code&gt;の設定を上書きすることで，ローカルHTTPサーバの場合に限って相対URLを使うことができます．&lt;code&gt;pelicanconf.py&lt;/code&gt;の&lt;code&gt;RELATIVE_URLS&lt;/code&gt;は常に&lt;code&gt;False&lt;/code&gt;にしておきましょう．開発用に&lt;code&gt;takuhai content&lt;/code&gt;としたときには相対URLを使い，公開用に&lt;code&gt;pelican content&lt;/code&gt;としたときには絶対URLを使います．公開前には忘れずに&lt;code&gt;pelican content&lt;/code&gt;を実行しましょう．&lt;/p&gt;
 &lt;p&gt;Takuhaiのインストールは簡単です．&lt;/p&gt;
-&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="bash"&gt;&amp;gt; pip install takuhai&lt;/code&gt;&lt;/pre&gt;
-&lt;p class="report"&gt;&lt;span class="count"&gt;[1]&lt;/span&gt;
-&lt;span class="start"&gt;2019-03-30 13:25:10&lt;/span&gt; (&lt;span class="elasped"&gt;953ms&lt;/span&gt;)
-&lt;span class="right"&gt;&lt;span class="kernel"&gt;&lt;/span&gt;&lt;span class="count"&gt; [1]&lt;/span&gt;
-&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="source"&gt;&lt;pre&gt;&lt;code class="bash"&gt;&amp;gt; pip install takuhai&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;condaパッケージも用意しています．&lt;/p&gt;
-&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="bash"&gt;&amp;gt; conda install -c daizutabi -c conda-forge takuhai&lt;/code&gt;&lt;/pre&gt;
-&lt;p class="report"&gt;&lt;span class="count"&gt;[2]&lt;/span&gt;
-&lt;span class="start"&gt;2019-03-30 13:25:10&lt;/span&gt; (&lt;span class="elasped"&gt;953ms&lt;/span&gt;)
-&lt;span class="right"&gt;&lt;span class="kernel"&gt;&lt;/span&gt;&lt;span class="count"&gt; [1]&lt;/span&gt;
-&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="source"&gt;&lt;pre&gt;&lt;code class="bash"&gt;&amp;gt; conda install -c daizutabi -c conda-forge takuhai&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;インストールができたら，いつも実行している&lt;/p&gt;
-&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="bash"&gt;&amp;gt; pelican content&lt;/code&gt;&lt;/pre&gt;
-&lt;p class="report"&gt;&lt;span class="count"&gt;[3]&lt;/span&gt;
-&lt;span class="start"&gt;2019-03-30 13:25:10&lt;/span&gt; (&lt;span class="elasped"&gt;953ms&lt;/span&gt;)
-&lt;span class="right"&gt;&lt;span class="kernel"&gt;&lt;/span&gt;&lt;span class="count"&gt; [1]&lt;/span&gt;
-&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="source"&gt;&lt;pre&gt;&lt;code class="bash"&gt;&amp;gt; pelican content&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;の代わりに&lt;/p&gt;
-&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="bash"&gt;&amp;gt; takuhai content&lt;/code&gt;&lt;/pre&gt;
-&lt;p class="report"&gt;&lt;span class="count"&gt;[4]&lt;/span&gt;
-&lt;span class="start"&gt;2019-03-30 13:25:10&lt;/span&gt; (&lt;span class="elasped"&gt;953ms&lt;/span&gt;)
-&lt;span class="right"&gt;&lt;span class="kernel"&gt;&lt;/span&gt;&lt;span class="count"&gt; [1]&lt;/span&gt;
-&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="source"&gt;&lt;pre&gt;&lt;code class="bash"&gt;&amp;gt; takuhai content&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;を実行してみましょう．&lt;code&gt;http://localhost:8000&lt;/code&gt;にアクセスすると記事が表示されます．記事ファイルを更新すると，ブラウザのページが自動でリロードされ，最新の内容に変更されることが確認できます．&lt;/p&gt;</content></entry><entry><title>ブログを始める</title><link href="https://blog.daizutabi.net%5C2017/12/16/" rel="alternate"></link><published>2017-12-16T00:00:00+09:00</published><updated>2017-12-16T00:00:00+09:00</updated><author><name>daizutabi</name></author><id>tag:blog.daizutabi.net\2017,2017-12-16:/12/16/</id><summary type="html">
+&lt;p&gt;を実行してみましょう．&lt;code&gt;http://localhost:8000&lt;/code&gt;にアクセスすると記事が表示されます．記事ファイルを更新すると，ブラウザのページが自動でリロードされ，最新の内容に変更されることが確認できます．&lt;/p&gt;</content></entry><entry><title>ブログを始める</title><link href="https://blog.daizutabi.net/2017/12/16/" rel="alternate"></link><published>2017-12-16T00:00:00+09:00</published><updated>2017-12-16T00:00:00+09:00</updated><author><name>daizutabi</name></author><id>tag:blog.daizutabi.net,2017-12-16:/2017/12/16/</id><summary type="html">
 &lt;p&gt;&lt;a href="https://pages.github.com/"&gt;GitHub Pages&lt;/a&gt;でブログを始めることにしました．&lt;a href="https://blog.getpelican.com/"&gt;Pelican&lt;/a&gt;を使って記事を生成します．フォーマットはマークダウンにします．&lt;/p&gt;
-&lt;!-- PELICAN_END_SUMMARY --&gt;
-
 &lt;p&gt;Pelicanでは，各記事のファイルの先頭に以下のようなメタデータを書く必要があります．&lt;/p&gt;
-&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="text"&gt;Title: My First Review
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="source"&gt;&lt;pre&gt;&lt;code class="text"&gt;Title: My First Review
 Date: 2010-12-03 10:20
 Category: Review
-Slug: URL&lt;/code&gt;&lt;/pre&gt;
-&lt;p class="report"&gt;&lt;span class="count"&gt;[1]&lt;/span&gt;
-&lt;span class="start"&gt;2019-03-30 13:25:11&lt;/span&gt; (&lt;span class="elasped"&gt;15.7ms&lt;/span&gt;)
-&lt;span class="right"&gt;&lt;span class="kernel"&gt;&lt;/span&gt;&lt;span class="count"&gt; [3]&lt;/span&gt;
-&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+Slug: URL&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;記事を書くたびにこれらのメタデータを入力するのは少々面倒です．そこで，ファイル名から自動的にメタデータを抽出するようにします．設定ファイル&lt;code&gt;pelicanconf.py&lt;/code&gt;に以下の内容を追加します．&lt;/p&gt;
-&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="text"&gt;PATH_METADATA = r&amp;#39;(?P&amp;lt;category&amp;gt;.+?)/.*&amp;#39;
-FILENAME_METADATA = r&amp;#39;(?P&amp;lt;date&amp;gt;\d{8}).(?P&amp;lt;title&amp;gt;.+)&amp;#39;&lt;/code&gt;&lt;/pre&gt;
-&lt;p class="report"&gt;&lt;span class="count"&gt;[2]&lt;/span&gt;
-&lt;span class="start"&gt;2019-03-30 13 …&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">
-&lt;p&gt;&lt;a href="https://pages.github.com/"&gt;GitHub Pages&lt;/a&gt;でブログを始めることにしました．&lt;a href="https://blog.getpelican.com/"&gt;Pelican&lt;/a&gt;を使って記事を生成します．フォーマットはマークダウンにします．&lt;/p&gt;
-&lt;!-- PELICAN_END_SUMMARY --&gt;
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="source"&gt;&lt;pre&gt;&lt;code class="markdown"&gt;PATH_METADATA = r&amp;#39;(?P&amp;lt;category&amp;gt;.+?)/.*&amp;#39;
+FILENAME_METADATA = r&amp;#39;(?P&amp;lt;date&amp;gt;\d{8}).(?P&amp;lt;title&amp;gt;.+)&amp;#39;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
+&lt;p&gt;以下のようなルールで記事ファイルを&lt;code&gt;content&lt;/code&gt;ディレクトリに配置します．&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;content&lt;/code&gt;ディレクトリ直下に置かれたディレクトリの名前がカテゴリー名になります．&lt;/li&gt;
+&lt;li&gt;その下のディレクトリから各記事ファイルに至るまでは任意のディレクトリ構造をとることができます．&lt;/li&gt;
+&lt;li&gt;記事ファイルの名前は&lt;code&gt;&amp;lt;YYYYMMDD&amp;gt;&amp;lt;sep&amp;gt;&amp;lt;title&amp;gt;.md …&lt;/code&gt;&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">
+&lt;p&gt;&lt;a href="https://pages.github.com/"&gt;GitHub Pages&lt;/a&gt;でブログを始めることにしました．&lt;a href="https://blog.getpelican.com/"&gt;Pelican&lt;/a&gt;を使って記事を生成します．フォーマットはマークダウンにします．&lt;/p&gt;
 &lt;p&gt;Pelicanでは，各記事のファイルの先頭に以下のようなメタデータを書く必要があります．&lt;/p&gt;
-&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="text"&gt;Title: My First Review
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="source"&gt;&lt;pre&gt;&lt;code class="text"&gt;Title: My First Review
 Date: 2010-12-03 10:20
 Category: Review
-Slug: URL&lt;/code&gt;&lt;/pre&gt;
-&lt;p class="report"&gt;&lt;span class="count"&gt;[1]&lt;/span&gt;
-&lt;span class="start"&gt;2019-03-30 13:25:11&lt;/span&gt; (&lt;span class="elasped"&gt;15.7ms&lt;/span&gt;)
-&lt;span class="right"&gt;&lt;span class="kernel"&gt;&lt;/span&gt;&lt;span class="count"&gt; [3]&lt;/span&gt;
-&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+Slug: URL&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;記事を書くたびにこれらのメタデータを入力するのは少々面倒です．そこで，ファイル名から自動的にメタデータを抽出するようにします．設定ファイル&lt;code&gt;pelicanconf.py&lt;/code&gt;に以下の内容を追加します．&lt;/p&gt;
-&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="text"&gt;PATH_METADATA = r&amp;#39;(?P&amp;lt;category&amp;gt;.+?)/.*&amp;#39;
-FILENAME_METADATA = r&amp;#39;(?P&amp;lt;date&amp;gt;\d{8}).(?P&amp;lt;title&amp;gt;.+)&amp;#39;&lt;/code&gt;&lt;/pre&gt;
-&lt;p class="report"&gt;&lt;span class="count"&gt;[2]&lt;/span&gt;
-&lt;span class="start"&gt;2019-03-30 13:25:11&lt;/span&gt; (&lt;span class="elasped"&gt;15.7ms&lt;/span&gt;)
-&lt;span class="right"&gt;&lt;span class="option"&gt; (python) &lt;/span&gt;&lt;span class="kernel"&gt;&lt;/span&gt;&lt;span class="count"&gt; [3]&lt;/span&gt;
-&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="source"&gt;&lt;pre&gt;&lt;code class="markdown"&gt;PATH_METADATA = r&amp;#39;(?P&amp;lt;category&amp;gt;.+?)/.*&amp;#39;
+FILENAME_METADATA = r&amp;#39;(?P&amp;lt;date&amp;gt;\d{8}).(?P&amp;lt;title&amp;gt;.+)&amp;#39;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;以下のようなルールで記事ファイルを&lt;code&gt;content&lt;/code&gt;ディレクトリに配置します．&lt;/p&gt;
 &lt;ul&gt;
@@ -1535,22 +1230,14 @@ FILENAME_METADATA = r&amp;#39;(?P&amp;lt;date&amp;gt;\d{8}).(?P&amp;lt;title&amp
 &lt;li&gt;ルートディレクトリから記事ファイルに至るまでのディレクトリ構造はどのようにしても構いませんでした．例えば，ひとつめの記事を書くのに，わざわざ&lt;code&gt;2017/12/06&lt;/code&gt;といったディレクトリ構造を作るのは大げさでしょう．はじめのうちは，カテゴリーディレクトリの直下に&lt;code&gt;20171206_something.md&lt;/code&gt;を作っておけばよいのです．記事の数が多くなって，ディレクトリ内の見通しが悪くなったら，その時に初めて月ごとあるいは年ごとのディレクトリを作り，そこに記事を移動しましょう．どのようなディレクトリ構造の中にあっても，ファイル名で記事の日付，タイトルを指定できます．&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;記事およびカテゴリーページのURLと出力先のファイル名は以下のように設定しています．一日に２本の記事を書くことはないため，記事のタイトルなどをURLに含めていません．また&lt;code&gt;CATEGORY_*&lt;/code&gt;には&lt;code&gt;slug&lt;/code&gt;を用いるとおかしなローマ字になるときがあるので，&lt;code&gt;name&lt;/code&gt;をそのまま使います．&lt;/p&gt;
-&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="text"&gt;ARTICLE_URL = &amp;#39;{date:%Y}/{date:%m}/{date:%d}/&amp;#39;
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="source"&gt;&lt;pre&gt;&lt;code class="markdown"&gt;ARTICLE_URL = &amp;#39;{date:%Y}/{date:%m}/{date:%d}/&amp;#39;
 ARTICLE_SAVE_AS = &amp;#39;{date:%Y}/{date:%m}/{date:%d}/index.html&amp;#39;
 CATEGORY_URL = &amp;#39;category/{name}/&amp;#39;
-CATEGORY_SAVE_AS = &amp;#39;category/{name}/index.html&amp;#39;&lt;/code&gt;&lt;/pre&gt;
-&lt;p class="report"&gt;&lt;span class="count"&gt;[3]&lt;/span&gt;
-&lt;span class="start"&gt;2019-03-30 13:25:11&lt;/span&gt; (&lt;span class="elasped"&gt;15.7ms&lt;/span&gt;)
-&lt;span class="right"&gt;&lt;span class="option"&gt; (python) &lt;/span&gt;&lt;span class="kernel"&gt;&lt;/span&gt;&lt;span class="count"&gt; [3]&lt;/span&gt;
-&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+CATEGORY_SAVE_AS = &amp;#39;category/{name}/index.html&amp;#39;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;日付の設定は，以下の通りです．&lt;/p&gt;
-&lt;div class="pheasant-fenced-code"&gt;&lt;div class="cached"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="text"&gt;TIMEZONE = &amp;#39;Asia/Tokyo&amp;#39;
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="source"&gt;&lt;pre&gt;&lt;code class="markdown"&gt;TIMEZONE = &amp;#39;Asia/Tokyo&amp;#39;
 DEFAULT_LANG = &amp;#39;ja&amp;#39;
 DATE_FORMATS = {
     &amp;#39;ja&amp;#39;: &amp;#39;%Y年%m月%d日 (%a)&amp;#39;,
-}&lt;/code&gt;&lt;/pre&gt;
-&lt;p class="report"&gt;&lt;span class="count"&gt;[4]&lt;/span&gt;
-&lt;span class="start"&gt;2019-03-30 13:25:11&lt;/span&gt; (&lt;span class="elasped"&gt;15.7ms&lt;/span&gt;)
-&lt;span class="right"&gt;&lt;span class="option"&gt; (python) &lt;/span&gt;&lt;span class="kernel"&gt;&lt;/span&gt;&lt;span class="count"&gt; [3]&lt;/span&gt;
-&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</content></entry></feed>
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content></entry></feed>

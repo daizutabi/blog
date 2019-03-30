@@ -6,12 +6,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="HandheldFriendly" content="True" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="daizutabi" />
 
-  <link rel="stylesheet" type="text/css" href="../../../theme/stylesheet/style.css">
-  <link rel="stylesheet" type="text/css" href="../../../theme/stylesheet/pheasant.css">
-  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
-  <link href="https://cdn.jsdelivr.net/gh/tonsky/FiraCode@1.206/distr/fira_code.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://blog.daizutabi.net/theme/stylesheet/style.css" />
+  <link rel="stylesheet" href="https://blog.daizutabi.net/theme/stylesheet/pheasant.css" />
+  <link rel='stylesheet' href="//fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  <link rel='stylesheet' href="//cdn.jsdelivr.net/gh/tonsky/FiraCode@1.206/distr/fira_code.css" />
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 
   <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon" />
   <title>大豆旅 &ndash; AtomにおけるPython開発環境構築 その2</title>
@@ -20,10 +22,10 @@
 <body>
   <aside>
     <div>
-      <a href="../../..">
+      <a href="https://blog.daizutabi.net">
         <img src="https://www.gravatar.com/avatar/425bf792666d158202306d5dc73367d0?s=140" />
       </a>
-      <h1><a href="../../..">大豆旅</a></h1>
+      <h1><a href="https://blog.daizutabi.net">大豆旅</a></h1>
 
 
     </div>
@@ -31,26 +33,24 @@
   <main>
 
 <article class="single">
-  <header>
-    <h1 id="atomniokerupythonkai-fa-huan-jing-gou-zhu-sono2">AtomにおけるPython開発環境構築 その2</h1>
-    <p>Posted on 2019年02月15日 (金) in <a href="../../../category/Atom/">Atom</a>
-</p>
+  <header class="article">
+    <p><span class="date">2019年02月15日 (金)</span>
+    <span class="info"><i class="fa fa-folder"></i> <a href="https://blog.daizutabi.net/category/Atom/">Atom</a></span></p>
+    <h1>AtomにおけるPython開発環境構築 その2</h1>
   </header>
-  <div>
+  <div class="content">
 <p>AtomテキストエディタにPython開発環境を構築します。細かい設定を丁寧に説明し、快適な開発環境を整備することを目指します。</p>
-<!-- PELICAN_END_SUMMARY -->
-
 <p>それでは，Python開発に役立つパッケージを紹介していきます．各節のヘッダがパッケージ名になっているので，特に記載のない限り，その名前でパッケージを検索してインストールしてください．その後，Settings，Keymap，Stylesheetの各項目を必要に応じて設定していきます．</p>
-<h2><span class="pheasant-header"><span class="header"><span class="number">0.1</span> <span class="title">platformio-ide-terminal</span></span></span></h2>
+<h2><span class="pheasant-header"><span class="header"><span class="number">1</span> <span class="title">platformio-ide-terminal</span></span></span></h2>
 <p>Atom内でターミナルを実行します．</p>
-<h3><span class="pheasant-header"><span class="header"><span class="number">0.1.1</span> <span class="title">Settings</span></span></span></h3>
+<h3><span class="pheasant-header"><span class="header"><span class="number">1.1</span> <span class="title">Settings</span></span></span></h3>
 <ul>
 <li>Auto Run Command: C:\Users\daizu\Miniconda3\Scripts\activate.bat base</li>
 <li>Shell Override: C:\Windows\System32\cmd.exe</li>
 </ul>
-<h2><span class="pheasant-header"><span class="header"><span class="number">0.2</span> <span class="title">vim-mode-plus, ex-mode, vim-mode-plus-keymaps-for-surround, cursor-history, quick-highlight</span></span></span></h2>
+<h2><span class="pheasant-header"><span class="header"><span class="number">2</span> <span class="title">vim-mode-plus, ex-mode, vim-mode-plus-keymaps-for-surround, cursor-history, quick-highlight</span></span></span></h2>
 <p>AtomでVimキーバインドを実現します。</p>
-<h3><span class="pheasant-header"><span class="header"><span class="number">0.2.1</span> <span class="title">Settings</span></span></span></h3>
+<h3><span class="pheasant-header"><span class="header"><span class="number">2.1</span> <span class="title">Settings</span></span></span></h3>
 <p>vim-mode-plusで、以下のキーマップを有効にします．</p>
 <ul>
 <li><code>Y</code>: 'yank-to-last-character-of-line'</li>
@@ -63,8 +63,8 @@
 <ul>
 <li>Automatically Escape Insert Mode On Activate Pane Item Change</li>
 </ul>
-<h3><span class="pheasant-header"><span class="header"><span class="number">0.2.2</span> <span class="title">Keymap</span></span></span></h3>
-<div class="pheasant-fenced-code"><div class="cached"><div class="input"><pre><code class="cson">&#39;atom-text-editor.vim-mode-plus:not(.insert-mode)&#39;:
+<h3><span class="pheasant-header"><span class="header"><span class="number">2.2</span> <span class="title">Keymap</span></span></span></h3>
+<div class="pheasant-fenced-code"><div class="source"><pre><code class="cson">&#39;atom-text-editor.vim-mode-plus:not(.insert-mode)&#39;:
   &#39;j&#39;: &#39;vim-mode-plus:move-down-screen&#39;
   &#39;k&#39;: &#39;vim-mode-plus:move-up-screen&#39;
   &#39;g j&#39;: &#39;vim-mode-plus:move-down&#39;
@@ -101,21 +101,17 @@
   &#39;ctrl-o&#39;: &#39;cursor-history:prev&#39;
 
 &#39;.tree-view&#39;:
-  &#39;s f&#39;: &#39;tree-view:toggle-focus&#39;</code></pre>
-<p class="report"><span class="count">[1]</span>
-<span class="start">2019-03-30 13:25:11</span> (<span class="elasped">15.7ms</span>)
-<span class="right"><span class="kernel"></span><span class="count"> [3]</span>
-</span></p></div></div></div>
+  &#39;s f&#39;: &#39;tree-view:toggle-focus&#39;</code></pre></div></div>
 
-<h2><span class="pheasant-header"><span class="header"><span class="number">0.3</span> <span class="title">MagicPython</span></span></span></h2>
+<h2><span class="pheasant-header"><span class="header"><span class="number">3</span> <span class="title">MagicPython</span></span></span></h2>
 <p>Pythonコードのシンタックスハイライターに，MagicPythonを使います．コアパッケージのlanguage-pythonはdisableにします．</p>
-<h3><span class="pheasant-header"><span class="header"><span class="number">0.3.1</span> <span class="title">Settings</span></span></span></h3>
+<h3><span class="pheasant-header"><span class="header"><span class="number">3.1</span> <span class="title">Settings</span></span></span></h3>
 <ul>
 <li>Tab Type: soft</li>
 </ul>
-<h3><span class="pheasant-header"><span class="header"><span class="number">0.3.2</span> <span class="title">Stylesheet</span></span></span></h3>
+<h3><span class="pheasant-header"><span class="header"><span class="number">3.2</span> <span class="title">Stylesheet</span></span></span></h3>
 <p>色の設定を追加します．[File] &gt; [Stylesheet]を選択して，<code>styles.less</code>を開き，次の行を追加します．好みに応じて変更してください．</p>
-<div class="pheasant-fenced-code"><div class="cached"><div class="input"><pre><code class="css">/* styles.less */
+<div class="pheasant-fenced-code"><div class="source"><pre><code class="css">/* styles.less */
 atom-text-editor .syntax--source.syntax--python {
   .syntax--keyword.syntax--control,
   .syntax--keyword.syntax--operator.syntax--logical,
@@ -170,61 +166,37 @@ atom-text-editor .syntax--source.syntax--python {
   .syntax--constant.syntax--other {
     color: #D69696;
   }
-}</code></pre>
-<p class="report"><span class="count">[2]</span>
-<span class="start">2019-03-30 13:25:11</span> (<span class="elasped">15.7ms</span>)
-<span class="right"><span class="kernel"></span><span class="count"> [3]</span>
-</span></p></div></div></div>
+}</code></pre></div></div>
 
-<h2><span class="pheasant-header"><span class="header"><span class="number">0.4</span> <span class="title">atom-ide-ui, ide-python</span></span></span></h2>
+<h2><span class="pheasant-header"><span class="header"><span class="number">4</span> <span class="title">atom-ide-ui, ide-python</span></span></span></h2>
 <p>Minicondaの仮想環境<code>atom</code>を作成します。</p>
-<div class="pheasant-fenced-code"><div class="cached"><div class="input"><pre><code class="bash">(base) &gt; conda create -n atom python
+<div class="pheasant-fenced-code"><div class="source"><pre><code class="bash">(base) &gt; conda create -n atom python
 (base) &gt; activate atom
 (atom) &gt; pip install python-language-server[all]
-(atom) &gt; pip install pyls-isort pyls-mypy</code></pre>
-<p class="report"><span class="count">[3]</span>
-<span class="start">2019-03-30 13:25:11</span> (<span class="elasped">15.7ms</span>)
-<span class="right"><span class="kernel"></span><span class="count"> [3]</span>
-</span></p></div></div></div>
+(atom) &gt; pip install pyls-isort pyls-mypy</code></pre></div></div>
 
 <p>Atom実行時のパスに、Pythonの仮想環境を追加します。AtomのFile-&gt;Init Script...でinit.coffeeを開き、</p>
-<div class="pheasant-fenced-code"><div class="cached"><div class="input"><pre><code class="javascript">process.env.PATH = [&#34;C:\\Users\\daizu\\Miniconda3\\envs\\atom;C:\\Users\\daizu\\Miniconda3\\envs\\atom\\Library\\bin;C:\\Users\\daizu\\Miniconda3\\envs\\atom\\Scripts&#34;, process.env.PATH].join(&#34;;&#34;)</code></pre>
-<p class="report"><span class="count">[4]</span>
-<span class="start">2019-03-30 13:25:12</span> (<span class="elasped">578ms</span>)
-<span class="right"><span class="kernel">javascript</span><span class="count"> [1]</span>
-</span></p></div><div class="output"><pre><code class="text">&#39;C:\\Users\\daizu\\Miniconda3\\envs\\atom;C:\\Users\\daizu\\Miniconda3\\envs\\atom\\Library\\bin;C:\\Users\\daizu\\Miniconda3\\envs\\atom\\Scripts;C:\\Users\\daizu\\Miniconda3\\envs\\daizu;C:\\Users\\daizu\\Miniconda3\\envs\\daizu\\Library\\mingw-w64\\bin;C:\\Users\\daizu\\Miniconda3\\envs\\daizu\\Library\\usr\\bin;C:\\Users\\daizu\\Miniconda3\\envs\\daizu\\Library\\bin;C:\\Users\\daizu\\Miniconda3\\envs\\daizu\\Scripts;C:\\Users\\daizu\\Miniconda3\\envs\\daizu\\bin;C:\\Users\\daizu\\Miniconda3\\condabin;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v10.0\\bin;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v10.0\\libnvvp;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Users\\daizu\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\daizu\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\daizu\\AppData\\Local\\bin;C:\\Local\\texlive\\2018\\bin\\win32;C:\\Users\\daizu\\AppData\\Local\\atom\\bin&#39;</code></pre></div></div></div>
+<div class="pheasant-fenced-code"><div class="source"><pre><code class="javascript">process.env.PATH = [&#34;C:\\Users\\daizu\\Miniconda3\\envs\\atom;C:\\Users\\daizu\\Miniconda3\\envs\\atom\\Library\\bin;C:\\Users\\daizu\\Miniconda3\\envs\\atom\\Scripts&#34;, process.env.PATH].join(&#34;;&#34;)</code></pre></div></div>
 
 <p>を追加します。</p>
 <p><a href="https://github.com/facebookarchive/atom-ide-ui/blob/master/docs/keybindings.md">キーマッピング</a></p>
-<h2><span class="pheasant-header"><span class="header"><span class="number">0.5</span> <span class="title">Hydrogen</span></span></span></h2>
+<h2><span class="pheasant-header"><span class="header"><span class="number">5</span> <span class="title">Hydrogen</span></span></span></h2>
 <p>Jupyter clientを使って，Atom上でPythonコードの実行ができます．インタラクティブな実行が可能なので，非常に重宝します．Hydrogenを使う仮想環境下(仮に<code>example</code>とします)で，以下を実行します。</p>
-<div class="pheasant-fenced-code"><div class="cached"><div class="input"><pre><code class="bash">(base) &gt; conda create -n daizu python
+<div class="pheasant-fenced-code"><div class="source"><pre><code class="bash">(base) &gt; conda create -n daizu python
 (base) &gt; active daizu
 (daizu) &gt; conda install jupyter
-(daizu) &gt; python -m ipykernel install --user --name daizu</code></pre>
-<p class="report"><span class="count">[5]</span>
-<span class="start">2019-03-30 13:25:12</span> (<span class="elasped">578ms</span>)
-<span class="right"><span class="kernel"></span><span class="count"> [1]</span>
-</span></p></div></div></div>
+(daizu) &gt; python -m ipykernel install --user --name daizu</code></pre></div></div>
 
 <p>Atom実行時のパスに、Pythonの仮想環境を追加します。AtomのFile-&gt;Init Script...でinit.coffeeを開き、以下のように変更します。</p>
-<div class="pheasant-fenced-code"><div class="cached"><div class="input"><pre><code class="javascript">process.env.PATH = [&#34;C:\\Users\\daizu\\Miniconda3\\envs\\atom;C:\\Users\\daizu\\Miniconda3\\envs\\atom\\Library\\bin;C:\\Users\\daizu\\Miniconda3\\envs\\atom\\Scripts;C:\\Users\\daizu\\Miniconda3\\envs\\daizu;C:\\Users\\daizu\\Miniconda3\\envs\\daizu\\Library\\bin;C:\\Users\\daizu\\Miniconda3\\envs\\daizu\\Scripts&#34;, process.env.PATH].join(&#34;;&#34;)</code></pre>
-<p class="report"><span class="count">[6]</span>
-<span class="start">2019-03-30 13:25:12</span> (<span class="elasped">15.6ms</span>)
-<span class="right"><span class="kernel">javascript</span><span class="count"> [2]</span>
-</span></p></div><div class="output"><pre><code class="text">&#39;C:\\Users\\daizu\\Miniconda3\\envs\\atom;C:\\Users\\daizu\\Miniconda3\\envs\\atom\\Library\\bin;C:\\Users\\daizu\\Miniconda3\\envs\\atom\\Scripts;C:\\Users\\daizu\\Miniconda3\\envs\\daizu;C:\\Users\\daizu\\Miniconda3\\envs\\daizu\\Library\\bin;C:\\Users\\daizu\\Miniconda3\\envs\\daizu\\Scripts;C:\\Users\\daizu\\Miniconda3\\envs\\atom;C:\\Users\\daizu\\Miniconda3\\envs\\atom\\Library\\bin;C:\\Users\\daizu\\Miniconda3\\envs\\atom\\Scripts;C:\\Users\\daizu\\Miniconda3\\envs\\daizu;C:\\Users\\daizu\\Miniconda3\\envs\\daizu\\Library\\mingw-w64\\bin;C:\\Users\\daizu\\Miniconda3\\envs\\daizu\\Library\\usr\\bin;C:\\Users\\daizu\\Miniconda3\\envs\\daizu\\Library\\bin;C:\\Users\\daizu\\Miniconda3\\envs\\daizu\\Scripts;C:\\Users\\daizu\\Miniconda3\\envs\\daizu\\bin;C:\\Users\\daizu\\Miniconda3\\condabin;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v10.0\\bin;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v10.0\\libnvvp;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Users\\daizu\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\daizu\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\daizu\\AppData\\Local\\bin;C:\\Local\\texlive\\2018\\bin\\win32;C:\\Users\\daizu\\AppData\\Local\\atom\\bin&#39;</code></pre></div></div></div>
+<div class="pheasant-fenced-code"><div class="source"><pre><code class="javascript">process.env.PATH = [&#34;C:\\Users\\daizu\\Miniconda3\\envs\\atom;C:\\Users\\daizu\\Miniconda3\\envs\\atom\\Library\\bin;C:\\Users\\daizu\\Miniconda3\\envs\\atom\\Scripts;C:\\Users\\daizu\\Miniconda3\\envs\\daizu;C:\\Users\\daizu\\Miniconda3\\envs\\daizu\\Library\\bin;C:\\Users\\daizu\\Miniconda3\\envs\\daizu\\Scripts&#34;, process.env.PATH].join(&#34;;&#34;)</code></pre></div></div>
 
-<h3><span class="pheasant-header"><span class="header"><span class="number">0.5.1</span> <span class="title">Keymap</span></span></span></h3>
-<div class="pheasant-fenced-code"><div class="cached"><div class="input"><pre><code class="cson">&#39;atom-text-editor&#39;:
+<h3><span class="pheasant-header"><span class="header"><span class="number">5.1</span> <span class="title">Keymap</span></span></span></h3>
+<div class="pheasant-fenced-code"><div class="source"><pre><code class="cson">&#39;atom-text-editor&#39;:
   &#39;f8&#39;: &#39;hydrogen:clear-results&#39;
   &#39;f9&#39;: &#39;hydrogen:run-all-above&#39;
-  &#39;f10&#39;: &#39;hydrogen:run-all&#39;</code></pre>
-<p class="report"><span class="count">[7]</span>
-<span class="start">2019-03-30 13:25:12</span> (<span class="elasped">15.6ms</span>)
-<span class="right"><span class="kernel"></span><span class="count"> [2]</span>
-</span></p></div></div></div>
+  &#39;f10&#39;: &#39;hydrogen:run-all&#39;</code></pre></div></div>
 
-<h2><span class="pheasant-header"><span class="header"><span class="number">0.6</span> <span class="title">その他のパッケージ</span></span></span></h2>
+<h2><span class="pheasant-header"><span class="header"><span class="number">6</span> <span class="title">その他のパッケージ</span></span></span></h2>
 <p>Pythonとは直接関係ないですが，以下のパッケージもインストールするとよいでしょう．</p>
 <ul>
 <li>tab-numbers</li>
@@ -234,6 +206,8 @@ atom-text-editor .syntax--source.syntax--python {
 <li>minimap系</li>
 </ul>
 <p>以上で，開発環境が整いました．</p></div>
+
+
 
 </article>
 

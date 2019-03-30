@@ -2,6 +2,23 @@ body {
   margin: 0;
 }
 
+h1 {
+  font-size: 1.3em;
+}
+
+h2 {
+  font-size: 1.2em;
+  border-bottom: 1px solid #dddddd;
+}
+
+h3 {
+  font-size: 1.1em;
+}
+
+p {
+  margin: 0px 0px 10px 0px;
+}
+
 a {
   color: #000099;
   text-decoration: none;
@@ -41,6 +58,27 @@ aside div {
 
 aside div h1 {
   margin: 15px 0 5px 0;
+}
+
+article {
+  margin: 15px 20px 15px 20px;
+  padding: 10px;
+  border: 1px solid transparent;
+}
+
+article.index {
+  border: 1px solid #dddddd;
+  border-radius: 2px;
+}
+
+article header p {
+  margin: 0px 0 2px 0;
+  font-size: 80%;
+  color: gray;
+}
+
+article header h1 {
+  margin: 0px 0 5px 0;
 }
 
 /*

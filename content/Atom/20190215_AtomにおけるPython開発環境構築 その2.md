@@ -1,6 +1,6 @@
 ﻿AtomテキストエディタにPython開発環境を構築します。細かい設定を丁寧に説明し、快適な開発環境を整備することを目指します。
 
-<!-- PELICAN_END_SUMMARY -->
+
 
 それでは，Python開発に役立つパッケージを紹介していきます．各節のヘッダがパッケージ名になっているので，特に記載のない限り，その名前でパッケージを検索してインストールしてください．その後，Settings，Keymap，Stylesheetの各項目を必要に応じて設定していきます．
 
@@ -34,7 +34,7 @@ vim-mode-plusで、以下のキーマップを有効にします．
 
 ### Keymap
 
-```cson
+~~~cson
 'atom-text-editor.vim-mode-plus:not(.insert-mode)':
   'j': 'vim-mode-plus:move-down-screen'
   'k': 'vim-mode-plus:move-up-screen'
@@ -73,7 +73,7 @@ vim-mode-plusで、以下のキーマップを有効にします．
 
 '.tree-view':
   's f': 'tree-view:toggle-focus'
-```
+~~~
 
 ## MagicPython
 
@@ -87,7 +87,7 @@ Pythonコードのシンタックスハイライターに，MagicPythonを使い
 
 色の設定を追加します．[File] > [Stylesheet]を選択して，`styles.less`を開き，次の行を追加します．好みに応じて変更してください．
 
-```css
+~~~css
 /* styles.less */
 atom-text-editor .syntax--source.syntax--python {
   .syntax--keyword.syntax--control,
@@ -144,25 +144,25 @@ atom-text-editor .syntax--source.syntax--python {
     color: #D69696;
   }
 }
-```
+~~~
 
 
 ## atom-ide-ui, ide-python
 
 Minicondaの仮想環境`atom`を作成します。
 
-```bash
+~~~bash
 (base) > conda create -n atom python
 (base) > activate atom
 (atom) > pip install python-language-server[all]
 (atom) > pip install pyls-isort pyls-mypy
-```
+~~~
 
 Atom実行時のパスに、Pythonの仮想環境を追加します。AtomのFile->Init Script...でinit.coffeeを開き、
 
-```javascript
+~~~javascript
 process.env.PATH = ["C:\\Users\\daizu\\Miniconda3\\envs\\atom;C:\\Users\\daizu\\Miniconda3\\envs\\atom\\Library\\bin;C:\\Users\\daizu\\Miniconda3\\envs\\atom\\Scripts", process.env.PATH].join(";")
-```
+~~~
 
 を追加します。
 
@@ -174,27 +174,27 @@ https://github.com/facebookarchive/atom-ide-ui/blob/master/docs/keybindings.md)
 
 Jupyter clientを使って，Atom上でPythonコードの実行ができます．インタラクティブな実行が可能なので，非常に重宝します．Hydrogenを使う仮想環境下(仮に`example`とします)で，以下を実行します。
 
-```bash
+~~~bash
 (base) > conda create -n daizu python
 (base) > active daizu
 (daizu) > conda install jupyter
 (daizu) > python -m ipykernel install --user --name daizu
-```
+~~~
 
 Atom実行時のパスに、Pythonの仮想環境を追加します。AtomのFile->Init Script...でinit.coffeeを開き、以下のように変更します。
 
-```javascript
+~~~javascript
 process.env.PATH = ["C:\\Users\\daizu\\Miniconda3\\envs\\atom;C:\\Users\\daizu\\Miniconda3\\envs\\atom\\Library\\bin;C:\\Users\\daizu\\Miniconda3\\envs\\atom\\Scripts;C:\\Users\\daizu\\Miniconda3\\envs\\daizu;C:\\Users\\daizu\\Miniconda3\\envs\\daizu\\Library\\bin;C:\\Users\\daizu\\Miniconda3\\envs\\daizu\\Scripts", process.env.PATH].join(";")
-```
+~~~
 
 ### Keymap
 
-```cson
+~~~cson
 'atom-text-editor':
   'f8': 'hydrogen:clear-results'
   'f9': 'hydrogen:run-all-above'
   'f10': 'hydrogen:run-all'
-```
+~~~
 
 
 ## その他のパッケージ
