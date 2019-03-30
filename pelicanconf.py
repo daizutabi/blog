@@ -2,6 +2,7 @@ from pheasant.plugins import pelican
 
 AUTHOR = "daizutabi"
 SITENAME = "大豆旅"
+SITETITLE = "大豆旅"
 SITEURL = "https://blog.daizutabi.net"
 
 PATH = "content"
@@ -15,11 +16,6 @@ DATE_FORMATS = {"ja": "%Y年%m月%d日 (%a)"}
 
 PATH_METADATA = r"(?P<category>.+?)/.*"
 FILENAME_METADATA = r"(?P<date>\d{8}).(?P<title>.+)"
-
-PLUGINS = [pelican]
-
-THEME = "theme/daizu"
-
 ARTICLE_URL = "{date:%Y}/{date:%m}/{date:%d}/"
 ARTICLE_SAVE_AS = "{date:%Y}/{date:%m}/{date:%d}/index.html"
 PAGE_URL = "page/{slug}/"
@@ -36,3 +32,8 @@ IGNORE_FILES = [".#*", "__pycache__"]
 FAVICON = "favicon.ico"
 FAVICON_TYPE = "image/vnd.microsoft.icon"
 EXTRA_PATH_METADATA = {"extra/" + FAVICON: {"path": FAVICON}}
+
+
+PLUGINS = [pelican]
+
+THEME = "theme/daizu"

@@ -1,33 +1,38 @@
+{% if 'jinja2.ext.i18n' not in JINJA_ENVIRONMENT.extensions and 'jinja2.ext.i18n' not in JINJA_EXTENSIONS %}
+{% macro _(msg) %}
+{{ msg % kwargs }}
+{% endmacro %}
+{% endif -%}
+
 <!DOCTYPE html>
 <html lang="{{ DEFAULT_LANG }}">
+
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="HandheldFriendly" content="True" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/stylesheet/style.min.css">
+  <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/stylesheet/style.css">
+  <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/stylesheet/pheasant.css">
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="https://cdn.jsdelivr.net/gh/tonsky/FiraCode@1.206/distr/fira_code.css" rel="stylesheet">
 
   {% if FAVICON %}
-    <link rel="shortcut icon" href="{{ FAVICON }}" type="image/x-icon">
+  <link rel="shortcut icon" href="{{ FAVICON }}" type="{{ FAVICON_TYPE }}" />
   {% endif %}
-
   {% block meta %}
-    <meta name="author" content="{{ AUTHOR }}" />
+  <meta name="author" content="{{ AUTHOR }}" />
   {% endblock %}
-
   <title>{{ SITENAME }}{% block title %}{% endblock %}</title>
-
 </head>
+
 <body>
   <aside>
     <div>
       <a href="{{ SITEURL }}">
-        {% if SITELOGO %}
-        <img src="{{ SITELOGO }}" alt="{{ SITETITLE }}" title="{{ SITETITLE }}">
-        {% else %}
-        <img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/profile.png" alt="{{ SITETITLE }}" title="{{ SITETITLE }}">
-        {% endif %}
+        <img src="https://www.gravatar.com/avatar/425bf792666d158202306d5dc73367d0?s=140" />
       </a>
       <h1><a href="{{ SITEURL }}">{{ SITETITLE }}</a></h1>
 
@@ -37,11 +42,11 @@
       <nav>
         <ul class="list">
           {% if not PAGES_SORT_ATTRIBUTE -%}
-              {% set PAGES_SORT_ATTRIBUTE = 'title' %}
+          {% set PAGES_SORT_ATTRIBUTE = 'title' %}
           {%- endif %}
           {% if DISPLAY_PAGES_ON_MENU %}
           {% for page in pages|sort(attribute=PAGES_SORT_ATTRIBUTE) %}
-          <li><a href="{{ SITEURL }}/{{ page.url }}{% if not DISABLE_URL_HASH %}#{{ page.slug }}{% endif %}">{{ page.title }}</a></li>
+          <li><a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a></li>
           {% endfor %}
           {% endif %}
 
@@ -63,36 +68,11 @@
     </nav>
     {% endif %}
 
-    {% block content %}
-    {% endblock %}
+    {% block content %}{% endblock %}
 
     <footer>
-      {% if CC_LICENSE %}
-        {% include "partial/cc_license.html" %}
-      {% else %}
-        {% include "partial/copyright.html" %}
-      {% endif %}
     </footer>
   </main>
-
-  {% if GUAGES %}
-    {% include "partial/guages.html" %}
-  {% endif %}
-
-  {% if ADD_THIS_ID %}
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid={{ ADD_THIS_ID }}" async="async"></script>
-  {% endif %}
-
-  {% if PIWIK_URL and PIWIK_SITE_ID %}
-    {% include "partial/piwik.html" %}
-  {% endif %}
-
-  {% include "partial/jsonld.html" %}
-
-  {% block additional_js %}{% endblock %}
-
-  {% if GITHUB_CORNER_URL %}
-  {% include 'partial/github.html' %}
-  {% endif %}
 </body>
+
 </html>

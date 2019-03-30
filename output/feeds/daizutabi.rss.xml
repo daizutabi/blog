@@ -1,38 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>大豆旅 - daizutabi</title><link>https://blog.daizutabi.net/</link><description></description><lastBuildDate>Fri, 29 Mar 2019 00:00:00 +0900</lastBuildDate><item><title>Fluent Python 例18-2 スピナー</title><link>https://blog.daizutabi.net%5C2019/03/29/</link><description>&lt;link href="https://cdn.pydata.org/bokeh/release/bokeh-1.0.4.min.css" rel="stylesheet"/&gt;
-&lt;link href="https://cdn.pydata.org/bokeh/release/bokeh-widgets-1.0.4.min.css" rel="stylesheet"/&gt;
-&lt;link href="https://cdn.pydata.org/bokeh/release/bokeh-tables-1.0.4.min.css" rel="stylesheet"/&gt;
-&lt;style&gt;div.bk-hbox {
-    display: flex;
-    justify-content: center;
-}
-
-div.bk-hbox div.bk-plot {
-    padding: 8px;
-}
-
-div.bk-hbox div.bk-data-table {
-    padding: 20px;
-}
-
-div.hololayout {
-  display: flex;
-  align-items: center;
-  margin: 0;
-}
-
-div.holoframe {
-  width: 75%;
-}
-
-div.holowell {
-  display: flex;
-  align-items: center;
-}
-
-form.holoform {
-  background-color: #fafafa;
-  border-radius: 5px;
-  overflow: hidden;
-  padding-left: 0.8em;
-  padding-right: 0.8em …&lt;/style&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">daizutabi</dc:creator><pubDate>Fri, 29 Mar 2019 00:00:00 +0900</pubDate><guid isPermaLink="false">tag:blog.daizutabi.net\2019,2019-03-29:/03/29/</guid></item></channel></rss>
+<rss version="2.0"><channel><title>大豆旅 - daizutabi</title><link>https://blog.daizutabi.net/</link><description></description><lastBuildDate>Fri, 29 Mar 2019 00:00:00 +0900</lastBuildDate><item><title>Fluent Python 例18-2 スピナー</title><link>https://blog.daizutabi.net%5C2019/03/29/</link><description>
+&lt;h1&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;1&lt;/span&gt; &lt;span class="title"&gt;test&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h1&gt;
+&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;1.1&lt;/span&gt; &lt;span class="title"&gt;def&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="python"&gt;1&lt;/code&gt;&lt;/pre&gt;
+&lt;p class="report"&gt;&lt;span class="count"&gt;[1]&lt;/span&gt;
+&lt;span class="start"&gt;2019-03-30 13:17:49&lt;/span&gt; (&lt;span class="elasped"&gt;11.1ms&lt;/span&gt;)
+&lt;span class="right"&gt;&lt;span class="kernel"&gt;python3&lt;/span&gt;&lt;span class="count"&gt; [2]&lt;/span&gt;
+&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class="output"&gt;&lt;pre&gt;&lt;code class="text"&gt;1&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">daizutabi</dc:creator><pubDate>Fri, 29 Mar 2019 00:00:00 +0900</pubDate><guid isPermaLink="false">tag:blog.daizutabi.net\2019,2019-03-29:/03/29/</guid></item></channel></rss>
