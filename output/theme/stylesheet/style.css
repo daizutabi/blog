@@ -20,12 +20,12 @@ p {
 }
 
 a {
-  color: #000099;
+  color: #0044DD;
   text-decoration: none;
 }
 
 a:hover {
-  color: #0033FF;
+  text-decoration: underline;
 }
 
 img {

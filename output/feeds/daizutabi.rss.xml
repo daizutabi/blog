@@ -1,8 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>大豆旅 - daizutabi</title><link>https://blog.daizutabi.net/</link><description></description><lastBuildDate>Fri, 29 Mar 2019 00:00:00 +0900</lastBuildDate><item><title>Fluent Python 例18-2 スピナー</title><link>https://blog.daizutabi.net/2019/03/29/</link><description>
-&lt;h1&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;1&lt;/span&gt; &lt;span class="title"&gt;test&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h1&gt;
-&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;1.1&lt;/span&gt; &lt;span class="title"&gt;def&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-&lt;div class="pheasant-fenced-code"&gt;&lt;div class="source"&gt;&lt;pre&gt;&lt;code class="python"&gt;1&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">daizutabi</dc:creator><pubDate>Fri, 29 Mar 2019 00:00:00 +0900</pubDate><guid isPermaLink="false">tag:blog.daizutabi.net,2019-03-29:/2019/03/29/</guid></item><item><title>AtomにおけるPython開発環境構築 その2</title><link>https://blog.daizutabi.net/2019/02/15/</link><description>
+<rss version="2.0"><channel><title>大豆旅 - daizutabi</title><link>https://blog.daizutabi.net/</link><description></description><lastBuildDate>Tue, 02 Apr 2019 00:00:00 +0900</lastBuildDate><item><title>Fluent Python 第18章</title><link>https://blog.daizutabi.net/2019/04/02/</link><description>
+&lt;p&gt;Fluent Python 18章 asyncioによる並行処理を Python 3.7で実装します。 &lt;a href="https://github.com/fluentpython/example-code"&gt;公式のHP&lt;/a&gt;にもPython 3.7用のアップデートがあります。&lt;/p&gt;
+&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;1&lt;/span&gt; &lt;span class="title"&gt;スレッドとコルーチン&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;p&gt;以下の例では、Jupyter clientで実行できるように、&lt;a href="https://github.com/erdewit/nest_asyncio"&gt;nest_asyncio&lt;/a&gt;パッケージを使っています。&lt;/p&gt;
+&lt;div class="pheasant-header"&gt;&lt;div class="other"&gt;&lt;p class="caption"&gt;&lt;span class="prefix"&gt;例&lt;/span&gt; &lt;span class="number"&gt;18.2&lt;/span&gt;
+&lt;/p&gt;
+&lt;div class="content"&gt;
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="python"&gt;import asyncio
+import itertools
+import sys
+
+import nest_asyncio
+
+nest_asyncio.apply()
+
+
+async def spin():
+    for char in itertools.cycle(&amp;#34;|/-\\&amp;#34;):
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        try:
+            await asyncio.sleep …&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">daizutabi</dc:creator><pubDate>Tue, 02 Apr 2019 00:00:00 +0900</pubDate><guid isPermaLink="false">tag:blog.daizutabi.net,2019-04-02:/2019/04/02/</guid></item><item><title>Fluent Python 第17章</title><link>https://blog.daizutabi.net/2019/04/01/</link><description>
+&lt;p&gt;「Fluent Python 17章 futuresを使った並行処理を Python 3.7で実装します。 &lt;a href="https://github.com/fluentpython/example-code"&gt;公式のHP&lt;/a&gt;にもPython 3.7用のアップデートがあります。&lt;/p&gt;
+&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;1&lt;/span&gt; &lt;span class="title"&gt;逐次型ダウンロードスクリプト&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;div class="pheasant-header"&gt;&lt;div class="other"&gt;&lt;p class="caption"&gt;&lt;span class="prefix"&gt;例&lt;/span&gt; &lt;span class="number"&gt;17.1&lt;/span&gt;
+&lt;span class="title"&gt;共通項目&lt;/span&gt;&lt;/p&gt;
+&lt;div class="content"&gt;
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="python"&gt;import asyncio
+import sys
+import time
+from concurrent import futures
+
+import aiohttp
+import nest_asyncio
+import requests
+
+nest_asyncio.apply()
+
+POP20_CC = (&amp;#34;CN IN US ID BR PK NG BD RU JP MX PH VN ET …&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">daizutabi</dc:creator><pubDate>Mon, 01 Apr 2019 00:00:00 +0900</pubDate><guid isPermaLink="false">tag:blog.daizutabi.net,2019-04-01:/2019/04/01/</guid></item><item><title>AtomにおけるPython開発環境構築 その2</title><link>https://blog.daizutabi.net/2019/02/15/</link><description>
 &lt;p&gt;AtomテキストエディタにPython開発環境を構築します。細かい設定を丁寧に説明し、快適な開発環境を整備することを目指します。&lt;/p&gt;
 &lt;p&gt;それでは，Python開発に役立つパッケージを紹介していきます．各節のヘッダがパッケージ名になっているので，特に記載のない限り，その名前でパッケージを検索してインストールしてください．その後，Settings，Keymap，Stylesheetの各項目を必要に応じて設定していきます．&lt;/p&gt;
 &lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;1&lt;/span&gt; &lt;span class="title"&gt;platformio-ide-terminal&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;

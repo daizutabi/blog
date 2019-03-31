@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="daizutabi" />
+
+  <link rel="stylesheet" href="https://blog.daizutabi.net/theme/stylesheet/style.css" />
+  <link rel="stylesheet" href="https://blog.daizutabi.net/theme/stylesheet/pheasant.css" />
+  <link rel='stylesheet' href="//fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  <link rel='stylesheet' href="//cdn.jsdelivr.net/gh/tonsky/FiraCode@1.206/distr/fira_code.css" />
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon" />
+  <title>大豆旅 &ndash; Fluent Python 第17章</title>
+</head>
+
+<body>
+  <aside>
+    <div>
+      <a href="https://blog.daizutabi.net">
+        <img src="https://www.gravatar.com/avatar/425bf792666d158202306d5dc73367d0?s=140" />
+      </a>
+      <h1><a href="https://blog.daizutabi.net">大豆旅</a></h1>
+
+
+    </div>
+  </aside>
+  <main>
+
+<article class="single">
+  <header class="article">
+    <p><span class="date">2019年04月01日 (月)</span>
+    <span class="info"><i class="fa fa-folder"></i> <a href="https://blog.daizutabi.net/category/Python/">Python</a></span></p>
+    <h1>Fluent Python 第17章</h1>
+  </header>
+  <div class="content">
+<p>「Fluent Python 17章 futuresを使った並行処理を Python 3.7で実装します。 <a href="https://github.com/fluentpython/example-code">公式のHP</a>にもPython 3.7用のアップデートがあります。</p>
+<h2><span class="pheasant-header"><span class="header"><span class="number">1</span> <span class="title">逐次型ダウンロードスクリプト</span></span></span></h2>
+<div class="pheasant-header"><div class="other"><p class="caption"><span class="prefix">例</span> <span class="number">17.1</span>
+<span class="title">共通項目</span></p>
+<div class="content">
+<div class="pheasant-fenced-code"><div class="input"><pre><code class="python">import asyncio
+import sys
+import time
+from concurrent import futures
+
+import aiohttp
+import nest_asyncio
+import requests
+
+nest_asyncio.apply()
+
+POP20_CC = (&#34;CN IN US ID BR PK NG BD RU JP MX PH VN ET EG DE IR TR CD FR&#34;).split()
+
+BASE_URL = &#34;http://flupy.org/data/flags&#34;
+
+
+def get_flag(cc):
+    url = &#34;{}/{cc}/{cc}.gif&#34;.format(BASE_URL, cc=cc.lower())
+    resp = requests.get(url)
+    return resp.content
+
+
+def show(text):
+    sys.stdout.write(text + &#34; &#34;)
+    sys.stdout.flush()
+
+
+def main(func):
+    t0 = time.time()
+    count = func(POP20_CC)
+    elapsed = time.time() - t0
+    msg = &#34;\n{} flags downloaded in {:.2f}s&#34;
+    print(msg.format(count, elapsed))</code></pre>
+<p class="report"><span class="count">[1]</span>
+<span class="start">2019-04-01 01:39:19</span> (<span class="elasped">317ms</span>)
+<span class="right"><span class="option"> (run) </span><span class="kernel">python3</span><span class="count"> [2]</span>
+</span></p></div></div>
+
+</div></div></div>
+
+<div class="pheasant-header"><div class="other"><p class="caption"><span class="prefix">例</span> <span class="number">17.2</span>
+<span class="title">flags.py</span></p>
+<div class="content">
+<div class="pheasant-fenced-code"><div class="input"><pre><code class="python">def download_many(cc_list):
+    for cc in sorted(cc_list):
+        get_flag(cc)
+        show(cc)
+
+    return len(cc_list)
+
+
+if __name__ == &#34;__main__&#34;:
+    main(download_many)</code></pre>
+<p class="report"><span class="count">[2]</span>
+<span class="start">2019-04-01 01:39:20</span> (<span class="elasped">553ms</span>)
+<span class="right"><span class="kernel">python3</span><span class="count"> [3]</span>
+</span></p></div><div class="stdout"><pre><code class="text">BD BR CD CN DE EG ET FR ID IN IR JP MX NG PH PK RU TR US VN 
+20 flags downloaded in 0.55s</code></pre></div></div>
+
+</div></div></div>
+
+<h2><span class="pheasant-header"><span class="header"><span class="number">2</span> <span class="title">concurrent.futuresを使ったダウンロードスクリプト</span></span></span></h2>
+<div class="pheasant-header"><div class="other"><p class="caption"><span class="prefix">例</span> <span class="number">17.3</span>
+<span class="title">flags_threadpool.py</span></p>
+<div class="content">
+<div class="pheasant-fenced-code"><div class="input"><pre><code class="python">MAX_WORKERS = 20
+
+def download_one(cc):
+    get_flag(cc)
+    show(cc)
+    return cc
+
+
+def download_many_threadpool(cc_list):
+    workers = min(MAX_WORKERS, len(cc_list))
+    with futures.ThreadPoolExecutor(workers) as executor:
+        res = executor.map(download_one, sorted(cc_list))
+
+    return len(list(res))
+
+
+if __name__ == &#34;__main__&#34;:
+    main(download_many_threadpool)</code></pre>
+<p class="report"><span class="count">[3]</span>
+<span class="start">2019-04-01 01:39:20</span> (<span class="elasped">164ms</span>)
+<span class="right"><span class="kernel">python3</span><span class="count"> [4]</span>
+</span></p></div><div class="stdout"><pre><code class="text">BR BD FR ET IR CN DE EG CD ID IN MX NG JP RU VN PK US TR PH 
+20 flags downloaded in 0.16s</code></pre></div></div>
+
+</div></div></div>
+
+<div class="pheasant-header"><div class="other"><p class="caption"><span class="prefix">例</span> <span class="number">17.4</span>
+<span class="title">flags_threadpool_ac.py</span></p>
+<div class="content">
+<div class="pheasant-fenced-code"><div class="input"><pre><code class="python">def download_many_threadpool_ac(cc_list):
+    cc_list = cc_list[:5]
+    with futures.ThreadPoolExecutor(max_workers=3) as executor:
+        to_do = []
+        for cc in sorted(cc_list):
+            future = executor.submit(download_one, cc)
+            to_do.append(future)
+            msg = &#34;Scheduled for {}: {}&#34;
+            print(msg.format(cc, future))
+
+        results = []
+        for future in futures.as_completed(to_do):
+            res = future.result()
+            msg = &#34;{} result: {!r}&#34;
+            print(msg.format(future, res))
+            results.append(res)
+
+    return len(results)
+
+
+if __name__ == &#34;__main__&#34;:
+    main(download_many_threadpool_ac)</code></pre>
+<p class="report"><span class="count">[4]</span>
+<span class="start">2019-04-01 01:39:20</span> (<span class="elasped">65.1ms</span>)
+<span class="right"><span class="kernel">python3</span><span class="count"> [5]</span>
+</span></p></div><div class="stdout"><pre><code class="text">Scheduled for BR: &lt;Future at 0x22eb8300fd0 state=running&gt;
+Scheduled for CN: &lt;Future at 0x22eb61082b0 state=running&gt;
+Scheduled for ID: &lt;Future at 0x22eb8d0e630 state=running&gt;
+Scheduled for IN: &lt;Future at 0x22eb8d0e7b8 state=pending&gt;
+Scheduled for US: &lt;Future at 0x22eb8d0e748 state=pending&gt;
+BR ID CN &lt;Future at 0x22eb8300fd0 state=finished returned str&gt; result: &#39;BR&#39;
+&lt;Future at 0x22eb61082b0 state=finished returned str&gt; result: &#39;CN&#39;
+&lt;Future at 0x22eb8d0e630 state=finished returned str&gt; result: &#39;ID&#39;
+IN &lt;Future at 0x22eb8d0e7b8 state=finished returned str&gt; result: &#39;IN&#39;
+US &lt;Future at 0x22eb8d0e748 state=finished returned str&gt; result: &#39;US&#39;
+
+5 flags downloaded in 0.06s</code></pre></div></div>
+
+</div></div></div>
+
+<h2><span class="pheasant-header"><span class="header"><span class="number">3</span> <span class="title">asyncio/aiohttpを使ったダウンロードスクリプト</span></span></span></h2>
+<div class="pheasant-header"><div class="other"><p class="caption"><span class="prefix">例</span> <span class="number">17.5</span>
+<span class="title">flags_asyncio.py</span></p>
+<div class="content">
+<div class="pheasant-fenced-code"><div class="input"><pre><code class="python">async def get_flag_async(session, cc):
+    url = &#34;{}/{cc}/{cc}.gif&#34;.format(BASE_URL, cc=cc.lower())
+    async with session.get(url) as resp:
+        return await resp.read()
+
+async def download_one_async(session, cc):
+    await get_flag_async(session, cc)
+    show(cc)
+    return cc
+
+
+async def download_many_async(cc_list):
+    async with aiohttp.ClientSession() as session:
+        aws = [
+            asyncio.create_task(download_one_async(session, cc))
+            for cc in sorted(cc_list)
+        ]
+        res = await asyncio.gather(*aws)
+
+    return len(res)
+
+
+if __name__ == &#34;__main__&#34;:
+    main(lambda x: asyncio.run(download_many_async(x)))</code></pre>
+<p class="report"><span class="count">[5]</span>
+<span class="start">2019-04-01 01:39:20</span> (<span class="elasped">80.1ms</span>)
+<span class="right"><span class="kernel">python3</span><span class="count"> [6]</span>
+</span></p></div><div class="stdout"><pre><code class="text">BD ID DE IN BR MX TR RU NG JP FR CN CD PH VN IR PK ET US EG 
+20 flags downloaded in 0.06s</code></pre></div></div>
+
+</div></div></div></div>
+
+
+
+</article>
+
+    <footer>
+    </footer>
+  </main>
+</body>
+
+</html>

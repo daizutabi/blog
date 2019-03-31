@@ -1,11 +1,270 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>大豆旅</title><link href="https://blog.daizutabi.net/" rel="alternate"></link><link href="https://blog.daizutabi.net/feeds/all.atom.xml" rel="self"></link><id>https://blog.daizutabi.net/</id><updated>2019-03-29T00:00:00+09:00</updated><entry><title>Fluent Python 例18-2 スピナー</title><link href="https://blog.daizutabi.net/2019/03/29/" rel="alternate"></link><published>2019-03-29T00:00:00+09:00</published><updated>2019-03-29T00:00:00+09:00</updated><author><name>daizutabi</name></author><id>tag:blog.daizutabi.net,2019-03-29:/2019/03/29/</id><summary type="html">
-&lt;h1&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;1&lt;/span&gt; &lt;span class="title"&gt;test&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h1&gt;
-&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;1.1&lt;/span&gt; &lt;span class="title"&gt;def&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-&lt;div class="pheasant-fenced-code"&gt;&lt;div class="source"&gt;&lt;pre&gt;&lt;code class="python"&gt;1&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">
-&lt;h1&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;1&lt;/span&gt; &lt;span class="title"&gt;test&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h1&gt;
-&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;1.1&lt;/span&gt; &lt;span class="title"&gt;def&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-&lt;div class="pheasant-fenced-code"&gt;&lt;div class="source"&gt;&lt;pre&gt;&lt;code class="python"&gt;1&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content></entry><entry><title>AtomにおけるPython開発環境構築 その2</title><link href="https://blog.daizutabi.net/2019/02/15/" rel="alternate"></link><published>2019-02-15T00:00:00+09:00</published><updated>2019-02-15T00:00:00+09:00</updated><author><name>daizutabi</name></author><id>tag:blog.daizutabi.net,2019-02-15:/2019/02/15/</id><summary type="html">
+<feed xmlns="http://www.w3.org/2005/Atom"><title>大豆旅</title><link href="https://blog.daizutabi.net/" rel="alternate"></link><link href="https://blog.daizutabi.net/feeds/all.atom.xml" rel="self"></link><id>https://blog.daizutabi.net/</id><updated>2019-04-02T00:00:00+09:00</updated><entry><title>Fluent Python 第18章</title><link href="https://blog.daizutabi.net/2019/04/02/" rel="alternate"></link><published>2019-04-02T00:00:00+09:00</published><updated>2019-04-02T00:00:00+09:00</updated><author><name>daizutabi</name></author><id>tag:blog.daizutabi.net,2019-04-02:/2019/04/02/</id><summary type="html">
+&lt;p&gt;Fluent Python 18章 asyncioによる並行処理を Python 3.7で実装します。 &lt;a href="https://github.com/fluentpython/example-code"&gt;公式のHP&lt;/a&gt;にもPython 3.7用のアップデートがあります。&lt;/p&gt;
+&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;1&lt;/span&gt; &lt;span class="title"&gt;スレッドとコルーチン&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;p&gt;以下の例では、Jupyter clientで実行できるように、&lt;a href="https://github.com/erdewit/nest_asyncio"&gt;nest_asyncio&lt;/a&gt;パッケージを使っています。&lt;/p&gt;
+&lt;div class="pheasant-header"&gt;&lt;div class="other"&gt;&lt;p class="caption"&gt;&lt;span class="prefix"&gt;例&lt;/span&gt; &lt;span class="number"&gt;18.2&lt;/span&gt;
+&lt;/p&gt;
+&lt;div class="content"&gt;
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="python"&gt;import asyncio
+import itertools
+import sys
+
+import nest_asyncio
+
+nest_asyncio.apply()
+
+
+async def spin():
+    for char in itertools.cycle(&amp;#34;|/-\\&amp;#34;):
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        try:
+            await asyncio.sleep …&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">
+&lt;p&gt;Fluent Python 18章 asyncioによる並行処理を Python 3.7で実装します。 &lt;a href="https://github.com/fluentpython/example-code"&gt;公式のHP&lt;/a&gt;にもPython 3.7用のアップデートがあります。&lt;/p&gt;
+&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;1&lt;/span&gt; &lt;span class="title"&gt;スレッドとコルーチン&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;p&gt;以下の例では、Jupyter clientで実行できるように、&lt;a href="https://github.com/erdewit/nest_asyncio"&gt;nest_asyncio&lt;/a&gt;パッケージを使っています。&lt;/p&gt;
+&lt;div class="pheasant-header"&gt;&lt;div class="other"&gt;&lt;p class="caption"&gt;&lt;span class="prefix"&gt;例&lt;/span&gt; &lt;span class="number"&gt;18.2&lt;/span&gt;
+&lt;/p&gt;
+&lt;div class="content"&gt;
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="python"&gt;import asyncio
+import itertools
+import sys
+
+import nest_asyncio
+
+nest_asyncio.apply()
+
+
+async def spin():
+    for char in itertools.cycle(&amp;#34;|/-\\&amp;#34;):
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        try:
+            await asyncio.sleep(0.5)
+        except asyncio.CancelledError:
+            break
+
+
+async def slow_function():
+    await asyncio.sleep(3)
+    return 42
+
+
+async def supervisor():
+    spinner = asyncio.create_task(spin())
+    print(&amp;#34;spinner object:&amp;#34;, spinner)
+    result = await slow_function()
+    spinner.cancel()
+    return result
+
+
+def main():
+    coro = supervisor()
+    result = asyncio.run(coro)
+    print(&amp;#34;Answer:&amp;#34;, result)
+
+
+if __name__ == &amp;#34;__main__&amp;#34;:
+    main()&lt;/code&gt;&lt;/pre&gt;
+&lt;p class="report"&gt;&lt;span class="count"&gt;[1]&lt;/span&gt;
+&lt;span class="start"&gt;2019-04-01 01:39:21&lt;/span&gt; (&lt;span class="elasped"&gt;3.00s&lt;/span&gt;)
+&lt;span class="right"&gt;&lt;span class="kernel"&gt;python3&lt;/span&gt;&lt;span class="count"&gt; [7]&lt;/span&gt;
+&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class="stdout"&gt;&lt;pre&gt;&lt;code class="text"&gt;spinner object: &amp;lt;Task pending coro=&amp;lt;spin() running at &amp;lt;ipython-input-7-e086832b3cff&amp;gt;:10&amp;gt;&amp;gt;
+|/-\|/Answer: 42&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</content></entry><entry><title>Fluent Python 第17章</title><link href="https://blog.daizutabi.net/2019/04/01/" rel="alternate"></link><published>2019-04-01T00:00:00+09:00</published><updated>2019-04-01T00:00:00+09:00</updated><author><name>daizutabi</name></author><id>tag:blog.daizutabi.net,2019-04-01:/2019/04/01/</id><summary type="html">
+&lt;p&gt;「Fluent Python 17章 futuresを使った並行処理を Python 3.7で実装します。 &lt;a href="https://github.com/fluentpython/example-code"&gt;公式のHP&lt;/a&gt;にもPython 3.7用のアップデートがあります。&lt;/p&gt;
+&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;1&lt;/span&gt; &lt;span class="title"&gt;逐次型ダウンロードスクリプト&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;div class="pheasant-header"&gt;&lt;div class="other"&gt;&lt;p class="caption"&gt;&lt;span class="prefix"&gt;例&lt;/span&gt; &lt;span class="number"&gt;17.1&lt;/span&gt;
+&lt;span class="title"&gt;共通項目&lt;/span&gt;&lt;/p&gt;
+&lt;div class="content"&gt;
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="python"&gt;import asyncio
+import sys
+import time
+from concurrent import futures
+
+import aiohttp
+import nest_asyncio
+import requests
+
+nest_asyncio.apply()
+
+POP20_CC = (&amp;#34;CN IN US ID BR PK NG BD RU JP MX PH VN ET …&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">
+&lt;p&gt;「Fluent Python 17章 futuresを使った並行処理を Python 3.7で実装します。 &lt;a href="https://github.com/fluentpython/example-code"&gt;公式のHP&lt;/a&gt;にもPython 3.7用のアップデートがあります。&lt;/p&gt;
+&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;1&lt;/span&gt; &lt;span class="title"&gt;逐次型ダウンロードスクリプト&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;div class="pheasant-header"&gt;&lt;div class="other"&gt;&lt;p class="caption"&gt;&lt;span class="prefix"&gt;例&lt;/span&gt; &lt;span class="number"&gt;17.1&lt;/span&gt;
+&lt;span class="title"&gt;共通項目&lt;/span&gt;&lt;/p&gt;
+&lt;div class="content"&gt;
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="python"&gt;import asyncio
+import sys
+import time
+from concurrent import futures
+
+import aiohttp
+import nest_asyncio
+import requests
+
+nest_asyncio.apply()
+
+POP20_CC = (&amp;#34;CN IN US ID BR PK NG BD RU JP MX PH VN ET EG DE IR TR CD FR&amp;#34;).split()
+
+BASE_URL = &amp;#34;http://flupy.org/data/flags&amp;#34;
+
+
+def get_flag(cc):
+    url = &amp;#34;{}/{cc}/{cc}.gif&amp;#34;.format(BASE_URL, cc=cc.lower())
+    resp = requests.get(url)
+    return resp.content
+
+
+def show(text):
+    sys.stdout.write(text + &amp;#34; &amp;#34;)
+    sys.stdout.flush()
+
+
+def main(func):
+    t0 = time.time()
+    count = func(POP20_CC)
+    elapsed = time.time() - t0
+    msg = &amp;#34;\n{} flags downloaded in {:.2f}s&amp;#34;
+    print(msg.format(count, elapsed))&lt;/code&gt;&lt;/pre&gt;
+&lt;p class="report"&gt;&lt;span class="count"&gt;[1]&lt;/span&gt;
+&lt;span class="start"&gt;2019-04-01 01:39:19&lt;/span&gt; (&lt;span class="elasped"&gt;317ms&lt;/span&gt;)
+&lt;span class="right"&gt;&lt;span class="option"&gt; (run) &lt;/span&gt;&lt;span class="kernel"&gt;python3&lt;/span&gt;&lt;span class="count"&gt; [2]&lt;/span&gt;
+&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class="pheasant-header"&gt;&lt;div class="other"&gt;&lt;p class="caption"&gt;&lt;span class="prefix"&gt;例&lt;/span&gt; &lt;span class="number"&gt;17.2&lt;/span&gt;
+&lt;span class="title"&gt;flags.py&lt;/span&gt;&lt;/p&gt;
+&lt;div class="content"&gt;
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="python"&gt;def download_many(cc_list):
+    for cc in sorted(cc_list):
+        get_flag(cc)
+        show(cc)
+
+    return len(cc_list)
+
+
+if __name__ == &amp;#34;__main__&amp;#34;:
+    main(download_many)&lt;/code&gt;&lt;/pre&gt;
+&lt;p class="report"&gt;&lt;span class="count"&gt;[2]&lt;/span&gt;
+&lt;span class="start"&gt;2019-04-01 01:39:20&lt;/span&gt; (&lt;span class="elasped"&gt;553ms&lt;/span&gt;)
+&lt;span class="right"&gt;&lt;span class="kernel"&gt;python3&lt;/span&gt;&lt;span class="count"&gt; [3]&lt;/span&gt;
+&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class="stdout"&gt;&lt;pre&gt;&lt;code class="text"&gt;BD BR CD CN DE EG ET FR ID IN IR JP MX NG PH PK RU TR US VN 
+20 flags downloaded in 0.55s&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;2&lt;/span&gt; &lt;span class="title"&gt;concurrent.futuresを使ったダウンロードスクリプト&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;div class="pheasant-header"&gt;&lt;div class="other"&gt;&lt;p class="caption"&gt;&lt;span class="prefix"&gt;例&lt;/span&gt; &lt;span class="number"&gt;17.3&lt;/span&gt;
+&lt;span class="title"&gt;flags_threadpool.py&lt;/span&gt;&lt;/p&gt;
+&lt;div class="content"&gt;
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="python"&gt;MAX_WORKERS = 20
+
+def download_one(cc):
+    get_flag(cc)
+    show(cc)
+    return cc
+
+
+def download_many_threadpool(cc_list):
+    workers = min(MAX_WORKERS, len(cc_list))
+    with futures.ThreadPoolExecutor(workers) as executor:
+        res = executor.map(download_one, sorted(cc_list))
+
+    return len(list(res))
+
+
+if __name__ == &amp;#34;__main__&amp;#34;:
+    main(download_many_threadpool)&lt;/code&gt;&lt;/pre&gt;
+&lt;p class="report"&gt;&lt;span class="count"&gt;[3]&lt;/span&gt;
+&lt;span class="start"&gt;2019-04-01 01:39:20&lt;/span&gt; (&lt;span class="elasped"&gt;164ms&lt;/span&gt;)
+&lt;span class="right"&gt;&lt;span class="kernel"&gt;python3&lt;/span&gt;&lt;span class="count"&gt; [4]&lt;/span&gt;
+&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class="stdout"&gt;&lt;pre&gt;&lt;code class="text"&gt;BR BD FR ET IR CN DE EG CD ID IN MX NG JP RU VN PK US TR PH 
+20 flags downloaded in 0.16s&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class="pheasant-header"&gt;&lt;div class="other"&gt;&lt;p class="caption"&gt;&lt;span class="prefix"&gt;例&lt;/span&gt; &lt;span class="number"&gt;17.4&lt;/span&gt;
+&lt;span class="title"&gt;flags_threadpool_ac.py&lt;/span&gt;&lt;/p&gt;
+&lt;div class="content"&gt;
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="python"&gt;def download_many_threadpool_ac(cc_list):
+    cc_list = cc_list[:5]
+    with futures.ThreadPoolExecutor(max_workers=3) as executor:
+        to_do = []
+        for cc in sorted(cc_list):
+            future = executor.submit(download_one, cc)
+            to_do.append(future)
+            msg = &amp;#34;Scheduled for {}: {}&amp;#34;
+            print(msg.format(cc, future))
+
+        results = []
+        for future in futures.as_completed(to_do):
+            res = future.result()
+            msg = &amp;#34;{} result: {!r}&amp;#34;
+            print(msg.format(future, res))
+            results.append(res)
+
+    return len(results)
+
+
+if __name__ == &amp;#34;__main__&amp;#34;:
+    main(download_many_threadpool_ac)&lt;/code&gt;&lt;/pre&gt;
+&lt;p class="report"&gt;&lt;span class="count"&gt;[4]&lt;/span&gt;
+&lt;span class="start"&gt;2019-04-01 01:39:20&lt;/span&gt; (&lt;span class="elasped"&gt;65.1ms&lt;/span&gt;)
+&lt;span class="right"&gt;&lt;span class="kernel"&gt;python3&lt;/span&gt;&lt;span class="count"&gt; [5]&lt;/span&gt;
+&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class="stdout"&gt;&lt;pre&gt;&lt;code class="text"&gt;Scheduled for BR: &amp;lt;Future at 0x22eb8300fd0 state=running&amp;gt;
+Scheduled for CN: &amp;lt;Future at 0x22eb61082b0 state=running&amp;gt;
+Scheduled for ID: &amp;lt;Future at 0x22eb8d0e630 state=running&amp;gt;
+Scheduled for IN: &amp;lt;Future at 0x22eb8d0e7b8 state=pending&amp;gt;
+Scheduled for US: &amp;lt;Future at 0x22eb8d0e748 state=pending&amp;gt;
+BR ID CN &amp;lt;Future at 0x22eb8300fd0 state=finished returned str&amp;gt; result: &amp;#39;BR&amp;#39;
+&amp;lt;Future at 0x22eb61082b0 state=finished returned str&amp;gt; result: &amp;#39;CN&amp;#39;
+&amp;lt;Future at 0x22eb8d0e630 state=finished returned str&amp;gt; result: &amp;#39;ID&amp;#39;
+IN &amp;lt;Future at 0x22eb8d0e7b8 state=finished returned str&amp;gt; result: &amp;#39;IN&amp;#39;
+US &amp;lt;Future at 0x22eb8d0e748 state=finished returned str&amp;gt; result: &amp;#39;US&amp;#39;
+
+5 flags downloaded in 0.06s&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;3&lt;/span&gt; &lt;span class="title"&gt;asyncio/aiohttpを使ったダウンロードスクリプト&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;div class="pheasant-header"&gt;&lt;div class="other"&gt;&lt;p class="caption"&gt;&lt;span class="prefix"&gt;例&lt;/span&gt; &lt;span class="number"&gt;17.5&lt;/span&gt;
+&lt;span class="title"&gt;flags_asyncio.py&lt;/span&gt;&lt;/p&gt;
+&lt;div class="content"&gt;
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="python"&gt;async def get_flag_async(session, cc):
+    url = &amp;#34;{}/{cc}/{cc}.gif&amp;#34;.format(BASE_URL, cc=cc.lower())
+    async with session.get(url) as resp:
+        return await resp.read()
+
+async def download_one_async(session, cc):
+    await get_flag_async(session, cc)
+    show(cc)
+    return cc
+
+
+async def download_many_async(cc_list):
+    async with aiohttp.ClientSession() as session:
+        aws = [
+            asyncio.create_task(download_one_async(session, cc))
+            for cc in sorted(cc_list)
+        ]
+        res = await asyncio.gather(*aws)
+
+    return len(res)
+
+
+if __name__ == &amp;#34;__main__&amp;#34;:
+    main(lambda x: asyncio.run(download_many_async(x)))&lt;/code&gt;&lt;/pre&gt;
+&lt;p class="report"&gt;&lt;span class="count"&gt;[5]&lt;/span&gt;
+&lt;span class="start"&gt;2019-04-01 01:39:20&lt;/span&gt; (&lt;span class="elasped"&gt;80.1ms&lt;/span&gt;)
+&lt;span class="right"&gt;&lt;span class="kernel"&gt;python3&lt;/span&gt;&lt;span class="count"&gt; [6]&lt;/span&gt;
+&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class="stdout"&gt;&lt;pre&gt;&lt;code class="text"&gt;BD ID DE IN BR MX TR RU NG JP FR CN CD PH VN IR PK ET US EG 
+20 flags downloaded in 0.06s&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</content></entry><entry><title>AtomにおけるPython開発環境構築 その2</title><link href="https://blog.daizutabi.net/2019/02/15/" rel="alternate"></link><published>2019-02-15T00:00:00+09:00</published><updated>2019-02-15T00:00:00+09:00</updated><author><name>daizutabi</name></author><id>tag:blog.daizutabi.net,2019-02-15:/2019/02/15/</id><summary type="html">
 &lt;p&gt;AtomテキストエディタにPython開発環境を構築します。細かい設定を丁寧に説明し、快適な開発環境を整備することを目指します。&lt;/p&gt;
 &lt;p&gt;それでは，Python開発に役立つパッケージを紹介していきます．各節のヘッダがパッケージ名になっているので，特に記載のない限り，その名前でパッケージを検索してインストールしてください．その後，Settings，Keymap，Stylesheetの各項目を必要に応じて設定していきます．&lt;/p&gt;
 &lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;1&lt;/span&gt; &lt;span class="title"&gt;platformio-ide-terminal&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
