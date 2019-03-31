@@ -42,8 +42,8 @@
     <h1>Fluent Python 第17章</h1>
   </header>
   <div class="content">
-<p>「Fluent Python 17章 futuresを使った並行処理」をPython 3.7で実装します。 <a href="https://github.com/fluentpython/example-code">公式のHP</a>にもPython 3.7用のアップデートがあります。</p>
-<h2><span class="pheasant-header"><span class="header"><span class="number">1</span> <span class="title">逐次型ダウンロードスクリプト</span></span></span></h2>
+<p>「Fluent Python 17章 futuresを使った並行処理」の前半部分をPython 3.7で実装します。 <a href="https://github.com/fluentpython/example-code">公式のHP</a>にもPython 3.7用のアップデートがあります。</p>
+<h2><span class="pheasant-header"><span class="header"><span class="number">1</span> <span class="title">共通項目</span></span></span></h2>
 <div class="pheasant-header"><div class="other"><p class="caption"><span class="prefix">例</span> <span class="number">17.1</span>
 <span class="title">共通項目</span></p>
 <div class="content">
@@ -81,12 +81,13 @@ def main(func):
     msg = &#34;\n{} flags downloaded in {:.2f}s&#34;
     print(msg.format(count, elapsed))</code></pre>
 <p class="report"><span class="count">[1]</span>
-<span class="start">2019-04-01 01:41:15</span> (<span class="elasped">323ms</span>)
-<span class="right"><span class="option"> (run) </span><span class="kernel">python3</span><span class="count"> [2]</span>
+<span class="start">2019-04-01 01:45:46</span> (<span class="elasped">328ms</span>)
+<span class="right"><span class="option"> (run) </span><span class="kernel">python3</span><span class="count"> [3]</span>
 </span></p></div></div>
 
 </div></div></div>
 
+<h2><span class="pheasant-header"><span class="header"><span class="number">2</span> <span class="title">逐次型ダウンロードスクリプト</span></span></span></h2>
 <div class="pheasant-header"><div class="other"><p class="caption"><span class="prefix">例</span> <span class="number">17.2</span>
 <span class="title">flags.py</span></p>
 <div class="content">
@@ -101,14 +102,14 @@ def main(func):
 if __name__ == &#34;__main__&#34;:
     main(download_many)</code></pre>
 <p class="report"><span class="count">[2]</span>
-<span class="start">2019-04-01 01:41:16</span> (<span class="elasped">455ms</span>)
-<span class="right"><span class="kernel">python3</span><span class="count"> [3]</span>
+<span class="start">2019-04-01 01:45:47</span> (<span class="elasped">435ms</span>)
+<span class="right"><span class="kernel">python3</span><span class="count"> [4]</span>
 </span></p></div><div class="stdout"><pre><code class="text">BD BR CD CN DE EG ET FR ID IN IR JP MX NG PH PK RU TR US VN 
-20 flags downloaded in 0.45s</code></pre></div></div>
+20 flags downloaded in 0.43s</code></pre></div></div>
 
 </div></div></div>
 
-<h2><span class="pheasant-header"><span class="header"><span class="number">2</span> <span class="title">concurrent.futuresを使ったダウンロードスクリプト</span></span></span></h2>
+<h2><span class="pheasant-header"><span class="header"><span class="number">3</span> <span class="title">concurrent.futuresを使ったダウンロードスクリプト</span></span></span></h2>
 <div class="pheasant-header"><div class="other"><p class="caption"><span class="prefix">例</span> <span class="number">17.3</span>
 <span class="title">flags_threadpool.py</span></p>
 <div class="content">
@@ -131,10 +132,10 @@ def download_many_threadpool(cc_list):
 if __name__ == &#34;__main__&#34;:
     main(download_many_threadpool)</code></pre>
 <p class="report"><span class="count">[3]</span>
-<span class="start">2019-04-01 01:41:16</span> (<span class="elasped">150ms</span>)
-<span class="right"><span class="kernel">python3</span><span class="count"> [4]</span>
-</span></p></div><div class="stdout"><pre><code class="text">BD CN FR EG BR DE CD ET ID IR IN MX PH NG JP PK RU TR US VN 
-20 flags downloaded in 0.14s</code></pre></div></div>
+<span class="start">2019-04-01 01:45:47</span> (<span class="elasped">141ms</span>)
+<span class="right"><span class="kernel">python3</span><span class="count"> [5]</span>
+</span></p></div><div class="stdout"><pre><code class="text">BD BR DE CN CD ET FR ID EG IN IR JP MX PK RU US NG PH TR VN 
+20 flags downloaded in 0.13s</code></pre></div></div>
 
 </div></div></div>
 
@@ -164,24 +165,24 @@ if __name__ == &#34;__main__&#34;:
 if __name__ == &#34;__main__&#34;:
     main(download_many_threadpool_ac)</code></pre>
 <p class="report"><span class="count">[4]</span>
-<span class="start">2019-04-01 01:41:16</span> (<span class="elasped">66.0ms</span>)
-<span class="right"><span class="kernel">python3</span><span class="count"> [5]</span>
-</span></p></div><div class="stdout"><pre><code class="text">Scheduled for BR: &lt;Future at 0x2965e84ee10 state=running&gt;
-Scheduled for CN: &lt;Future at 0x2965e838518 state=running&gt;
-Scheduled for ID: &lt;Future at 0x2965e84ec88 state=running&gt;
-Scheduled for IN: &lt;Future at 0x2965e81bfd0 state=pending&gt;
-Scheduled for US: &lt;Future at 0x2965e81bdd8 state=pending&gt;
-BR ID &lt;Future at 0x2965e84ee10 state=finished returned str&gt; result: &#39;BR&#39;
-CN &lt;Future at 0x2965e84ec88 state=finished returned str&gt; result: &#39;ID&#39;
-&lt;Future at 0x2965e838518 state=finished returned str&gt; result: &#39;CN&#39;
-IN &lt;Future at 0x2965e81bfd0 state=finished returned str&gt; result: &#39;IN&#39;US 
-&lt;Future at 0x2965e81bdd8 state=finished returned str&gt; result: &#39;US&#39;
+<span class="start">2019-04-01 01:45:47</span> (<span class="elasped">73.7ms</span>)
+<span class="right"><span class="kernel">python3</span><span class="count"> [6]</span>
+</span></p></div><div class="stdout"><pre><code class="text">Scheduled for BR: &lt;Future at 0x272fbbc6208 state=running&gt;
+Scheduled for CN: &lt;Future at 0x272fbbc6668 state=running&gt;
+Scheduled for ID: &lt;Future at 0x272fbbbbb38 state=running&gt;
+Scheduled for IN: &lt;Future at 0x272fbba0358 state=pending&gt;
+Scheduled for US: &lt;Future at 0x272fbba00f0 state=pending&gt;
+CN BR ID &lt;Future at 0x272fbbc6208 state=finished returned str&gt; result: &#39;BR&#39;
+&lt;Future at 0x272fbbbbb38 state=finished returned str&gt; result: &#39;ID&#39;
+&lt;Future at 0x272fbbc6668 state=finished returned str&gt; result: &#39;CN&#39;
+IN &lt;Future at 0x272fbba0358 state=finished returned str&gt; result: &#39;IN&#39;
+US &lt;Future at 0x272fbba00f0 state=finished returned str&gt; result: &#39;US&#39;
 
-5 flags downloaded in 0.06s</code></pre></div></div>
+5 flags downloaded in 0.07s</code></pre></div></div>
 
 </div></div></div>
 
-<h2><span class="pheasant-header"><span class="header"><span class="number">3</span> <span class="title">asyncio/aiohttpを使ったダウンロードスクリプト</span></span></span></h2>
+<h2><span class="pheasant-header"><span class="header"><span class="number">4</span> <span class="title">asyncio/aiohttpを使ったダウンロードスクリプト</span></span></span></h2>
 <div class="pheasant-header"><div class="other"><p class="caption"><span class="prefix">例</span> <span class="number">17.5</span>
 <span class="title">flags_asyncio.py</span></p>
 <div class="content">
@@ -210,9 +211,9 @@ async def download_many_async(cc_list):
 if __name__ == &#34;__main__&#34;:
     main(lambda x: asyncio.run(download_many_async(x)))</code></pre>
 <p class="report"><span class="count">[5]</span>
-<span class="start">2019-04-01 01:41:16</span> (<span class="elasped">72.2ms</span>)
-<span class="right"><span class="kernel">python3</span><span class="count"> [6]</span>
-</span></p></div><div class="stdout"><pre><code class="text">BD ID BR NG DE MX TR RU IN EG CN JP ET CD PK IR FR US VN PH 
+<span class="start">2019-04-01 01:45:47</span> (<span class="elasped">68.2ms</span>)
+<span class="right"><span class="kernel">python3</span><span class="count"> [7]</span>
+</span></p></div><div class="stdout"><pre><code class="text">DE BD BR NG ID RU EG MX IN TR CN CD ET IR PH JP US VN PK FR 
 20 flags downloaded in 0.06s</code></pre></div></div>
 
 </div></div></div></div>

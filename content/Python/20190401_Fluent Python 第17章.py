@@ -1,8 +1,8 @@
-# 「Fluent Python 17章 futuresを使った並行処理」をPython 3.7で実装します。 [公式の
-# HP](https://github.com/fluentpython/example-code)にもPython 3.7用のアップデートがあり
-# ます。
+# 「Fluent Python 17章 futuresを使った並行処理」の前半部分をPython 3.7で実装します。 [公
+# 式のHP](https://github.com/fluentpython/example-code)にもPython 3.7用のアップデートがあ
+# ります。
 
-# ## 逐次型ダウンロードスクリプト
+# ## 共通項目
 
 # #例 17.1 共通項目
 # -run
@@ -40,6 +40,8 @@ def main(func):
     msg = "\n{} flags downloaded in {:.2f}s"
     print(msg.format(count, elapsed))
 
+
+# ## 逐次型ダウンロードスクリプト
 
 # #例 17.2 flags.py
 def download_many(cc_list):
