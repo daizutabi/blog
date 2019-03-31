@@ -21,7 +21,7 @@ async def spin():
         sys.stdout.flush()
         try:
             await asyncio.sleep …&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">daizutabi</dc:creator><pubDate>Tue, 02 Apr 2019 00:00:00 +0900</pubDate><guid isPermaLink="false">tag:blog.daizutabi.net,2019-04-02:/2019/04/02/</guid></item><item><title>Fluent Python 第17章</title><link>https://blog.daizutabi.net/2019/04/01/</link><description>
-&lt;p&gt;「Fluent Python 17章 futuresを使った並行処理を Python 3.7で実装します。 &lt;a href="https://github.com/fluentpython/example-code"&gt;公式のHP&lt;/a&gt;にもPython 3.7用のアップデートがあります。&lt;/p&gt;
+&lt;p&gt;「Fluent Python 17章 futuresを使った並行処理」をPython 3.7で実装します。 &lt;a href="https://github.com/fluentpython/example-code"&gt;公式のHP&lt;/a&gt;にもPython 3.7用のアップデートがあります。&lt;/p&gt;
 &lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;1&lt;/span&gt; &lt;span class="title"&gt;逐次型ダウンロードスクリプト&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
 &lt;div class="pheasant-header"&gt;&lt;div class="other"&gt;&lt;p class="caption"&gt;&lt;span class="prefix"&gt;例&lt;/span&gt; &lt;span class="number"&gt;17.1&lt;/span&gt;
 &lt;span class="title"&gt;共通項目&lt;/span&gt;&lt;/p&gt;

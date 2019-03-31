@@ -68,13 +68,13 @@ def main():
 if __name__ == &amp;#34;__main__&amp;#34;:
     main()&lt;/code&gt;&lt;/pre&gt;
 &lt;p class="report"&gt;&lt;span class="count"&gt;[1]&lt;/span&gt;
-&lt;span class="start"&gt;2019-04-01 01:39:21&lt;/span&gt; (&lt;span class="elasped"&gt;3.00s&lt;/span&gt;)
+&lt;span class="start"&gt;2019-04-01 01:41:16&lt;/span&gt; (&lt;span class="elasped"&gt;3.01s&lt;/span&gt;)
 &lt;span class="right"&gt;&lt;span class="kernel"&gt;python3&lt;/span&gt;&lt;span class="count"&gt; [7]&lt;/span&gt;
 &lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class="stdout"&gt;&lt;pre&gt;&lt;code class="text"&gt;spinner object: &amp;lt;Task pending coro=&amp;lt;spin() running at &amp;lt;ipython-input-7-e086832b3cff&amp;gt;:10&amp;gt;&amp;gt;
 |/-\|/Answer: 42&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</content></entry><entry><title>Fluent Python 第17章</title><link href="https://blog.daizutabi.net/2019/04/01/" rel="alternate"></link><published>2019-04-01T00:00:00+09:00</published><updated>2019-04-01T00:00:00+09:00</updated><author><name>daizutabi</name></author><id>tag:blog.daizutabi.net,2019-04-01:/2019/04/01/</id><summary type="html">
-&lt;p&gt;「Fluent Python 17章 futuresを使った並行処理を Python 3.7で実装します。 &lt;a href="https://github.com/fluentpython/example-code"&gt;公式のHP&lt;/a&gt;にもPython 3.7用のアップデートがあります。&lt;/p&gt;
+&lt;p&gt;「Fluent Python 17章 futuresを使った並行処理」をPython 3.7で実装します。 &lt;a href="https://github.com/fluentpython/example-code"&gt;公式のHP&lt;/a&gt;にもPython 3.7用のアップデートがあります。&lt;/p&gt;
 &lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;1&lt;/span&gt; &lt;span class="title"&gt;逐次型ダウンロードスクリプト&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
 &lt;div class="pheasant-header"&gt;&lt;div class="other"&gt;&lt;p class="caption"&gt;&lt;span class="prefix"&gt;例&lt;/span&gt; &lt;span class="number"&gt;17.1&lt;/span&gt;
 &lt;span class="title"&gt;共通項目&lt;/span&gt;&lt;/p&gt;
@@ -91,7 +91,7 @@ import requests
 nest_asyncio.apply()
 
 POP20_CC = (&amp;#34;CN IN US ID BR PK NG BD RU JP MX PH VN ET …&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">
-&lt;p&gt;「Fluent Python 17章 futuresを使った並行処理を Python 3.7で実装します。 &lt;a href="https://github.com/fluentpython/example-code"&gt;公式のHP&lt;/a&gt;にもPython 3.7用のアップデートがあります。&lt;/p&gt;
+&lt;p&gt;「Fluent Python 17章 futuresを使った並行処理」をPython 3.7で実装します。 &lt;a href="https://github.com/fluentpython/example-code"&gt;公式のHP&lt;/a&gt;にもPython 3.7用のアップデートがあります。&lt;/p&gt;
 &lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;1&lt;/span&gt; &lt;span class="title"&gt;逐次型ダウンロードスクリプト&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
 &lt;div class="pheasant-header"&gt;&lt;div class="other"&gt;&lt;p class="caption"&gt;&lt;span class="prefix"&gt;例&lt;/span&gt; &lt;span class="number"&gt;17.1&lt;/span&gt;
 &lt;span class="title"&gt;共通項目&lt;/span&gt;&lt;/p&gt;
@@ -130,7 +130,7 @@ def main(func):
     msg = &amp;#34;\n{} flags downloaded in {:.2f}s&amp;#34;
     print(msg.format(count, elapsed))&lt;/code&gt;&lt;/pre&gt;
 &lt;p class="report"&gt;&lt;span class="count"&gt;[1]&lt;/span&gt;
-&lt;span class="start"&gt;2019-04-01 01:39:19&lt;/span&gt; (&lt;span class="elasped"&gt;317ms&lt;/span&gt;)
+&lt;span class="start"&gt;2019-04-01 01:41:15&lt;/span&gt; (&lt;span class="elasped"&gt;323ms&lt;/span&gt;)
 &lt;span class="right"&gt;&lt;span class="option"&gt; (run) &lt;/span&gt;&lt;span class="kernel"&gt;python3&lt;/span&gt;&lt;span class="count"&gt; [2]&lt;/span&gt;
 &lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
 
@@ -150,10 +150,10 @@ def main(func):
 if __name__ == &amp;#34;__main__&amp;#34;:
     main(download_many)&lt;/code&gt;&lt;/pre&gt;
 &lt;p class="report"&gt;&lt;span class="count"&gt;[2]&lt;/span&gt;
-&lt;span class="start"&gt;2019-04-01 01:39:20&lt;/span&gt; (&lt;span class="elasped"&gt;553ms&lt;/span&gt;)
+&lt;span class="start"&gt;2019-04-01 01:41:16&lt;/span&gt; (&lt;span class="elasped"&gt;455ms&lt;/span&gt;)
 &lt;span class="right"&gt;&lt;span class="kernel"&gt;python3&lt;/span&gt;&lt;span class="count"&gt; [3]&lt;/span&gt;
 &lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class="stdout"&gt;&lt;pre&gt;&lt;code class="text"&gt;BD BR CD CN DE EG ET FR ID IN IR JP MX NG PH PK RU TR US VN 
-20 flags downloaded in 0.55s&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+20 flags downloaded in 0.45s&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
 
@@ -180,10 +180,10 @@ def download_many_threadpool(cc_list):
 if __name__ == &amp;#34;__main__&amp;#34;:
     main(download_many_threadpool)&lt;/code&gt;&lt;/pre&gt;
 &lt;p class="report"&gt;&lt;span class="count"&gt;[3]&lt;/span&gt;
-&lt;span class="start"&gt;2019-04-01 01:39:20&lt;/span&gt; (&lt;span class="elasped"&gt;164ms&lt;/span&gt;)
+&lt;span class="start"&gt;2019-04-01 01:41:16&lt;/span&gt; (&lt;span class="elasped"&gt;150ms&lt;/span&gt;)
 &lt;span class="right"&gt;&lt;span class="kernel"&gt;python3&lt;/span&gt;&lt;span class="count"&gt; [4]&lt;/span&gt;
-&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class="stdout"&gt;&lt;pre&gt;&lt;code class="text"&gt;BR BD FR ET IR CN DE EG CD ID IN MX NG JP RU VN PK US TR PH 
-20 flags downloaded in 0.16s&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class="stdout"&gt;&lt;pre&gt;&lt;code class="text"&gt;BD CN FR EG BR DE CD ET ID IR IN MX PH NG JP PK RU TR US VN 
+20 flags downloaded in 0.14s&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
 
@@ -213,18 +213,18 @@ if __name__ == &amp;#34;__main__&amp;#34;:
 if __name__ == &amp;#34;__main__&amp;#34;:
     main(download_many_threadpool_ac)&lt;/code&gt;&lt;/pre&gt;
 &lt;p class="report"&gt;&lt;span class="count"&gt;[4]&lt;/span&gt;
-&lt;span class="start"&gt;2019-04-01 01:39:20&lt;/span&gt; (&lt;span class="elasped"&gt;65.1ms&lt;/span&gt;)
+&lt;span class="start"&gt;2019-04-01 01:41:16&lt;/span&gt; (&lt;span class="elasped"&gt;66.0ms&lt;/span&gt;)
 &lt;span class="right"&gt;&lt;span class="kernel"&gt;python3&lt;/span&gt;&lt;span class="count"&gt; [5]&lt;/span&gt;
-&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class="stdout"&gt;&lt;pre&gt;&lt;code class="text"&gt;Scheduled for BR: &amp;lt;Future at 0x22eb8300fd0 state=running&amp;gt;
-Scheduled for CN: &amp;lt;Future at 0x22eb61082b0 state=running&amp;gt;
-Scheduled for ID: &amp;lt;Future at 0x22eb8d0e630 state=running&amp;gt;
-Scheduled for IN: &amp;lt;Future at 0x22eb8d0e7b8 state=pending&amp;gt;
-Scheduled for US: &amp;lt;Future at 0x22eb8d0e748 state=pending&amp;gt;
-BR ID CN &amp;lt;Future at 0x22eb8300fd0 state=finished returned str&amp;gt; result: &amp;#39;BR&amp;#39;
-&amp;lt;Future at 0x22eb61082b0 state=finished returned str&amp;gt; result: &amp;#39;CN&amp;#39;
-&amp;lt;Future at 0x22eb8d0e630 state=finished returned str&amp;gt; result: &amp;#39;ID&amp;#39;
-IN &amp;lt;Future at 0x22eb8d0e7b8 state=finished returned str&amp;gt; result: &amp;#39;IN&amp;#39;
-US &amp;lt;Future at 0x22eb8d0e748 state=finished returned str&amp;gt; result: &amp;#39;US&amp;#39;
+&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class="stdout"&gt;&lt;pre&gt;&lt;code class="text"&gt;Scheduled for BR: &amp;lt;Future at 0x2965e84ee10 state=running&amp;gt;
+Scheduled for CN: &amp;lt;Future at 0x2965e838518 state=running&amp;gt;
+Scheduled for ID: &amp;lt;Future at 0x2965e84ec88 state=running&amp;gt;
+Scheduled for IN: &amp;lt;Future at 0x2965e81bfd0 state=pending&amp;gt;
+Scheduled for US: &amp;lt;Future at 0x2965e81bdd8 state=pending&amp;gt;
+BR ID &amp;lt;Future at 0x2965e84ee10 state=finished returned str&amp;gt; result: &amp;#39;BR&amp;#39;
+CN &amp;lt;Future at 0x2965e84ec88 state=finished returned str&amp;gt; result: &amp;#39;ID&amp;#39;
+&amp;lt;Future at 0x2965e838518 state=finished returned str&amp;gt; result: &amp;#39;CN&amp;#39;
+IN &amp;lt;Future at 0x2965e81bfd0 state=finished returned str&amp;gt; result: &amp;#39;IN&amp;#39;US 
+&amp;lt;Future at 0x2965e81bdd8 state=finished returned str&amp;gt; result: &amp;#39;US&amp;#39;
 
 5 flags downloaded in 0.06s&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
@@ -259,9 +259,9 @@ async def download_many_async(cc_list):
 if __name__ == &amp;#34;__main__&amp;#34;:
     main(lambda x: asyncio.run(download_many_async(x)))&lt;/code&gt;&lt;/pre&gt;
 &lt;p class="report"&gt;&lt;span class="count"&gt;[5]&lt;/span&gt;
-&lt;span class="start"&gt;2019-04-01 01:39:20&lt;/span&gt; (&lt;span class="elasped"&gt;80.1ms&lt;/span&gt;)
+&lt;span class="start"&gt;2019-04-01 01:41:16&lt;/span&gt; (&lt;span class="elasped"&gt;72.2ms&lt;/span&gt;)
 &lt;span class="right"&gt;&lt;span class="kernel"&gt;python3&lt;/span&gt;&lt;span class="count"&gt; [6]&lt;/span&gt;
-&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class="stdout"&gt;&lt;pre&gt;&lt;code class="text"&gt;BD ID DE IN BR MX TR RU NG JP FR CN CD PH VN IR PK ET US EG 
+&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class="stdout"&gt;&lt;pre&gt;&lt;code class="text"&gt;BD ID BR NG DE MX TR RU IN EG CN JP ET CD PK IR FR US VN PH 
 20 flags downloaded in 0.06s&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</content></entry><entry><title>AtomにおけるPython開発環境構築 その2</title><link href="https://blog.daizutabi.net/2019/02/15/" rel="alternate"></link><published>2019-02-15T00:00:00+09:00</published><updated>2019-02-15T00:00:00+09:00</updated><author><name>daizutabi</name></author><id>tag:blog.daizutabi.net,2019-02-15:/2019/02/15/</id><summary type="html">

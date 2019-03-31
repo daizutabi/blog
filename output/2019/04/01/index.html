@@ -42,7 +42,7 @@
     <h1>Fluent Python 第17章</h1>
   </header>
   <div class="content">
-<p>「Fluent Python 17章 futuresを使った並行処理を Python 3.7で実装します。 <a href="https://github.com/fluentpython/example-code">公式のHP</a>にもPython 3.7用のアップデートがあります。</p>
+<p>「Fluent Python 17章 futuresを使った並行処理」をPython 3.7で実装します。 <a href="https://github.com/fluentpython/example-code">公式のHP</a>にもPython 3.7用のアップデートがあります。</p>
 <h2><span class="pheasant-header"><span class="header"><span class="number">1</span> <span class="title">逐次型ダウンロードスクリプト</span></span></span></h2>
 <div class="pheasant-header"><div class="other"><p class="caption"><span class="prefix">例</span> <span class="number">17.1</span>
 <span class="title">共通項目</span></p>
@@ -81,7 +81,7 @@ def main(func):
     msg = &#34;\n{} flags downloaded in {:.2f}s&#34;
     print(msg.format(count, elapsed))</code></pre>
 <p class="report"><span class="count">[1]</span>
-<span class="start">2019-04-01 01:39:19</span> (<span class="elasped">317ms</span>)
+<span class="start">2019-04-01 01:41:15</span> (<span class="elasped">323ms</span>)
 <span class="right"><span class="option"> (run) </span><span class="kernel">python3</span><span class="count"> [2]</span>
 </span></p></div></div>
 
@@ -101,10 +101,10 @@ def main(func):
 if __name__ == &#34;__main__&#34;:
     main(download_many)</code></pre>
 <p class="report"><span class="count">[2]</span>
-<span class="start">2019-04-01 01:39:20</span> (<span class="elasped">553ms</span>)
+<span class="start">2019-04-01 01:41:16</span> (<span class="elasped">455ms</span>)
 <span class="right"><span class="kernel">python3</span><span class="count"> [3]</span>
 </span></p></div><div class="stdout"><pre><code class="text">BD BR CD CN DE EG ET FR ID IN IR JP MX NG PH PK RU TR US VN 
-20 flags downloaded in 0.55s</code></pre></div></div>
+20 flags downloaded in 0.45s</code></pre></div></div>
 
 </div></div></div>
 
@@ -131,10 +131,10 @@ def download_many_threadpool(cc_list):
 if __name__ == &#34;__main__&#34;:
     main(download_many_threadpool)</code></pre>
 <p class="report"><span class="count">[3]</span>
-<span class="start">2019-04-01 01:39:20</span> (<span class="elasped">164ms</span>)
+<span class="start">2019-04-01 01:41:16</span> (<span class="elasped">150ms</span>)
 <span class="right"><span class="kernel">python3</span><span class="count"> [4]</span>
-</span></p></div><div class="stdout"><pre><code class="text">BR BD FR ET IR CN DE EG CD ID IN MX NG JP RU VN PK US TR PH 
-20 flags downloaded in 0.16s</code></pre></div></div>
+</span></p></div><div class="stdout"><pre><code class="text">BD CN FR EG BR DE CD ET ID IR IN MX PH NG JP PK RU TR US VN 
+20 flags downloaded in 0.14s</code></pre></div></div>
 
 </div></div></div>
 
@@ -164,18 +164,18 @@ if __name__ == &#34;__main__&#34;:
 if __name__ == &#34;__main__&#34;:
     main(download_many_threadpool_ac)</code></pre>
 <p class="report"><span class="count">[4]</span>
-<span class="start">2019-04-01 01:39:20</span> (<span class="elasped">65.1ms</span>)
+<span class="start">2019-04-01 01:41:16</span> (<span class="elasped">66.0ms</span>)
 <span class="right"><span class="kernel">python3</span><span class="count"> [5]</span>
-</span></p></div><div class="stdout"><pre><code class="text">Scheduled for BR: &lt;Future at 0x22eb8300fd0 state=running&gt;
-Scheduled for CN: &lt;Future at 0x22eb61082b0 state=running&gt;
-Scheduled for ID: &lt;Future at 0x22eb8d0e630 state=running&gt;
-Scheduled for IN: &lt;Future at 0x22eb8d0e7b8 state=pending&gt;
-Scheduled for US: &lt;Future at 0x22eb8d0e748 state=pending&gt;
-BR ID CN &lt;Future at 0x22eb8300fd0 state=finished returned str&gt; result: &#39;BR&#39;
-&lt;Future at 0x22eb61082b0 state=finished returned str&gt; result: &#39;CN&#39;
-&lt;Future at 0x22eb8d0e630 state=finished returned str&gt; result: &#39;ID&#39;
-IN &lt;Future at 0x22eb8d0e7b8 state=finished returned str&gt; result: &#39;IN&#39;
-US &lt;Future at 0x22eb8d0e748 state=finished returned str&gt; result: &#39;US&#39;
+</span></p></div><div class="stdout"><pre><code class="text">Scheduled for BR: &lt;Future at 0x2965e84ee10 state=running&gt;
+Scheduled for CN: &lt;Future at 0x2965e838518 state=running&gt;
+Scheduled for ID: &lt;Future at 0x2965e84ec88 state=running&gt;
+Scheduled for IN: &lt;Future at 0x2965e81bfd0 state=pending&gt;
+Scheduled for US: &lt;Future at 0x2965e81bdd8 state=pending&gt;
+BR ID &lt;Future at 0x2965e84ee10 state=finished returned str&gt; result: &#39;BR&#39;
+CN &lt;Future at 0x2965e84ec88 state=finished returned str&gt; result: &#39;ID&#39;
+&lt;Future at 0x2965e838518 state=finished returned str&gt; result: &#39;CN&#39;
+IN &lt;Future at 0x2965e81bfd0 state=finished returned str&gt; result: &#39;IN&#39;US 
+&lt;Future at 0x2965e81bdd8 state=finished returned str&gt; result: &#39;US&#39;
 
 5 flags downloaded in 0.06s</code></pre></div></div>
 
@@ -210,9 +210,9 @@ async def download_many_async(cc_list):
 if __name__ == &#34;__main__&#34;:
     main(lambda x: asyncio.run(download_many_async(x)))</code></pre>
 <p class="report"><span class="count">[5]</span>
-<span class="start">2019-04-01 01:39:20</span> (<span class="elasped">80.1ms</span>)
+<span class="start">2019-04-01 01:41:16</span> (<span class="elasped">72.2ms</span>)
 <span class="right"><span class="kernel">python3</span><span class="count"> [6]</span>
-</span></p></div><div class="stdout"><pre><code class="text">BD ID DE IN BR MX TR RU NG JP FR CN CD PH VN IR PK ET US EG 
+</span></p></div><div class="stdout"><pre><code class="text">BD ID BR NG DE MX TR RU IN EG CN JP ET CD PK IR FR US VN PH 
 20 flags downloaded in 0.06s</code></pre></div></div>
 
 </div></div></div></div>
