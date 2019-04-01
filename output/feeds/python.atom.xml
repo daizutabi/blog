@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"><title>大豆旅 - Python</title><link href="https://blog.daizutabi.net/" rel="alternate"></link><link href="https://blog.daizutabi.net/feeds/python.atom.xml" rel="self"></link><id>https://blog.daizutabi.net/</id><updated>2019-04-02T00:00:00+09:00</updated><entry><title>Fluent Python 第18章</title><link href="https://blog.daizutabi.net/2019/04/02/" rel="alternate"></link><published>2019-04-02T00:00:00+09:00</published><updated>2019-04-02T00:00:00+09:00</updated><author><name>daizutabi</name></author><id>tag:blog.daizutabi.net,2019-04-02:/2019/04/02/</id><summary type="html">
-&lt;p&gt;Fluent Python 18章 asyncioによる並行処理を Python 3.7で実装します。 &lt;a href="https://github.com/fluentpython/example-code"&gt;公式のHP&lt;/a&gt;にもPython 3.7用のアップデートがあります。&lt;/p&gt;
+&lt;p&gt;「Fluent Python 18章 asyncioによる並行処理」をPython 3.7で実装します。 &lt;a href="https://github.com/fluentpython/example-code"&gt;公式のHP&lt;/a&gt;にもPython 3.7用のアップデートがあります。&lt;/p&gt;
 &lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;1&lt;/span&gt; &lt;span class="title"&gt;スレッドとコルーチン&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
 &lt;p&gt;以下の例では、Jupyter clientで実行できるように、&lt;a href="https://github.com/erdewit/nest_asyncio"&gt;nest_asyncio&lt;/a&gt;パッケージを使っています。&lt;/p&gt;
 &lt;div class="pheasant-header"&gt;&lt;div class="other"&gt;&lt;p class="caption"&gt;&lt;span class="prefix"&gt;例&lt;/span&gt; &lt;span class="number"&gt;18.2&lt;/span&gt;
@@ -21,7 +21,7 @@ async def spin():
         sys.stdout.flush()
         try:
             await asyncio.sleep …&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">
-&lt;p&gt;Fluent Python 18章 asyncioによる並行処理を Python 3.7で実装します。 &lt;a href="https://github.com/fluentpython/example-code"&gt;公式のHP&lt;/a&gt;にもPython 3.7用のアップデートがあります。&lt;/p&gt;
+&lt;p&gt;「Fluent Python 18章 asyncioによる並行処理」をPython 3.7で実装します。 &lt;a href="https://github.com/fluentpython/example-code"&gt;公式のHP&lt;/a&gt;にもPython 3.7用のアップデートがあります。&lt;/p&gt;
 &lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;1&lt;/span&gt; &lt;span class="title"&gt;スレッドとコルーチン&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
 &lt;p&gt;以下の例では、Jupyter clientで実行できるように、&lt;a href="https://github.com/erdewit/nest_asyncio"&gt;nest_asyncio&lt;/a&gt;パッケージを使っています。&lt;/p&gt;
 &lt;div class="pheasant-header"&gt;&lt;div class="other"&gt;&lt;p class="caption"&gt;&lt;span class="prefix"&gt;例&lt;/span&gt; &lt;span class="number"&gt;18.2&lt;/span&gt;
@@ -68,9 +68,9 @@ def main():
 if __name__ == &amp;#34;__main__&amp;#34;:
     main()&lt;/code&gt;&lt;/pre&gt;
 &lt;p class="report"&gt;&lt;span class="count"&gt;[1]&lt;/span&gt;
-&lt;span class="start"&gt;2019-04-01 01:45:43&lt;/span&gt; (&lt;span class="elasped"&gt;3.01s&lt;/span&gt;)
-&lt;span class="right"&gt;&lt;span class="kernel"&gt;python3&lt;/span&gt;&lt;span class="count"&gt; [2]&lt;/span&gt;
-&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class="stdout"&gt;&lt;pre&gt;&lt;code class="text"&gt;spinner object: &amp;lt;Task pending coro=&amp;lt;spin() running at &amp;lt;ipython-input-2-e086832b3cff&amp;gt;:10&amp;gt;&amp;gt;
+&lt;span class="start"&gt;2019-04-01 09:08:35&lt;/span&gt; (&lt;span class="elasped"&gt;3.03s&lt;/span&gt;)
+&lt;span class="right"&gt;&lt;span class="kernel"&gt;python3&lt;/span&gt;&lt;span class="count"&gt; [7]&lt;/span&gt;
+&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class="stdout"&gt;&lt;pre&gt;&lt;code class="text"&gt;spinner object: &amp;lt;Task pending coro=&amp;lt;spin() running at &amp;lt;ipython-input-7-e086832b3cff&amp;gt;:10&amp;gt;&amp;gt;
 |/-\|/Answer: 42&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</content></entry><entry><title>Fluent Python 第17章</title><link href="https://blog.daizutabi.net/2019/04/01/" rel="alternate"></link><published>2019-04-01T00:00:00+09:00</published><updated>2019-04-01T00:00:00+09:00</updated><author><name>daizutabi</name></author><id>tag:blog.daizutabi.net,2019-04-01:/2019/04/01/</id><summary type="html">
@@ -130,8 +130,8 @@ def main(func):
     msg = &amp;#34;\n{} flags downloaded in {:.2f}s&amp;#34;
     print(msg.format(count, elapsed))&lt;/code&gt;&lt;/pre&gt;
 &lt;p class="report"&gt;&lt;span class="count"&gt;[1]&lt;/span&gt;
-&lt;span class="start"&gt;2019-04-01 01:45:46&lt;/span&gt; (&lt;span class="elasped"&gt;328ms&lt;/span&gt;)
-&lt;span class="right"&gt;&lt;span class="option"&gt; (run) &lt;/span&gt;&lt;span class="kernel"&gt;python3&lt;/span&gt;&lt;span class="count"&gt; [3]&lt;/span&gt;
+&lt;span class="start"&gt;2019-04-01 09:08:29&lt;/span&gt; (&lt;span class="elasped"&gt;324ms&lt;/span&gt;)
+&lt;span class="right"&gt;&lt;span class="option"&gt; (run) &lt;/span&gt;&lt;span class="kernel"&gt;python3&lt;/span&gt;&lt;span class="count"&gt; [2]&lt;/span&gt;
 &lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
@@ -151,10 +151,10 @@ def main(func):
 if __name__ == &amp;#34;__main__&amp;#34;:
     main(download_many)&lt;/code&gt;&lt;/pre&gt;
 &lt;p class="report"&gt;&lt;span class="count"&gt;[2]&lt;/span&gt;
-&lt;span class="start"&gt;2019-04-01 01:45:47&lt;/span&gt; (&lt;span class="elasped"&gt;435ms&lt;/span&gt;)
-&lt;span class="right"&gt;&lt;span class="kernel"&gt;python3&lt;/span&gt;&lt;span class="count"&gt; [4]&lt;/span&gt;
+&lt;span class="start"&gt;2019-04-01 09:08:29&lt;/span&gt; (&lt;span class="elasped"&gt;5.28s&lt;/span&gt;)
+&lt;span class="right"&gt;&lt;span class="kernel"&gt;python3&lt;/span&gt;&lt;span class="count"&gt; [3]&lt;/span&gt;
 &lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class="stdout"&gt;&lt;pre&gt;&lt;code class="text"&gt;BD BR CD CN DE EG ET FR ID IN IR JP MX NG PH PK RU TR US VN 
-20 flags downloaded in 0.43s&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+20 flags downloaded in 5.27s&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
 
@@ -181,9 +181,9 @@ def download_many_threadpool(cc_list):
 if __name__ == &amp;#34;__main__&amp;#34;:
     main(download_many_threadpool)&lt;/code&gt;&lt;/pre&gt;
 &lt;p class="report"&gt;&lt;span class="count"&gt;[3]&lt;/span&gt;
-&lt;span class="start"&gt;2019-04-01 01:45:47&lt;/span&gt; (&lt;span class="elasped"&gt;141ms&lt;/span&gt;)
-&lt;span class="right"&gt;&lt;span class="kernel"&gt;python3&lt;/span&gt;&lt;span class="count"&gt; [5]&lt;/span&gt;
-&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class="stdout"&gt;&lt;pre&gt;&lt;code class="text"&gt;BD BR DE CN CD ET FR ID EG IN IR JP MX PK RU US NG PH TR VN 
+&lt;span class="start"&gt;2019-04-01 09:08:35&lt;/span&gt; (&lt;span class="elasped"&gt;158ms&lt;/span&gt;)
+&lt;span class="right"&gt;&lt;span class="kernel"&gt;python3&lt;/span&gt;&lt;span class="count"&gt; [4]&lt;/span&gt;
+&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class="stdout"&gt;&lt;pre&gt;&lt;code class="text"&gt;BD BR DE CN FR EG ET CD IN ID JP IR NG TR PH PK MX RU US VN 
 20 flags downloaded in 0.13s&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
@@ -214,25 +214,25 @@ if __name__ == &amp;#34;__main__&amp;#34;:
 if __name__ == &amp;#34;__main__&amp;#34;:
     main(download_many_threadpool_ac)&lt;/code&gt;&lt;/pre&gt;
 &lt;p class="report"&gt;&lt;span class="count"&gt;[4]&lt;/span&gt;
-&lt;span class="start"&gt;2019-04-01 01:45:47&lt;/span&gt; (&lt;span class="elasped"&gt;73.7ms&lt;/span&gt;)
-&lt;span class="right"&gt;&lt;span class="kernel"&gt;python3&lt;/span&gt;&lt;span class="count"&gt; [6]&lt;/span&gt;
-&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class="stdout"&gt;&lt;pre&gt;&lt;code class="text"&gt;Scheduled for BR: &amp;lt;Future at 0x272fbbc6208 state=running&amp;gt;
-Scheduled for CN: &amp;lt;Future at 0x272fbbc6668 state=running&amp;gt;
-Scheduled for ID: &amp;lt;Future at 0x272fbbbbb38 state=running&amp;gt;
-Scheduled for IN: &amp;lt;Future at 0x272fbba0358 state=pending&amp;gt;
-Scheduled for US: &amp;lt;Future at 0x272fbba00f0 state=pending&amp;gt;
-CN BR ID &amp;lt;Future at 0x272fbbc6208 state=finished returned str&amp;gt; result: &amp;#39;BR&amp;#39;
-&amp;lt;Future at 0x272fbbbbb38 state=finished returned str&amp;gt; result: &amp;#39;ID&amp;#39;
-&amp;lt;Future at 0x272fbbc6668 state=finished returned str&amp;gt; result: &amp;#39;CN&amp;#39;
-IN &amp;lt;Future at 0x272fbba0358 state=finished returned str&amp;gt; result: &amp;#39;IN&amp;#39;
-US &amp;lt;Future at 0x272fbba00f0 state=finished returned str&amp;gt; result: &amp;#39;US&amp;#39;
+&lt;span class="start"&gt;2019-04-01 09:08:35&lt;/span&gt; (&lt;span class="elasped"&gt;76.6ms&lt;/span&gt;)
+&lt;span class="right"&gt;&lt;span class="kernel"&gt;python3&lt;/span&gt;&lt;span class="count"&gt; [5]&lt;/span&gt;
+&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class="stdout"&gt;&lt;pre&gt;&lt;code class="text"&gt;Scheduled for BR: &amp;lt;Future at 0x176d97c2160 state=running&amp;gt;
+Scheduled for CN: &amp;lt;Future at 0x176d97c2128 state=running&amp;gt;
+Scheduled for ID: &amp;lt;Future at 0x176d97cdda0 state=running&amp;gt;
+Scheduled for IN: &amp;lt;Future at 0x176d8dc2f60 state=pending&amp;gt;
+Scheduled for US: &amp;lt;Future at 0x176d8dc2f98 state=pending&amp;gt;
+ID BR CN &amp;lt;Future at 0x176d97c2160 state=finished returned str&amp;gt; result: &amp;#39;BR&amp;#39;
+&amp;lt;Future at 0x176d97cdda0 state=finished returned str&amp;gt; result: &amp;#39;ID&amp;#39;
+&amp;lt;Future at 0x176d97c2128 state=finished returned str&amp;gt; result: &amp;#39;CN&amp;#39;
+IN &amp;lt;Future at 0x176d8dc2f60 state=finished returned str&amp;gt; result: &amp;#39;IN&amp;#39;
+US &amp;lt;Future at 0x176d8dc2f98 state=finished returned str&amp;gt; result: &amp;#39;US&amp;#39;
 
-5 flags downloaded in 0.07s&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+5 flags downloaded in 0.06s&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;4&lt;/span&gt; &lt;span class="title"&gt;asyncio/aiohttpを使ったダウンロードスクリプト&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
-&lt;div class="pheasant-header"&gt;&lt;div class="other"&gt;&lt;p class="caption"&gt;&lt;span class="prefix"&gt;例&lt;/span&gt; &lt;span class="number"&gt;17.5&lt;/span&gt;
+&lt;div class="pheasant-header"&gt;&lt;div class="other"&gt;&lt;p class="caption"&gt;&lt;span class="prefix"&gt;例&lt;/span&gt; &lt;span class="number"&gt;18.5&lt;/span&gt;
 &lt;span class="title"&gt;flags_asyncio.py&lt;/span&gt;&lt;/p&gt;
 &lt;div class="content"&gt;
 &lt;div class="pheasant-fenced-code"&gt;&lt;div class="input"&gt;&lt;pre&gt;&lt;code class="python"&gt;async def get_flag_async(session, cc):
@@ -260,10 +260,10 @@ async def download_many_async(cc_list):
 if __name__ == &amp;#34;__main__&amp;#34;:
     main(lambda x: asyncio.run(download_many_async(x)))&lt;/code&gt;&lt;/pre&gt;
 &lt;p class="report"&gt;&lt;span class="count"&gt;[5]&lt;/span&gt;
-&lt;span class="start"&gt;2019-04-01 01:45:47&lt;/span&gt; (&lt;span class="elasped"&gt;68.2ms&lt;/span&gt;)
-&lt;span class="right"&gt;&lt;span class="kernel"&gt;python3&lt;/span&gt;&lt;span class="count"&gt; [7]&lt;/span&gt;
-&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class="stdout"&gt;&lt;pre&gt;&lt;code class="text"&gt;DE BD BR NG ID RU EG MX IN TR CN CD ET IR PH JP US VN PK FR 
-20 flags downloaded in 0.06s&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;span class="start"&gt;2019-04-01 09:08:35&lt;/span&gt; (&lt;span class="elasped"&gt;352ms&lt;/span&gt;)
+&lt;span class="right"&gt;&lt;span class="kernel"&gt;python3&lt;/span&gt;&lt;span class="count"&gt; [6]&lt;/span&gt;
+&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class="stdout"&gt;&lt;pre&gt;&lt;code class="text"&gt;BD ID MX DE BR RU NG EG IN TR IR CD VN CN PK JP PH FR ET US 
+20 flags downloaded in 0.33s&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</content></entry><entry><title>Pythonパッケージの作り方</title><link href="https://blog.daizutabi.net/2017/12/18/" rel="alternate"></link><published>2017-12-18T00:00:00+09:00</published><updated>2017-12-18T00:00:00+09:00</updated><author><name>daizutabi</name></author><id>tag:blog.daizutabi.net,2017-12-18:/2017/12/18/</id><summary type="html">
 &lt;p&gt;&lt;a href="https://github.com/daizutabi/takuhai"&gt;Takuhai&lt;/a&gt;を作成するにあたってPythonパッケージの作り方について学びました．&lt;a href="https://iroha.daizutabi.net/"&gt;「Pythonパッケージの作り方」&lt;/a&gt;に公開しています．パッケージを作るたびに&lt;code&gt;PYTHONPATH&lt;/code&gt;を設定していたり，&lt;code&gt;setup.py&lt;/code&gt;を作るのが敷居が高いなと思っている方の参考になれば幸いです．&lt;/p&gt;</summary><content type="html">

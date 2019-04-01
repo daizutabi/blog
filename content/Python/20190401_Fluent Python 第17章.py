@@ -107,7 +107,7 @@ if __name__ == "__main__":
 
 # ## asyncio/aiohttpを使ったダウンロードスクリプト
 
-# #例 17.5 flags_asyncio.py
+# #例 18.5 flags_asyncio.py
 async def get_flag_async(session, cc):
     url = "{}/{cc}/{cc}.gif".format(BASE_URL, cc=cc.lower())
     async with session.get(url) as resp:

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0"><channel><title>大豆旅 - daizutabi</title><link>https://blog.daizutabi.net/</link><description></description><lastBuildDate>Tue, 02 Apr 2019 00:00:00 +0900</lastBuildDate><item><title>Fluent Python 第18章</title><link>https://blog.daizutabi.net/2019/04/02/</link><description>
-&lt;p&gt;Fluent Python 18章 asyncioによる並行処理を Python 3.7で実装します。 &lt;a href="https://github.com/fluentpython/example-code"&gt;公式のHP&lt;/a&gt;にもPython 3.7用のアップデートがあります。&lt;/p&gt;
+&lt;p&gt;「Fluent Python 18章 asyncioによる並行処理」をPython 3.7で実装します。 &lt;a href="https://github.com/fluentpython/example-code"&gt;公式のHP&lt;/a&gt;にもPython 3.7用のアップデートがあります。&lt;/p&gt;
 &lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;1&lt;/span&gt; &lt;span class="title"&gt;スレッドとコルーチン&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
 &lt;p&gt;以下の例では、Jupyter clientで実行できるように、&lt;a href="https://github.com/erdewit/nest_asyncio"&gt;nest_asyncio&lt;/a&gt;パッケージを使っています。&lt;/p&gt;
 &lt;div class="pheasant-header"&gt;&lt;div class="other"&gt;&lt;p class="caption"&gt;&lt;span class="prefix"&gt;例&lt;/span&gt; &lt;span class="number"&gt;18.2&lt;/span&gt;

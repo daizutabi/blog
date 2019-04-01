@@ -1,4 +1,4 @@
-# Fluent Python 18章 asyncioによる並行処理を Python 3.7で実装します。 [公式の
+# 「Fluent Python 18章 asyncioによる並行処理」をPython 3.7で実装します。 [公式の
 # HP](https://github.com/fluentpython/example-code)にもPython 3.7用のアップデートがあり
 # ます。
 
