@@ -1,5 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>大豆旅 - Machine Learning</title><link href="https://blog.daizutabi.net/" rel="alternate"></link><link href="https://blog.daizutabi.net/feeds/machine-learning.atom.xml" rel="self"></link><id>https://blog.daizutabi.net/</id><updated>2019-01-20T00:00:00+09:00</updated><entry><title>機械学習の準備 その2</title><link href="https://blog.daizutabi.net/2019/01/20/" rel="alternate"></link><published>2019-01-20T00:00:00+09:00</published><updated>2019-01-20T00:00:00+09:00</updated><author><name>daizutabi</name></author><id>tag:blog.daizutabi.net,2019-01-20:/2019/01/20/</id><summary type="html">
+<feed xmlns="http://www.w3.org/2005/Atom"><title>大豆旅 - Machine Learning</title><link href="https://blog.daizutabi.net/" rel="alternate"></link><link href="https://blog.daizutabi.net/feeds/machine-learning.atom.xml" rel="self"></link><id>https://blog.daizutabi.net/</id><updated>2019-04-02T00:00:00+09:00</updated><entry><title>機械学習の準備 その3</title><link href="https://blog.daizutabi.net/2019/04/02/" rel="alternate"></link><published>2019-04-02T00:00:00+09:00</published><updated>2019-04-02T00:00:00+09:00</updated><author><name>daizutabi</name></author><id>tag:blog.daizutabi.net,2019-04-02:/2019/04/02/</id><summary type="html">
+&lt;p&gt;&lt;a href="../../../2019/1/20/"&gt;2019/1/20の記事&lt;/a&gt;のアップデート版です．TensorFlow 2 Alpha版をインストールし、CUDA10で動作させます。&lt;/p&gt;
+&lt;p&gt;今回インストールする主なPythonパッケージは，以下の通りです．&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;TensorFlow (GPU) 2.0.0-Alpha0&lt;/li&gt;
+&lt;li&gt;Keras 2.2.4&lt;/li&gt;
+&lt;li&gt;Neural Network Libraries (GPU) 1.0.14&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;インストールするPC環境は以下の通りです：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;OS: Windows 10 Pro (64-bit)&lt;/li&gt;
+&lt;li&gt;CPU: Intel Core i7-7700HQ @ 2.80 GH&lt;/li&gt;
+&lt;li&gt;GPU: NVIDIA GeForce GTX 1050&lt;/li&gt;
+&lt;li&gt;RAM: 16 GB&lt;/li&gt;
+&lt;li&gt;nVグラフィックスドライバー: 417.71 …&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">
+&lt;p&gt;&lt;a href="../../../2019/1/20/"&gt;2019/1/20の記事&lt;/a&gt;のアップデート版です．TensorFlow 2 Alpha版をインストールし、CUDA10で動作させます。&lt;/p&gt;
+&lt;p&gt;今回インストールする主なPythonパッケージは，以下の通りです．&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;TensorFlow (GPU) 2.0.0-Alpha0&lt;/li&gt;
+&lt;li&gt;Keras 2.2.4&lt;/li&gt;
+&lt;li&gt;Neural Network Libraries (GPU) 1.0.14&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;インストールするPC環境は以下の通りです：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;OS: Windows 10 Pro (64-bit)&lt;/li&gt;
+&lt;li&gt;CPU: Intel Core i7-7700HQ @ 2.80 GH&lt;/li&gt;
+&lt;li&gt;GPU: NVIDIA GeForce GTX 1050&lt;/li&gt;
+&lt;li&gt;RAM: 16 GB&lt;/li&gt;
+&lt;li&gt;nVグラフィックスドライバー: 417.71&lt;/li&gt;
+&lt;li&gt;CUDA Toolkit: 10.0&lt;/li&gt;
+&lt;li&gt;cuDNN: 7.4&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;1&lt;/span&gt; &lt;span class="title"&gt;Condaの設定と仮想環境の作成&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;p&gt;仮想環境を作成します。Atomで開発することを念頭に必要なパッケージをインストールします。TensorFlowやNeural Network Librariesは、pipを使ってインストールしますので、その他のパッケージもpipでインストールします。&lt;/p&gt;
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="source"&gt;&lt;pre&gt;&lt;code class="bash"&gt;(base) &amp;gt; conda create -n daizu python=3.7
+(base) &amp;gt; activate daizu
+(daizu) &amp;gt; pip install numpy scipy sympy pandas scikit-learn pywin32 ipykernel
+(daizu) &amp;gt; pip install altair vega_datasets holoviews matplotlib bokeh
+(daizu) &amp;gt; pip install pytest pytest-cov
+(daizu) &amp;gt; pip install mkdocs pymdown-extensions pelican
+(daizu) &amp;gt; pip install python-language-server[all] black mypy
+(daizu) &amp;gt; pip install pyls-isort pyls-mypy pyls-black
+(daizu) &amp;gt; pip install tensorflow-gpu==2.0.0-alpha0 keras
+(daizu) &amp;gt; pip install nnabla nnabla-ext-cuda100
+(daizu) &amp;gt; pip install -U numpy&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2&gt;&lt;span class="pheasant-header"&gt;&lt;span class="header"&gt;&lt;span class="number"&gt;2&lt;/span&gt; &lt;span class="title"&gt;インストールの確認&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="source"&gt;&lt;pre&gt;&lt;code class="python"&gt;import nnabla_ext.cuda, nnabla_ext.cudnn
+from nnabla.ext_utils import list_extensions
+list_extensions()&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class="pheasant-fenced-code"&gt;&lt;div class="source"&gt;&lt;pre&gt;&lt;code class="python"&gt;import tensorflow as tf
+with tf.device(&amp;#34;/device:GPU:0&amp;#34;):
+  a = tf.constant([1.0, 2.0, 3.0, 4.0, 5.0, 6.0], shape=[2, 3], name=&amp;#39;a&amp;#39;)
+  b = tf.constant([1.0, 2.0, 3.0, 4.0, 5.0, 6.0], shape=[3, 2], name=&amp;#39;b&amp;#39;)
+c = tf.matmul(a, b)
+print(c)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content></entry><entry><title>機械学習の準備 その2</title><link href="https://blog.daizutabi.net/2019/01/20/" rel="alternate"></link><published>2019-01-20T00:00:00+09:00</published><updated>2019-01-20T00:00:00+09:00</updated><author><name>daizutabi</name></author><id>tag:blog.daizutabi.net,2019-01-20:/2019/01/20/</id><summary type="html">
 &lt;p&gt;&lt;a href="../../../2018/09/03/"&gt;2018/9/3の記事&lt;/a&gt;のアップデート版です．今回は，ソニー製&lt;a href="https://nnabla.org/ja/"&gt;Neural Network Libraries&lt;/a&gt;もインストールし，今後両者を比較する準備とします．&lt;/p&gt;
 &lt;p&gt;今回インストールする主なPythonパッケージは，以下の通りです．&lt;/p&gt;
 &lt;ul&gt;

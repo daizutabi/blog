@@ -170,7 +170,7 @@ code {
 }
 
 .pheasant-fenced-code .stderr:before {
-  content: "Stderr:";
+  /* content: "Stderr:"; */
   color: #fdd;
 }
 
